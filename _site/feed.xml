@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="projects/feed.xml" rel="self" type="application/atom+xml" /><link href="projects/" rel="alternate" type="text/html" /><updated>2021-09-07T03:22:06+06:00</updated><id>projects/feed.xml</id><title type="html">Molla Mohammad Abid Naziri</title><subtitle>This site is a work in progress. Pardon any mistakes.</subtitle><entry><title type="html">Academic Projects</title><link href="projects/2021/09/07/projects.html" rel="alternate" type="text/html" title="Academic Projects" /><published>2021-09-07T02:45:03+06:00</published><updated>2021-09-07T02:45:03+06:00</updated><id>projects/2021/09/07/projects</id><content type="html" xml:base="projects/2021/09/07/projects.html">&lt;h1&gt;Projects&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Academic Result Analysis Using Tools of EDM&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Undergraduate Thesis, 2018&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Full Title:&lt;/strong&gt; “Secondary \&amp;amp; Higher Secondary Result Analysis Using the Tools of Educational Data Mining”
+A research work to discover subjects with the most impact on board examination results in Bangladesh using Feature Selection and classifiers like Decision Tree, Naive Bayes, and Logistic Regression
+&lt;strong&gt;Domain:&lt;/strong&gt; Educational Data Mining
+&lt;strong&gt;Supervisor:&lt;/strong&gt; Abu Ahmed Ferdaus, Associate Professor, University of Dhaka&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/RaidaAsh/Delivery-Scheduling\faGithub&quot;&gt;Delivery Scheduler&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;CodeAhead Hackathon, 2018&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Developed in a hackathon arranged by https://shopup.com.bd/ShopUp Tech to automate the sorting and scheduling process by clustering delivery points using k-means, spectral and affinity propagation models
+Developed using Python and Google Maps API&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/abidnazirisami/BookEX\faGithub&quot;&gt;BookEx&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Web Engineering Project, 2018&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A platform for sharing books among people with spare books and people looking for books to read
+Aimed at creating an efficient distribution of shared books and providing rare and expensive books to people who need them
+Used the Django Framework&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/abidnazirisami/DUClub\faGithub&quot;&gt;DUClub&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Software Design Pattern Project, 2017&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Developed for the Dhaka University Club to manage their canteen services by generating receipts online and to keep track of purchases made by members of the club
+Used the Django Framework&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/abidnazirisami/Emo-Express\faGithubb&quot;&gt;Emo-Express&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Software Engineering Project, 2017&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Android app with face detection and emotion recognition abilities
+Developed using Microsoft’s Face API and Emotion API&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/abidnazirisami/Car-Keeper\faGithubb&quot;&gt;Car Keeper&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Peripheral and Interfacing Project, 2017&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A model for a public garage including an Android app with password protection for security
+Includes an automated door implemented with Sonar Sensors to detect entry and exit
+Developed using Arduino (Microprocessor) and MIT App Inventor (Android App)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://github.com/abidnazirisami/Into-the-Black-Hole\faGithubb&quot;&gt;Into the Black Hole&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+&lt;em&gt;Computer Programming Project, 2015&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A shooting game in space, with a storyline and 3 different levels with 3 different types of enemies
+Developed in C language using the BGI library&lt;/p&gt;</content><author><name></name></author><summary type="html">Projects</summary></entry></feed>
