@@ -15,39 +15,39 @@ A research work to discover subjects with the most impact on board examination r
 **Domain:** Educational Data Mining
 **Supervisor:** Abu Ahmed Ferdaus, Associate Professor, University of Dhaka
 
-**[Delivery Scheduler](https://github.com/RaidaAsh/Delivery-Scheduling\faGithub)**  
+**[Delivery Scheduler](https://github.com/RaidaAsh/Delivery-Scheduling\)**  
 *CodeAhead Hackathon, 2018*
 
 Developed in a hackathon arranged by https://shopup.com.bd/ShopUp Tech to automate the sorting and scheduling process by clustering delivery points using k-means, spectral and affinity propagation models
 Developed using Python and Google Maps API
 
-**[BookEx](https://github.com/abidnazirisami/BookEX\faGithub)**  
+**[BookEx](https://github.com/abidnazirisami/BookEX\)**  
 *Web Engineering Project, 2018*
 
 A platform for sharing books among people with spare books and people looking for books to read
 Aimed at creating an efficient distribution of shared books and providing rare and expensive books to people who need them
 Used the Django Framework
 
-**[DUClub](https://github.com/abidnazirisami/DUClub\faGithub)**  
+**[DUClub](https://github.com/abidnazirisami/DUClub\)**  
 *Software Design Pattern Project, 2017*
 
 Developed for the Dhaka University Club to manage their canteen services by generating receipts online and to keep track of purchases made by members of the club
 Used the Django Framework
 
-**[Emo-Express](https://github.com/abidnazirisami/Emo-Express\faGithubb)**  
+**[Emo-Express](https://github.com/abidnazirisami/Emo-Express\b)**  
 *Software Engineering Project, 2017*
 
 Android app with face detection and emotion recognition abilities
 Developed using Microsoft's Face API and Emotion API
 
-**[Car Keeper](https://github.com/abidnazirisami/Car-Keeper\faGithubb)**  
+**[Car Keeper](https://github.com/abidnazirisami/Car-Keeper\b)**  
 *Peripheral and Interfacing Project, 2017*
 
 A model for a public garage including an Android app with password protection for security
 Includes an automated door implemented with Sonar Sensors to detect entry and exit
 Developed using Arduino (Microprocessor) and MIT App Inventor (Android App)
 
-**[Into the Black Hole](https://github.com/abidnazirisami/Into-the-Black-Hole\faGithubb)**  
+**[Into the Black Hole](https://github.com/abidnazirisami/Into-the-Black-Hole\b)**  
 *Computer Programming Project, 2015*
 
 A shooting game in space, with a storyline and 3 different levels with 3 different types of enemies
