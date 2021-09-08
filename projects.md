@@ -7,7 +7,7 @@ title:  "Projects"
 **Academic Result Analysis Using Tools of EDM**  
 *Undergraduate Thesis, 2018*
 
-**Full Title:** "Secondary \& Higher Secondary Result Analysis Using the Tools of Educational Data Mining"
+**Full Title:** "Secondary & Higher Secondary Result Analysis Using the Tools of Educational Data Mining"
 A research work to discover subjects with the most impact on board examination results in Bangladesh using Feature Selection and classifiers like Decision Tree, Naive Bayes, and Logistic Regression.  
 **Domain:** Educational Data Mining  
 **Supervisor:** Abu Ahmed Ferdaus, Associate Professor, University of Dhaka  
