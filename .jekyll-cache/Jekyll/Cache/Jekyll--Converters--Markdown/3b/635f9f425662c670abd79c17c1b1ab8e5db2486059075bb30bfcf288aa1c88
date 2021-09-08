@@ -1,16 +1,7 @@
----
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
----
-
-![My profile picture](/assets/Edited_Formal.jpg)
-
-<h1>About me</h1>
+I"ü<h1>About me&lt;/h2&gt;
 
 I am Molla Mohammad Abid Naziri, also known as M M Abid Naziri. I graduated from the University of Dhaka in December, 2018 with a Bachelors of Science degree in Computer Science and Engineering. I am currently working as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc.
 
-[Academic Projects](/projects)
 
-
+</h1>
+:ET
