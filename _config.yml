@@ -21,11 +21,13 @@
 title: Molla Mohammad Abid Naziri
 email: abidnazirisami@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  This site is a work in progress. Pardon any mistakes.
+  Software Engineer | PhD Applicant |
+  A tech geek
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: abidnazirisami
 github_username:  abidnazirisami
+linkedin_username: abidnazirisami
+
 
 # Build settings
 theme: minima

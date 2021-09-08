@@ -36,7 +36,7 @@ Aimed at creating an efficient distribution of shared books and providing rare a
 <ul>
     <li>Language(s): Python, HTML, CSS, JS </li>
     <li>Technology(s): Django</li>
-    <li>Responsibility(s): Frontend design and implimentation, Testing, Backend (partial)</li>
+    <li>Responsibility(s): Frontend design and implementation, Testing, Backend (partial)</li>
     <li>Group Member(s): Nahian Ashraf and Mahfida Jerin</li>
 </ul>
 
@@ -48,7 +48,7 @@ Developed for the Dhaka University Club to manage their canteen services by gene
 <ul>
     <li>Language(s): Python, HTML, CSS </li>
     <li>Technology(s): Django</li>
-    <li>Responsibility(s): Frontend design and implimentation, Testing, Backend (partial)</li>
+    <li>Responsibility(s): Frontend design and implementation, Testing, Backend (partial)</li>
     <li>Group Member(s): Nahian Ashraf and Sabrina Yasmin</li>
 </ul>
 
@@ -58,7 +58,7 @@ Developed for the Dhaka University Club to manage their canteen services by gene
 Android app with face detection and emotion recognition abilities.
 
 <ul>
-    <li>Technology(s): Android Studio, Microsoft's Face API and Emption API</li>
+    <li>Technology(s): Android Studio, Microsoft's Face API and Emotion API</li>
     <li>Responsibility(s): UI Design, API integration</li>
     <li>Group Member(s): Md Sakib Anwar, Fariha Hossain, Md Shahadat Hossain Shahin</li>
 </ul>
