@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Projects"
+permalink: /projects/
 ---
 <h3> Undergraduate Thesis </h3>
 
