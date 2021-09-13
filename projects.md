@@ -41,6 +41,8 @@ Aimed at creating an efficient distribution of shared books and providing rare a
     <li>Group Member(s): Nahian Ashraf and Mahfida Jerin</li>
 </ul>
 
+*[Demonstration (YouTube)](https://youtu.be/8Oneqrm6TCo)*
+
 **[DUClub](https://github.com/abidnazirisami/DUClub)**  
 *Software Design Pattern Project, 2017*
 
@@ -52,6 +54,8 @@ Developed for the Dhaka University Club to manage their canteen services by gene
     <li>Responsibility(s): Frontend design and implementation, Testing, Backend (partial)</li>
     <li>Group Member(s): Nahian Ashraf and Sabrina Yasmin</li>
 </ul>
+
+*[Demonstration (YouTube)](https://youtu.be/aEQd8ZhR7_A)*
 
 **[Emo-Express](https://github.com/abidnazirisami/Emo-Express)**  
 *Software Engineering Project, 2017*
