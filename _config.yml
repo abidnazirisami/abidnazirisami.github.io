@@ -28,6 +28,8 @@ logo: /images/Abid_logo.png
 
 
 # Build settings
+remote_theme: mmistakes/so-simple-theme
+
 theme: jekyll-theme-so-simple
 skin: "/assets/css/skins/dark.css"
 
