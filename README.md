@@ -1,1 +1,1 @@
-# Welcome to the website of Molla Mohammad Abid Naziri
+# Welcome to the website of M M Abid Naziri

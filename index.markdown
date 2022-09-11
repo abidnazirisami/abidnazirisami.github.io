@@ -4,7 +4,13 @@
 
 layout: home
 ---
-  
 
-I am Molla Mohammad Abid Naziri, also known as M M Abid Naziri. I graduated from the University of Dhaka in 2018 with a Bachelor of Science degree in Computer Science and Engineering. I am currently working as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc. 
+![My profile picture](/assets/Edited_Formal.jpg)
+
+[Projects](/projects) | [Publications](/publications) | [Co-curricular Activities](/co-curricular) | [Resume](https://tinyurl.com/abidnazirisami-cv)
+
+<h1>About me</h1>
+
+I am M M Abid Naziri, also known as Molla Mohammad Abid Naziri. Currently, I am a first year Ph.D. student in Computer Science at North Carolina State University (NCSU). I completed my undergraduate degree in Computer Science and Engineering from University of Dhaka in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc. 
+
 
