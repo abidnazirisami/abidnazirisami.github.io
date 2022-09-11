@@ -39,7 +39,7 @@ google_fonts:
 footer_links:
   - title: Institutional Mail
     url: mailto:mnaziri@ncsu.edu
-    icon: fa-solid fa-building-columns
+    icon: fas fa-university
   - title: Mail
     url: mailto:abidnazirisami@gmail.com
     icon: fas fa-envelope-square
