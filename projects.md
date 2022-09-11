@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Projects"
 permalink: /projects/
 ---
@@ -41,7 +41,7 @@ Aimed at creating an efficient distribution of shared books and providing rare a
     <li>Group Member(s): Nahian Ashraf and Mahfida Jerin</li>
 </ul>
 
-*[Demonstration (YouTube)](https://youtu.be/8Oneqrm6TCo)*
+[Demonstration (YouTube)](https://youtu.be/8Oneqrm6TCo){: .btn}
 
 **[DUClub](https://github.com/abidnazirisami/DUClub)**  
 *Software Design Pattern Project, 2017*
@@ -55,7 +55,7 @@ Developed for the Dhaka University Club to manage their canteen services by gene
     <li>Group Member(s): Nahian Ashraf and Sabrina Yasmin</li>
 </ul>
 
-*[Demonstration (YouTube)](https://youtu.be/aEQd8ZhR7_A)*
+[Demonstration (YouTube)](https://youtu.be/aEQd8ZhR7_A){: .btn}
 
 **[Emo-Express](https://github.com/abidnazirisami/Emo-Express)**  
 *Software Engineering Project, 2017*

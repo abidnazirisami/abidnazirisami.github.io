@@ -21,18 +21,34 @@
 title: M M Abid Naziri
 email: abidnazirisami@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Phd Student |
-  CS Education Enthusiast  |
-  Former Software Engineer | 
-  A tech geek |
+  Ph.D. Student  |  CS Education Enthusiast  |  Former Software Engineer  |  A tech geek
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  abidnazirisami
-linkedin_username: abidnazirisami
+logo: /images/Abid_logo.png
 
 
 # Build settings
-theme: minima
+remote_theme: mmistakes/so-simple-theme@3.2.0
+
+skin: "/assets/css/skins/dark.css"
+
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+
+footer_links:
+  - title: Institutional Mail
+    url: mailto:mnaziri@ncsu.edu
+    icon: fas fa-building-columns
+  - title: Mail
+    url: mailto:abidnazirisami@gmail.com
+    icon: fas fa-envelope-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/abidnazirisami
+    icon: fab fa-linkedin
+  - title: GitHub
+    url: https://github.com/abidnazirisami
+    icon: fab fa-github-square
 
 # Exclude from processing.
 # The following items will not be processed, by default.

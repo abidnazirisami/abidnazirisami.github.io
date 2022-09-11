@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Co-curricular Activities"
 permalink: /co-curricular/
 ---
