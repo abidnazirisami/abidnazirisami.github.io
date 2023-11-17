@@ -6,6 +6,6 @@ layout: home
 ---
 <h1>About me</h1>
 
-I am M M Abid Naziri, also known as Molla Mohammad Abid Naziri. Currently, I am a first year Ph.D. student in Computer Science at North Carolina State University (NCSU). I am working with Autonomous Driving Systems (ADS), specifically on generating complex scenarios to test these systems. I completed my undergraduate degree in Computer Science and Engineering from University of Dhaka in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc. 
+I am M M Abid Naziri, also known as Molla Mohammad Abid Naziri. Currently, I am a second year Ph.D. student in Computer Science at North Carolina State University (NCSU). I am working with Autonomous Driving Systems (ADS), specifically on generating complex scenarios to test these systems. I completed my undergraduate degree in Computer Science and Engineering from University of Dhaka in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc. 
 
-
+Currently, my area of research is complex test case generation for Autonomous Driving Systems using high-fidelity simulators. I am working with [Dr. Marcelo D'Amorim](https://damorim.github.io/), an excellent researcher in the area of Software Engineering and Software Testing.
