@@ -40,7 +40,7 @@ permalink: /co-curricular/
 </ul>
 
 
-**Officer, Bangladesh Student Association, North Carolina State University [BSA NCSU](https://getinvolved.ncsu.edu/organization/BSA/)**
+**Officer, Bangladesh Student Association, North Carolina State University [(BSA NCSU)](https://getinvolved.ncsu.edu/organization/BSA/)**
 *August 2022 - July 2023*
 <ul>
     <li>Organized and co-ordinated various events (e.g. cultural, communications etc.)</li>
