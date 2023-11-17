@@ -39,3 +39,9 @@ permalink: /co-curricular/
     <li>Volunteered in several fundraising events</li> 
 </ul>
 
+**Officer, [Bangladesh Student Association, North Carolina State University](https://getinvolved.ncsu.edu/organization/BSA)**
+*August 2022 - July 2023*
+<ul>
+    <li>Organized and co-ordinated various events (e.g. cultural, communications etc.)</li>
+    <li>Volunteered to assist incoming international students from Bangladesh</li>
+</ul>
