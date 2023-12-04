@@ -17,7 +17,7 @@ I am currently working on generating complex test cases for Autonomous Driving S
 
 **Simulator:** [CARLA](https://carla.readthedocs.io/)
 
-**Graduate Teacher Assistant**  
+**Graduate Teaching Assistant**  
 *August 2022 - May 2023*
 
 **CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
