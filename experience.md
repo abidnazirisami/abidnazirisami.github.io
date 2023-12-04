@@ -3,11 +3,11 @@ layout: page
 title:  "Experience"
 permalink: /experience/
 ---
-<h3> North Carolina State University </h3>
+<h3> North Carolina State University </h3> 
 
 *Raleigh, NC, United States*
 
-**Graduate Research Assistant**
+**Graduate Research Assistant** 
 *May 2023 - Present*
 
 **Advisor:** [Dr. Marcelo D'Amorim](https://damorim.github.io/)
@@ -17,7 +17,7 @@ I am currently working on generating complex test cases for Autonomous Driving S
 
 **Simulator:** [CARLA](https://carla.readthedocs.io/)
 
-**Graduate Teacher Assistant**
+**Graduate Teacher Assistant** 
 *August 2022 - May 2023*
 
 **CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
@@ -25,11 +25,11 @@ I am currently working on generating complex test cases for Autonomous Driving S
 **CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
 
 
-<h3> Enosis Solutions </h3>
+<h3> Enosis Solutions </h3> 
 
 *Dhaka, Bangladesh*
 
-**Senior Software Engineer**
+**Senior Software Engineer** 
 *March 2019 - July 2022*
 
 **Web Applications**
