@@ -20,8 +20,10 @@ I am currently working on generating complex test cases for Autonomous Driving S
 **Graduate Teacher Assistant**
 *August 2022 - May 2023*
 
-**CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
-**CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
+<ul>
+    <li> **CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/). </li>
+    <li> **CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/). </li>
+</ul>
 
 <h3> Enosis Solutions </h3>
 
