@@ -78,6 +78,7 @@
 }
 .hero-location { font-size: 0.95rem; color: #000; }
 .hero-location p { margin: 0; line-height: 1.4; }
+.hero-location .inline-logo { height: 1em; width: 1em; vertical-align: -0.15em; margin-right: 6px; }
 .hero-news-list { text-align: left; }
 .hero-news-list h3 { margin-top: 0; text-align: left; }
 /* Use default list spacing from .hero-news ul above */

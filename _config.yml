@@ -29,6 +29,8 @@ logo: /images/Abid_logo.png
 
 # Build settings
 theme: minima
+minima:
+  skin: classic
 
 ## Note: google_fonts and footer_links are not used by Minima; removed for cleanliness
 

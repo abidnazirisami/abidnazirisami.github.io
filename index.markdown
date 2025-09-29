@@ -13,7 +13,7 @@ layout: home
         <div class="hero-location" aria-label="Office Location">
             <p>
                 Room 3228, Engineering Bldg II<br/>
-                NC State University<br/>
+                <img class="inline-logo" src="/favicon.ico" alt="" aria-hidden="true"> NC State University<br/>
                 Raleigh, USA
             </p>
         </div>
