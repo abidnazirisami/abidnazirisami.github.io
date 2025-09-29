@@ -48,4 +48,4 @@ layout: home
 
 <h1>Education and Experience</h1>
 
- I completed my undergraduate degree in Computer Science and Engineering from University of Dhaka in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc.
+ I completed my undergraduate degree in [Computer Science and Engineering](https://du.ac.bd/body/CSE) from [University of Dhaka](https://du.ac.bd) in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc.

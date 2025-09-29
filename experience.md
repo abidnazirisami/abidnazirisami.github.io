@@ -12,18 +12,26 @@ permalink: /experience/
 
 **Advisor:** [Dr. Marcelo D'Amorim](https://damorim.github.io/)
 
-**Current Project**  
-I am currently working on generating complex test cases for Autonomous Driving Systems (ADS). Since testing ADS in real life is both costly and a safety concern, high-fidelity simulators that can create realistic scenarios are better for testing ADSs before deploying them to the real world. But due to the huge search space for testing these systems in these simulators, efficient ways of creating realistic and complex test cases is necessary to minimize the use of resources. My current work focuses on running an ADS agent on existing scenarios (test cases) and using simulation data to create a misbehavior predictor that specifies the risky portions of the scenarios. Then we clip the scenarios around these risky points to create smaller sub-simulations and apply different mutation operators on these sub-simulations to generate different children of these risky scenarios. This reduces the time required to generate these test cases and generates riskier test cases that can challenge the ever-evolving ADS agents.
+**Current Projects**  
+I am focused on testing **Deep Learning (DL)** libraries like PyTorch and TensorFlow using fuzzing techniques. Generating valid inputs for DL library APIs is challenging due to the complexity of these libraries. I am developing efficient methods to infer input constraints, aiming to improve test validity and uncover deeper bugs in core API implementations.
+
+**Libraries:** [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/)\
+**Reported Bugs:** [Sheet](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)
+
+I am also developing efficient methods to generate complex test cases for **Autonomous Driving Systems (ADS)** using high-fidelity simulators. My work involves running ADS agents on scenarios, analyzing simulation data to predict risky scenario segments, and then focusing test generation on these areas. By clipping and mutating these risky segments, we create challenging test cases that improve ADS robustness while reducing resource usage.
 
 **Simulator:** [CARLA](https://carla.readthedocs.io/)
 
 **Graduate Teaching Assistant**  
-*August 2022 - May 2023*
+*August 2022 - Present*
 
 **CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
 
 **CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
 
+**CSC 326 - Software Engineering**, Spring 2025, taught by [Dr. Wesley Klewerton Guez Assunção](https://wesleyklewerton.github.io/) and [Dr. Bowen Xu](https://www.bowenxu.me/).
+
+**CSC 712 - Software Testing and Reliability**, Fall 2025, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
 
 <h3> Enosis Solutions </h3> 
 
