@@ -28,27 +28,19 @@ logo: /images/Abid_logo.png
 
 
 # Build settings
-remote_theme: mmistakes/so-simple-theme@3.2.0
+theme: minima
 
-skin: "/assets/css/skins/dark.css"
+## Note: google_fonts and footer_links are not used by Minima; removed for cleanliness
 
-google_fonts:
-  - name: "Source Sans Pro"
-    weights: "400,400i,700,700i"
-
-footer_links:
-  - title: Institutional Mail
-    url: mailto:mnaziri@ncsu.edu
-    icon: fas fa-university
-  - title: Mail
-    url: mailto:abidnazirisami@gmail.com
-    icon: fas fa-envelope-square
-  - title: LinkedIn
-    url: https://www.linkedin.com/in/abidnazirisami
-    icon: fab fa-linkedin
-  - title: GitHub
-    url: https://github.com/abidnazirisami
-    icon: fab fa-github-square
+# Navigation for Minima theme
+# These pages will appear in the header nav in order
+header_pages:
+  - resume.md
+  - experience.md
+  - projects.md
+  - publications.md
+  - co-curricular.md
+  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.

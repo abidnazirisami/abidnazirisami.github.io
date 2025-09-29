@@ -4,6 +4,36 @@
 
 layout: home
 ---
+
+<!-- styles moved to assets/css/custom.css and loaded via assets/main.scss -->
+
+<div class="hero">
+    <img class="hero-photo" src="/assets/Edited_Formal.png" alt="M M Abid Naziri">
+    <aside class="hero-contacts" aria-label="Contacts">
+        <div class="hero-location" aria-label="Office Location">
+            <p>
+                Room 3228, Engineering Bldg II<br/>
+                NC State University<br/>
+                Raleigh, USA
+            </p>
+        </div>
+        <ul class="contact-links">
+            <li><i class="fas fa-graduation-cap"></i><a href="https://scholar.google.com/citations?hl=en&user=oJJIZNcAAAAJ" target="_blank" rel="noopener">Google Scholar</a></li>
+            <li><i class="fas fa-envelope"></i><a href="mailto:abidnazirisami@gmail.com">abidnazirisami@gmail.com</a></li>
+            <li><i class="fas fa-university"></i><a href="mailto:mnaziri@ncsu.edu">mnaziri@ncsu.edu</a></li>
+            <li><i class="fab fa-github"></i><a href="https://github.com/abidnazirisami" target="_blank" rel="noopener">github.com/abidnazirisami</a></li>
+            <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/abidnazirisami" target="_blank" rel="noopener">linkedin.com/in/abidnazirisami</a></li>
+        </ul>
+    </aside>
+    <aside class="hero-news" aria-label="News">
+        <div class="hero-news-list">
+            <h3>News</h3>
+            {% capture news_md %}{% include news.md %}{% endcapture %}
+            {{ news_md | markdownify }}
+            <div class="meta">Latest highlights</div>
+        </div>
+    </aside>
+</div>
 <h1>Who am I?</h1>
  I am a fourth year PhD Student at [NC State](https://www.ncsu.edu/). I am working with [Dr. Marcelo D'Amorim](https://damorim.github.io/) as a member of the [Software Engineering Group](https://ncsu.software/). My areaf of research is Software Testing.
 
@@ -12,27 +42,8 @@ layout: home
  My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc. To date, I have reported 48 bugs in PyTorch and Tensorflow ([full list of reported bugs](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)). I am also working in generating complex test cases for Autonomous Driving Systems (ADS).
 
 <h1>Publications</h1>
- 
- > BugsInDLLs : A Database of Reproducible Bugs in Deep Learning Libraries to Enable Systematic Evaluation of Testing Techniques\
-  M M Abid Naziri, Aman Kumar Singh, Benjamin Wu, Feiran (Alex) Qin, Saikat Dutta, Marcelo d'Amorim\
-  **Published** in [ISSTA 2025, Tool Demonstration](https://conf.researchr.org/track/issta-2025/issta-2025-tool-demonstrations?)\
-  [[PDF]](https://dl.acm.org/doi/pdf/10.1145/3713081.3731739) [[Tool]](https://github.com/ncsu-swat/bugsindlls)
 
- > Evaluating the Effectiveness of Neurosymbolic Constraint Learning for Testing Deep Learning Library APIs\
-  M. M. Abid Naziri, Shinhae Kim, Feiran Qin, Saikat Dutta, Marcelo d'Amorim\
-  _Submitted_
- <!-- Submitted to [ICSE 2026](https://conf.researchr.org/home/icse-2026) -->
-
- > Testing Autonomous Driving Systems with Focused Misbehavior Forecasting\
-  M M Abid Naziri, Stefano Carlo Lambertenghi, Andrea Stocco, Marcelo d'Amorim\
-  _Submitted_
- <!-- Submitted to [ICSE 2026](https://conf.researchr.org/home/icse-2026) -->
- 
- > Evaluating the Effectiveness of Coverage-Guided Fuzzing for Testing Deep Learning Library APIs\
- Feiran Qin, M. M. Abid Naziri, Hengyu Ai, Saikat Dutta, Marcelo d'Amorim\
- _Submitted_, [Preprint](https://arxiv.org/abs/2509.14626)\
- [[PDF]](https://arxiv.org/pdf/2509.14626)
- <!-- Submitted to [FSE 2026](https://conf.researchr.org/home/fse-2026) -->
+{% include publications_list.md %}
 
 
 <h1>Education and Experience</h1>
