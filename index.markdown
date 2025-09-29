@@ -35,7 +35,7 @@ layout: home
     </aside>
 </div>
 <h1>Who am I?</h1>
- I am a fourth year PhD Student at [NC State](https://www.ncsu.edu/). I am working with [Dr. Marcelo D'Amorim](https://damorim.github.io/) as a member of the [Software Engineering Group](https://ncsu.software/). My areaf of research is Software Testing.
+ I am a fourth year PhD Student at [NC State](https://www.ncsu.edu/). I am working with [Dr. Marcelo D'Amorim](https://damorim.github.io/) as a member of the [Software Engineering Group](https://ncsu.software/). My area of research is Software Testing.
 
 <h1>Research Interests</h1>
 
