@@ -1,0 +1,32 @@
+Reported:,29,12,10,,,7,,
+,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note
+torch.acos,https://github.com/pytorch/pytorch/issues/134487,Fixed,Yes,2,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/134838,
+torch.angle,https://github.com/pytorch/pytorch/issues/134607,Submitted,No,0,Crash,No,,
+torch.floor_divide,https://github.com/pytorch/pytorch/issues/135330,Submitted,No,2,Inconsistent,No,,
+torch.nn.functional.normalize,https://github.com/pytorch/pytorch/issues/135428,Fixed,Yes,3,Nan,Merged,https://github.com/pytorch/pytorch/pull/140375,
+"torch.nn.ReplicationPad1d, torch.nn.ReflectionPad1d,torch.nn.ReplicationPad3d, torch.nn.ReflectionPad3d,torch.nn.ReplicationPad3d, torch.nn.ReflectionPad3d",https://github.com/pytorch/pytorch/issues/135519,Fixed,No,2,Crash,Merged,,
+torch.sigmoid,https://github.com/pytorch/pytorch/issues/135777,Fixed,No,2,Nan,Merged,https://github.com/pytorch/pytorch/pull/140391,
+torch.linalg.lstsq,https://github.com/pytorch/pytorch/issues/136443,Rejected,No,6,False positive,No,,
+torch.nn.InstanceNorm3d,https://github.com/pytorch/pytorch/issues/136680,Confirmed,Yes,0,Inconsistent,Open,https://github.com/pytorch/pytorch/pull/136824,
+torch.digamma,https://github.com/pytorch/pytorch/issues/137817,Rejected,Yes,3,False positive,No,,
+torch.asin,https://github.com/pytorch/pytorch/issues/138327,Fixed,No,0,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/134838,
+torch.dot,https://github.com/pytorch/pytorch/issues/138829,Confirmed,No,1,Crash,No,,
+torch.nn.AvgPool2d,https://github.com/pytorch/pytorch/issues/139115,Submitted,No,4,Crash,No,,
+torch.nn.InstanceNorm2d,https://github.com/pytorch/pytorch/issues/139140,Confirmed,No,1,Crash,No,,
+torch.nn.ReflectionPad2d,https://github.com/pytorch/pytorch/issues/139333,Confirmed,No,0,Crash,No,,
+torch.logcumsumexp,https://github.com/pytorch/pytorch/issues/139342,Confirmed,No,0,Inconsistent,No,,
+torch.logcumsumexp,https://github.com/pytorch/pytorch/issues/139342,Confirmed,No,0,Crash,No,,
+torch.nansum,https://github.com/pytorch/pytorch/issues/139349,Rejected,No,0,False positive,No,,
+torch.histc,https://github.com/pytorch/pytorch/issues/139360,Fixed,No,0,Crash,Merged,https://github.com/pytorch/pytorch/pull/139372,
+torch.nn.functional.softshrink,https://github.com/pytorch/pytorch/issues/153186,Confirmed,No,4,Overflow,,,
+torch.nn.functional.conv_transpose2d,https://github.com/pytorch/pytorch/issues/153276,Confirmed,Yes,0,Inconsistent,,,
+torch.nn.functional.rrelu,https://github.com/pytorch/pytorch/issues/153281,Confirmed,No,0,Inconsistent,,,
+torch.floor_divide,https://github.com/pytorch/pytorch/issues/153597,Rejected,Yes,1,False positive,,,
+torch.nn.functional.conv_transpose2d,https://github.com/pytorch/pytorch/issues/153700,Confirmed,Yes,2,Overflow,,,OneDNN bug
+torch.native_channel_shuffle,https://github.com/pytorch/pytorch/issues/158154,Confirmed,No,0,Crash,,,FPE
+torch.nn.LPPool2d,https://github.com/pytorch/pytorch/issues/158166,Confirmed,No,0,Inconsistent,,,
+torch.fmin,https://github.com/pytorch/pytorch/issues/158172,Rejected,No,2,False positive,,,
+torch.det,https://github.com/pytorch/pytorch/issues/158208,Rejected,Yes,2,False positive,,,
+torch.nn.LogSoftmax,https://github.com/pytorch/pytorch/issues/158310,Previously Fixed,Yes,2,Inconsistent,,,Fixed on latest nightly
+torch.nn.functional.celu,https://github.com/pytorch/pytorch/issues/158314,Previously Fixed,Yes,2,Inconsistent,,,Fixed on latest nightly

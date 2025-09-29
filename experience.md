@@ -16,7 +16,7 @@ permalink: /experience/
 I am focused on testing **Deep Learning (DL)** libraries like PyTorch and TensorFlow using fuzzing techniques. Generating valid inputs for DL library APIs is challenging due to the complexity of these libraries. I am developing efficient methods to infer input constraints, aiming to improve test validity and uncover deeper bugs in core API implementations.
 
 **Libraries:** [PyTorch](https://pytorch.org/), [TensorFlow](https://www.tensorflow.org/)\
-**Reported Bugs:** [Sheet](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)
+**Reported Bugs:** [[List]](/bugs/)
 
 I am also developing efficient methods to generate complex test cases for **Autonomous Driving Systems (ADS)** using high-fidelity simulators. My work involves running ADS agents on scenarios, analyzing simulation data to predict risky scenario segments, and then focusing test generation on these areas. By clipping and mutating these risky segments, we create challenging test cases that improve ADS robustness while reducing resource usage.
 
