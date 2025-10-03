@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <div class="back-home-container">
+          <a class="back-home" href="{{ '/' | relative_url }}" aria-label="Back to homepage">
+            <span class="back-home-arrow" aria-hidden="true">&larr;</span>
+            <span>Back to homepage</span>
+          </a>
+        </div>
+
+        {{ content }}
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+  </html>
