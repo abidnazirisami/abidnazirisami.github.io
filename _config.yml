@@ -21,7 +21,7 @@
 title: M M Abid Naziri
 email: abidnazirisami@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ph.D. Student  |  SE Researcher 
+  SE Researcher | Ph.D. Student
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /images/Abid_logo.png
