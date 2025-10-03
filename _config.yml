@@ -42,7 +42,6 @@ header_pages:
   - projects.md
   - publications.md
   - co-curricular.md
-  - about.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
