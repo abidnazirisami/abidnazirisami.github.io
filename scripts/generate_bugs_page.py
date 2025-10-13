@@ -80,7 +80,7 @@ def main():
     total = len(pytorch_rows) + len(tf_rows)
     # Single-line summary as requested
     content.append(
-        f"## {STATUS_ICON['Confirmed']} Confirmed ({conf}) + {STATUS_ICON['Fixed']} Fixed ({fix}) + {STATUS_ICON['Submitted']} Pending ({sub}) + {STATUS_ICON['Rejected']} Rejected ({total - (sub + conf + fix)}) = {total}"
+        f"## {STATUS_ICON['Confirmed']} Confirmed ({conf + fix}) + {STATUS_ICON['Fixed']} Fixed ({fix}) + {STATUS_ICON['Submitted']} Pending ({sub}) + {STATUS_ICON['Rejected']} Rejected ({total - (sub + conf + fix)}) = {total}"
     )
     content.append("Detailed Spreadsheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)")
     content.append("\n<hr class=\"bugs-divider\" />\n")
