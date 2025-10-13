@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import csv
 from pathlib import Path
+from datetime import datetime, timezone
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 CSV_DIR = REPO_ROOT / "bugs"
@@ -73,7 +74,14 @@ def main():
     content.append("layout: page")
     content.append("title: Reported Bugs")
     content.append("permalink: /bugs/")
+    # Add a machine-readable last-updated timestamp in the front matter
+    now = datetime.now(timezone.utc)
+    iso_ts = now.isoformat(timespec="seconds")
+    content.append(f"last_updated: \"{iso_ts}\"")
     content.append("---\n")
+
+    # Human-friendly 'Last updated' line displayed on the page
+    content.append(f"_Last updated: {now.strftime('%Y-%m-%d %H:%M:%S UTC')}_")
 
     # Summary section
     sub, conf, fix = summarize([pytorch_rows, tf_rows])
