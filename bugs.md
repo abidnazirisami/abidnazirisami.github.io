@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Bugs
+title: Reported Bugs
 permalink: /bugs/
 ---
 

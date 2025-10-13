@@ -38,9 +38,10 @@ minima:
 # These pages will appear in the header nav in order
 header_pages:
   - resume.md
+  - bugs.md
+  - publications.md
   - experience.md
   - projects.md
-  - publications.md
   - co-curricular.md
 
 # Exclude from processing.

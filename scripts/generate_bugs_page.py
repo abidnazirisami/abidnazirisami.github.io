@@ -71,7 +71,7 @@ def main():
     # YAML front matter for Jekyll
     content.append("---")
     content.append("layout: page")
-    content.append("title: Bugs")
+    content.append("title: Reported Bugs")
     content.append("permalink: /bugs/")
     content.append("---\n")
 
