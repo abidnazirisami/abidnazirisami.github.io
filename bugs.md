@@ -2,11 +2,11 @@
 layout: page
 title: Reported Bugs
 permalink: /bugs/
-last_updated: "2025-10-13T18:02:14+00:00"
+last_updated: "2025-10-15T11:50:45+00:00"
 ---
 
-_Last updated: 2025-10-13 18:02:14 UTC_
-## 🔵 Confirmed (74) + ✅ Fixed (16) + 🔄 Pending (7) + ❌ Rejected (13) = 94
+_Last updated: 2025-10-15 11:50:45 UTC_
+## 🔵 74 Confirmed (✅ 16 Fixed) + 🔄 7 Pending + ❌ 13 Rejected = **94**
 Detailed Spreadsheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)
 
 <hr class="bugs-divider" />
