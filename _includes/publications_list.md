@@ -1,5 +1,5 @@
 - Testing Deep Learning Libraries via Neurosymbolic Constraint Learning\
-[M M Abid Naziri](/), [Shinhae Kim](https://shinhae-kim.github.io/), [Feiran Qin](https://nsdi.dev/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)\
+[M M Abid Naziri](/)<sup>*</sup>, [Shinhae Kim](https://shinhae-kim.github.io/)<sup>*</sup>, [Feiran Qin](https://nsdi.dev/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)\
 This paper introduces **Centaur**, a novel neurosymbolic technique to test Deep Learning library APIs by dynamically learning their input constraints. By uniquely combining a grammar-guided Large Language Model with an SMT solver, Centaur generates more valid and diverse test inputs than prior approaches. Our method significantly improves API and code coverage and has already found **23** new bugs in PyTorch and TensorFlow, **11** of which have been confirmed.\
 **Accepted** for [ICSE 2026](https://conf.researchr.org/home/icse-2026)
 - Misbehavior Forecasting for Focused Autonomous Driving Systems Testing\
@@ -20,3 +20,5 @@ _Submitted_ \
 [Facundo Molina](https://facumolina.github.io/), [M M Abid Naziri](/), [Feiran Qin](https://nsdi.dev/), [Alessandra Gorla](https://software.imdea.org/~alessandra.gorla/), [Marcelo d'Amorim](https://damorim.github.io/)\
 This paper demonstrates the effectiveness of ML classifiers as an efficient validity checker for DL Library inputs. Once trained with enough data, different out-of-the-box classifiers can achieve high accuracy in predicting whether an input will be valid or not without executing the input on an API. We demonstrate that the classifiers can predict the validity of an input with an accuracy of **91%**. We also improve [ACETest](https://github.com/shijy16/ACETest), a prominent DL Library API fuzzing tool, by complementing the technique with ML classifiers. The validity ratio of the tool increases from **29%** to **61%** after the integration, demonstrating the effectiveness of ML classifiers as a filter for the DL Library API inputs.\
 _Submitted_
+
+<font size="1.5"><sup>*</sup>Co-first author</font>
