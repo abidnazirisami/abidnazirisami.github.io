@@ -5,7 +5,8 @@ This paper introduces **Centaur**, a novel neurosymbolic technique to test Deep 
 - Misbehavior Forecasting for Focused Autonomous Driving Systems Testing\
 [M M Abid Naziri](/), [Stefano Carlo Lambertenghi](https://www.fortiss.org/en/results/scientific-publications/author/stefano-carlo-lambertenghi), [Andrea Stocco](https://tsigalko18.github.io/), [Marcelo d'Amorim](https://damorim.github.io/)\
 This paper introduces **Foresee**, a testing technique for autonomous driving systems that identifies potential failures by forecasting and fuzzing "near-miss" events in simulation. By using a misbehavior forecaster to target high-risk scenarios, our approach makes testing more efficient and effective. In our evaluation using the CARLA simulator, Foresee finds up to **128%** more failures than baselines while being up to **2.49x** faster, and improves the bug-finding capability of state-of-the-art fuzzers by over **93%**.\
-**Accepted** for [ICSE 2026](https://conf.researchr.org/home/icse-2026)
+**Accepted** for [ICSE 2026](https://conf.researchr.org/home/icse-2026) \
+[[Preprint]](https://arxiv.org/abs/2512.18823) [[PDF]](https://arxiv.org/pdf/2512.18823)
 - BugsInDLLs : A Database of Reproducible Bugs in Deep Learning Libraries to Enable Systematic Evaluation of Testing Techniques\
 [M M Abid Naziri](/), Aman Kumar Singh, [Feiran Qin](https://nsdi.dev/), Benjamin Wu, [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)\
 We introduce **BugsInDLLs**, a curated database of **112** reproducible bugs from popular deep learning libraries like TensorFlow and PyTorch. This benchmark provides the research community with a standard resource to systematically evaluate and improve bug-finding techniques.\
@@ -21,4 +22,4 @@ _Submitted_ \
 This paper demonstrates the effectiveness of ML classifiers as an efficient validity checker for DL Library inputs. Once trained with enough data, different out-of-the-box classifiers can achieve high accuracy in predicting whether an input will be valid or not without executing the input on an API. We demonstrate that the classifiers can predict the validity of an input with an accuracy of **91%**. We also improve [ACETest](https://github.com/shijy16/ACETest), a prominent DL Library API fuzzing tool, by complementing the technique with ML classifiers. The validity ratio of the tool increases from **29%** to **61%** after the integration, demonstrating the effectiveness of ML classifiers as a filter for the DL Library API inputs.\
 _Submitted_
 
-<font size="1.5"><sup>*</sup>Co-first author</font>
+<font size="1.5"><sup>*</sup>Equal contribution</font>

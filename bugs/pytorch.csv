@@ -1,4 +1,4 @@
-Reported:,53,25,10,,,7,,,
+Reported:,58,26,10,,,7,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 torch.acos,https://github.com/pytorch/pytorch/issues/134487,Fixed,Yes,2,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/134838,,Greyfox
@@ -54,3 +54,8 @@ torch.cumsum,https://github.com/pytorch/pytorch/issues/153359,Rejected,,,,,,,Fla
 torch.aminmax,https://github.com/pytorch/pytorch/issues/153360,Confirmed,,,Inconsistent,,,,Flashfuzz
 torch.remainder,https://github.com/pytorch/pytorch/issues/153919,Fixed,,,Crash,,,,Flashfuzz
 torch.batch_norm_update_stats,https://github.com/pytorch/pytorch/issues/153967,Confirmed,,,Crash,,,,Flashfuzz
+torch.Tensor.resize_,https://github.com/pytorch/pytorch/issues/170298,Confirmed,No,2,Crash,,,,RBF
+"torch.add, torch.matmul, torch.linalg.pinv",https://github.com/pytorch/pytorch/issues/170573,Submitted,No,2,Silent,,,,RBF
+torch.clip,https://github.com/pytorch/pytorch/issues/171356,Submitted,No,0,Inconsistent,,,,RBF
+torch.logdet,https://github.com/pytorch/pytorch/issues/154312,Previously Fixed,No,7,Inconsistent,,,,RBF
+torch.nn.PixelUnshuffle,https://github.com/pytorch/pytorch/issues/171536,Submitted,No,0,Inconsistent,,,,RBF

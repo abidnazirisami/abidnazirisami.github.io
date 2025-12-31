@@ -1,4 +1,4 @@
-Reported:,41,33,3,,,3,,,
+Reported:,44,35,4,,,3,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 tf.math.pow,https://github.com/tensorflow/tensorflow/issues/79060,Rejected,No,0,False positive,No,,,Greyfox
@@ -42,3 +42,6 @@ tf.raw_ops.BiasAdd,https://github.com/tensorflow/tensorflow/issues/94379,Confirm
 tf.raw_ops.MaxPoolGradGradWithArgmax,https://github.com/tensorflow/tensorflow/issues/94382,Confirmed,,,Crash,,,,Flashfuzz
 tf.conv2d_backprop_filter_v2,https://github.com/tensorflow/tensorflow/issues/93903,Confirmed,,,Internal Exception,,,,Flashfuzz
 tf.raw_ops.QuantizedMaxPool,https://github.com/tensorflow/tensorflow/issues/100223,Submitted,,,Internal Exception,,,,Flashfuzz
+"tf.cast, tf.experimental.numpy.ascontiguousarray, tf.experimental.numpy.array, tf.saturate_cast, tf.image.convert_image_dtype",https://github.com/tensorflow/tensorflow/issues/106175,Confirmed,Yes,1,Inconsistent,,,,RBF
+tf.raw_ops.SparseFillEmptyRowsGrad,https://github.com/tensorflow/tensorflow/issues/106388,Submitted,,,Inconsistent,,,,RBF
+tf.math.unsorted_segment_max,https://github.com/tensorflow/tensorflow/issues/106602,Confirmed,No,0,Inconsistent,,,,RBF
