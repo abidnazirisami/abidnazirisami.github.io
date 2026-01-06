@@ -1,3 +1,6 @@
+> **January 2026**\
+Our paper titled **"Improving Deep Learning Library Testing with Machine Learning"** accepted for [AST 2026](https://conf.researchr.org/home/ast-2026)
+
 > **December 2025**\
 **Centaur** and **Foresee** accepted for [ICSE 2026](https://conf.researchr.org/home/icse-2026)
 
