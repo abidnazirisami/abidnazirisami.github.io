@@ -13,6 +13,7 @@ STATUS_ICON = {
     "Previously Fixed": "✅",
     "Submitted": "🔄",
     "Confirmed": "🔵",
+    "Previously Reported": "🔵",
     "Rejected": "❌",
 }
 
@@ -53,14 +54,16 @@ def format_list_html(rows):
 
 def summarize(rows_list):
     submitted = confirmed = fixed = 0
+    confirmed_statuses = ["Confirmed", "Fixed", "Previously Fixed", "Previously Reported"]
+    fixed_statuses = ["Fixed", "Previously Fixed"]
     for rows in rows_list:
         for r in rows:
             s = (r.get("Status") or "").strip()
             if s == "Submitted":
                 submitted += 1
-            elif s == "Confirmed":
+            if s in confirmed_statuses:
                 confirmed += 1
-            elif s in ("Fixed", "Previously Fixed"):
+            if s in fixed_statuses:
                 fixed += 1
     return submitted, confirmed, fixed
 
@@ -88,7 +91,7 @@ def main():
     total = len(pytorch_rows) + len(tf_rows)
     # Single-line summary as requested
     content.append(
-        f"## {STATUS_ICON['Confirmed']} {conf + fix} Confirmed ({STATUS_ICON['Fixed']} {fix} Fixed) + {STATUS_ICON['Submitted']} {sub} Pending + {STATUS_ICON['Rejected']} {total - (sub + conf + fix)} Rejected = **{total}**"
+        f"## {STATUS_ICON['Confirmed']} {conf} Confirmed ({STATUS_ICON['Fixed']} {fix} Fixed) + {STATUS_ICON['Submitted']} {sub} Pending + {STATUS_ICON['Rejected']} {total - (sub + conf)} Rejected = **{total}**"
     )
     content.append("Detailed Spreadsheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)")
     content.append("\n<hr class=\"bugs-divider\" />\n")

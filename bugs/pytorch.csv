@@ -1,4 +1,4 @@
-Reported:,58,26,10,,,7,,,
+Reported:,79,35,13,,,15,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 torch.acos,https://github.com/pytorch/pytorch/issues/134487,Fixed,Yes,2,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/134838,,Greyfox
@@ -31,9 +31,9 @@ torch.det,https://github.com/pytorch/pytorch/issues/158208,Rejected,Yes,2,False 
 torch.nn.LogSoftmax,https://github.com/pytorch/pytorch/issues/158310,Previously Fixed,Yes,2,Inconsistent,,,Fixed on latest nightly,Centaur
 torch.nn.functional.celu,https://github.com/pytorch/pytorch/issues/158314,Previously Fixed,Yes,2,Inconsistent,,,Fixed on latest nightly,Centaur
 torch.add,https://github.com/pytorch/pytorch/issues/152731,Confirmed,,,Inconsistent,,,,Flashfuzz
-torch.Tensor.put_,https://github.com/pytorch/pytorch/issues/152755,Rejected,,,,,,,Flashfuzz
+torch.Tensor.put_,https://github.com/pytorch/pytorch/issues/152755,Rejected,,,False positive,,,,Flashfuzz
 torch.lcm_,https://github.com/pytorch/pytorch/issues/152979,Confirmed,,,Crash,,,,Flashfuzz
-torch.Tensor.asin_,https://github.com/pytorch/pytorch/issues/153128,Rejected,,,,,,,Flashfuzz
+torch.Tensor.asin_,https://github.com/pytorch/pytorch/issues/153128,Rejected,,,False positive,,,,Flashfuzz
 torch.nanmean,https://github.com/pytorch/pytorch/issues/153132,Fixed,,,Inconsistent,,,,Flashfuzz
 torch.arange,https://github.com/pytorch/pytorch/issues/153133,Fixed,,,Inconsistent,,,,Flashfuzz
 torch.batch_norm,https://github.com/pytorch/pytorch/issues/153137,Fixed,,,Inconsistent,,,,Flashfuzz
@@ -42,7 +42,7 @@ torch.fmod,https://github.com/pytorch/pytorch/issues/153203,Confirmed,,,Crash,,,
 torch.cosine_similarity,https://github.com/pytorch/pytorch/issues/153209,Confirmed,,,Inconsistent,,,,Flashfuzz
 torch.addcmul,https://github.com/pytorch/pytorch/issues/153210,Confirmed,,,Inconsistent,,,,Flashfuzz
 torch.native_channel_shuffle,https://github.com/pytorch/pytorch/issues/153231,Confirmed,,,Crash,,,,Flashfuzz
-torch.lu_unpack,https://github.com/pytorch/pytorch/issues/153232,Rejected,,,,,,,Flashfuzz
+torch.lu_unpack,https://github.com/pytorch/pytorch/issues/153232,Rejected,,,False positive,,,,Flashfuzz
 torch.fused_moving_avg_obs_fake_quant,https://github.com/pytorch/pytorch/issues/153310,Fixed,,,Inconsistent,,,,Flashfuzz
 lp_pool1d,https://github.com/pytorch/pytorch/issues/153312,Fixed,,,Inconsistent,,,,Flashfuzz
 torch.choose_qparams_optimized,https://github.com/pytorch/pytorch/issues/153326,Fixed,,,Crash,,,,Flashfuzz
@@ -50,12 +50,33 @@ torch.pixel_shuffle(),https://github.com/pytorch/pytorch/issues/153327,Confirmed
 torch.to_dense(),https://github.com/pytorch/pytorch/issues/153329,Confirmed,,,Crash,,,,Flashfuzz
 torch.combinations,https://github.com/pytorch/pytorch/issues/153337,Confirmed,,,Crash,,,,Flashfuzz
 torch.dequantize,https://github.com/pytorch/pytorch/issues/153358,Confirmed,,,Inconsistent,,,,Flashfuzz
-torch.cumsum,https://github.com/pytorch/pytorch/issues/153359,Rejected,,,,,,,Flashfuzz
+torch.cumsum,https://github.com/pytorch/pytorch/issues/153359,Rejected,,,False positive,,,,Flashfuzz
 torch.aminmax,https://github.com/pytorch/pytorch/issues/153360,Confirmed,,,Inconsistent,,,,Flashfuzz
 torch.remainder,https://github.com/pytorch/pytorch/issues/153919,Fixed,,,Crash,,,,Flashfuzz
 torch.batch_norm_update_stats,https://github.com/pytorch/pytorch/issues/153967,Confirmed,,,Crash,,,,Flashfuzz
 torch.Tensor.resize_,https://github.com/pytorch/pytorch/issues/170298,Confirmed,No,2,Crash,,,,RBF
 "torch.add, torch.matmul, torch.linalg.pinv",https://github.com/pytorch/pytorch/issues/170573,Submitted,No,2,Silent,,,,RBF
 torch.clip,https://github.com/pytorch/pytorch/issues/171356,Submitted,No,0,Inconsistent,,,,RBF
-torch.logdet,https://github.com/pytorch/pytorch/issues/154312,Previously Fixed,No,7,Inconsistent,,,,RBF
+torch.logdet,https://github.com/pytorch/pytorch/issues/154312,Previously Reported,No,7,Inconsistent,,,,RBF
 torch.nn.PixelUnshuffle,https://github.com/pytorch/pytorch/issues/171536,Submitted,No,0,Inconsistent,,,,RBF
+torch.nn.functional.pixel_shuffle,https://github.com/pytorch/pytorch/issues/171838,Confirmed,No,0,Crash,Open,https://github.com/pytorch/pytorch/pull/171855,Invalid input,RBF
+torch._remove_batch_dim,https://github.com/pytorch/pytorch/issues/128691,Previously Reported,No,1,Crash,Open,https://github.com/pytorch/pytorch/pull/139016,Invalid input,RBF
+torch.nn.NLLLoss,https://github.com/pytorch/pytorch/issues/171931,Confirmed,Yes,0,Inconsistent,Open,https://github.com/pytorch/pytorch/pull/172018,Invalid input,RBF
+torch.nn.LocalResponseNorm,https://github.com/pytorch/pytorch/issues/171948,Rejected,No,0,False positive,,,FP: Invalid input,RBF
+torch.pixel_shuffle,https://github.com/pytorch/pytorch/issues/172011,Confirmed,No,1,Overflow,,,Invalid input,RBF
+torch.nn.Linear,https://github.com/pytorch/pytorch/issues/172014,Rejected,No,0,False positive,,,FP: Invalid input,RBF
+torch.index_select,https://github.com/pytorch/pytorch/issues/172019,Rejected,No,1,False positive,,,FP: Invalid input,RBF
+torch.addr,https://github.com/pytorch/pytorch/issues/173491,Rejected,No,,False positive,,,FP: Valid input,RBF
+"torch.fbgemm_linear_quantize_weight, torch.fbgemm_pack_gemm_matrix_fp16",https://github.com/pytorch/pytorch/issues/173495,Confirmed,No,,Crash,Open,https://github.com/pytorch/pytorch/pull/173682,Invalid input,RBF
+torch._stack,https://github.com/pytorch/pytorch/issues/173498,Confirmed,No,2,Crash,Open,https://github.com/pytorch/pytorch/pull/173615,Invalid input,RBF
+torch.native_channel_shuffle,https://github.com/pytorch/pytorch/issues/173500,Confirmed,No,,Crash,Open,https://github.com/pytorch/pytorch/pull/173508,Invalid input,RBF
+torch.lcm,https://github.com/pytorch/pytorch/issues/121343,Previously Reported,No,,Crash,,,Invalid input,RBF
+torch.floor_divide,https://github.com/pytorch/pytorch/issues/173506,Previously Reported,Yes,,Crash,,,Valid input,RBF
+torch.arange,https://github.com/pytorch/pytorch/issues/173574,Confirmed,No,,Crash,Open,https://github.com/pytorch/pytorch/pull/173601,Valid input,RBF
+torch._C._nn.slow_conv3d,https://github.com/pytorch/pytorch/issues/121095,Previously Reported,No,,Crash,Open,https://github.com/pytorch/pytorch/pull/121105,Invalid input,RBF
+"torch.special.zeta, torch.special.spherical_bessel_j0,  torch.special.i1, torch.special.modified_bessel_k0, torch.special.sinc, torch.special.psi, torch.special.modified_bessel_i1, torch.special.entr, torch.special.i1e, torch.special.log_ndtr, torch.special.i0, torch.special.hermite_polynomial_he, torch.special.i0e, torch.special.gammaln, torch.lgamma",https://github.com/pytorch/pytorch/issues/173636,Confirmed,No,,Inconsistent,,,Valid input,RBF
+"torch.linalg.slogdet, torch.linalg.inv, torch.inverse",https://github.com/pytorch/pytorch/issues/173638,Confirmed,No,,Inconsistent,,,Valid input,RBF
+torch.linalg.cholesky_ex,https://github.com/pytorch/pytorch/issues/173786,Submitted,Yes,,Inconsistent,,,,RBF
+torch.addcmul,https://github.com/pytorch/pytorch/issues/170869,Previously Reported,No,,Silent,,,Valid input,RBF
+torch.nn.functional.PoissonNLLLoss,https://github.com/pytorch/pytorch/issues/173796,Submitted,No,,Inconsistent,,,,RBF
+torch.nn.functional.pdist,https://github.com/pytorch/pytorch/issues/173799,Submitted,No,,Inconsistent,,,,RBF

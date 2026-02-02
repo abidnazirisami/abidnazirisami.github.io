@@ -1,4 +1,4 @@
-Reported:,44,35,4,,,3,,,
+Reported:,61,41,5,,,6,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 tf.math.pow,https://github.com/tensorflow/tensorflow/issues/79060,Rejected,No,0,False positive,No,,,Greyfox
@@ -45,3 +45,20 @@ tf.raw_ops.QuantizedMaxPool,https://github.com/tensorflow/tensorflow/issues/1002
 "tf.cast, tf.experimental.numpy.ascontiguousarray, tf.experimental.numpy.array, tf.saturate_cast, tf.image.convert_image_dtype",https://github.com/tensorflow/tensorflow/issues/106175,Confirmed,Yes,1,Inconsistent,,,,RBF
 tf.raw_ops.SparseFillEmptyRowsGrad,https://github.com/tensorflow/tensorflow/issues/106388,Submitted,,,Inconsistent,,,,RBF
 tf.math.unsorted_segment_max,https://github.com/tensorflow/tensorflow/issues/106602,Confirmed,No,0,Inconsistent,,,,RBF
+tf.compat.as_str_any,https://github.com/tensorflow/tensorflow/issues/108548,Rejected,No,0,False positive,,,FP: Invalid input,RBF
+tf.compat.dimension_value,https://github.com/tensorflow/tensorflow/issues/108605,Rejected,No,,False positive,,,FP: Valid input,RBF
+tf.compat.forward_compatible,https://github.com/tensorflow/tensorflow/issues/108608,Rejected,No,,False positive,,,FP: Invalid input,RBF
+tf.eye,https://github.com/tensorflow/tensorflow/issues/108621,Confirmed,Yes,,Crash,,,Invalid input,RBF
+tf.concat,https://github.com/tensorflow/tensorflow/issues/108628,Rejected,No,,False positive,,,FP: Valid input,RBF
+tf.experimental.numpy.asarray,https://github.com/tensorflow/tensorflow/issues/108629,Rejected,No,,False positive,,,FP: Valid input,RBF
+tf.raw_ops.ParallelConcat,https://github.com/tensorflow/tensorflow/issues/108663,Confirmed,No,,Crash,,,Invalid input,RBF
+tf.raw_ops.AudioSpectrogram,https://github.com/tensorflow/tensorflow/issues/108664,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/108808,Invalid input,RBF
+tf.raw_ops.ImmutableConst,https://github.com/tensorflow/tensorflow/issues/108665,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/108705,Invalid input,RBF
+"tf.linalg.det,tf.linalg.slogdet,tf.linalg.logdet,tf.linalg.cholesky,tf.linalg.inv",https://github.com/tensorflow/tensorflow/issues/76730,Previously Reported,No,2,Crash,,,Invalid input,RBF
+tf.experimental.numpy.amax,https://github.com/tensorflow/tensorflow/issues/108891,Confirmed,No,,Crash,,,Invalid input,RBF
+"tf.experimental.numpy.ones, tf.experimental.numpy.zeros",https://github.com/tensorflow/tensorflow/issues/108904,Submitted,No,1,Crash,,,,RBF
+tf.io.encode_png,https://github.com/tensorflow/tensorflow/issues/108916,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/109131,Invalid input,RBF
+"tf.experimental.numpy.var, tf.experimental.numpy.all, tf.experimental.numpy.any, tf.experimental.numpy.amax, tf.experimental.numpy.amin, tf.experimental.numpy.count_nonzero, tf.experimental.numpy.max, tf.experimental.numpy.nanmean, tf.experimental.numpy.ptp, tf.experimental.numpy.nansum, tf.experimental.numpy.reshape, tf.experimental.numpy.promote_types, tf.experimental.numpy.var, tf.experimental.numpy.std",https://github.com/tensorflow/tensorflow/issues/108921,Submitted,No,1,Crash,,,,RBF
+tf.histogram_fixed_width,https://github.com/tensorflow/tensorflow/issues/68836,Previously Reported,No,2,Crash,,,Invalid input,RBF
+tf.math.reduce_variance,https://github.com/tensorflow/tensorflow/issues/109148,Submitted,No,,Crash,,,,RBF
+tf.image.non_max_suppression,https://github.com/tensorflow/tensorflow/issues/109150,Submitted,No,,Crash,,,,RBF
