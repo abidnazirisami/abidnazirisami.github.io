@@ -29,6 +29,7 @@
     [Facundo Molina](https://facumolina.github.io/), [M M Abid Naziri](/), [Feiran Qin](https://nsdi.dev/), [Alessandra Gorla](https://software.imdea.org/~alessandra.gorla/), [Marcelo d'Amorim](https://damorim.github.io/)\
     *ACM/IEEE International Conference on Automation of Software Test (accpt. 40% [18/45])*\
     ([AST 2026](https://conf.researchr.org/home/ast-2026)), Rio de Janeiro, Brazil, April 2026.\
+    <a class="btn" href="{{ '/papers/specs4freeDLL.pdf' | relative_url }}" target="_blank" rel="noopener">[PDF]</a>
     <details>
     <summary>Summary</summary>
         This paper demonstrates the effectiveness of ML classifiers as an efficient validity checker for DL Library inputs. Once trained with enough data, different out-of-the-box classifiers can achieve high accuracy in predicting whether an input will be valid or not without executing the input on an API. We demonstrate that the classifiers can predict the validity of an input with an accuracy of <b>91%</b>. We also improve <a href="https://github.com/shijy16/ACETest">ACETest</a>, a prominent DL Library API fuzzing tool, by complementing the technique with ML classifiers. The validity ratio of the tool increases from <b>29%</b> to <b>61%</b> after the integration, demonstrating the effectiveness of ML classifiers as a filter for the DL Library API inputs.
