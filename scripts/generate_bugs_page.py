@@ -9,11 +9,11 @@ OUT_FILE = REPO_ROOT / "bugs.md"
 
 # Map CSV Status -> icon (emoji)
 STATUS_ICON = {
-    "Fixed": "✅",
-    "Previously Fixed": "✅",
-    "Submitted": "🔄",
-    "Confirmed": "🔵",
-    "Previously Reported": "🔵",
+    "Fixed": "📦",
+    "Previously Fixed": "📦",
+    "Submitted": "⏳",
+    "Confirmed": "✅",
+    "Previously Reported": "✅",
     "Rejected": "❌",
 }
 

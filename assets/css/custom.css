@@ -138,3 +138,31 @@ ul.bugs-list li { margin: 0 0 .4rem 0; }
 }
 .back-home:hover { text-decoration: underline; }
 .back-home-arrow { color: #0366d6; font-size: 1em; }
+
+/* 1. Remove the default arrow for all browsers */
+summary {
+  display: block; /* Required for some browsers to hide the marker */
+  list-style: none; /* Standard way to hide the triangle */
+  cursor: pointer;
+}
+
+summary::-webkit-details-marker {
+  display: none; /* Hides the triangle in Chrome/Safari/Edge */
+}
+
+/* 2. Add your custom icon globally */
+summary::before {
+  content: "📘"; /* Change this to ⏳ or ✅ as you prefer */
+  margin-right: 2px;
+  display: inline-block;
+  transition: transform 0.2s ease; /* Optional: smooth rotation */
+  font-size: smaller;
+}
+
+/* 3. Optional: Rotate or change the icon when open */
+details[open] summary::before {
+  content: "📖"; /* Swaps the bug for a magnifying glass when expanded */
+  margin-right: 2px;
+  font-size: smaller;
+  /* transform: rotate(90deg); Or just rotate the original bug */
+}
