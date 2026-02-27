@@ -78,22 +78,70 @@ h1, h2, h3, h4, h5, h6, .site-title, .site-nav, .footer-col-wrapper {
 .hero-contacts .contact-links { flex-direction: column; align-items: flex-start; }
 .hero-contacts .contact-links a { width: auto; }
 .hero-news {
-  flex: 1 1 0;
-  padding: .75rem 1rem;
-  border-left: 3px solid #ccc;
-  background: rgba(255,255,255,0.04);
-  border-radius: 4px;
-  margin-left: auto; /* push the entire panel to the right edge */
+  flex: 1 1 auto;
+  min-width: 0; /* allow flex child to shrink and enable scrolling */
+  padding: 0; /* inner container handles padding */
+  border-left: none; /* remove visible dividing bar between contacts and news */
+  display: flex;
+  align-items: flex-start;
 }
 .hero-location { font-size: 0.95rem; color: #000; }
 .hero-location p { margin: 0; line-height: 1.4; }
 .hero-location .inline-logo { height: 1em; width: 1em; vertical-align: -0.15em; margin-right: 6px; }
-.hero-news-list { text-align: left; }
-.hero-news-list h3 { margin-top: 0; text-align: left; }
+.hero-news-list {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  background: rgba(255,255,255,0.98);
+  color: #111;
+  border-radius: 6px;
+  box-shadow: 0 6px 18px rgba(20,30,40,0.06);
+  text-align: left;
+  max-height: 220px; /* total card height (header + scrollable content + meta) */
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  font-size: 0.92rem; /* slightly smaller news font */
+  line-height: 1.35;
+}
+.hero-news-list h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  padding: 0.18rem 0.5rem;
+  background: rgba(99,102,241,0.06); /* subtle bluish background on header */
+  border-radius: 6px;
+  display: inline-block;
+  color: #111;
+}
+
+/* Scrollable inner area between header and meta */
+.hero-news-scroll {
+  flex: 1 1 auto;
+  min-height: 0; /* allow proper flexbox scrolling */
+  overflow-y: auto;
+  padding: 0 0.4rem;
+}
+
+/* Make blockquotes and list items compact */
+.hero-news-scroll blockquote { margin: 0 0 0.5rem 0; padding: 0; border-left: none; color: #111; font-size: 0.95em; }
+.hero-news-scroll ul, .hero-news-scroll p { margin: 0 0 0.45rem 0; }
 /* Use default list spacing from .hero-news ul above */
 .hero-news h3 { margin-top: 0; }
 .hero-news ul { margin: 0 0 0 1rem; }
-.hero-news .meta { font-size: .85em; color: #aaa; margin-top: .5rem; }
+.hero-news .meta { font-size: .85em; color: #6b7280; margin-top: .5rem; }
+
+/* Custom scrollbar for WebKit/Blink */
+.hero-news-scroll::-webkit-scrollbar { width: 8px; }
+.hero-news-scroll::-webkit-scrollbar-track { background: transparent; }
+.hero-news-scroll::-webkit-scrollbar-thumb { background: rgba(99,102,241,0.18); border-radius: 999px; }
+
+/* Darker thumb on hover */
+.hero-news-scroll::-webkit-scrollbar-thumb:hover { background: rgba(99,102,241,0.28); }
+
+/* Responsive: remove fixed max-height on small screens */
+@media (max-width: 768px) {
+  .hero-news-list { max-height: none; }
+  .hero-news-scroll { overflow: visible; max-height: none; }
+}
 
 /* Contact links with icons */
 .contact-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin: 0 0 .75rem 0; padding: 0; list-style: none; }

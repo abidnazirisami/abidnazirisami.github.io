@@ -27,10 +27,12 @@ layout: home
     </aside>
     <aside class="hero-news" aria-label="News">
         <div class="hero-news-list">
-            <h3>News</h3>
+            <h3>Latest highlights</h3>
             {% capture news_md %}{% include news.md %}{% endcapture %}
-            {{ news_md | markdownify }}
-            <div class="meta">Latest highlights</div>
+            <div class="hero-news-scroll">
+              {{ news_md | markdownify }}
+            </div>
+            <div class="meta">Last updated: February 27, 2026</div>
         </div>
     </aside>
 </div>
