@@ -32,7 +32,7 @@ layout: home
             <div class="hero-news-scroll">
               {{ news_md | markdownify }}
             </div>
-            <div class="meta">Last updated: February 27, 2026</div>
+            <div class="meta">Last updated: April 25, 2026</div>
         </div>
     </aside>
 </div>
@@ -41,7 +41,7 @@ layout: home
 
 <h1>Research Interests</h1>
 
- My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc. To date, I have submitted **140** bug reports in PyTorch and Tensorflow, among which **100** have been confirmed ([list of bug-reports](/bugs/)). I am also working in generating complex test cases for Autonomous Driving Systems (ADS).
+ My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc. To date, I have submitted **140** bug reports in PyTorch and Tensorflow, among which **102** have been confirmed ([list of bug-reports](/bugs/)). I am also working in generating complex test cases for Autonomous Driving Systems (ADS).
 
 <h1>Publications</h1>
 
