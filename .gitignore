@@ -2,3 +2,8 @@
 Gemfile.lock
 **/jekyll-cache/*
 **/vendor/bundle/*
+resume/*.aux
+resume/*.fdb_latexmk
+resume/*.fls
+resume/*.log
+resume/*.pdf
