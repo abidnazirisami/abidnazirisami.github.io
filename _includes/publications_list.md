@@ -1,4 +1,4 @@
-1. Evaluating the Effectiveness of Coverage-Guided Fuzzing for Testing Deep Learning Library APIs  <font size="1.9"><a href="https://arxiv.org/pdf/2509.14626"><i class="fa fa-file-pdf"></i> pdf</a>  <a href="https://github.com/ncsu-swat/flashfuzz"><i class="fa fa-tools"></i> tool</a></font>\
+1. How Effective Is Coverage-Guided Fuzzing to Test Deep Learning Library APIs?  <font size="1.9"><a class="btn" href="{{ '/papers/flashfuzz-icst2026.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fa fa-file-pdf"></i> pdf</a>  <a href="https://github.com/ncsu-swat/flashfuzz"><i class="fa fa-tools"></i> tool</a></font>\
 [Feiran Qin](https://nsdi.dev/), [M M Abid Naziri](/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)\
     *IEEE International Conference on Software Testing, Verification and Validation (accpt. 26.9% [44/163])*\
     [ICST 2026](https://conf.researchr.org/home/icst-2026), Daejeon, Republic of Korea, May 2026.
@@ -42,6 +42,14 @@
     <details>
     <summary><font size="2.8">Summary</font></summary>
         We introduce <b>BugsInDLLs</b>, a curated database of <b>112</b> reproducible bugs from popular deep learning libraries like TensorFlow and PyTorch. This benchmark provides the research community with a standard resource to systematically evaluate and improve bug-finding techniques.
+    </details>
+6. A Comprehensive Study of Bugs from Deep Learning Library Fuzzers\
+    [M M Abid Naziri](/), Manideepika Reddy Myaka, [Lingjun Liu](https://lingjunliu.github.io/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)\
+    *Submitted for review*
+
+    <details>
+    <summary><font size="2.8">Summary</font></summary>
+        We present a large-scale empirical study of <b>220</b> bugs reported by five state-of-the-art Deep Learning library testing techniques, reproducing each bug and analyzing its triggering input and root cause. We find that <b>70%</b> of the bugs are validation bugs triggered by simple invalid-input patterns rather than deep logic errors, and identify <b>94</b> distinct input patterns capable of triggering them. Exploiting these patterns, we build a mutational fuzzing tool that uncovers <b>46</b> new bugs in Deep Learning libraries, <b>30</b> of which have been confirmed.
     </details>
 
 <font size="1.5"><sup>*</sup>Equal contribution</font>
