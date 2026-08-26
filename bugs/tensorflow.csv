@@ -19,18 +19,18 @@ tf.raw_ops.MaxPool,https://github.com/tensorflow/tensorflow/issues/94115,Confirm
 tf.raw_ops.QuantizeAndDequantizeV3,https://github.com/tensorflow/tensorflow/issues/94116,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.ResourceSparseApplyProximalAdagrad,https://github.com/tensorflow/tensorflow/issues/94117,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.SparseBincount,https://github.com/tensorflow/tensorflow/issues/94118,Confirmed,,,Crash,,,,Flashfuzz
-tf.raw_ops.AvgPool3DGrad,https://github.com/tensorflow/tensorflow/issues/94119,Confirmed,,,Crash,,,,Flashfuzz
+tf.raw_ops.AvgPool3DGrad,https://github.com/tensorflow/tensorflow/issues/94119,Fixed,,,Crash,,,,Flashfuzz
 tf.raw_ops.MaxPool3D,https://github.com/tensorflow/tensorflow/issues/94120,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.CropAndResizeGradBoxes,https://github.com/tensorflow/tensorflow/issues/94122,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.HistogramFixedWidth,https://github.com/tensorflow/tensorflow/issues/94127,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.ResourceSparseApplyAdagradDA,https://github.com/tensorflow/tensorflow/issues/94130,Confirmed,,,Crash,,,,Flashfuzz
-tf.raw_ops.ResourceSparseApplyMomentum,https://github.com/tensorflow/tensorflow/issues/94131,Confirmed,,,Crash,,,,Flashfuzz
+tf.raw_ops.ResourceSparseApplyMomentum,https://github.com/tensorflow/tensorflow/issues/94131,Fixed,,,Crash,,,,Flashfuzz
 tf.raw_ops.TensorScatterMin,https://github.com/tensorflow/tensorflow/issues/94132,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.TensorScatterMax,https://github.com/tensorflow/tensorflow/issues/94134,Confirmed,,,Crash,,,,Flashfuzz
 tf.raw_ops.SparseSegmentSumGradV2,https://github.com/tensorflow/tensorflow/issues/94151,Confirmed,,,Inconsistent,,,,Flashfuzz
-tf.raw_ops.SparseToDense,https://github.com/tensorflow/tensorflow/issues/94378,Confirmed,,,Inconsistent,,,,Flashfuzz
+tf.raw_ops.SparseToDense,https://github.com/tensorflow/tensorflow/issues/94378,Fixed,,,Inconsistent,,,,Flashfuzz
 tf.raw_ops.BiasAdd,https://github.com/tensorflow/tensorflow/issues/94379,Confirmed,,,Crash,,,,Flashfuzz
-tf.raw_ops.MaxPoolGradGradWithArgmax,https://github.com/tensorflow/tensorflow/issues/94382,Confirmed,,,Crash,,,,Flashfuzz
+tf.raw_ops.MaxPoolGradGradWithArgmax,https://github.com/tensorflow/tensorflow/issues/94382,Fixed,,,Crash,,,,Flashfuzz
 tf.conv2d_backprop_filter_v2,https://github.com/tensorflow/tensorflow/issues/93903,Confirmed,,,Internal Exception,,,,Flashfuzz
 tf.linalg.triangular_solve,https://github.com/tensorflow/tensorflow/issues/79090,Confirmed,No,0,Inconsistent,No,,,Greyfox
 tf.linalg.lstsq,https://github.com/tensorflow/tensorflow/issues/79157,Confirmed,No,0,Inconsistent,No,,,Greyfox
@@ -39,12 +39,12 @@ tf.math.floormod,https://github.com/tensorflow/tensorflow/issues/79162,Confirmed
 tf.math.unsorted_segment_max,https://github.com/tensorflow/tensorflow/issues/106602,Confirmed,No,0,Inconsistent,,,,RBF
 tf.eye,https://github.com/tensorflow/tensorflow/issues/108621,Confirmed,Yes,,Crash,,,Invalid input,RBF
 tf.raw_ops.ParallelConcat,https://github.com/tensorflow/tensorflow/issues/108663,Confirmed,No,,Crash,,,Invalid input,RBF
-tf.raw_ops.AudioSpectrogram,https://github.com/tensorflow/tensorflow/issues/108664,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/108808,Invalid input,RBF
+tf.raw_ops.AudioSpectrogram,https://github.com/tensorflow/tensorflow/issues/108664,Fixed,No,,Crash,Merged,https://github.com/tensorflow/tensorflow/pull/109326,Invalid input,RBF
 tf.raw_ops.ImmutableConst,https://github.com/tensorflow/tensorflow/issues/108665,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/108705,Invalid input,RBF
 tf.experimental.numpy.amax,https://github.com/tensorflow/tensorflow/issues/108891,Confirmed,No,,Crash,,,Invalid input,RBF
-tf.io.encode_png,https://github.com/tensorflow/tensorflow/issues/108916,Confirmed,No,,Crash,Open,https://github.com/tensorflow/tensorflow/pull/109131,Invalid input,RBF
+tf.io.encode_png,https://github.com/tensorflow/tensorflow/issues/108916,Fixed,No,,Crash,Merged,https://github.com/tensorflow/tensorflow/pull/109131,Invalid input,RBF
 "tf.linalg.det,tf.linalg.slogdet,tf.linalg.logdet,tf.linalg.cholesky,tf.linalg.inv",https://github.com/tensorflow/tensorflow/issues/76730,Previously Reported,No,2,Crash,,,Invalid input,RBF
-tf.histogram_fixed_width,https://github.com/tensorflow/tensorflow/issues/68836,Previously Reported,No,2,Crash,,,Invalid input,RBF
+tf.histogram_fixed_width,https://github.com/tensorflow/tensorflow/issues/68836,Fixed,No,2,Crash,,,Invalid input; now raises InvalidArgumentError instead of segfaulting,RBF
 "tf.math.argmax,tf.experimental.numpy.argmax",https://github.com/tensorflow/tensorflow/issues/97096,Fixed,No,2,False positive,,,Waiting for feedback,Centaur
 tf.raw_ops.SparseSegmentSqrtNGradV2,https://github.com/tensorflow/tensorflow/issues/94376,Fixed,,,Inconsistent,,,,Flashfuzz
 tf.nn.conv2d_transpose,https://github.com/tensorflow/tensorflow/issues/93733,Rejected,No,2,Crash,,,SIGILL,Centaur
@@ -55,10 +55,10 @@ tf.compat.dimension_value,https://github.com/tensorflow/tensorflow/issues/108605
 tf.compat.forward_compatible,https://github.com/tensorflow/tensorflow/issues/108608,Rejected,No,,False positive,,,FP: Invalid input,RBF
 tf.concat,https://github.com/tensorflow/tensorflow/issues/108628,Rejected,No,,False positive,,,FP: Valid input,RBF
 tf.experimental.numpy.asarray,https://github.com/tensorflow/tensorflow/issues/108629,Rejected,No,,False positive,,,FP: Valid input,RBF
-tf.raw_ops.QuantizedMaxPool,https://github.com/tensorflow/tensorflow/issues/100223,Submitted,,,Internal Exception,,,,Flashfuzz
-tf.gather,https://github.com/tensorflow/tensorflow/issues/79063,Submitted,No,0,Inconsistent,No,,,Greyfox
+tf.raw_ops.QuantizedMaxPool,https://github.com/tensorflow/tensorflow/issues/100223,Fixed,,,Internal Exception,Merged,https://github.com/tensorflow/tensorflow/pull/122516,,Flashfuzz
+tf.gather,https://github.com/tensorflow/tensorflow/issues/79063,Confirmed,No,0,Inconsistent,No,,,Greyfox
 tf.raw_ops.SparseFillEmptyRowsGrad,https://github.com/tensorflow/tensorflow/issues/106388,Submitted,,,Inconsistent,,,,RBF
 "tf.experimental.numpy.ones, tf.experimental.numpy.zeros",https://github.com/tensorflow/tensorflow/issues/108904,Submitted,No,1,Crash,,,,RBF
 "tf.experimental.numpy.var, tf.experimental.numpy.all, tf.experimental.numpy.any, tf.experimental.numpy.amax, tf.experimental.numpy.amin, tf.experimental.numpy.count_nonzero, tf.experimental.numpy.max, tf.experimental.numpy.nanmean, tf.experimental.numpy.ptp, tf.experimental.numpy.nansum, tf.experimental.numpy.reshape, tf.experimental.numpy.promote_types, tf.experimental.numpy.var, tf.experimental.numpy.std",https://github.com/tensorflow/tensorflow/issues/108921,Submitted,No,1,Crash,,,,RBF
-tf.math.reduce_variance,https://github.com/tensorflow/tensorflow/issues/109148,Submitted,No,,Crash,,,,RBF
+tf.math.reduce_variance,https://github.com/tensorflow/tensorflow/issues/109148,Confirmed,No,,Crash,,,,RBF
 tf.image.non_max_suppression,https://github.com/tensorflow/tensorflow/issues/109150,Submitted,No,,Crash,,,,RBF
