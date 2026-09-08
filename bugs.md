@@ -2,10 +2,10 @@
 layout: page
 title: Reported Bugs
 permalink: /bugs/
-last_updated: "2026-08-26T19:33:45+00:00"
+last_updated: "2026-09-08T09:17:39+00:00"
 ---
 
-_Last updated: 2026-08-26 19:33:45 UTC_
+_Last updated: 2026-09-08 09:17:39 UTC_
 ## ✅ 103 Confirmed (📦 37 Fixed) + ⏳ 10 Pending + ❌ 27 Rejected = **140**
 Detailed Spreadsheet: [Google Sheets](https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing)
 

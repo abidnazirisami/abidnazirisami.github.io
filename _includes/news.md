@@ -1,3 +1,7 @@
+🏅 **May 2026**
+
+*FlashFuzz* won the [IEEE Computer Society TCSE Best Student Paper Award](https://www.linkedin.com/pulse/phd-students-alex-qin-m-abid-naziri-win-tcse-best-student-paper-rcw6e/).
+
 🏅 **April 2026**
 
 Won the 1st prize in the inaugural [NCStateCS Graduate Research Symposium](https://www.linkedin.com/posts/ncstatecs_ncstatecs-programyourpath-gradpack-activity-7449571785240375296-M01q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACH7TKgBi21tXmBnW0hq50W-ghhBKogjcVM).

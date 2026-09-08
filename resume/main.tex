@@ -154,8 +154,10 @@
 % academic version; otherwise the professional (single-page) version is used.
 \ifdefined\academictrue
     \newcommand{\details}[1]{#1} % academic
+    \newcommand{\professionalonly}[1]{} % academic
 \else
     \newcommand{\details}[1]{} % professional
+    \newcommand{\professionalonly}[1]{#1} % professional
 \fi
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -197,13 +199,16 @@
 
     % Section ordering: academic version keeps Research Projects right after
     % Education; the single-page (professional) version moves it to the end
-    % so Technologies and Experience come first.
+    % so Technologies and Experience come first. The professional version also
+    % drops the standalone Awards section -- the awards are listed inside the
+    % Education section instead (see sections/education.tex).
     \ifdefined\academictrue
         \input{sections/about-me}
         \input{sections/education}
         \input{sections/research-projects}
         \input{sections/experience}
         \input{sections/technologies}
+        \input{sections/awards}
     \else
         \input{sections/about-me}
         \input{sections/education}
