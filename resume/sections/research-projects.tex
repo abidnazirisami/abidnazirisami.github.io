@@ -1,5 +1,65 @@
 \section{Research Projects \& Publications}
 
+    % RBFuzzer
+    \details{\vspace{0.05 cm}}
+    \vspace{0.15 cm}
+
+    \begin{samepage}
+        \begin{twocolentry}{
+            \textit{Submitted}
+        }
+            \textbf{A Comprehensive Study of Bugs from Deep Learning Library Fuzzers}
+        \end{twocolentry}
+
+        \details{\vspace{0.05 cm}}
+        \vspace{0.05 cm}
+
+        \begin{onecolentry}
+            \mbox{\textbf{\textit{M M Abid Naziri}}, Manideepika Reddy Myaka, Lingjun Liu, Saikat Dutta, Marcelo d'Amorim}
+
+            % \vspace{0.10 cm}
+
+            \details{\begin{highlights}
+                \item Studied \textbf{220} bugs from \textbf{5} state-of-the-art Deep Learning Library testing techniques; found \textbf{70\%} are validation bugs from simple invalid-input patterns, not deep logic errors.
+                \item Built a mutational fuzzing tool from these patterns, uncovering \textbf{46} new bugs in these libraries (\textbf{30} confirmed).
+            \end{highlights}}
+        \end{onecolentry}
+    \end{samepage}
+    %%
+
+    % Flashfuzz
+    \details{\vspace{0.05 cm}}
+    \vspace{0.15 cm}
+
+
+    \begin{samepage}
+        \begin{twocolentry}{
+            \href{https://conf.researchr.org/home/icst-2026}{ICST 2026}
+        }
+            \textbf{How Effective Is Coverage-Guided Fuzzing to Test Deep Learning Library APIs?}
+        \end{twocolentry}
+
+        \details{\vspace{0.05 cm}}
+        \vspace{0.05 cm}
+
+        \begin{onecolentry}
+            \mbox{Feiran Qin, \textbf{\textit{M M Abid Naziri}}, Hengyu Ai, Saikat Dutta, Marcelo d'Amorim}
+
+            % \vspace{0.10 cm}
+
+            \details{\begin{highlights}
+                \item Conducted a study to assess the effectiveness of coverage guided fuzzing to test Deep Learning Library APIs.
+                \item Reported \textbf{42} new bugs in \href{https://github.com/tensorflow/tensorflow}{Tensorflow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{8} Fixed).
+            \end{highlights}}
+
+            % \vspace{0.10 cm}
+
+            \textbf{Venue:} \href{https://conf.researchr.org/home/icst-2026}{IEEE International Conference on Software Testing, Verification and Validation (ICST 2026)} \href{https://abidnazirisami.github.io/papers/flashfuzz-icst2026.pdf}{[pdf]} \\
+            \textbf{Award:} IEEE Computer Society TCSE Best Student Paper Award
+        \end{onecolentry}
+    \end{samepage}
+    %%
+
     % Centaur    
     \begin{samepage}
         \begin{twocolentry}{
@@ -61,63 +121,35 @@
     \end{samepage}
     %%
 
-    % RBFuzzer
+    % AST 2026 - ML Classifier
     \details{\vspace{0.05 cm}}
     \vspace{0.15 cm}
 
     \begin{samepage}
         \begin{twocolentry}{
-            \textit{Submitted}
+            \href{https://conf.researchr.org/home/ast-2026}{AST 2026}
         }
-            \textbf{A Comprehensive Study of Bugs from Deep Learning Library Fuzzers}
+            \textbf{Improving Deep Learning Library Testing with Machine Learning}
         \end{twocolentry}
 
         \details{\vspace{0.05 cm}}
         \vspace{0.05 cm}
 
         \begin{onecolentry}
-            \mbox{\textbf{\textit{M M Abid Naziri}}, Manideepika Reddy Myaka, Lingjun Liu, Saikat Dutta, Marcelo d'Amorim}
-
-            % \vspace{0.10 cm}
+            \mbox{Facundo Molina, \textbf{\textit{M M Abid Naziri}}, Feiran (Alex) Qin, Alessandra Gorla, Marcelo d'Amorim}
 
             \details{\begin{highlights}
-                \item Studied \textbf{220} bugs from \textbf{5} state-of-the-art Deep Learning Library testing techniques; found \textbf{70\%} are validation bugs from simple invalid-input patterns, not deep logic errors.
-                \item Built a mutational fuzzing tool from these patterns, uncovering \textbf{46} new bugs in these libraries (\textbf{30} confirmed).
-            \end{highlights}}
-        \end{onecolentry}
-    \end{samepage}
-    %%
-
-    % Flashfuzz
-    \details{\vspace{0.05 cm}}
-    \vspace{0.15 cm}
-
-
-    \begin{samepage}
-        \begin{twocolentry}{
-            \href{https://conf.researchr.org/home/icst-2026}{ICST 2026}
-        }
-            \textbf{How Effective Is Coverage-Guided Fuzzing to Test Deep Learning Library APIs?}
-        \end{twocolentry}
-
-        \details{\vspace{0.05 cm}}
-        \vspace{0.05 cm}
-
-        \begin{onecolentry}
-            \mbox{Feiran Qin, \textbf{\textit{M M Abid Naziri}}, Hengyu Ai, Saikat Dutta, Marcelo d'Amorim}
-
-            % \vspace{0.10 cm}
-
-            \details{\begin{highlights}
-                \item Conducted a study to assess the effectiveness of coverage guided fuzzing to test Deep Learning Library APIs.
-                \item Reported \textbf{42} new bugs in \href{https://github.com/tensorflow/tensorflow}{Tensorflow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{8} Fixed).
+                \item Applied ML classifiers to infer the validity of an input before executing to increase efficiency
+                of DL Library fuzzing tools.
+                \item The classifiers achieved an accuracy of \textbf{91}\% in predicting input validity.
+                \item They also improved an existing fuzzing tool called \href{https://github.com/shijy16/ACETest}{ACETest} by increasing its validity
+                ratio from \textbf{29}\% to \textbf{61}\%.
             \end{highlights}}
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://conf.researchr.org/home/icst-2026}{IEEE International Conference on Software Testing, Verification and Validation (ICST 2026)} \href{https://abidnazirisami.github.io/papers/flashfuzz-icst2026.pdf}{[pdf]} \\
-            \textbf{Award:} IEEE Computer Society TCSE Best Student Paper Award
-        \end{onecolentry}
+            \textbf{Venue:} \href{https://conf.researchr.org/details/ast-2026/ast-2026-papers/4/Improving-Deep-Learning-Library-Testing-with-Machine-Learning}{ACM/IEEE International Conference on Automation of Software Test (AST 2026)} \href{https://abidnazirisami.github.io/papers/specs4freeDLL.pdf}{[pdf]}
+    \end{onecolentry}
     \end{samepage}
     %%
 
@@ -151,37 +183,5 @@
             \textbf{Venue:} \href{https://dl.acm.org/doi/pdf/10.1145/3713081.3731739}{International Symposium on Software Testing and Analysis (ISSTA 2025: Tool Demos)}
             \href{https://abidnazirisami.github.io/papers/bugsindlls.pdf}{[pdf]}
         \end{onecolentry}
-    \end{samepage}
-    %%
-
-    % AST 2026 - ML Classifier
-    \details{\vspace{0.05 cm}}
-    \vspace{0.15 cm}
-
-    \begin{samepage}
-        \begin{twocolentry}{
-            \href{https://conf.researchr.org/home/ast-2026}{AST 2026}
-        }
-            \textbf{Improving Deep Learning Library Testing with Machine Learning}
-        \end{twocolentry}
-
-        \details{\vspace{0.05 cm}}
-        \vspace{0.05 cm}
-
-        \begin{onecolentry}
-            \mbox{Facundo Molina, \textbf{\textit{M M Abid Naziri}}, Feiran (Alex) Qin, Alessandra Gorla, Marcelo d'Amorim}
-
-            \details{\begin{highlights}
-                \item Applied ML classifiers to infer the validity of an input before executing to increase efficiency
-                of DL Library fuzzing tools.
-                \item The classifiers achieved an accuracy of \textbf{91}\% in predicting input validity.
-                \item They also improved an existing fuzzing tool called \href{https://github.com/shijy16/ACETest}{ACETest} by increasing its validity
-                ratio from \textbf{29}\% to \textbf{61}\%.
-            \end{highlights}}
-
-            % \vspace{0.10 cm}
-
-            \textbf{Venue:} \href{https://conf.researchr.org/details/ast-2026/ast-2026-papers/4/Improving-Deep-Learning-Library-Testing-with-Machine-Learning}{ACM/IEEE International Conference on Automation of Software Test (AST 2026)} \href{https://abidnazirisami.github.io/papers/specs4freeDLL.pdf}{[pdf]}
-    \end{onecolentry}
     \end{samepage}
     %%
