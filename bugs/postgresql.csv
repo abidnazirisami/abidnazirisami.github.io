@@ -1,0 +1,13 @@
+Reported:,10,2,2,,,0,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+pg_backup_start,https://www.postgresql.org/account/submitbug/19730/,Pending,,,Functional,,,"pg_backup_start accepts a newline in the label, and the backup will not start",claude-opus-5
+last_value,https://www.postgresql.org/account/submitbug/19731/,Confirmed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,claude-opus-5
+last_value,https://www.postgresql.org/account/submitbug/19732/,Confirmed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,claude-opus-5
+json_object,https://www.postgresql.org/account/submitbug/19737/,Pending,,,Functional,,,an empty JSON_OBJECT rejects the ON NULL and WITH UNIQUE KEYS clauses that its documented syntax allows,claude-opus-5
+transaction_timestamp,https://www.postgresql.org/account/submitbug/19739/,Pending,,,Functional,,,"transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value",claude-opus-5
+has_language_privilege,https://www.postgresql.org/account/submitbug/19740/,Pending,,,Functional,,,"has_language_privilege returns true for a nonexistent language OID when the current user is a superuser, where a named non-superuser gets null",claude-opus-5
+avg,https://www.postgresql.org/account/submitbug/19741/,Pending,,,Functional,,,avg(double precision) overflows on cancelling finite inputs whose mean is representable,claude-opus-5
+jsonb_object_agg_unique_strict (round 003-jsonb-object-agg-unique-strict),https://www.postgresql.org/account/submitbug/19735/,Pending,,,Functional,,,jsonb_object_agg_unique_strict silently discards a JSONB null value,claude-opus-5
+json_object (round 004-json-object),https://www.postgresql.org/account/submitbug/19736/,Pending,,,Functional,,,"JSON_OBJECT with ABSENT ON NULL accepts a NULL key and an array, composite or JSON key for the omitted pair",claude-opus-5
+uuidv7 (round 009-uuidv7),https://www.postgresql.org/account/submitbug/19738/,Pending,,,Functional,,,uuidv7(interval) rejects timestamps 1 to 999 microseconds into the last millisecond its field can hold,claude-opus-5

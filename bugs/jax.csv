@@ -1,0 +1,41 @@
+Reported:,38,28,11,,,1,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+jax-scipy-special-betaln;jax-scipy-special-beta;jax-scipy-special-betaln--again;jax-scipy-special-beta--again;jax-scipy-special-betaln--long;jax-scipy-special-beta--long,https://github.com/jax-ml/jax/issues/40653,Confirmed,,,Functional,,,"betaln and beta inaccurate for max(a,b) >= 8 (algdiv transcription error)",claude-opus-5
+jax-numpy-histogram,https://github.com/jax-ml/jax/issues/40963,Rejected,,,Functional,,,jnp.histogram puts values on an interior bin edge into the wrong bin,claude-opus-5
+jax-scipy-stats-pareto,https://github.com/jax-ml/jax/issues/40964,Confirmed,,,Functional,Yes,,pareto checks support on x but computes on (x-loc)/scale,claude-opus-5
+jax-scipy-stats-expon,https://github.com/jax-ml/jax/issues/40965,Confirmed,,,Functional,,,expon.logcdf returns -inf for small positive x,claude-opus-5
+jax-scipy-stats-laplace,https://github.com/jax-ml/jax/issues/40966,Confirmed,,,Functional,,,laplace.cdf has NaN gradients in the tails,claude-opus-5
+jax-jit,https://github.com/jax-ml/jax/issues/40967,Confirmed,,,Functional,Yes,,jit with negative static_argnums does not treat a keyword argument as static,claude-opus-5
+jax-scipy-special-zeta;jax-scipy-special-zeta--long,https://github.com/jax-ml/jax/issues/40968,Confirmed,,,Functional,Yes,,zeta: differentiating changes the primal value,claude-opus-5
+jax-scipy-stats-poisson;jax-scipy-stats-poisson--long,https://github.com/jax-ml/jax/issues/40969,Confirmed,,,Functional,,,poisson.entropy has NaN gradients outside a middle range of mu,claude-opus-5
+jax-scipy-special-betaln,https://github.com/jax-ml/jax/issues/38270,Confirmed,,,Functional,,,"betaln(inf, b) returns nan",claude-opus-5
+jax-scipy-special-i0;jax-scipy-special-i1,https://github.com/jax-ml/jax/issues/39772,Confirmed,,,Functional,,,i0 and i1 overflow to inf before the result does,claude-opus-5
+jax-scipy-stats-uniform,https://github.com/jax-ml/jax/issues/38317,Confirmed,,,Functional,,,uniform cdf/pdf/logpdf map NaN input to finite values,claude-opus-5
+jax-scipy-stats-vonmises,https://github.com/jax-ml/jax/issues/38621,Confirmed,,,Functional,,,vonmises returns NaN at kappa = 0,claude-opus-5
+jax-scipy-special-rel-entr,https://github.com/jax-ml/jax/issues/38262,Pending,,,Functional,,,rel_entr maps NaN input to +inf,claude-opus-5
+jax-scipy-special-kl-div,https://github.com/jax-ml/jax/issues/38239,Confirmed,,,Functional,,,kl_div returns NaN for infinite arguments,claude-opus-5
+jax-scipy-stats-cauchy,https://github.com/jax-ml/jax/issues/38318,Confirmed,,,Functional,,,"cauchy ppf/isf finite at and outside [0, 1]",claude-opus-5
+jax-scipy-stats-chi2,https://github.com/jax-ml/jax/issues/38316,Confirmed,,,Functional,,,"chi2.logpdf(0, 2) returns NaN",claude-opus-5
+jax-scipy-stats-dirichlet,https://github.com/jax-ml/jax/issues/38520,Confirmed,,,Functional,,,dirichlet gives zero density on the simplex boundary,claude-opus-5
+jax-scipy-stats-multinomial,https://github.com/jax-ml/jax/issues/38605,Confirmed,,,Functional,,,multinomial.logpmf returns -inf for batched input,claude-opus-5
+jax-scipy-special-erfcx,https://github.com/jax-ml/jax/issues/38607,Confirmed,,,Functional,,,erfcx returns 0 in a band below the asymptotic switch,claude-opus-5
+jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8,https://github.com/jax-ml/jax/issues/37751,Confirmed,,,Functional,Yes,,"xlogy(0, nan) and xlog1py(0, nan) return 0",claude-opus-4-8
+jax-numpy-abs;jax-numpy-abs--opus-4-8,https://github.com/jax-ml/jax/issues/37817,Confirmed,,,Functional,Yes,,abs(inf + nan j) returns nan instead of inf,claude-opus-4-8
+jax-scipy-special-digamma--opus-4-8,https://github.com/jax-ml/jax/issues/37763,Confirmed,,,Functional,Yes,,digamma(0.0) returns nan instead of -inf,claude-opus-4-8
+jax-scipy-special-loggamma--again,https://github.com/jax-ml/jax/issues/38240,Confirmed,,,Functional,,,loggamma(0.0) returns nan instead of inf,claude-opus-5
+jax-scipy-special-zeta--again,https://github.com/jax-ml/jax/issues/38199,Confirmed,,,Functional,,,"zeta(x, q) is silently wrong for q below about -6",claude-opus-5
+jax.Array.sum,https://github.com/jax-ml/jax/issues/41120,Confirmed,,,Functional,Yes,,Array.sum(initial=...) drops the initial value,claude-opus-5
+jax.fwd_and_bwd,https://github.com/jax-ml/jax/issues/41121,Confirmed,,,Functional,Yes,,fwd_and_bwd drops keyword arguments,claude-opus-5
+jax.lax.pmean,https://github.com/jax-ml/jax/issues/41132,Pending,,,Functional,,,pmean (and psum of a constant) with unequal axis_index_groups divides every group by the size of the first group,claude-opus-5
+jax-scipy-special-gammaln--long,https://github.com/jax-ml/jax/issues/38264,Confirmed,,,Functional,Yes,,gammaln(-inf) returns +inf where SciPy returns -inf,claude-opus-5
+jax-scipy-special-rel-entr;jax-scipy-special-kl-div;jax-scipy-special-kl-div--long,https://github.com/jax-ml/jax/issues/41200,Confirmed,,,Functional,,,rel_entr/kl_div wrong for p close to q and nan for large p,claude-opus-5
+jax-scipy-special-gammaincc;jax-scipy-special-gammaincc--long,https://github.com/jax-ml/jax/issues/41201,Pending,,,Functional,,,"gammaincc returns values outside [0, 1] for large a",claude-opus-5
+jax-random-poisson,https://github.com/jax-ml/jax/issues/41202,Pending,,,Functional,,,random.poisson samples have the wrong variance for large lam,claude-opus-5
+jax-scipy-stats-t,https://github.com/jax-ml/jax/issues/41203,Pending,,,Functional,,,t.logpdf loses precision for large df,claude-opus-5
+jax-numpy-linalg-eigh,https://github.com/jax-ml/jax/issues/41204,Confirmed,,,Functional,Yes,,linalg.eigh accepts a non-square matrix and decomposes a different one,claude-opus-5
+jax-scipy-special-expn,https://github.com/jax-ml/jax/issues/41205,Pending,,,Functional,,,"expn(n, 0) returns 1/n instead of 1/(n-1)",claude-opus-5
+jax-numpy-floor-divide;jax-numpy-floor-divide--long,https://github.com/jax-ml/jax/issues/41206,Pending,,,Functional,,,floor_divide off by one for some float16/bfloat16 inputs,claude-opus-5
+jax-scipy-special-expi--again;jax-scipy-special-expi--long,https://github.com/jax-ml/jax/issues/41207,Confirmed,,,Functional,Yes,,jax.scipy.special.expi(0.0) returns nan instead of -inf,claude-opus-5
+jax-scipy-stats-poisson--again,https://github.com/jax-ml/jax/issues/41208,Pending,,,Functional,,,"poisson.logpmf tests k for integrality instead of k - loc, so a fractional loc gives every support point probability zero",claude-opus-5
+jax#1;jax_1,https://github.com/jax-ml/jax/issues/41246,Pending,,,Functional,,,jnp.add.reduceat and jnp.multiply.reduceat ignore the dtype argument,claude-opus-5

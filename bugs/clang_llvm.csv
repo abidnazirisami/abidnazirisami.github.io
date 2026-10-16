@@ -1,0 +1,12 @@
+Reported:,9,6,0,,,0,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+alignment-builtins,https://github.com/llvm/llvm-project/issues/216999,Confirmed,,,Crash,,,alignment builtins crash Clang on a pointer with no base object,claude-opus-5
+__is_bitwise_cloneable,https://github.com/llvm/llvm-project/issues/227446,Confirmed,,,Crash,,,__is_bitwise_cloneable takes exponential time on nested types,claude-opus-5
+model attribute,https://github.com/llvm/llvm-project/issues/227447,Pending,,,Functional,,,"a late model(""large"") attribute is dropped after an earlier use of the global",claude-opus-5
+vectorcall attribute,https://github.com/llvm/llvm-project/issues/227451,Pending,,,Functional,,,SysV vectorcall does not put an HVA in sequential SSE registers,claude-opus-5
+vectorcall attribute,https://github.com/llvm/llvm-project/issues/227448,Confirmed,,,Crash,,,vectorcall with an x87 long double crashes code generation,claude-opus-5
+Alignment builtins,https://github.com/llvm/llvm-project/issues/227548,Confirmed,,,Functional,,,constant-evaluated __builtin_align_up/down on a pointer into an array reads the original element,claude-opus-5
+builtin-convertvector,https://github.com/llvm/llvm-project/issues/228648,Confirmed,,,Crash,,,__builtin_convertvector from a __bf16 vector to a long double vector gives wrong values,claude-opus-5
+builtin-convertvector,https://github.com/llvm/llvm-project/issues/228649,Confirmed,,,Functional,,,__builtin_convertvector to a bool vector folds 0.5 to false in a constant expression,claude-opus-5
+nonnull attribute,https://github.com/llvm/llvm-project/issues/228670,Pending,,,Functional,,,"nonnull whose every index is rejected is attached with no indices, which means every pointer parameter, and the optimizer drops their null checks",claude-opus-5

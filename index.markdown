@@ -41,7 +41,9 @@ layout: home
 
 <h1>Research Interests</h1>
 
- My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc. To date, I have submitted **140** bug reports in PyTorch and Tensorflow, among which **103** have been confirmed ([list of bug-reports](/bugs/)). I am also working in generating complex test cases for Autonomous Driving Systems (ADS).
+ My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc.
+ I have also worked on testing applications in domains like databases, compilers, toolchains etc. using Property-Based Testing. In addition,
+ I have worked on generating complex test cases for Autonomous Driving Systems (ADS). To date, I have reported 323 bugs across 11 systems including deep learning frameworks, databases, compilers, and toolchains, with 214 confirmed or fixed upstream ([list of bug-reports](/bugs/)).
 
 <h1>Publications</h1>
 

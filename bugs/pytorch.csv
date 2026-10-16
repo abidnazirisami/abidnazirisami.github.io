@@ -1,4 +1,4 @@
-Reported:,79,31,13,,,15,,,
+Reported:,91,62,27,,,19,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 torch.logcumsumexp,https://github.com/pytorch/pytorch/issues/139342,Confirmed,No,0,Inconsistent,No,,,Centaur
@@ -80,3 +80,15 @@ torch.nn.PixelUnshuffle,https://github.com/pytorch/pytorch/issues/171536,Submitt
 torch.linalg.cholesky_ex,https://github.com/pytorch/pytorch/issues/173786,Rejected,Yes,,Inconsistent,,,Not a bug (behavior for nan/inf input is undefined by design),RBF
 torch.nn.functional.PoissonNLLLoss,https://github.com/pytorch/pytorch/issues/173796,Submitted,No,,Inconsistent,,,,RBF
 torch.nn.functional.pdist,https://github.com/pytorch/pytorch/issues/173799,Fixed,No,,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/173826,,RBF
+torch-ldexp;torch-ldexp--long,https://github.com/pytorch/pytorch/issues/198577,Confirmed,,,Crash,,,ldexp fails for a bool exponent in eager mode,claude-opus-5
+torch-distributions-cauchy;torch-distributions-cauchy--long,https://github.com/pytorch/pytorch/issues/198578,Pending,,,Functional,,,Cauchy.log_prob returns -inf where the log density is finite,claude-opus-5
+torch-distributions-normal,https://github.com/pytorch/pytorch/issues/198579,Pending,,,Functional,,,Normal.log_prob returns NaN for extreme scales,claude-opus-5
+torch-distributions-laplace,https://github.com/pytorch/pytorch/issues/198580,Confirmed,,,Functional,,,Laplace cdf/icdf have zero gradient at the median,claude-opus-5
+torch-distributions-laplace,https://github.com/pytorch/pytorch/issues/198582,Confirmed,,,Functional,,,Laplace.icdf loses accuracy in the tails,claude-opus-5
+torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai,https://github.com/pytorch/pytorch/issues/198583,Confirmed,,,Functional,,,bessel_j0/j1/y0/y1 and airy_ai lose ~9 digits (dropped p1evl leading coefficient),claude-opus-5
+torch-special-logit,https://github.com/pytorch/pytorch/issues/195075,Confirmed,,,Functional,,,logit backward gives NaN elements index-dependent gradients,claude-opus-5
+torch-maximum;torch-maximum--long,https://github.com/pytorch/pytorch/issues/193781,Confirmed,,,Functional,,,maximum of signed zeros depends on the tensor length,claude-opus-5
+torch-trace;torch-trace--opus-4-8,https://github.com/pytorch/pytorch/issues/184847,Confirmed,,,Crash,Yes,,trace raises NotImplementedError for float16 on CPU,claude-opus-4-8
+torch.unique,https://github.com/pytorch/pytorch/issues/199057,Pending,,,Functional,,,unique(dim=0) keeps duplicate rows when another row holds NaN,claude-opus-5
+torch.arctanh,https://github.com/pytorch/pytorch/issues/199058,Pending,,,Functional,,,compiled CPU atanh loses precision to cancellation,claude-opus-5
+torch-clamp--long,https://github.com/pytorch/pytorch/issues/195675,Confirmed,,,Functional,,,inductor silently ignores a clamp bound that eager rejects as unrepresentable,claude-opus-5

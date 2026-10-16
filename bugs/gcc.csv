@@ -1,0 +1,8 @@
+Reported:,5,3,0,,,1,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+builtin-is-virtual-base-of,https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127487,Confirmed,,,Functional,,,__builtin_is_virtual_base_of reports a non-virtual base reached through a virtual base as virtual,claude-opus-5
+builtin-stdc-rotate-left,https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127490,Pending,,,Functional,,,the manual's equivalent expression for __builtin_stdc_rotate_left/right is wrong for non-power-of-two _BitInt widths,claude-opus-5
+hardbool-attribute,https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127486,Rejected,,,Functional,,,implicitly zero-initialized hardbool objects hold zero bits instead of the false representation,claude-opus-5
+macros-with-a-variable-number-of-arguments,https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127491,Confirmed,,,Functional,,,"the GCC manual says , ## __VA_ARGS__ drops the comma for an empty argument; the CPP manual and GCC keep it",claude-opus-5
+__builtin_bitreverseg,https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127668,Confirmed,,,Crash,,,__builtin_bitreverseg on a dependent C++ operand gives an ICE in mangle_decl,claude-opus-5

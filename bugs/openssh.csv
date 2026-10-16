@@ -1,0 +1,8 @@
+Reported:,5,1,1,,,0,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+ssh-1-g,https://bugzilla.mindrot.org/show_bug.cgi?id=4008,Pending,,,Functional,,,ssh -G prints EscapeChar ^A as \^A which does not parse back,claude-opus-5
+ssh-1-g,https://bugzilla.mindrot.org/show_bug.cgi?id=4009,Pending,,,Functional,,,ssh -G shows some LocalForward entries as DynamicForward,claude-opus-5
+ssh-keygen-1-s,https://bugzilla.mindrot.org/show_bug.cgi?id=4010,Pending,,,Functional,,,"ssh-keygen -s signs certificates with duplicate options, which sshd rejects",claude-opus-5
+ssh-1-g--long,https://bugzilla.mindrot.org/show_bug.cgi?id=4013,Confirmed,,,Functional,Yes,,"StreamLocalBindMask ignores Host and Match blocks, and the last value wins",claude-opus-5
+openssh#1;openssh_1,https://bugzilla.mindrot.org/show_bug.cgi?id=4014,Pending,,,Functional,,,ssh-keygen -F and -R miss a hashed known_hosts entry when the host name's case differs,claude-opus-5

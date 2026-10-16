@@ -1,0 +1,16 @@
+Reported:,13,13,1,,,0,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+crontab-1-description;crontab-1-t;crontab-5-extensions,https://github.com/cronie-crond/cronie/issues/223,Confirmed,,,Functional,,,crontab -T - rejects every valid crontab read from a pipe,claude-opus-5
+anacron-8-t,https://github.com/cronie-crond/cronie/issues/224,Confirmed,,,Functional,,,anacron -T prints errors on standard error instead of standard output,claude-opus-5
+anacron-8-t;anacrontab-5-start-hours-range;anacrontab-5-description,https://github.com/cronie-crond/cronie/issues/226,Confirmed,,,Functional,,,anacron matches START_HOURS_RANGE / RANDOM_DELAY / PREFERRED_HOUR by prefix,claude-opus-5
+anacron-8-t;anacrontab-5-description,https://github.com/cronie-crond/cronie/issues/227,Confirmed,,,Functional,,,anacron accepts misspelled period macros such as @monthlyXYZ; a job with an unknown macro runs although reported as skipped,claude-opus-5
+anacrontab-5-start-hours-range,https://github.com/cronie-crond/cronie/issues/231,Confirmed,,,Functional,,,START_HOURS_RANGE is unbounded; accepted ranges run no job,claude-opus-5
+cronnext-1-t,https://github.com/cronie-crond/cronie/issues/228,Confirmed,,,Functional,,,cronnext -t and -q parse times with atoi (Y2038),claude-opus-5
+crontab-5-extensions,https://github.com/cronie-crond/cronie/issues/229,Confirmed,,,Functional,,,@daily and @hourly do not set DOM_STAR/DOW_STAR,claude-opus-5
+crontab-5-description,https://github.com/cronie-crond/cronie/issues/215,Confirmed,,,Functional,,,cronnext ignores a stepped day-of-week field (*/2),claude-opus-5
+crontab-5-description,https://github.com/cronie-crond/cronie/issues/221,Confirmed,,,Functional,,,reversed ranges such as 5-2 pass crontab -T and never run,claude-opus-5
+crontab-5-cron-tz,https://github.com/cronie-crond/cronie/issues/222,Confirmed,,,Functional,,,cronnext ignores CRON_TZ,claude-opus-5
+cronnext-1,https://github.com/cronie-crond/cronie/issues/217,Confirmed,,,Functional,Yes,,cronnext misses the first hour of a month after a DST change (stale tm_isdst),claude-opus-5
+cronnext-1,https://github.com/cronie-crond/cronie/issues/218,Confirmed,,,Functional,,,cronnext skips the whole spring-forward day,claude-opus-5
+anacrontab-5-description,https://github.com/cronie-crond/cronie/issues/230,Confirmed,,,Crash,,,a large RANDOM_DELAY crashes anacron (SIGFPE) or hangs it,claude-opus-5

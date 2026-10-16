@@ -9,3 +9,6 @@ resume/*.log
 resume/*.pdf
 .venv
 .env
+bugs_data/
+__pycache__/
+*.pyc

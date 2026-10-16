@@ -1,0 +1,27 @@
+Reported:,24,6,5,,,0,,,
+,,,,,,,,,
+api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
+aql-functions-string-substitute; co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23293,Confirmed,,,Functional,Yes,,SUBSTITUTE returns null for an empty input string,claude-opus-5
+aql-functions-string-substitute; co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23357,Confirmed,,,Functional,Yes,,SUBSTITUTE returns null for an empty input string,claude-opus-5
+co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23358,Pending,,,Functional,,,TO_NUMBER converts a valid subnormal decimal string to zero,claude-opus-5
+co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23359,Pending,,,Functional,,,"APPEND(null, []) returns null instead of the other input array",claude-opus-5
+co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23360,Confirmed,,,Functional,Yes,,REVERSE corrupts a single astral Unicode character,claude-opus-5
+co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23361,Pending,,,Functional,,,FIND_FIRST and FIND_LAST fail to find present control characters,claude-opus-5
+co-author's Agentic-PBT run,https://github.com/arangodb/arangodb/issues/23362,Confirmed,,,Functional,Yes,,REGEX_MATCHES reports a match for an empty string that cannot match,claude-opus-5
+aql-operators-array-comparison-operators;aql-operators-array-comparison-operators--long,https://github.com/arangodb/arangodb/issues/23363,Confirmed,,,Functional,,,AT LEAST (n) is true when the array has fewer than n elements,claude-opus-5
+aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again,https://github.com/arangodb/arangodb/issues/22909,Confirmed,,,Functional,Yes,,LIMIT offset after an index-delivered SORT with a tiebreaker drops the rows after the offset (grouped sort),claude-opus-5
+DATE_DIFF();DATE_ISO8601(),https://github.com/arangodb/arangodb/issues/23382,Pending,,,Functional,,,DATE_DIFF gets the sign of the minutes of a negative ISO offset wrong,claude-opus-5
+NGRAM_MATCH(),https://github.com/arangodb/arangodb/issues/23383,Pending,,,Functional,,,NGRAM_MATCH reads a stale diagonal and reports a match that is not there,claude-opus-5
+TO_ARRAY(),https://github.com/arangodb/arangodb/issues/23384,Pending,,,Functional,,,SORTED collapses elements that compare equal,claude-opus-5
+JSON_PARSE();PI(),https://github.com/arangodb/arangodb/issues/23385,Pending,,,Functional,,,the VelocyPack number parser reads past the exponent token,claude-opus-5
+JSON_PARSE(),https://github.com/arangodb/arangodb/issues/23386,Pending,,,Functional,,,the VelocyPack number parser loses precision on exactly representable decimals,claude-opus-5
+aql-execution-and-performance-query-optimization-optimizer-r,https://github.com/arangodb/arangodb/issues/23396,Pending,,,Functional,,,"use-indexes serves a range that can match null from a sparse index, dropping rows",claude-opus-5
+aql-functions-string-substitute,https://github.com/arangodb/arangodb/issues/23399,Pending,,,Functional,,,SUBSTITUTE with several search values skips a match adjacent to a replacement,claude-opus-5
+aql-operators-arithmetic-operators,https://github.com/arangodb/arangodb/issues/23400,Pending,,,Functional,,,"arithmetic on stored 64-bit integers is done in doubles, unlike on literals",claude-opus-5
+aql-operators-ternary-operator,https://github.com/arangodb/arangodb/issues/23397,Pending,,,Functional,,,"remove-redundant-calculations merges differently nested ternaries, giving a wrong result",claude-opus-5
+develop-http-api-import,https://github.com/arangodb/arangodb/issues/23401,Pending,,,Functional,,,"/_api/import stores documents with duplicate attribute names, from a repeated key and from a repeated tabular header",claude-opus-5
+develop-http-api-import,https://github.com/arangodb/arangodb/issues/23398,Pending,,,Functional,,,/_api/import complete=true commits the documents before an unparsable line,claude-opus-5
+indexes-and-search-indexing-working-with-indexes-persistent--again,https://github.com/arangodb/arangodb/issues/23402,Pending,,,Functional,,,COLLECT served from a persistent index merges the array values [] and [null],claude-opus-5
+aql-operators-ternary-operator--again,https://github.com/arangodb/arangodb/issues/23403,Pending,,,Crash,,,the AQL ternary evaluates an untaken operand that contains an array expansion over a subquery,claude-opus-5
+arangodb#1;arangodb_1,https://github.com/arangodb/arangodb/issues/23411,Pending,,,Crash,,,DATE_ROUND with a large amount kills arangod with SIGFPE,claude-opus-5
+arangodb#1;arangodb_1,https://github.com/arangodb/arangodb/issues/23412,Pending,,,Functional,,,DATE_ROUND files every pre-epoch instant under the following bucket,claude-opus-5
