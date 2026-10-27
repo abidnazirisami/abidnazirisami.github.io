@@ -56,6 +56,32 @@
 \setlength{\columnsep}{0.15cm} % set column seperation
 \pagenumbering{gobble} % no page numbering
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% new command for academic vs professional:
+% \academictrue is defined on the command line (see Makefile) to select the
+% academic version; otherwise the professional (single-page) version is used.
+%
+% The two gap macros below set the vertical rhythm for every section, so that
+% entries in Education, Technologies, Experience and Research Projects are
+% spaced the same way. The professional version uses tighter values (and
+% tighter section titles) to keep the whole resume on a single page.
+\ifdefined\academictrue
+    \newcommand{\details}[1]{#1} % academic
+    \newcommand{\professionalonly}[1]{} % academic
+    \newcommand{\headgap}{\vspace{0.10 cm}} % entry heading -> its body
+    \newcommand{\entrygap}{\vspace{0.15 cm}} % between sibling entries
+    \newcommand{\sectiontopgap}{0.30 cm}
+    \newcommand{\sectionbotgap}{0.20 cm}
+\else
+    \newcommand{\details}[1]{} % professional
+    \newcommand{\professionalonly}[1]{#1} % professional
+    \newcommand{\headgap}{\vspace{0.06 cm}} % entry heading -> its body
+    \newcommand{\entrygap}{\vspace{0.12 cm}} % between sibling entries
+    \newcommand{\sectiontopgap}{0.22 cm}
+    \newcommand{\sectionbotgap}{0.14 cm}
+\fi
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
 
 \titlespacing{\section}{
@@ -63,10 +89,10 @@
     -1pt
 }{
     % top space:
-    0.3 cm
+    \sectiontopgap
 }{
     % bottom space:
-    0.2 cm
+    \sectionbotgap
 } % section title spacing
 
 \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
@@ -148,18 +174,7 @@
 % save the original href command in a new command:
 \let\hrefWithoutArrow\href
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% new command for academic vs professional:
-% \academictrue is defined on the command line (see Makefile) to select the
-% academic version; otherwise the professional (single-page) version is used.
-\ifdefined\academictrue
-    \newcommand{\details}[1]{#1} % academic
-    \newcommand{\professionalonly}[1]{} % academic
-\else
-    \newcommand{\details}[1]{} % professional
-    \newcommand{\professionalonly}[1]{#1} % professional
-\fi
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
 
 
 \begin{document}

@@ -3,7 +3,7 @@ layout: page
 title: Resume
 permalink: /resume/
 ---
-_Last updated: 2025-11-24 19:34:00 UTC_
+_Last updated: 2026-10-27 14:05:41 UTC_
 
 Below is an embedded copy of my resume. You can also open or download the PDF using the links.
 
