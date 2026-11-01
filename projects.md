@@ -2,6 +2,7 @@
 layout: page
 title:  "Projects"
 permalink: /projects/
+body_style: cv
 ---
 <h3> Undergraduate Thesis </h3>
 

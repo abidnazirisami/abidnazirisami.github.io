@@ -1,0 +1,401 @@
+/* ==========================================================================
+   Shell: skip link, header, nav, content column, footer
+   ========================================================================== */
+
+.wrapper {
+  width: 100%;
+  max-width: var(--shell-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+/* --- Skip link ---------------------------------------------------------- */
+
+.skip-link {
+  position: absolute;
+  left: var(--gutter);
+  top: var(--space-2);
+  z-index: var(--z-skiplink);
+  padding: var(--space-2) var(--space-4);
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: var(--fw-medium);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(calc(-100% - var(--space-4)));
+  transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-fast) ease;
+}
+
+.skip-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* --- Header ------------------------------------------------------------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-header);
+  background: color-mix(in srgb, var(--paper) 86%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  box-shadow: 0 var(--hairline) 0 var(--rule);
+  padding-top: env(safe-area-inset-top);
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .site-header { background: var(--paper); }
+}
+
+.site-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  min-height: var(--header-height);
+}
+
+.site-brand {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  color: var(--ink);
+  text-decoration: none;
+  padding-block: var(--space-2);
+}
+
+.site-brand__name {
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
+  font-weight: var(--fw-semibold);
+  letter-spacing: -0.015em;
+  line-height: 1.15;
+}
+
+.site-brand__role {
+  font-family: var(--font-sans);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+@media (hover: hover) {
+  .site-brand:hover .site-brand__name { color: var(--accent); }
+}
+
+/* --- Navigation --------------------------------------------------------- */
+
+.site-header__tools {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.site-nav { display: flex; align-items: center; }
+
+/* --- Theme toggle -------------------------------------------------------- */
+
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--ink-muted);
+  cursor: pointer;
+  transition: color var(--dur-fast) ease, background-color var(--dur-fast) ease;
+}
+
+.theme-toggle svg {
+  grid-area: 1 / 1;
+  width: 18px;
+  height: 18px;
+}
+
+@media (hover: hover) {
+  .theme-toggle:hover { background: var(--accent-wash); color: var(--ink); }
+}
+
+@media (hover: none) {
+  .theme-toggle { width: 44px; height: 44px; }
+}
+
+/* Which glyph shows is decided in CSS, by the same cascade that picks the
+   theme, so the icon is never briefly wrong on load. */
+.theme-toggle__sun { display: none; }
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle__moon { display: none; }
+  :root:not([data-theme="light"]) .theme-toggle__sun { display: block; }
+}
+
+:root[data-theme="dark"] .theme-toggle__moon { display: none; }
+:root[data-theme="dark"] .theme-toggle__sun { display: block; }
+
+.nav-trigger,
+.nav-toggle { display: none; }
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: var(--fw-medium);
+  line-height: 1.2;
+  color: var(--ink-soft);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color var(--dur-fast) ease, background-color var(--dur-fast) ease;
+}
+
+@media (hover: hover) {
+  .nav-link:hover { color: var(--ink); background: var(--accent-wash); }
+}
+
+/* Underline marks the current page — weight never changes, so nothing shifts. */
+.nav-link[aria-current="page"] { color: var(--ink); }
+
+.nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: 0.2rem;
+  height: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--accent);
+}
+
+.nav-link--cta {
+  margin-left: var(--space-2);
+  color: var(--surface);
+  background: var(--ink);
+  font-weight: var(--fw-semibold);
+}
+
+@media (hover: hover) {
+  .nav-link--cta:hover { color: var(--surface); background: var(--accent); }
+}
+
+.nav-link--cta[aria-current="page"] { color: var(--surface); }
+.nav-link--cta[aria-current="page"]::after { background: var(--surface); }
+
+/* --- Mobile navigation (CSS only, keyboard operable) -------------------- */
+
+@media (max-width: 62rem) {
+  .site-nav { position: relative; }
+
+  /* Keep the toggle out of the collapsed menu, to the left of the hamburger. */
+  .theme-toggle { order: -1; }
+
+  .nav-toggle {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: calc(var(--space-2) * -1);
+    border-radius: var(--radius-md);
+    color: var(--ink);
+    cursor: pointer;
+  }
+
+  .nav-toggle svg { width: 20px; height: 20px; }
+
+  /* SVG transforms resolve against the viewBox origin, so each bar names the
+     point it should pivot on. */
+  .nav-toggle__bar {
+    transform-box: view-box;
+    transition: transform var(--dur-base) var(--ease-out), opacity var(--dur-fast) ease;
+  }
+
+  .nav-toggle__bar--top { transform-origin: 10px 5px; }
+  .nav-toggle__bar--mid { transform-origin: 10px 10px; }
+  .nav-toggle__bar--bot { transform-origin: 10px 15px; }
+
+  /* The real checkbox sits over the icon so Space/Enter toggle the menu. */
+  .nav-trigger {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: calc(var(--space-2) * -1);
+    width: 44px;
+    height: 44px;
+    margin: -22px 0 0;
+    padding: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: var(--z-base);
+  }
+
+  .nav-trigger:focus-visible + .nav-toggle {
+    outline: 2px solid var(--ink);
+    outline-offset: 2px;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: calc(100% + var(--space-2));
+    right: 0;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    min-width: 15rem;
+    padding: var(--space-2);
+    background: var(--surface);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transform-origin: top right;
+    transform: scale(0.96);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity var(--dur-base) var(--ease-out),
+                transform var(--dur-base) var(--ease-out),
+                visibility 0s linear var(--dur-base);
+  }
+
+  .nav-trigger:checked ~ .nav-links {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transition-delay: 0s;
+  }
+
+  .nav-trigger:checked + .nav-toggle .nav-toggle__bar--top { transform: translateY(5px) rotate(45deg); }
+  .nav-trigger:checked + .nav-toggle .nav-toggle__bar--mid { opacity: 0; }
+  .nav-trigger:checked + .nav-toggle .nav-toggle__bar--bot { transform: translateY(-5px) rotate(-45deg); }
+
+  .nav-link {
+    min-height: 44px;
+    padding-inline: var(--space-3);
+    font-size: var(--text-base);
+  }
+
+  .nav-link[aria-current="page"]::after { left: var(--space-3); right: auto; width: 1.25rem; bottom: 0.5rem; }
+
+  .nav-link--cta { margin: var(--space-1) 0 0; justify-content: center; }
+}
+
+/* --- Main --------------------------------------------------------------- */
+
+.page-content {
+  flex: 1 0 auto;
+  padding-block: var(--space-7) var(--space-8);
+}
+
+.page-content > .wrapper { max-width: var(--content-max); }
+
+/* --- Page header -------------------------------------------------------- */
+
+.page-eyebrow {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-family: var(--font-sans);
+  font-size: var(--text-2xs);
+  font-weight: var(--fw-semibold);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+}
+
+.page-title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-5);
+}
+
+@media (max-width: 40rem) {
+  .page-title { font-size: var(--text-3xl); }
+}
+
+/* --- Back link ---------------------------------------------------------- */
+
+.back-home-container { margin-bottom: var(--space-5); }
+
+.back-home {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 44px;
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  font-weight: var(--fw-medium);
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+.back-home-arrow {
+  display: inline-block;
+  transition: transform var(--dur-base) var(--ease-out);
+}
+
+@media (hover: hover) {
+  .back-home:hover { color: var(--accent); }
+  .back-home:hover .back-home-arrow { transform: translateX(-3px); }
+}
+
+/* --- Footer ------------------------------------------------------------- */
+
+.site-footer {
+  flex-shrink: 0;
+  margin-top: var(--space-8);
+  padding-block: var(--space-5);
+  padding-bottom: calc(var(--space-5) + env(safe-area-inset-bottom));
+  box-shadow: 0 calc(var(--hairline) * -1) 0 var(--rule);
+  font-family: var(--font-sans);
+  font-size: var(--text-md);
+  color: var(--ink-muted);
+}
+
+.site-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-2) var(--space-5);
+}
+
+.site-footer__name {
+  font-family: var(--font-serif);
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  color: var(--ink);
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__links a {
+  color: var(--ink-muted);
+  text-decoration: none;
+}
+
+@media (hover: hover) {
+  .site-footer__links a:hover { color: var(--accent); text-decoration: underline; }
+}

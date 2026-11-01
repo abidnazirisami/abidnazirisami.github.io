@@ -2,6 +2,7 @@
 layout: page
 title:  "Experience"
 permalink: /experience/
+body_style: cv
 ---
 <h3> North Carolina State University </h3> 
 

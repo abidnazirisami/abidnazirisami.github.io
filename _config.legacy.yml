@@ -1,0 +1,16 @@
+# Overlay config for previewing the legacy frontend without editing _config.yml.
+#
+#   bundle exec jekyll serve --config _config.yml,_config.legacy.yml
+#
+# GitHub Pages only ever reads _config.yml, so the deployed site keeps
+# whatever `frontend` is set to there.
+frontend: legacy
+
+# Legacy nav order, as it was before the redesign.
+header_pages:
+  - resume.md
+  - bugs.md
+  - publications.md
+  - experience.md
+  - projects.md
+  - co-curricular.md

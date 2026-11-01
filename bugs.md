@@ -3,6 +3,8 @@ layout: page
 title: Reported Bugs
 permalink: /bugs/
 last_updated: "2026-10-16T14:15:41+00:00"
+wide: true
+hide_title: true
 ---
 
 <div class="bugs-dashboard">
@@ -83,7 +85,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
       </div>
     </div>
     <div class="apps-bar-list">
-      <div class="app-bar-row" title="PyTorch: 35 Confirmed, 27 Fixed, 10 Pending, 19 Rejected (91 total)" style="cursor: pointer;" onclick="toggleAppAccordion('pytorch')">
+      <div class="app-bar-row" title="PyTorch: 35 Confirmed, 27 Fixed, 10 Pending, 19 Rejected (91 total)" role="button" tabindex="0" onclick="toggleAppAccordion('pytorch')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="PyTorch"><path d="M12.5 2.5C12.5 2.5 7.5 7.5 7.5 13.5C7.5 16.8 9.7 19.5 12.5 19.5C15.3 19.5 17.5 16.8 17.5 13.5C17.5 7.5 12.5 2.5 12.5 2.5Z" fill="#EE4C2C"/><circle cx="16.5" cy="7.5" r="1.8" fill="#EE4C2C"/></svg> <strong>PyTorch</strong> <span class="app-bar-domain">Deep Learning</span></span>
           <span class="app-bar-total">91 bugs</span>
@@ -95,7 +97,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 20.88%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="TensorFlow: 39 Confirmed, 10 Fixed, 4 Pending, 8 Rejected (61 total)" style="cursor: pointer;" onclick="toggleAppAccordion('tensorflow')">
+      <div class="app-bar-row" title="TensorFlow: 39 Confirmed, 10 Fixed, 4 Pending, 8 Rejected (61 total)" role="button" tabindex="0" onclick="toggleAppAccordion('tensorflow')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TensorFlow"><path d="M12 2L3 7.2V17.5L7.5 15V9.8L12 7.2L16.5 9.8V15L21 17.5V7.2L12 2Z" fill="#FF6F00"/><path d="M10 10.5V22L14 22V10.5L12 9.3L10 10.5Z" fill="#FFA000"/></svg> <strong>TensorFlow</strong> <span class="app-bar-domain">Deep Learning</span></span>
           <span class="app-bar-total">61 bugs</span>
@@ -107,7 +109,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 8.79%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="JAX: 28 Confirmed, 0 Fixed, 9 Pending, 1 Rejected (38 total)" style="cursor: pointer;" onclick="toggleAppAccordion('jax')">
+      <div class="app-bar-row" title="JAX: 28 Confirmed, 0 Fixed, 9 Pending, 1 Rejected (38 total)" role="button" tabindex="0" onclick="toggleAppAccordion('jax')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="JAX"><rect x="2" y="4" width="20" height="16" rx="4" fill="#E8F0FE"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#1A73E8" text-anchor="middle" letter-spacing="-0.02em">JAX</text></svg> <strong>JAX</strong> <span class="app-bar-domain">Autodiff / ML</span></span>
           <span class="app-bar-total">38 bugs</span>
@@ -119,7 +121,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="vLLM: 27 Confirmed, 0 Fixed, 7 Pending, 0 Rejected (34 total)" style="cursor: pointer;" onclick="toggleAppAccordion('vllm')">
+      <div class="app-bar-row" title="vLLM: 27 Confirmed, 0 Fixed, 7 Pending, 0 Rejected (34 total)" role="button" tabindex="0" onclick="toggleAppAccordion('vllm')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="vLLM"><path d="M4 4L12 20L20 4H15.5L12 13L8.5 4H4Z" fill="#2563EB"/><circle cx="12" cy="7" r="2.2" fill="#60A5FA"/></svg> <strong>vLLM</strong> <span class="app-bar-domain">LLM Serving</span></span>
           <span class="app-bar-total">34 bugs</span>
@@ -131,7 +133,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="SGLang: 17 Confirmed, 0 Fixed, 15 Pending, 1 Rejected (33 total)" style="cursor: pointer;" onclick="toggleAppAccordion('sglang')">
+      <div class="app-bar-row" title="SGLang: 17 Confirmed, 0 Fixed, 15 Pending, 1 Rejected (33 total)" role="button" tabindex="0" onclick="toggleAppAccordion('sglang')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SGLang"><rect x="2" y="4" width="20" height="16" rx="4" fill="#F3E8FF"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#7C3AED" text-anchor="middle" letter-spacing="-0.02em">SGL</text></svg> <strong>SGLang</strong> <span class="app-bar-domain">LLM Serving</span></span>
           <span class="app-bar-total">33 bugs</span>
@@ -143,7 +145,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="ArangoDB: 6 Confirmed, 0 Fixed, 18 Pending, 0 Rejected (24 total)" style="cursor: pointer;" onclick="toggleAppAccordion('arangodb')">
+      <div class="app-bar-row" title="ArangoDB: 6 Confirmed, 0 Fixed, 18 Pending, 0 Rejected (24 total)" role="button" tabindex="0" onclick="toggleAppAccordion('arangodb')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ArangoDB"><path d="M12 2C8 2 4 8 4 14C4 18.5 7.5 22 12 22C16.5 22 20 18.5 20 14C20 8 16 2 12 2Z" fill="#2B8236"/><circle cx="12" cy="15" r="4.2" fill="#84CC16"/><circle cx="12" cy="15" r="2.5" fill="#65A30D"/></svg> <strong>ArangoDB</strong> <span class="app-bar-domain">Graph Database</span></span>
           <span class="app-bar-total">24 bugs</span>
@@ -155,7 +157,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="cronie: 13 Confirmed, 0 Fixed, 0 Pending, 0 Rejected (13 total)" style="cursor: pointer;" onclick="toggleAppAccordion('cronie')">
+      <div class="app-bar-row" title="cronie: 13 Confirmed, 0 Fixed, 0 Pending, 0 Rejected (13 total)" role="button" tabindex="0" onclick="toggleAppAccordion('cronie')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="cronie"><circle cx="12" cy="12" r="9" stroke="#475569" stroke-width="2" fill="none"/><polyline points="12,7 12,12 15,14" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> <strong>cronie</strong> <span class="app-bar-domain">System Daemon</span></span>
           <span class="app-bar-total">13 bugs</span>
@@ -167,7 +169,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="PostgreSQL: 2 Confirmed, 0 Fixed, 8 Pending, 0 Rejected (10 total)" style="cursor: pointer;" onclick="toggleAppAccordion('postgresql')">
+      <div class="app-bar-row" title="PostgreSQL: 2 Confirmed, 0 Fixed, 8 Pending, 0 Rejected (10 total)" role="button" tabindex="0" onclick="toggleAppAccordion('postgresql')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="PostgreSQL"><path d="M12 3C8 3 4 5 4 10C4 13.5 5.5 17 8 19V22H11V18H13V22H16V19C18.5 17 20 13.5 20 10C20 5 16 3 12 3Z" fill="#336791"/><circle cx="9.5" cy="9.5" r="1.5" fill="#FFFFFF"/><circle cx="14.5" cy="9.5" r="1.5" fill="#FFFFFF"/><path d="M11 12H13V15H11V12Z" fill="#E2E8F0"/></svg> <strong>PostgreSQL</strong> <span class="app-bar-domain">Database Engine</span></span>
           <span class="app-bar-total">10 bugs</span>
@@ -179,7 +181,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="Clang / LLVM: 6 Confirmed, 0 Fixed, 3 Pending, 0 Rejected (9 total)" style="cursor: pointer;" onclick="toggleAppAccordion('clang_llvm')">
+      <div class="app-bar-row" title="Clang / LLVM: 6 Confirmed, 0 Fixed, 3 Pending, 0 Rejected (9 total)" role="button" tabindex="0" onclick="toggleAppAccordion('clang_llvm')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Clang / LLVM"><path d="M4 18C4 18 7 19 10 16C13 13 13 8 13 8C13 8 15 11 17 12C19 13 21 12 21 12C21 12 19 15 16 17C13 19 8 20 4 18Z" fill="#D9381E"/><path d="M13 8C11 5 7 4 7 4C7 4 8 7 10 9C11 10 13 8 13 8Z" fill="#EA580C"/></svg> <strong>Clang / LLVM</strong> <span class="app-bar-domain">Compiler / Toolchain</span></span>
           <span class="app-bar-total">9 bugs</span>
@@ -191,7 +193,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="GCC: 3 Confirmed, 0 Fixed, 1 Pending, 1 Rejected (5 total)" style="cursor: pointer;" onclick="toggleAppAccordion('gcc')">
+      <div class="app-bar-row" title="GCC: 3 Confirmed, 0 Fixed, 1 Pending, 1 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('gcc')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="GCC"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FEE2E2"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#991B1B" text-anchor="middle" letter-spacing="-0.02em">GCC</text></svg> <strong>GCC</strong> <span class="app-bar-domain">Compiler / Toolchain</span></span>
           <span class="app-bar-total">5 bugs</span>
@@ -203,7 +205,7 @@ last_updated: "2026-10-16T14:15:41+00:00"
           <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="OpenSSH: 1 Confirmed, 0 Fixed, 4 Pending, 0 Rejected (5 total)" style="cursor: pointer;" onclick="toggleAppAccordion('openssh')">
+      <div class="app-bar-row" title="OpenSSH: 1 Confirmed, 0 Fixed, 4 Pending, 0 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('openssh')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OpenSSH"><path d="M12 2L4 6V12C4 17 7.5 21 12 22C16.5 21 20 17 20 12V6L12 2Z" fill="#0F766E"/><circle cx="12" cy="10" r="2.5" fill="#CCFBF1"/><path d="M11 12.5H13V16H11V12.5Z" fill="#CCFBF1"/></svg> <strong>OpenSSH</strong> <span class="app-bar-domain">Security / Network</span></span>
           <span class="app-bar-total">5 bugs</span>
@@ -254,20 +256,20 @@ last_updated: "2026-10-16T14:15:41+00:00"
 
 <div class="bugs-toolbar">
   <div class="bugs-search-box">
-    <span aria-hidden="true" style="color: #64748b; font-size: 0.9rem;">🔍</span>
+    <span class="bugs-search-icon" aria-hidden="true">🔍</span>
     <input type="text" id="bugSearchInput" class="bugs-search-input" placeholder="Search by API, keyword, or title..." aria-label="Search bugs">
   </div>
   <div class="bugs-filter-group">
-    <button class="filter-btn active" data-filter="all">All (323)</button>
-    <button class="filter-btn" data-filter="Confirmed"><span class="filter-dot dot-confirmed"></span>Confirmed (177)</button>
-    <button class="filter-btn" data-filter="Fixed"><span class="filter-dot dot-fixed"></span>Fixed (37)</button>
-    <button class="filter-btn" data-filter="Pending"><span class="filter-dot dot-pending"></span>Pending (79)</button>
-    <button class="filter-btn" data-filter="Rejected"><span class="filter-dot dot-rejected"></span>Rejected (30)</button>
+    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All (323)</button>
+    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed (177)</button>
+    <button type="button" class="filter-btn" data-filter="Fixed" aria-pressed="false"><span class="filter-dot dot-fixed"></span>Fixed (37)</button>
+    <button type="button" class="filter-btn" data-filter="Pending" aria-pressed="false"><span class="filter-dot dot-pending"></span>Pending (79)</button>
+    <button type="button" class="filter-btn" data-filter="Rejected" aria-pressed="false"><span class="filter-dot dot-rejected"></span>Rejected (30)</button>
   </div>
   <div class="bugs-action-group">
-    <button class="action-btn" id="expandAllBtn">Expand All</button>
-    <button class="action-btn" id="collapseAllBtn">Collapse All</button>
-    <span style="font-size: 0.8rem; color: #64748b; font-weight: 500; margin-left: 4px;">Showing <strong id="visibleCount" style="color: #0f172a;">323</strong> of 323</span>
+    <button type="button" class="action-btn" id="expandAllBtn">Expand All</button>
+    <button type="button" class="action-btn" id="collapseAllBtn">Collapse All</button>
+    <span class="bugs-visible-count">Showing <strong id="visibleCount">323</strong> of 323</span>
   </div>
 </div>
 <div id="noBugsMessage" class="no-bugs-found">No reported bugs matched your filter or search query.</div>
@@ -5067,20 +5069,32 @@ last_updated: "2026-10-16T14:15:41+00:00"
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
 (function() {
+  // Read a design token so the chart follows the active colour scheme.
+  function cssVar(name, fallback) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return v || fallback;
+  }
+
   // 1. Chart.js Donut Initialization
+  var donutChart = null;
+
+  function donutColors() {
+    return [cssVar('--c-ok', '#10b981'), cssVar('--c-info', '#3b82f6'), cssVar('--c-warn', '#f59e0b'), cssVar('--c-danger', '#ef4444')];
+  }
+
   function initChart() {
     const ctx = document.getElementById('statusDonutChart');
     if (!ctx || typeof Chart === 'undefined') return;
 
-    new Chart(ctx, {
+    donutChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
         labels: ['Confirmed', 'Fixed', 'Pending', 'Rejected'],
         datasets: [{
           data: [177, 37, 79, 30],
-          backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'],
+          backgroundColor: donutColors(),
           borderWidth: 2,
-          borderColor: '#ffffff',
+          borderColor: cssVar('--surface', '#ffffff'),
           hoverOffset: 6
         }]
       },
@@ -5111,6 +5125,15 @@ last_updated: "2026-10-16T14:15:41+00:00"
     initChart();
   }
 
+  // The chart paints with canvas pixels, not CSS, so it is repainted by hand
+  // when the theme toggle changes the tokens underneath it.
+  document.addEventListener('themechange', function() {
+    if (!donutChart) return;
+    donutChart.data.datasets[0].backgroundColor = donutColors();
+    donutChart.data.datasets[0].borderColor = cssVar('--surface', '#ffffff');
+    donutChart.update('none');
+  });
+
   // 2. Global helper to toggle an accordion and scroll to it
   window.toggleAppAccordion = function(slug) {
     const el = document.getElementById('app-' + slug);
@@ -5121,6 +5144,16 @@ last_updated: "2026-10-16T14:15:41+00:00"
 
   // 3. Search and Status Filtering
   document.addEventListener('DOMContentLoaded', function() {
+    // The application bars act as buttons, so give them keyboard activation too.
+    document.querySelectorAll('.app-bar-row[role="button"]').forEach(function(row) {
+      row.addEventListener('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          row.click();
+        }
+      });
+    });
+
     const searchInput = document.getElementById('bugSearchInput');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const expandAllBtn = document.getElementById('expandAllBtn');
@@ -5179,8 +5212,12 @@ last_updated: "2026-10-16T14:15:41+00:00"
 
     filterBtns.forEach(function(btn) {
       btn.addEventListener('click', function() {
-        filterBtns.forEach(b => b.classList.remove('active'));
+        filterBtns.forEach(function(b) {
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        });
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         activeFilter = btn.getAttribute('data-filter') || 'all';
         applyFilters();
       });

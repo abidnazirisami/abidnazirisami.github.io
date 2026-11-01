@@ -4,6 +4,6 @@ title:  "Publications"
 permalink: /publications/
 ---
 
-<h1>Publications</h1>
-
+<div class="pub-list" markdown="1">
 {% include publications_list.md %}
+</div>

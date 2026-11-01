@@ -2,6 +2,7 @@
 layout: page
 title:  "Co-curricular Activities"
 permalink: /co-curricular/
+body_style: cv
 ---
 
 

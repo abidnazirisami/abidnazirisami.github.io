@@ -1,4 +1,18 @@
 ---
+# Front matter tells Jekyll to run this file through Liquid, then Sass.
+# Which frontend gets compiled is decided by `frontend` in _config.yml.
 ---
+
+{% if site.frontend == 'legacy' %}
+// --- Legacy: the pre-redesign Minima build -------------------------------
 @import "minima";
-@import "css/custom.css";
+@import "legacy/custom";
+@import "legacy/compat";
+{% else %}
+// --- Modern (default) ----------------------------------------------------
+@import "abid/tokens";
+@import "abid/base";
+@import "abid/layout";
+@import "abid/components";
+@import "abid/bugs";
+{% endif %}

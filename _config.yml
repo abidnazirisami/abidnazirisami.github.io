@@ -28,21 +28,28 @@ logo: /images/Abid_logo.png
 
 
 # Build settings
+# Minima supplies the gem scaffolding only; every layout, include and
+# stylesheet used by the site lives in this repository.
 theme: minima
-minima:
-  skin: classic
 
-## Note: google_fonts and footer_links are not used by Minima; removed for cleanliness
+# Which frontend to build.
+#   modern  - the current design (default)
+#   legacy  - the pre-redesign Minima look, kept as a fallback
+# Layouts, includes and assets/main.scss all branch on this one value.
+frontend: modern
+
+sass:
+  style: compressed
 
 # Navigation for Minima theme
 # These pages will appear in the header nav in order
 header_pages:
-  - resume.md
-  - bugs.md
   - publications.md
+  - bugs.md
   - experience.md
   - projects.md
   - co-curricular.md
+  - resume.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.

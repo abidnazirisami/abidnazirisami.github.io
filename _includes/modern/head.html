@@ -1,0 +1,85 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101215" media="(prefers-color-scheme: dark)">
+
+  {%- seo -%}
+  {%- feed_meta -%}
+
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/images/Abid_logo.png' | relative_url }}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://use.fontawesome.com" crossorigin>
+
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..600&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+
+  <noscript><style>.theme-toggle { display: none; }</style></noscript>
+
+  <script>
+  /* Runs before the body is parsed, so a stored theme is in place for the
+     first paint and nothing flashes. Without a stored choice the page simply
+     follows prefers-color-scheme, which is handled in CSS alone. */
+  (function () {
+    var root = document.documentElement;
+    var LIGHT = '#fbfaf7';
+    var DARK = '#101215';
+
+    function stored() {
+      try {
+        var t = window.localStorage.getItem('theme');
+        return (t === 'light' || t === 'dark') ? t : null;
+      } catch (e) { return null; }
+    }
+
+    function systemTheme() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    /* Both meta tags are media-scoped for the follow-the-system case; pinning
+       them to one colour makes an explicit choice win there too. */
+    function pinBrowserChrome(theme) {
+      var metas = document.querySelectorAll('meta[name="theme-color"]');
+      for (var i = 0; i < metas.length; i++) {
+        metas[i].setAttribute('content', theme === 'dark' ? DARK : LIGHT);
+      }
+    }
+
+    var initial = stored();
+    if (initial) { root.setAttribute('data-theme', initial); }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      if (initial) { pinBrowserChrome(initial); }
+
+      var toggle = document.querySelector('.theme-toggle');
+      if (!toggle) { return; }
+
+      toggle.addEventListener('click', function () {
+        var current = root.getAttribute('data-theme') || systemTheme();
+        var next = current === 'dark' ? 'light' : 'dark';
+
+        root.classList.add('theme-switching');
+        root.setAttribute('data-theme', next);
+        pinBrowserChrome(next);
+        try { window.localStorage.setItem('theme', next); } catch (e) {}
+
+        /* Read back a layout value to flush the swap before transitions
+           are allowed again. */
+        void root.offsetWidth;
+        root.classList.remove('theme-switching');
+
+        document.dispatchEvent(new CustomEvent('themechange', { detail: { theme: next } }));
+      });
+    });
+  })();
+  </script>
+
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+</head>

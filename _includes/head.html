@@ -1,0 +1,4 @@
+{%- comment -%}
+  Selects the frontend variant. See `frontend` in _config.yml.
+{%- endcomment -%}
+{%- if site.frontend == 'legacy' -%}{%- include legacy/head.html -%}{%- else -%}{%- include modern/head.html -%}{%- endif -%}

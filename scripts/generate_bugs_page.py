@@ -338,7 +338,7 @@ def build_visuals_html(apps_data: List[Dict], total: int, conf: int, fix: int, p
         tooltip_text = f"{app_name}: {c} Confirmed, {fx} Fixed, {p} Pending, {r} Rejected ({app_total} total)"
 
         html_parts.extend([
-            f'      <div class="app-bar-row" title="{html.escape(tooltip_text)}" style="cursor: pointer;" onclick="toggleAppAccordion(\'{app_slug}\')">',
+            f'      <div class="app-bar-row" title="{html.escape(tooltip_text)}" role="button" tabindex="0" onclick="toggleAppAccordion(\'{app_slug}\')">',
             '        <div class="app-bar-info">',
             f'          <span class="app-bar-name">{logo_svg} <strong>{html.escape(app_name)}</strong> <span class="app-bar-domain">{html.escape(app_cat)}</span></span>',
             f'          <span class="app-bar-total">{app_total} bugs</span>',
@@ -404,20 +404,20 @@ def build_toolbar_html(total: int, conf: int, fix: int, pend: int, rej: int) -> 
     html_parts = [
         '<div class="bugs-toolbar">',
         '  <div class="bugs-search-box">',
-        '    <span aria-hidden="true" style="color: #64748b; font-size: 0.9rem;">🔍</span>',
+        '    <span class="bugs-search-icon" aria-hidden="true">🔍</span>',
         '    <input type="text" id="bugSearchInput" class="bugs-search-input" placeholder="Search by API, keyword, or title..." aria-label="Search bugs">',
         '  </div>',
         '  <div class="bugs-filter-group">',
-        f'    <button class="filter-btn active" data-filter="all">All ({total})</button>',
-        f'    <button class="filter-btn" data-filter="Confirmed"><span class="filter-dot dot-confirmed"></span>Confirmed ({conf})</button>',
-        f'    <button class="filter-btn" data-filter="Fixed"><span class="filter-dot dot-fixed"></span>Fixed ({fix})</button>',
-        f'    <button class="filter-btn" data-filter="Pending"><span class="filter-dot dot-pending"></span>Pending ({pend})</button>',
-        f'    <button class="filter-btn" data-filter="Rejected"><span class="filter-dot dot-rejected"></span>Rejected ({rej})</button>',
+        f'    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All ({total})</button>',
+        f'    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed ({conf})</button>',
+        f'    <button type="button" class="filter-btn" data-filter="Fixed" aria-pressed="false"><span class="filter-dot dot-fixed"></span>Fixed ({fix})</button>',
+        f'    <button type="button" class="filter-btn" data-filter="Pending" aria-pressed="false"><span class="filter-dot dot-pending"></span>Pending ({pend})</button>',
+        f'    <button type="button" class="filter-btn" data-filter="Rejected" aria-pressed="false"><span class="filter-dot dot-rejected"></span>Rejected ({rej})</button>',
         '  </div>',
         '  <div class="bugs-action-group">',
-        '    <button class="action-btn" id="expandAllBtn">Expand All</button>',
-        '    <button class="action-btn" id="collapseAllBtn">Collapse All</button>',
-        f'    <span style="font-size: 0.8rem; color: #64748b; font-weight: 500; margin-left: 4px;">Showing <strong id="visibleCount" style="color: #0f172a;">{total}</strong> of {total}</span>',
+        '    <button type="button" class="action-btn" id="expandAllBtn">Expand All</button>',
+        '    <button type="button" class="action-btn" id="collapseAllBtn">Collapse All</button>',
+        f'    <span class="bugs-visible-count">Showing <strong id="visibleCount">{total}</strong> of {total}</span>',
         '  </div>',
         '</div>',
         '<div id="noBugsMessage" class="no-bugs-found">No reported bugs matched your filter or search query.</div>',
@@ -552,20 +552,32 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <script>
 (function() {{
+  // Read a design token so the chart follows the active colour scheme.
+  function cssVar(name, fallback) {{
+    var v = getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    return v || fallback;
+  }}
+
   // 1. Chart.js Donut Initialization
+  var donutChart = null;
+
+  function donutColors() {{
+    return [cssVar('--c-ok', '#10b981'), cssVar('--c-info', '#3b82f6'), cssVar('--c-warn', '#f59e0b'), cssVar('--c-danger', '#ef4444')];
+  }}
+
   function initChart() {{
     const ctx = document.getElementById('statusDonutChart');
     if (!ctx || typeof Chart === 'undefined') return;
 
-    new Chart(ctx, {{
+    donutChart = new Chart(ctx, {{
       type: 'doughnut',
       data: {{
         labels: ['Confirmed', 'Fixed', 'Pending', 'Rejected'],
         datasets: [{{
           data: [{conf}, {fix}, {pend}, {rej}],
-          backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444'],
+          backgroundColor: donutColors(),
           borderWidth: 2,
-          borderColor: '#ffffff',
+          borderColor: cssVar('--surface', '#ffffff'),
           hoverOffset: 6
         }}]
       }},
@@ -596,6 +608,15 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
     initChart();
   }}
 
+  // The chart paints with canvas pixels, not CSS, so it is repainted by hand
+  // when the theme toggle changes the tokens underneath it.
+  document.addEventListener('themechange', function() {{
+    if (!donutChart) return;
+    donutChart.data.datasets[0].backgroundColor = donutColors();
+    donutChart.data.datasets[0].borderColor = cssVar('--surface', '#ffffff');
+    donutChart.update('none');
+  }});
+
   // 2. Global helper to toggle an accordion and scroll to it
   window.toggleAppAccordion = function(slug) {{
     const el = document.getElementById('app-' + slug);
@@ -606,6 +627,16 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
 
   // 3. Search and Status Filtering
   document.addEventListener('DOMContentLoaded', function() {{
+    // The application bars act as buttons, so give them keyboard activation too.
+    document.querySelectorAll('.app-bar-row[role="button"]').forEach(function(row) {{
+      row.addEventListener('keydown', function(e) {{
+        if (e.key === 'Enter' || e.key === ' ') {{
+          e.preventDefault();
+          row.click();
+        }}
+      }});
+    }});
+
     const searchInput = document.getElementById('bugSearchInput');
     const filterBtns = document.querySelectorAll('.filter-btn');
     const expandAllBtn = document.getElementById('expandAllBtn');
@@ -664,8 +695,12 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
 
     filterBtns.forEach(function(btn) {{
       btn.addEventListener('click', function() {{
-        filterBtns.forEach(b => b.classList.remove('active'));
+        filterBtns.forEach(function(b) {{
+          b.classList.remove('active');
+          b.setAttribute('aria-pressed', 'false');
+        }});
         btn.classList.add('active');
+        btn.setAttribute('aria-pressed', 'true');
         activeFilter = btn.getAttribute('data-filter') || 'all';
         applyFilters();
       }});

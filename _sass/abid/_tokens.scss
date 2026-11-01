@@ -1,0 +1,202 @@
+/* ==========================================================================
+   Design tokens
+   A single numeric/semantic scale. Dark mode re-declares the same names, so
+   no component ever needs a theme-specific rule.
+   ========================================================================== */
+
+:root {
+  color-scheme: light;
+
+  /* --- Type families ---------------------------------------------------- */
+  --font-serif: "Source Serif 4", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+  /* --- Weights (named so they can be retuned globally) ------------------- */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* --- Type scale ------------------------------------------------------- */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-md: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.3125rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  /* --- Spacing ---------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+
+  /* --- Radii ------------------------------------------------------------ */
+  --radius-xs: 3px;
+  --radius-sm: 5px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 999px;
+
+  /* --- Measure / shell -------------------------------------------------- */
+  --content-max: 44rem;
+  --shell-max: max(68rem, var(--content-max));
+  --gutter: 1.25rem;
+  --header-height: 4rem;
+
+  /* --- Hairlines: true 0.5px on retina ---------------------------------- */
+  --hairline: 1px;
+
+  /* --- Motion ----------------------------------------------------------- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 120ms;
+  --dur-base: 180ms;
+  --dur-slow: 280ms;
+
+  /* --- Z-index scale ---------------------------------------------------- */
+  --z-base: 1;
+  --z-sticky: 100;
+  --z-header: 200;
+  --z-skiplink: 400;
+
+  /* --- Neutrals (light) ------------------------------------------------- */
+  --paper: #fbfaf7;
+  --surface: #ffffff;
+  --surface-2: #f4f3ef;
+  --surface-3: #ecebe5;
+
+  --ink: #15171a;
+  --ink-soft: #3b4149;
+  --ink-muted: #6a7178;
+  --ink-faint: #949aa1;
+
+  --rule: rgba(21, 23, 26, 0.13);
+  --rule-soft: rgba(21, 23, 26, 0.07);
+
+  /* --- Accent ----------------------------------------------------------- */
+  --accent: #1c4f6e;
+  --accent-hover: #123b54;
+  --accent-wash: rgba(28, 79, 110, 0.08);
+  --accent-line: rgba(28, 79, 110, 0.24);
+
+  --gold: #8a6208;
+  --gold-wash: rgba(176, 129, 36, 0.14);
+  --gold-line: rgba(176, 129, 36, 0.32);
+
+  /* --- Semantic status (bug tracker) ------------------------------------ */
+  --ok: #0f7a53;
+  --ok-wash: #e9f7f0;
+  --ok-line: #b4e2ce;
+
+  --info: #1d5fc4;
+  --info-wash: #ebf2fe;
+  --info-line: #bed3f7;
+
+  --warn: #91601a;
+  --warn-wash: #fdf4e3;
+  --warn-line: #f0dcb2;
+
+  --danger: #ad2a22;
+  --danger-wash: #fdeeec;
+  --danger-line: #f4c9c4;
+
+  /* Solid chart fills: must stay legible on either canvas */
+  --c-ok: #12a06a;
+  --c-info: #3b82f6;
+  --c-warn: #e0912f;
+  --c-danger: #e05a4f;
+  --c-track: var(--surface-3);
+
+  /* --- Elevation -------------------------------------------------------- */
+  --ring: 0 0 0 var(--hairline) var(--rule);
+  --shadow-sm: var(--ring), 0 1px 2px rgba(21, 23, 26, 0.04);
+  --shadow-md: var(--ring), 0 2px 4px rgba(21, 23, 26, 0.03), 0 8px 20px -10px rgba(21, 23, 26, 0.14);
+  --shadow-lg: var(--ring), 0 4px 8px rgba(21, 23, 26, 0.04), 0 18px 40px -16px rgba(21, 23, 26, 0.2);
+
+  --selection: rgba(28, 79, 110, 0.16);
+}
+
+@media only screen and (min-resolution: 192dpi), only screen and (-webkit-min-device-pixel-ratio: 2) {
+  :root { --hairline: 0.5px; }
+}
+
+/* Pages that need the full width (dashboards, embedded PDFs) opt in. */
+body.layout-wide { --content-max: 80rem; }
+
+/* ==========================================================================
+   Dark theme — the same token names with different values.
+
+   Applied twice: once for visitors whose system asks for dark and who have
+   not chosen otherwise, and once for an explicit choice stored by the theme
+   toggle. [data-theme="light"] therefore always wins over a dark system.
+   ========================================================================== */
+
+@mixin dark-theme {
+  color-scheme: dark;
+
+  --paper: #101215;
+  --surface: #171a1e;
+  --surface-2: #1e2227;
+  --surface-3: #262b31;
+
+  --ink: #e9eaec;
+  --ink-soft: #c2c7cc;
+  --ink-muted: #969ca3;
+  --ink-faint: #71787f;
+
+  --rule: rgba(255, 255, 255, 0.13);
+  --rule-soft: rgba(255, 255, 255, 0.07);
+
+  --accent: #7fb8da;
+  --accent-hover: #a6d0ea;
+  --accent-wash: rgba(127, 184, 218, 0.12);
+  --accent-line: rgba(127, 184, 218, 0.3);
+
+  --gold: #d9ad5e;
+  --gold-wash: rgba(217, 173, 94, 0.13);
+  --gold-line: rgba(217, 173, 94, 0.3);
+
+  --ok: #4ec79c;
+  --ok-wash: rgba(78, 199, 156, 0.12);
+  --ok-line: rgba(78, 199, 156, 0.28);
+
+  --info: #79aaf5;
+  --info-wash: rgba(121, 170, 245, 0.12);
+  --info-line: rgba(121, 170, 245, 0.28);
+
+  --warn: #e0ad5f;
+  --warn-wash: rgba(224, 173, 95, 0.12);
+  --warn-line: rgba(224, 173, 95, 0.28);
+
+  --danger: #ed8278;
+  --danger-wash: rgba(237, 130, 120, 0.12);
+  --danger-line: rgba(237, 130, 120, 0.28);
+
+  --c-ok: #2bb881;
+  --c-info: #5b94ef;
+  --c-warn: #d99a3f;
+  --c-danger: #dc6a5f;
+  --c-track: rgba(255, 255, 255, 0.08);
+
+  --shadow-sm: var(--ring), 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: var(--ring), 0 2px 6px rgba(0, 0, 0, 0.32), 0 10px 24px -12px rgba(0, 0, 0, 0.6);
+  --shadow-lg: var(--ring), 0 4px 10px rgba(0, 0, 0, 0.34), 0 20px 44px -18px rgba(0, 0, 0, 0.7);
+
+  --selection: rgba(127, 184, 218, 0.26);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { @include dark-theme; }
+}
+
+:root[data-theme="dark"] { @include dark-theme; }

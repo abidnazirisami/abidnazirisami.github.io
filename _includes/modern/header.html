@@ -1,0 +1,39 @@
+<header class="site-header">
+  <div class="wrapper site-header__inner">
+    <a class="site-brand" href="{{ '/' | relative_url }}" rel="author">
+      <span class="site-brand__name">{{ site.title | escape }}</span>
+      <span class="site-brand__role">{{ site.description | strip_newlines | strip | escape }}</span>
+    </a>
+
+    <div class="site-header__tools">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- if page_paths -%}
+    <nav class="site-nav" aria-label="Primary">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" aria-label="Show navigation menu">
+      <label for="nav-trigger" class="nav-toggle" aria-hidden="true">
+        <svg viewBox="0 0 20 20" width="20" height="20" fill="none" stroke="currentColor"
+             stroke-width="1.75" stroke-linecap="round">
+          <line class="nav-toggle__bar nav-toggle__bar--top" x1="3" y1="5" x2="17" y2="5"/>
+          <line class="nav-toggle__bar nav-toggle__bar--mid" x1="3" y1="10" x2="17" y2="10"/>
+          <line class="nav-toggle__bar nav-toggle__bar--bot" x1="3" y1="15" x2="17" y2="15"/>
+        </svg>
+      </label>
+
+      <div class="nav-links">
+        {%- for path in page_paths -%}
+          {%- assign nav_page = site.pages | where: "path", path | first -%}
+          {%- if nav_page.title -%}
+            {%- assign nav_url = nav_page.url | relative_url -%}
+            <a class="nav-link{% if nav_page.nav_cta %} nav-link--cta{% endif %}"
+               href="{{ nav_url }}"
+               {% if page.url == nav_page.url %}aria-current="page"{% endif %}>{{ nav_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </nav>
+    {%- endif -%}
+    {%- include modern/theme-toggle.html -%}
+    </div>
+  </div>
+</header>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if site.frontend == 'legacy' %} class="frontend-legacy"{% endif %}>
+  {%- include head.html -%}
+  {%- if site.frontend == 'legacy' -%}
+  <body class="page-{{ page.title | default: 'home' | slugify }}">
+    {%- include header.html -%}
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="page-body">
+          {{ content }}
+        </article>
+      </div>
+    </main>
+    {%- include footer.html -%}
+  </body>
+  {%- else -%}
+  <body class="{% if page.wide %}layout-wide {% endif %}page-{{ page.title | default: 'home' | slugify }}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    {%- include header.html -%}
+
+    <main class="page-content" id="main">
+      <div class="wrapper">
+        <article class="page-body">
+          {{ content }}
+        </article>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+  </body>
+  {%- endif -%}
+</html>

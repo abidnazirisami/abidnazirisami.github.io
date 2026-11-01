@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
-  {% include head.html %}
-  <body>
-    {% include header.html %}
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}"{% if site.frontend == 'legacy' %} class="frontend-legacy"{% endif %}>
+  {%- include head.html -%}
+  {%- if site.frontend == 'legacy' -%}
+  <body class="page-{{ page.title | slugify }}">
+    {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
@@ -13,10 +14,45 @@
           </a>
         </div>
 
-        {{ content }}
+        {%- unless page.hide_title -%}
+        <h1 class="page-title">{{ page.title | escape }}</h1>
+        {%- endunless -%}
+
+        <article class="page-body">
+          {{ content }}
+        </article>
       </div>
     </main>
 
-    {% include footer.html %}
+    {%- include footer.html -%}
   </body>
-  </html>
+  {%- else -%}
+  <body class="{% if page.wide %}layout-wide {% endif %}page-{{ page.title | slugify }}">
+    <a class="skip-link" href="#main">Skip to content</a>
+    {%- include header.html -%}
+
+    <main class="page-content" id="main">
+      <div class="wrapper">
+        <div class="back-home-container">
+          <a class="back-home" href="{{ '/' | relative_url }}">
+            <span class="back-home-arrow" aria-hidden="true">&larr;</span>
+            <span>Back to homepage</span>
+          </a>
+        </div>
+
+        {%- unless page.hide_title -%}
+        <header>
+          <h1 class="page-title">{{ page.title | escape }}</h1>
+        </header>
+        {%- endunless -%}
+
+        <article class="page-body{% if page.body_style == 'cv' %} page-body--cv{% endif %}">
+          {{ content }}
+        </article>
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+  </body>
+  {%- endif -%}
+</html>
