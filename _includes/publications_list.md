@@ -24,7 +24,7 @@
     <span class="pub-authors">[Feiran Qin](https://nsdi.dev/), [M M Abid Naziri](/), Hengyu Ai, [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-award">🏆 IEEE Computer Society TCSE Best Student Paper Award</span>
     <span class="pub-venue">*IEEE International Conference on Software Testing, Verification and Validation (accpt. 26.9% [44/163])*</span>
-    <span class="pub-where">[ICST 2026](https://conf.researchr.org/home/icst-2026), Daejeon, Republic of Korea, May 2026.</span>
+    <span class="pub-where">[ICST 2026](https://conf.researchr.org/details/icst-2026/icst-2026-research/38/How-Effective-Is-Coverage-Guided-Fuzzing-to-Test-Deep-Learning-Library-APIs-), Daejeon, Republic of Korea, May 2026.</span>
     <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Coverage-guided fuzzing</span> <span class="pub-tag">LLM harness synthesis</span></span>
 
     <details class="disclosure">
