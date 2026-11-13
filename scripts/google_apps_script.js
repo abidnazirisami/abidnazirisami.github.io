@@ -1006,7 +1006,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.ldexp raises NotImplementedError for a bool exponent (eager), while torch.compile and the decomposition accept it",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-distributions-cauchy;torch-distributions-cauchy--long",
@@ -1018,7 +1018,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.distributions.Cauchy.log_prob returns -inf (and NaN gradients) for large |value - loc| / scale because the square overflows",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-distributions-normal",
@@ -1030,7 +1030,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.distributions.Normal.log_prob returns NaN for very large or very small scale because scale**2 overflows/underflows",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-distributions-laplace",
@@ -1042,7 +1042,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.distributions.Laplace cdf/icdf return a zero gradient at the median (value == loc, p == 0.5)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-distributions-laplace",
@@ -1054,7 +1054,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.distributions.Laplace.icdf returns -inf (and loses accuracy) for small tail probabilities",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai",
@@ -1066,7 +1066,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.special.bessel_j0 / bessel_j1 / bessel_y0 lose ~9 significant digits in float64: the Cephes p1evl denominators drop their implied leading 1",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-special-logit",
@@ -1078,7 +1078,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[CPU] logit_backward and six activation backward kernels return a different gradient at NaN depending on tensor length",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-maximum;torch-maximum--long",
@@ -1090,7 +1090,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.minimum and torch.maximum return a zero whose sign depends on the tensor length",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-trace;torch-trace--opus-4-8",
@@ -1102,7 +1102,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`torch.trace` raises `NotImplementedError` for `float16` input on CPU — no kernel registered for `Half`, no documented exclusion, NumPy handles it fine",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ],
     [
       "torch.unique",
@@ -1114,7 +1114,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.unique returns duplicate sub-tensors when the input contains NaN",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch.arctanh",
@@ -1126,7 +1126,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "torch-clamp--long",
@@ -1138,7 +1138,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "torch.clamp with a bound unrepresentable in the tensor dtype: eager raises, torch.compile ignores the bound",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "TensorFlow": [
@@ -1958,7 +1958,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "betaln(a, b) is too large by exactly min(a, b) when min(a, b)/max(a, b) is subnormal",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-numpy-histogram",
@@ -1970,7 +1970,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jnp.histogram assigns values lying exactly on an interior bin edge to the wrong bin",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-pareto",
@@ -1982,7 +1982,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-expon",
@@ -1994,7 +1994,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.expon.logcdf returns -inf for small positive x (log1p(-sf) cancellation)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-laplace",
@@ -2006,7 +2006,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.laplace.cdf gives NaN gradients in the tails (unselected branch overflows)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-jit",
@@ -2018,7 +2018,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-zeta;jax-scipy-special-zeta--long",
@@ -2030,7 +2030,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s < 1)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-poisson;jax-scipy-stats-poisson--long",
@@ -2042,7 +2042,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.poisson.entropy returns NaN gradients for large mu (and small mu in float32)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-betaln",
@@ -2054,7 +2054,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.beta returns nan / wrong sign at multiple defined points (negative integers, ±inf, -0)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-i0;jax-scipy-special-i1",
@@ -2066,7 +2066,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.i1 overflows to inf for large finite float64 input",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-uniform",
@@ -2078,7 +2078,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.uniform.cdf/pdf/logpdf silently map NaN input to finite values (pdf(nan) == 1.0)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-vonmises",
@@ -2090,7 +2090,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.vonmises.pdf returns nan at kappa=0.0",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-rel-entr",
@@ -2102,7 +2102,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — SciPy compatibility mismatch",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-kl-div",
@@ -2114,7 +2114,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.kl_div returns nan instead of inf at x=inf, y=0.0",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-cauchy",
@@ -2126,7 +2126,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.cauchy.ppf/isf: no quantile-domain handling — ppf(0) returns large finite value (wrong sign in float32), q outside [0,1] returns garbage",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-chi2",
@@ -2138,7 +2138,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.chi2.logpdf returns NaN at x=0 and x=inf when df=2 (inconsistent with gamma.logpdf)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-dirichlet",
@@ -2150,7 +2150,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.dirichlet.logpdf returns -inf at simplex boundary where density diverges to +inf (alpha<1)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-multinomial",
@@ -2162,7 +2162,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.multinomial.logpmf/pmf return -inf for all rows of a batched input (sum reduces over all axes, not axis=-1)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-erfcx",
@@ -2174,7 +2174,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.erfcx returns spurious 0.0 in a band near x≈26.6 (should be ~0.0212; scipy/torch agree)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8",
@@ -2186,7 +2186,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan`",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ],
     [
       "jax-numpy-abs;jax-numpy-abs--opus-4-8",
@@ -2198,7 +2198,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`jnp.abs(inf + nan*j)` returns `nan` — violates IEEE 754 / C99 \"infinity dominates\" rule for complex magnitude",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-digamma--opus-4-8",
@@ -2210,7 +2210,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf`",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-loggamma--again",
@@ -2222,7 +2222,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.loggamma returns nan instead of inf at x=0.0 and x=-0.0",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-zeta--again",
@@ -2234,7 +2234,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.lax.zeta gives wrong results for negative non-integer q (Euler-Maclaurin breakdown)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax.Array.sum",
@@ -2246,7 +2246,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.Array.sum silently ignores the `initial` argument",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax.fwd_and_bwd",
@@ -2258,7 +2258,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.fwd_and_bwd silently discards keyword arguments",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax.lax.pmean",
@@ -2270,7 +2270,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-gammaln--long",
@@ -2282,7 +2282,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-rel-entr;jax-scipy-special-kl-div;jax-scipy-special-kl-div--long",
@@ -2294,7 +2294,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.rel_entr / kl_div lose all precision for p close to q and return nan for large p (p*log(p) - p*log(q))",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-gammaincc;jax-scipy-special-gammaincc--long",
@@ -2306,7 +2306,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.gammaincc returns values far outside [0, 1] for large a (continued fraction stops unconverged)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-random-poisson",
@@ -2318,7 +2318,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.random.poisson: samples for large lam (>~2e5) have the wrong variance (+46% at lam=1e8)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-t",
@@ -2330,7 +2330,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-numpy-linalg-eigh",
@@ -2342,7 +2342,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-expn",
@@ -2354,7 +2354,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n >= 2",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-numpy-floor-divide;jax-numpy-floor-divide--long",
@@ -2366,7 +2366,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-special-expi--again;jax-scipy-special-expi--long",
@@ -2378,7 +2378,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "jax.scipy.special.expi(0.0)` returns nan instead of -inf",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax-scipy-stats-poisson--again",
@@ -2390,7 +2390,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jax#1;jax_1",
@@ -2402,7 +2402,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "vLLM": [
@@ -2452,7 +2452,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: gigachat3, granite and granite-20b-fc tool parsers lose tool calls when the whole message arrives in a single streaming delta",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-reasoning-olmo3-reasoning-parser;vllm-reasoning-deepseek-r1-reasoning-parser;vllm-reasoning-ernie45-reasoning-parser;vllm-parser-abstract-parser",
@@ -2464,7 +2464,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: Reasoning parsers mishandle markers in multi-token streaming deltas",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tokenizers-detokenizer-utils",
@@ -2476,7 +2476,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(logprobs): guard convert_ids_list_to_tokens against out-of-range ids",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-utils-argparse-utils",
@@ -2488,7 +2488,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Parse human-readable ints with Decimal to avoid off-by-one",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-utils-argparse-utils",
@@ -2500,7 +2500,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Avoid an IndexError for trailing dotted CLI args",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-reasoning-olmo3-reasoning-parser",
@@ -2512,7 +2512,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix][Reasoning] Olmo3: keep literal think tags in streamed content",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long",
@@ -2524,7 +2524,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bugfix] Let an optional Literal flag accept the None it advertises",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long",
@@ -2536,7 +2536,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix][Tool Parser] Return early for unlisted tool names in InternLM2 parser",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-utils-collection-utils",
@@ -2548,7 +2548,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Invalidate LazyDict cache on __setitem__",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-utils-collection-utils",
@@ -2560,7 +2560,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix][Core] Preserve None values in swap_dict_values",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tool-parsers-utils",
@@ -2572,7 +2572,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Fix extreme case in pythonic parser argument json safety",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-sampling-params-structuredoutputsparams",
@@ -2584,7 +2584,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bugfix][Structured Outputs] Reject empty `structural_tag` at request validation",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tool-parsers-xlam-tool-parser;vllm-tool-parsers-hunyuan-a13b-tool-parser",
@@ -2596,7 +2596,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: xlam and hunyuan_a13b tool parsers drop the arguments of any tool call that follows an empty-argument call (streaming)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-reasoning-basic-parsers",
@@ -2608,7 +2608,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Count reasoning tokens when the start token is absent",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-entrypoints-openai-completion-protocol-completionreques",
@@ -2620,7 +2620,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] reject empty prompt lists in CompletionRequest",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-entrypoints-openai-completion-protocol-completionreques",
@@ -2632,7 +2632,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix][Frontend] Avoid mutating OpenAI request extra args",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-reasoning-deepseek-v3-reasoning-parser",
@@ -2644,7 +2644,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bugfix][Frontend] Count reasoning tokens for Harmony, DeepSeek-V3 and Step3 parsers",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-reasoning-ernie45-reasoning-parser",
@@ -2656,7 +2656,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(reasoning): recompute ernie45 response-end index after stripping prefix",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-v1-structured-output",
@@ -2668,7 +2668,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bugfix] Escape control characters in xgrammar choice grammar",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-v1-structured-output",
@@ -2680,7 +2680,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Make Lark-to-EBNF quote handling escape-aware",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tool-parsers-abstract-tool-parser-toolparser",
@@ -2692,7 +2692,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Avoid mutating tool parameters in _get_tool_schema_defs",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long",
@@ -2704,7 +2704,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Limit split to first marker in internlm2 tool parser",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-model-executor-models-qwen3-moe",
@@ -2716,7 +2716,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: Qwen3MoeSparseMoeBlock rejects its documented 1D input",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-model-executor-layers-rotary-embedding-fope",
@@ -2728,7 +2728,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: FourierRotaryEmbedding pads sin with 1 and corrupts unrotated channels",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm-lora;vllm-lora--again;vllm-lora--long",
@@ -2740,7 +2740,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix][LoRA] Skip no-LoRA tokens (index -1) in CPU torch bgmv ops",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.multimodal.audio.AudioSpec",
@@ -2752,7 +2752,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: AudioSpec(target_channels=1) does not produce 1D mono output for single-channel 2D audio",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.utils.system_utils.suppress_stdout",
@@ -2764,7 +2764,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.utils.system_utils.suppress_stdout",
@@ -2776,7 +2776,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.plugins.lora_resolvers.filesystem_resolver.register_filesystem_resolver",
@@ -2788,7 +2788,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: FilesystemResolver loads adapters outside VLLM_LORA_RESOLVER_CACHE_DIR (path traversal via LoRA name)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.models.deepseek_v4.common.mm_preprocess.DeepseekV4VLImageProcessor",
@@ -2800,7 +2800,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bug]: DeepSeek-V4 VL dummy image is not the worst case for multimodal profiling",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.v1.sample.thinking_budget_state.ThinkingBudgetStateHolder",
@@ -2812,7 +2812,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: ThinkingBudgetStateHolder maps every request to logits row 0 when spec decoding is on but a step has no drafts",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm.v1.sample.thinking_budget_state.ThinkingBudgetStateHolder",
@@ -2824,7 +2824,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]: ThinkingBudgetStateHolder.sync_batch leaks stale state on unidirectional moves",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window",
@@ -2836,7 +2836,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bug]: vLLM hangs indefinitely with low `num_gpu_blocks_override`",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ],
     [
       "vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window",
@@ -2848,7 +2848,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bug]: `block_size=8` triggers Triton CompilationError in FlexAttention kernel; other backends correctly reject",
-      "claude-opus-4-8"
+      "Agentic-PBT"
     ]
   ],
   "SGLang": [
@@ -2898,7 +2898,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(completion): treat None suffix as empty in FIM prompt builder",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-qwen25-detector",
@@ -2910,7 +2910,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Fix] Keep normal text preceding the tool-call opener in streaming parsers",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-qwen25-detector;sglang-srt-function-call-function-call-parser-functioncallpa;sglang-srt-function-call-llama32-detector;sglang-srt-function-call-gigachat3-detector;sglang-srt-function-call-hermes-detector--long;sglang-srt-function-call-llama32-detector--long;sglang-srt-function-call-mistral-detector--long",
@@ -2922,7 +2922,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] 9 tool-call parsers drop arguments when one streaming increment has more than one complete call",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long",
@@ -2934,7 +2934,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]  8 tool-call parsers give wrong or missing calls in token-by-token streaming",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-llama32-detector;sglang-srt-function-call-lfm2-detector--long;sglang-srt-function-call-llama32-detector--long",
@@ -2946,7 +2946,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(function_call): skip non-object entries in parse_base_json",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-mimo-detector;sglang-srt-function-call-mimo-detector--long",
@@ -2958,7 +2958,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] MiMo tool-call streaming: text after the last tool call is silently dropped; split bot-token flushes markup into content",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-trinity-detector",
@@ -2970,7 +2970,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(function_call): strip think tags split across stream chunks in Trinity",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-parser-reasoning-parser-reasoningparser;sglang-srt-parser-reasoning-parser-reasoningparser--long",
@@ -2982,7 +2982,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Fix] Cohere Command4: strip echoed `<|START_THINKING|>` in streaming and flush the final text block",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-mimo-detector;sglang-srt-function-call-qwen3-coder-detector;sglang-srt-function-call-mimo-detector--long;sglang-srt-function-call-poolside-v1-detector--long",
@@ -2994,7 +2994,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix(function_call): handle non-finite numbers in tool-call argument coercion",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-layers-deep-gemm-wrapper-configurer",
@@ -3006,7 +3006,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] JIT DeepGEMM is enabled on SM121 (GB10 / DGX Spark): the SM120 exclusion checks `== 120` instead of the consumer-Blackwell family",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-parser-harmony-parser;sglang-srt-parser-harmony-parser--long",
@@ -3018,7 +3018,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[parser] Hold back harmony markers split across streaming chunks",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long",
@@ -3030,7 +3030,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "fix: truncate xgrammar accepted_tokens in place on rollback",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang.srt.function_call.apertus2509_detector.Apertus2509Detector",
@@ -3042,7 +3042,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "Apertus2509Detector (streaming) drops the second tool block and trailing text when they arrive in the same chunk`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-entrypoints-ollama-serving--long",
@@ -3054,7 +3054,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Ollama] Map options.seed to the sampling_seed field",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-deepseekv3-detector--long",
@@ -3066,7 +3066,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "Tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-hunyuan-detector--long",
@@ -3078,7 +3078,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Fix] Parse Hunyuan tool arguments with JSON Schema type arrays",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-llama32-detector--long;sglang#1",
@@ -3090,7 +3090,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Flush pending tool calls at end of stream in the Llama 3.2 detector",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-llama32-detector--long",
@@ -3102,7 +3102,7 @@ const BUG_SHEETS_DATA = {
       "Open",
       "",
       "[Bugfix] Preserve single quotes inside JSON values in Llama32 streaming tool calls",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-mistral-detector--long;sglang_1",
@@ -3114,7 +3114,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "Tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517",
@@ -3126,7 +3126,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "[Bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-function-call-parser-functioncallpa",
@@ -3138,7 +3138,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] DeepSeekV31Detector.structure_info() omits `<｜tool▁calls▁begin｜>`, so its own detect_and_parse returns no tool call",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long",
@@ -3150,7 +3150,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] Glm4MoeDetector streaming emits invalid JSON when a non-string parameter's value is not valid JSON",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long",
@@ -3162,7 +3162,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug]  Glm4MoeDetector changes string-typed argument values that look like JSON (\"true\" → \"True\", \"1.50\" → \"1.5\")",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-entrypoints-openai-protocol;sglang-srt-entrypoints-openai-protocol--long",
@@ -3174,7 +3174,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] ChatCompletionRequest.set_json_schema mutates the caller's response_format schema (reused schemas change behaviour)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-cohere-command4-detector;sglang-srt-function-call-cohere-command4-detector--long",
@@ -3186,7 +3186,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] cohere_command4 detector (streaming) drops the tool call when text and the whole action block arrive in one chunk",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long",
@@ -3198,7 +3198,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] deepseekv31 detector (streaming) drops the text that shares a delta with the start of a tool call",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long",
@@ -3210,7 +3210,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] deepseekv31 detector (streaming): greedy name regex drops a call and attaches the next call's arguments to it",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-hunyuan-detector;sglang-srt-function-call-hunyuan-detector--long",
@@ -3222,7 +3222,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] hunyuan detector (streaming): control characters in string arguments produce invalid, corrupted JSON",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-function-call-trinity-detector",
@@ -3234,7 +3234,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] trinity detector removes `<think>` / `</think>` from inside tool-call arguments",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-entrypoints-ollama-serving",
@@ -3246,7 +3246,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] Ollama streaming endpoints mangle the output when `--incremental-streaming-output` is on",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-utils-hf-transformers-common",
@@ -3258,7 +3258,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] `get_hf_text_config` raises AttributeError when `thinker_config` holds a dict `text_config`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-parser-harmony-parser",
@@ -3270,7 +3270,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] HarmonyParser streaming: arguments of a tool call on the analysis channel are emitted as reasoning",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long",
@@ -3282,7 +3282,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Bug] XGrammarGrammarBackend._sanitize_structural_format` skips `optional`, `star`, `plus`, `repeat`, `dispatch`, `token_dispatch` and `token_triggered_tags`, so a `null` `json_schema` inside them is rejected",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "ArangoDB": [
@@ -3332,7 +3332,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "AQL `SUBSTITUTE()` returns `null` for an empty input string",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-functions-string-substitute; co-author's Agentic-PBT run",
@@ -3344,7 +3344,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`SUBSTITUTE` returns null and an ICU warning for an empty input string",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
@@ -3356,7 +3356,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`TO_NUMBER` converts a valid subnormal decimal string to zero",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
@@ -3368,7 +3368,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "APPEND(null, [])` returns null instead of the other input array",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
@@ -3380,7 +3380,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "REVERSE corrupts a single astral Unicode character",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
@@ -3392,7 +3392,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`FIND_FIRST` and `FIND_LAST` fail to find present control characters",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
@@ -3404,7 +3404,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "`REGEX_MATCHES` reports a match for an empty string that cannot match",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-operators-array-comparison-operators;aql-operators-array-comparison-operators--long",
@@ -3416,7 +3416,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AT LEAST (<n>) (<expression>) is true even when n is larger than the array's length",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again",
@@ -3428,7 +3428,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "Persistent index with deterministic SORT and offset LIMIT incorrectly returns an empty result",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "DATE_DIFF();DATE_ISO8601()",
@@ -3440,7 +3440,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ArangoDB DATE_ISO8601() applies the sign of a negative UTC offset only to its hours, not its minutes",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "NGRAM_MATCH()",
@@ -3452,7 +3452,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ArangoDB `NGRAM_MATCH()` counts one attribute n-gram many times (stale DP diagonal)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "TO_ARRAY()",
@@ -3464,7 +3464,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ArangoDB AQL `SORTED()` replaces distinct elements that compare equal",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "JSON_PARSE();PI()",
@@ -3476,7 +3476,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`JSON_PARSE` exponent numbers can read beyond the input string",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "JSON_PARSE()",
@@ -3488,7 +3488,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`JSON_PARSE` can misround fractions and large integer tokens",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-execution-and-performance-query-optimization-optimizer-r",
@@ -3500,7 +3500,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL `use-indexes` uses a sparse index for a range condition that can match `null` when an `OR` branch proves non-null, dropping rows",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-functions-string-substitute",
@@ -3512,7 +3512,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL `SUBSTITUTE()` with several search values skips a match that starts right where the previous replacement ended",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-operators-arithmetic-operators",
@@ -3524,7 +3524,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-operators-ternary-operator",
@@ -3536,7 +3536,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL `remove-redundant-calculations` treats `(a ? b : c) ? d : e` and `a ? b : (c ? d : e)` as the same calculation",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "develop-http-api-import",
@@ -3548,7 +3548,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`POST /_api/import` stores duplicate attribute names from document and tabular input",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "develop-http-api-import",
@@ -3560,7 +3560,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "indexes-and-search-indexing-working-with-indexes-persistent--again",
@@ -3572,7 +3572,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL `COLLECT` served from a persistent index merges the array values `[]` and `[null]` into one group",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "aql-operators-ternary-operator--again",
@@ -3584,7 +3584,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "AQL ternary operator evaluates an untaken operand when it contains an array expansion with a subquery",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "arangodb#1;arangodb_1",
@@ -3596,7 +3596,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`DATE_ROUND` with a large positive amount terminates the server with SIGFPE",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "arangodb#1;arangodb_1",
@@ -3608,7 +3608,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`DATE_ROUND` assigns pre-1970 timestamps to the following bucket",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "cronie": [
@@ -3658,7 +3658,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "Support input from a pipe for `crontab -T -`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "anacron-8-t",
@@ -3670,7 +3670,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`anacron -T` error stream contradicts its manual",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "anacron-8-t;anacrontab-5-start-hours-range;anacrontab-5-description",
@@ -3682,7 +3682,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "anacron: START_HOURS_RANGE, RANDOM_DELAY and PREFERRED_HOUR are matched by prefix, so other variables such as START_HOURS_RANGE_OLD are rejected or silently change scheduling",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "anacron-8-t;anacrontab-5-description",
@@ -3694,7 +3694,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "anacron: misspelled period macros such as `@monthlyXYZ` are accepted as `@monthly`, and a job with an unknown macro runs although anacron says it is skipped",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "anacrontab-5-start-hours-range",
@@ -3706,7 +3706,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "anacron: START_HOURS_RANGE hours are not range-checked (and overflow `int`), so invalid ranges pass `anacron -T` and silently stop all jobs",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "cronnext-1-t",
@@ -3718,7 +3718,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "cronnext: `-t` and `-q` parse the epoch time with `atoi()`, so times from 2038-01-19 on are truncated (Y2038)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "crontab-5-extensions",
@@ -3730,7 +3730,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "@daily`/`@midnight` and `@hourly` do not set `DOM_STAR`/`DOW_STAR`, unlike their documented equivalents (cf. #52)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "crontab-5-description",
@@ -3742,7 +3742,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`cronnext` ignores a stepped day-of-week / day-of-month field",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "crontab-5-description",
@@ -3754,7 +3754,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "reversed ranges are accepted but never match",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "crontab-5-cron-tz",
@@ -3766,7 +3766,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`cronnext` ignores `CRON_TZ`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "cronnext-1",
@@ -3778,7 +3778,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "cronnext reports a time one hour late when skipping to a month with a different DST state",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "cronnext-1",
@@ -3790,7 +3790,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "cronnext can skip an entire matching day across a DST spring-forward transition",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "anacrontab-5-description",
@@ -3802,7 +3802,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "anacron: a large `RANDOM_DELAY` value crashes anacron with SIGFPE or makes it loop forever",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "PostgreSQL": [
@@ -3852,7 +3852,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "pg_backup_start accepts a newline in the label, and the backup will not start",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "last_value",
@@ -3864,7 +3864,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "last_value",
@@ -3876,7 +3876,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "json_object",
@@ -3888,7 +3888,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "an empty JSON_OBJECT rejects the ON NULL and WITH UNIQUE KEYS clauses that its documented syntax allows",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "transaction_timestamp",
@@ -3900,7 +3900,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "has_language_privilege",
@@ -3912,7 +3912,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "has_language_privilege returns true for a nonexistent language OID when the current user is a superuser, where a named non-superuser gets null",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "avg",
@@ -3924,7 +3924,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "avg(double precision) overflows on cancelling finite inputs whose mean is representable",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "jsonb_object_agg_unique_strict (round 003-jsonb-object-agg-unique-strict)",
@@ -3936,7 +3936,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "jsonb_object_agg_unique_strict silently discards a JSONB null value",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "json_object (round 004-json-object)",
@@ -3948,7 +3948,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "JSON_OBJECT with ABSENT ON NULL accepts a NULL key and an array, composite or JSON key for the omitted pair",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "uuidv7 (round 009-uuidv7)",
@@ -3960,7 +3960,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "uuidv7(interval) rejects timestamps 1 to 999 microseconds into the last millisecond its field can hold",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "Clang_LLVM": [
@@ -4010,7 +4010,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[Clang] Assertion `is<TypeInfoLValue>() && \"not a type_info lvalue\"' failed with alignment builtins",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "__is_bitwise_cloneable",
@@ -4022,7 +4022,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "clang `__is_bitwise_cloneable` hangs the compiler on nested structs (exponential, un-memoized recursion)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "model attribute",
@@ -4034,7 +4034,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "clang `model` attribute silently ignored when the variable was referenced before its definition",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vectorcall attribute",
@@ -4046,7 +4046,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "Clang misassigns homogeneous vector aggregate arguments for SysV `vectorcall`",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "vectorcall attribute",
@@ -4058,7 +4058,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "clang `__attribute__((vectorcall))` crashes on any `long double` parameter (x86_64 Linux)",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "Alignment builtins",
@@ -4070,7 +4070,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "[clang] `constexpr` `__builtin_align_down/up` on a pointer into an array reads the original element",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "builtin-convertvector",
@@ -4082,7 +4082,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`__builtin_convertvector` from `__bf16` to `long double` vectors gives wrong values",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "builtin-convertvector",
@@ -4094,7 +4094,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`__builtin_convertvector` to a `bool` vector folds 0.5 to `false` in a constant expression",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "nonnull attribute",
@@ -4106,7 +4106,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "`nonnull` whose every index is rejected becomes \"all pointers\" and changes code",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "GCC": [
@@ -4156,7 +4156,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "__builtin_is_virtual_base_of reports a non-virtual base reached through a virtual base as virtual",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "builtin-stdc-rotate-left",
@@ -4168,7 +4168,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "the manual's equivalent expression for __builtin_stdc_rotate_left/right is wrong for non-power-of-two _BitInt widths",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "hardbool-attribute",
@@ -4180,7 +4180,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "implicitly zero-initialized hardbool objects hold zero bits instead of the false representation",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "macros-with-a-variable-number-of-arguments",
@@ -4192,7 +4192,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "the GCC manual says , ## __VA_ARGS__ drops the comma for an empty argument; the CPP manual and GCC keep it",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "__builtin_bitreverseg",
@@ -4204,7 +4204,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "__builtin_bitreverseg on a dependent C++ operand gives an ICE in mangle_decl",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ],
   "OpenSSH": [
@@ -4254,7 +4254,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ssh -G prints EscapeChar ^A as \\^A which does not parse back",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "ssh-1-g",
@@ -4266,7 +4266,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ssh -G shows some LocalForward entries as DynamicForward",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "ssh-keygen-1-s",
@@ -4278,7 +4278,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ssh-keygen -s signs certificates with duplicate options, which sshd rejects",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "ssh-1-g--long",
@@ -4290,7 +4290,7 @@ const BUG_SHEETS_DATA = {
       "Yes",
       "",
       "StreamLocalBindMask ignores Host and Match blocks, and the last value wins",
-      "claude-opus-5"
+      "Agentic-PBT"
     ],
     [
       "openssh#1;openssh_1",
@@ -4302,7 +4302,7 @@ const BUG_SHEETS_DATA = {
       "",
       "",
       "ssh-keygen -F and -R miss a hashed known_hosts entry when the host name's case differs",
-      "claude-opus-5"
+      "Agentic-PBT"
     ]
   ]
 };

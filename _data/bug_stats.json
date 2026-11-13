@@ -1,0 +1,127 @@
+{
+  "generated": "2026-11-13",
+  "total": 323,
+  "confirmed": 177,
+  "fixed": 37,
+  "accepted": 214,
+  "pending": 79,
+  "rejected": 30,
+  "accepted_pct": "66.3",
+  "system_count": 11,
+  "domain_count": 5,
+  "domains": [
+    {
+      "name": "Deep learning libraries",
+      "systems": [
+        {
+          "name": "PyTorch",
+          "slug": "pytorch",
+          "total": 91,
+          "confirmed": 35,
+          "fixed": 27,
+          "accepted": 62
+        },
+        {
+          "name": "TensorFlow",
+          "slug": "tensorflow",
+          "total": 61,
+          "confirmed": 39,
+          "fixed": 10,
+          "accepted": 49
+        },
+        {
+          "name": "JAX",
+          "slug": "jax",
+          "total": 38,
+          "confirmed": 28,
+          "fixed": 0,
+          "accepted": 28
+        }
+      ]
+    },
+    {
+      "name": "LLM serving engines",
+      "systems": [
+        {
+          "name": "vLLM",
+          "slug": "vllm",
+          "total": 34,
+          "confirmed": 27,
+          "fixed": 0,
+          "accepted": 27
+        },
+        {
+          "name": "SGLang",
+          "slug": "sglang",
+          "total": 33,
+          "confirmed": 17,
+          "fixed": 0,
+          "accepted": 17
+        }
+      ]
+    },
+    {
+      "name": "Databases",
+      "systems": [
+        {
+          "name": "ArangoDB",
+          "slug": "arangodb",
+          "total": 24,
+          "confirmed": 6,
+          "fixed": 0,
+          "accepted": 6
+        },
+        {
+          "name": "PostgreSQL",
+          "slug": "postgresql",
+          "total": 10,
+          "confirmed": 2,
+          "fixed": 0,
+          "accepted": 2
+        }
+      ]
+    },
+    {
+      "name": "Compilers",
+      "systems": [
+        {
+          "name": "Clang/LLVM",
+          "slug": "clang_llvm",
+          "total": 9,
+          "confirmed": 6,
+          "fixed": 0,
+          "accepted": 6
+        },
+        {
+          "name": "GCC",
+          "slug": "gcc",
+          "total": 5,
+          "confirmed": 3,
+          "fixed": 0,
+          "accepted": 3
+        }
+      ]
+    },
+    {
+      "name": "System software",
+      "systems": [
+        {
+          "name": "cronie",
+          "slug": "cronie",
+          "total": 13,
+          "confirmed": 13,
+          "fixed": 0,
+          "accepted": 13
+        },
+        {
+          "name": "OpenSSH",
+          "slug": "openssh",
+          "total": 5,
+          "confirmed": 1,
+          "fixed": 0,
+          "accepted": 1
+        }
+      ]
+    }
+  ]
+}

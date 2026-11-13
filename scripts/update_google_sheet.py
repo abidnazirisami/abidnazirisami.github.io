@@ -27,8 +27,11 @@ from typing import Dict, List
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BUGS_DIR = REPO_ROOT / "bugs"
-BUGS_DATA_DIR = REPO_ROOT / "bugs_data"
 SPREADSHEET_ID = "1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM"
+
+# The sibling scripts are imported by name, whether this file is run or imported.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bug_titles import load_titles as load_cached_titles  # noqa: E402
 
 SHEET_CONFIGS = [
     {"name": "PyTorch", "file": "pytorch.csv"},
@@ -54,22 +57,6 @@ STATUS_NORMALIZE = {
     "rejected": "Rejected",
 }
 
-
-def load_cached_titles() -> Dict[str, str]:
-    titles = {}
-    if not BUGS_DATA_DIR.exists():
-        return titles
-    for p in BUGS_DATA_DIR.glob("*/*.json"):
-        try:
-            with p.open(encoding="utf-8") as f:
-                d = json.load(f)
-                url = d.get("html_url")
-                t = d.get("title")
-                if url and t:
-                    titles[url.strip().rstrip("/").lower()] = t.strip()
-        except Exception:
-            pass
-    return titles
 
 
 def build_sheet_table(csv_file: Path, cached_titles: Dict[str, str]) -> List[List[str]]:

@@ -12,16 +12,19 @@ Features:
 
 import csv
 import html
-import json
 import re
+import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Dict, List
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BUGS_DIR = REPO_ROOT / "bugs"
-BUGS_DATA_DIR = REPO_ROOT / "bugs_data"
 OUT_FILE = REPO_ROOT / "bugs.md"
+
+# The sibling scripts are imported by name, whether this file is run or imported.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bug_titles import load_titles as load_cached_titles  # noqa: E402
 
 SPREADSHEET_URL = "https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing"
 
@@ -123,25 +126,6 @@ STATUS_NORMALIZE = {
     "rejected": "Rejected",
 }
 
-
-def load_cached_titles() -> Dict[str, str]:
-    """Load cached issue titles from bugs_data/."""
-    titles = {}
-    if not BUGS_DATA_DIR.exists():
-        return titles
-
-    for p in BUGS_DATA_DIR.glob("*/*.json"):
-        try:
-            with p.open(encoding="utf-8") as f:
-                d = json.load(f)
-                url = d.get("html_url")
-                t = d.get("title")
-                if url and t:
-                    norm = url.strip().rstrip("/").lower()
-                    titles[norm] = t.strip()
-        except Exception:
-            pass
-    return titles
 
 
 def read_issues(csv_path: Path) -> List[Dict[str, str]]:
@@ -726,7 +710,7 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
 
 def main():
     cached_titles = load_cached_titles()
-    print(f"Loaded {len(cached_titles)} cached titles from bugs_data/.")
+    print(f"Loaded {len(cached_titles)} issue titles.")
 
     total_bugs = 0
     total_confirmed = 0
@@ -779,6 +763,8 @@ def main():
     content.append("title: Reported Bugs")
     content.append("permalink: /bugs/")
     content.append(f'last_updated: "{iso_ts}"')
+    content.append("wide: true")
+    content.append("hide_title: true")
     content.append("---\n")
 
     content.append('<div class="bugs-dashboard">')
@@ -829,13 +815,18 @@ def main():
 
     # Automatically keep Reported_Bugs_Complete.xlsx and google_apps_script.js in sync
     try:
-        import sys
-        sys.path.insert(0, str(Path(__file__).resolve().parent))
         from export_sheets_workbook import build_excel_workbook, build_apps_script
         build_excel_workbook(cached_titles)
         build_apps_script(cached_titles)
     except Exception as e:
         print(f"[Notice] Excel/Apps Script sync skipped: {e}")
+
+    # Keep the homepage trophy case (_data/bug_stats.json) in sync as well
+    try:
+        from generate_bug_stats import main as write_bug_stats
+        write_bug_stats()
+    except Exception as e:
+        print(f"[Notice] Homepage bug stats sync skipped: {e}")
 
 
 if __name__ == "__main__":

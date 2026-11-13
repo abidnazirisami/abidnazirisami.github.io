@@ -9,6 +9,7 @@ Generate:
 import csv
 import json
 import re
+import sys
 from pathlib import Path
 from typing import Dict, List
 
@@ -18,9 +19,12 @@ from openpyxl.utils import get_column_letter
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BUGS_DIR = REPO_ROOT / "bugs"
-BUGS_DATA_DIR = REPO_ROOT / "bugs_data"
 EXCEL_OUT = BUGS_DIR / "Reported_Bugs_Complete.xlsx"
 APPS_SCRIPT_OUT = REPO_ROOT / "scripts" / "google_apps_script.js"
+
+# The sibling scripts are imported by name, whether this file is run or imported.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bug_titles import load_titles as load_cached_titles  # noqa: E402
 
 SHEET_CONFIGS = [
     {"name": "Summary", "file": None, "category": "Overview"},
@@ -47,22 +51,6 @@ STATUS_NORMALIZE = {
     "rejected": "Rejected",
 }
 
-
-def load_cached_titles() -> Dict[str, str]:
-    titles = {}
-    if not BUGS_DATA_DIR.exists():
-        return titles
-    for p in BUGS_DATA_DIR.glob("*/*.json"):
-        try:
-            with p.open(encoding="utf-8") as f:
-                d = json.load(f)
-                url = d.get("html_url")
-                t = d.get("title")
-                if url and t:
-                    titles[url.strip().rstrip("/").lower()] = t.strip()
-        except Exception:
-            pass
-    return titles
 
 
 def read_app_csv(csv_path: Path, cached_titles: Dict[str, str]) -> List[Dict[str, str]]:

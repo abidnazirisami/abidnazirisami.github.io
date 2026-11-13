@@ -2,7 +2,7 @@
 layout: page
 title: Reported Bugs
 permalink: /bugs/
-last_updated: "2026-10-16T14:15:41+00:00"
+last_updated: "2026-11-13T21:50:20+00:00"
 wide: true
 hide_title: true
 ---
@@ -12,7 +12,7 @@ hide_title: true
     <h1 class="bugs-hero-title">Reported Bugs</h1>
     <p class="bugs-hero-subtitle">A list of <strong>323 bugs and issues</strong> reported across <strong>11 open-source applications</strong> spanning deep learning frameworks (PyTorch, TensorFlow, JAX), LLM serving engines (vLLM, SGLang), databases (ArangoDB, PostgreSQL), compilers (Clang/LLVM, GCC), and system utilities (cronie, OpenSSH). <strong>66.3%</strong> have been confirmed or fixed upstream.</p>
     <div class="bugs-hero-meta">
-      <span class="bugs-meta-pill">Last updated: 2026-10-16 14:15:41 UTC</span>
+      <span class="bugs-meta-pill">Last updated: 2026-11-13 21:50:20 UTC</span>
       <span class="bugs-meta-pill">11 Applications</span>
       <a class="bugs-sheet-link" href="https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Spreadsheet: Google Sheets ↗</a>
     </div>
@@ -1424,13 +1424,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/pull/173826" target="_blank" rel="noopener noreferrer" class="bug-pr-btn" title="View associated Pull Request">PR #173826 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-ldexp;torch-ldexp--long torch.ldexp raises notimplementederror for a bool exponent (eager), while torch.compile and the decomposition accept it crash claude-opus-5 https://github.com/pytorch/pytorch/issues/198577  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-ldexp;torch-ldexp--long torch.ldexp raises notimplementederror for a bool exponent (eager), while torch.compile and the decomposition accept it crash agentic-pbt https://github.com/pytorch/pytorch/issues/198577  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-ldexp;torch-ldexp--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.ldexp raises NotImplementedError for a bool exponent (eager), while torch.compile and the decomposition accept it</div>
         </div>
@@ -1438,13 +1438,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198577" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198577 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch-distributions-cauchy;torch-distributions-cauchy--long torch.distributions.cauchy.log_prob returns -inf (and nan gradients) for large |value - loc| / scale because the square overflows functional claude-opus-5 https://github.com/pytorch/pytorch/issues/198578  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="torch-distributions-cauchy;torch-distributions-cauchy--long torch.distributions.cauchy.log_prob returns -inf (and nan gradients) for large |value - loc| / scale because the square overflows functional agentic-pbt https://github.com/pytorch/pytorch/issues/198578  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">torch-distributions-cauchy;torch-distributions-cauchy--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.distributions.Cauchy.log_prob returns -inf (and NaN gradients) for large |value - loc| / scale because the square overflows</div>
         </div>
@@ -1452,13 +1452,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198578" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198578 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch-distributions-normal torch.distributions.normal.log_prob returns nan for very large or very small scale because scale**2 overflows/underflows functional claude-opus-5 https://github.com/pytorch/pytorch/issues/198579  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="torch-distributions-normal torch.distributions.normal.log_prob returns nan for very large or very small scale because scale**2 overflows/underflows functional agentic-pbt https://github.com/pytorch/pytorch/issues/198579  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">torch-distributions-normal</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.distributions.Normal.log_prob returns NaN for very large or very small scale because scale**2 overflows/underflows</div>
         </div>
@@ -1466,13 +1466,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198579" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198579 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-distributions-laplace torch.distributions.laplace cdf/icdf return a zero gradient at the median (value == loc, p == 0.5) functional claude-opus-5 https://github.com/pytorch/pytorch/issues/198580  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-distributions-laplace torch.distributions.laplace cdf/icdf return a zero gradient at the median (value == loc, p == 0.5) functional agentic-pbt https://github.com/pytorch/pytorch/issues/198580  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-distributions-laplace</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.distributions.Laplace cdf/icdf return a zero gradient at the median (value == loc, p == 0.5)</div>
         </div>
@@ -1480,13 +1480,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198580" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198580 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-distributions-laplace torch.distributions.laplace.icdf returns -inf (and loses accuracy) for small tail probabilities functional claude-opus-5 https://github.com/pytorch/pytorch/issues/198582  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-distributions-laplace torch.distributions.laplace.icdf returns -inf (and loses accuracy) for small tail probabilities functional agentic-pbt https://github.com/pytorch/pytorch/issues/198582  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-distributions-laplace</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.distributions.Laplace.icdf returns -inf (and loses accuracy) for small tail probabilities</div>
         </div>
@@ -1494,13 +1494,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198582" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198582 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai torch.special.bessel_j0 / bessel_j1 / bessel_y0 lose ~9 significant digits in float64: the cephes p1evl denominators drop their implied leading 1 functional claude-opus-5 https://github.com/pytorch/pytorch/issues/198583  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai torch.special.bessel_j0 / bessel_j1 / bessel_y0 lose ~9 significant digits in float64: the cephes p1evl denominators drop their implied leading 1 functional agentic-pbt https://github.com/pytorch/pytorch/issues/198583  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.special.bessel_j0 / bessel_j1 / bessel_y0 lose ~9 significant digits in float64: the Cephes p1evl denominators drop their implied leading 1</div>
         </div>
@@ -1508,13 +1508,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/198583" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #198583 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-special-logit [cpu] logit_backward and six activation backward kernels return a different gradient at nan depending on tensor length functional claude-opus-5 https://github.com/pytorch/pytorch/issues/195075  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-special-logit [cpu] logit_backward and six activation backward kernels return a different gradient at nan depending on tensor length functional agentic-pbt https://github.com/pytorch/pytorch/issues/195075  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-special-logit</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[CPU] logit_backward and six activation backward kernels return a different gradient at NaN depending on tensor length</div>
         </div>
@@ -1522,13 +1522,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/195075" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #195075 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-maximum;torch-maximum--long torch.minimum and torch.maximum return a zero whose sign depends on the tensor length functional claude-opus-5 https://github.com/pytorch/pytorch/issues/193781  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-maximum;torch-maximum--long torch.minimum and torch.maximum return a zero whose sign depends on the tensor length functional agentic-pbt https://github.com/pytorch/pytorch/issues/193781  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-maximum;torch-maximum--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.minimum and torch.maximum return a zero whose sign depends on the tensor length</div>
         </div>
@@ -1536,13 +1536,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/193781" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #193781 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-trace;torch-trace--opus-4-8 `torch.trace` raises `notimplementederror` for `float16` input on cpu — no kernel registered for `half`, no documented exclusion, numpy handles it fine crash claude-opus-4-8 https://github.com/pytorch/pytorch/issues/184847  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-trace;torch-trace--opus-4-8 `torch.trace` raises `notimplementederror` for `float16` input on cpu — no kernel registered for `half`, no documented exclusion, numpy handles it fine crash agentic-pbt https://github.com/pytorch/pytorch/issues/184847  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-trace;torch-trace--opus-4-8</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`torch.trace` raises `NotImplementedError` for `float16` input on CPU — no kernel registered for `Half`, no documented exclusion, NumPy handles it fine</div>
         </div>
@@ -1550,13 +1550,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/184847" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #184847 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.unique torch.unique returns duplicate sub-tensors when the input contains nan functional claude-opus-5 https://github.com/pytorch/pytorch/issues/199057  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="torch.unique torch.unique returns duplicate sub-tensors when the input contains nan functional agentic-pbt https://github.com/pytorch/pytorch/issues/199057  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">torch.unique</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.unique returns duplicate sub-tensors when the input contains NaN</div>
         </div>
@@ -1564,13 +1564,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/199057" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #199057 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.arctanh torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0) functional claude-opus-5 https://github.com/pytorch/pytorch/issues/199058  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="torch.arctanh torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0) functional agentic-pbt https://github.com/pytorch/pytorch/issues/199058  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">torch.arctanh</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0)</div>
         </div>
@@ -1578,13 +1578,13 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/199058" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #199058 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-clamp--long torch.clamp with a bound unrepresentable in the tensor dtype: eager raises, torch.compile ignores the bound functional claude-opus-5 https://github.com/pytorch/pytorch/issues/195675  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch-clamp--long torch.clamp with a bound unrepresentable in the tensor dtype: eager raises, torch.compile ignores the bound functional agentic-pbt https://github.com/pytorch/pytorch/issues/195675  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch-clamp--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">torch.clamp with a bound unrepresentable in the tensor dtype: eager raises, torch.compile ignores the bound</div>
         </div>
@@ -2498,13 +2498,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-betaln;jax-scipy-special-beta;jax-scipy-special-betaln--again;jax-scipy-special-beta--again;jax-scipy-special-betaln--long;jax-scipy-special-beta--long betaln(a, b) is too large by exactly min(a, b) when min(a, b)/max(a, b) is subnormal functional claude-opus-5 https://github.com/jax-ml/jax/issues/40653  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-betaln;jax-scipy-special-beta;jax-scipy-special-betaln--again;jax-scipy-special-beta--again;jax-scipy-special-betaln--long;jax-scipy-special-beta--long betaln(a, b) is too large by exactly min(a, b) when min(a, b)/max(a, b) is subnormal functional agentic-pbt https://github.com/jax-ml/jax/issues/40653  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-betaln;jax-scipy-special-beta;jax-scipy-special-betaln--again;jax-scipy-special-beta--again;jax-scipy-special-betaln--long;jax-scipy-special-beta--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">betaln(a, b) is too large by exactly min(a, b) when min(a, b)/max(a, b) is subnormal</div>
         </div>
@@ -2512,13 +2512,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40653" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40653 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Rejected" data-search="jax-numpy-histogram jnp.histogram assigns values lying exactly on an interior bin edge to the wrong bin functional claude-opus-5 https://github.com/jax-ml/jax/issues/40963  rejected">
+      <div class="bug-card-row" data-status="Rejected" data-search="jax-numpy-histogram jnp.histogram assigns values lying exactly on an interior bin edge to the wrong bin functional agentic-pbt https://github.com/jax-ml/jax/issues/40963  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">jax-numpy-histogram</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jnp.histogram assigns values lying exactly on an interior bin edge to the wrong bin</div>
         </div>
@@ -2526,13 +2526,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40963" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40963 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-pareto jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40964  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-pareto jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x) functional agentic-pbt https://github.com/jax-ml/jax/issues/40964  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-pareto</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x)</div>
         </div>
@@ -2540,13 +2540,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40964" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40964 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-expon jax.scipy.stats.expon.logcdf returns -inf for small positive x (log1p(-sf) cancellation) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40965  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-expon jax.scipy.stats.expon.logcdf returns -inf for small positive x (log1p(-sf) cancellation) functional agentic-pbt https://github.com/jax-ml/jax/issues/40965  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-expon</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.expon.logcdf returns -inf for small positive x (log1p(-sf) cancellation)</div>
         </div>
@@ -2554,13 +2554,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40965" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40965 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-laplace jax.scipy.stats.laplace.cdf gives nan gradients in the tails (unselected branch overflows) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40966  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-laplace jax.scipy.stats.laplace.cdf gives nan gradients in the tails (unselected branch overflows) functional agentic-pbt https://github.com/jax-ml/jax/issues/40966  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-laplace</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.laplace.cdf gives NaN gradients in the tails (unselected branch overflows)</div>
         </div>
@@ -2568,13 +2568,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40966" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40966 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-jit jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40967  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-jit jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred) functional agentic-pbt https://github.com/jax-ml/jax/issues/40967  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-jit</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred)</div>
         </div>
@@ -2582,13 +2582,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40967" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40967 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-zeta;jax-scipy-special-zeta--long jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s &lt; 1) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40968  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-zeta;jax-scipy-special-zeta--long jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s &lt; 1) functional agentic-pbt https://github.com/jax-ml/jax/issues/40968  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-zeta;jax-scipy-special-zeta--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s &lt; 1)</div>
         </div>
@@ -2596,13 +2596,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40968" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40968 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-poisson;jax-scipy-stats-poisson--long jax.scipy.stats.poisson.entropy returns nan gradients for large mu (and small mu in float32) functional claude-opus-5 https://github.com/jax-ml/jax/issues/40969  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-poisson;jax-scipy-stats-poisson--long jax.scipy.stats.poisson.entropy returns nan gradients for large mu (and small mu in float32) functional agentic-pbt https://github.com/jax-ml/jax/issues/40969  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-poisson;jax-scipy-stats-poisson--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.poisson.entropy returns NaN gradients for large mu (and small mu in float32)</div>
         </div>
@@ -2610,13 +2610,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40969" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40969 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-betaln jax.scipy.special.beta returns nan / wrong sign at multiple defined points (negative integers, ±inf, -0) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38270  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-betaln jax.scipy.special.beta returns nan / wrong sign at multiple defined points (negative integers, ±inf, -0) functional agentic-pbt https://github.com/jax-ml/jax/issues/38270  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-betaln</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.beta returns nan / wrong sign at multiple defined points (negative integers, ±inf, -0)</div>
         </div>
@@ -2624,13 +2624,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38270" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38270 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-i0;jax-scipy-special-i1 jax.scipy.special.i1 overflows to inf for large finite float64 input functional claude-opus-5 https://github.com/jax-ml/jax/issues/39772  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-i0;jax-scipy-special-i1 jax.scipy.special.i1 overflows to inf for large finite float64 input functional agentic-pbt https://github.com/jax-ml/jax/issues/39772  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-i0;jax-scipy-special-i1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.i1 overflows to inf for large finite float64 input</div>
         </div>
@@ -2638,13 +2638,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/39772" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #39772 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-uniform jax.scipy.stats.uniform.cdf/pdf/logpdf silently map nan input to finite values (pdf(nan) == 1.0) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38317  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-uniform jax.scipy.stats.uniform.cdf/pdf/logpdf silently map nan input to finite values (pdf(nan) == 1.0) functional agentic-pbt https://github.com/jax-ml/jax/issues/38317  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-uniform</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.uniform.cdf/pdf/logpdf silently map NaN input to finite values (pdf(nan) == 1.0)</div>
         </div>
@@ -2652,13 +2652,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38317" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38317 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-vonmises jax.scipy.stats.vonmises.pdf returns nan at kappa=0.0 functional claude-opus-5 https://github.com/jax-ml/jax/issues/38621  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-vonmises jax.scipy.stats.vonmises.pdf returns nan at kappa=0.0 functional agentic-pbt https://github.com/jax-ml/jax/issues/38621  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-vonmises</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.vonmises.pdf returns nan at kappa=0.0</div>
         </div>
@@ -2666,13 +2666,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38621" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38621 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-rel-entr jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — scipy compatibility mismatch functional claude-opus-5 https://github.com/jax-ml/jax/issues/38262  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-rel-entr jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — scipy compatibility mismatch functional agentic-pbt https://github.com/jax-ml/jax/issues/38262  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-scipy-special-rel-entr</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — SciPy compatibility mismatch</div>
         </div>
@@ -2680,13 +2680,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38262" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38262 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-kl-div jax.scipy.special.kl_div returns nan instead of inf at x=inf, y=0.0 functional claude-opus-5 https://github.com/jax-ml/jax/issues/38239  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-kl-div jax.scipy.special.kl_div returns nan instead of inf at x=inf, y=0.0 functional agentic-pbt https://github.com/jax-ml/jax/issues/38239  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-kl-div</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.kl_div returns nan instead of inf at x=inf, y=0.0</div>
         </div>
@@ -2694,13 +2694,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38239" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38239 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-cauchy jax.scipy.stats.cauchy.ppf/isf: no quantile-domain handling — ppf(0) returns large finite value (wrong sign in float32), q outside [0,1] returns garbage functional claude-opus-5 https://github.com/jax-ml/jax/issues/38318  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-cauchy jax.scipy.stats.cauchy.ppf/isf: no quantile-domain handling — ppf(0) returns large finite value (wrong sign in float32), q outside [0,1] returns garbage functional agentic-pbt https://github.com/jax-ml/jax/issues/38318  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-cauchy</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.cauchy.ppf/isf: no quantile-domain handling — ppf(0) returns large finite value (wrong sign in float32), q outside [0,1] returns garbage</div>
         </div>
@@ -2708,13 +2708,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38318" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38318 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-chi2 jax.scipy.stats.chi2.logpdf returns nan at x=0 and x=inf when df=2 (inconsistent with gamma.logpdf) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38316  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-chi2 jax.scipy.stats.chi2.logpdf returns nan at x=0 and x=inf when df=2 (inconsistent with gamma.logpdf) functional agentic-pbt https://github.com/jax-ml/jax/issues/38316  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-chi2</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.chi2.logpdf returns NaN at x=0 and x=inf when df=2 (inconsistent with gamma.logpdf)</div>
         </div>
@@ -2722,13 +2722,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38316" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38316 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-dirichlet jax.scipy.stats.dirichlet.logpdf returns -inf at simplex boundary where density diverges to +inf (alpha&lt;1) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38520  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-dirichlet jax.scipy.stats.dirichlet.logpdf returns -inf at simplex boundary where density diverges to +inf (alpha&lt;1) functional agentic-pbt https://github.com/jax-ml/jax/issues/38520  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-dirichlet</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.dirichlet.logpdf returns -inf at simplex boundary where density diverges to +inf (alpha&lt;1)</div>
         </div>
@@ -2736,13 +2736,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38520" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38520 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-multinomial jax.scipy.stats.multinomial.logpmf/pmf return -inf for all rows of a batched input (sum reduces over all axes, not axis=-1) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38605  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-multinomial jax.scipy.stats.multinomial.logpmf/pmf return -inf for all rows of a batched input (sum reduces over all axes, not axis=-1) functional agentic-pbt https://github.com/jax-ml/jax/issues/38605  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-stats-multinomial</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.multinomial.logpmf/pmf return -inf for all rows of a batched input (sum reduces over all axes, not axis=-1)</div>
         </div>
@@ -2750,13 +2750,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38605" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38605 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-erfcx jax.scipy.special.erfcx returns spurious 0.0 in a band near x≈26.6 (should be ~0.0212; scipy/torch agree) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38607  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-erfcx jax.scipy.special.erfcx returns spurious 0.0 in a band near x≈26.6 (should be ~0.0212; scipy/torch agree) functional agentic-pbt https://github.com/jax-ml/jax/issues/38607  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-erfcx</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.erfcx returns spurious 0.0 in a band near x≈26.6 (should be ~0.0212; scipy/torch agree)</div>
         </div>
@@ -2764,13 +2764,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38607" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38607 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8 `jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan` functional claude-opus-4-8 https://github.com/jax-ml/jax/issues/37751  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8 `jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan` functional agentic-pbt https://github.com/jax-ml/jax/issues/37751  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan`</div>
         </div>
@@ -2778,13 +2778,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/37751" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37751 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-abs;jax-numpy-abs--opus-4-8 `jnp.abs(inf + nan*j)` returns `nan` — violates ieee 754 / c99 &quot;infinity dominates&quot; rule for complex magnitude functional claude-opus-4-8 https://github.com/jax-ml/jax/issues/37817  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-abs;jax-numpy-abs--opus-4-8 `jnp.abs(inf + nan*j)` returns `nan` — violates ieee 754 / c99 &quot;infinity dominates&quot; rule for complex magnitude functional agentic-pbt https://github.com/jax-ml/jax/issues/37817  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-numpy-abs;jax-numpy-abs--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`jnp.abs(inf + nan*j)` returns `nan` — violates IEEE 754 / C99 &quot;infinity dominates&quot; rule for complex magnitude</div>
         </div>
@@ -2792,13 +2792,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/37817" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37817 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-digamma--opus-4-8 `jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf` functional claude-opus-4-8 https://github.com/jax-ml/jax/issues/37763  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-digamma--opus-4-8 `jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf` functional agentic-pbt https://github.com/jax-ml/jax/issues/37763  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-digamma--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf`</div>
         </div>
@@ -2806,13 +2806,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/37763" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37763 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-loggamma--again jax.scipy.special.loggamma returns nan instead of inf at x=0.0 and x=-0.0 functional claude-opus-5 https://github.com/jax-ml/jax/issues/38240  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-loggamma--again jax.scipy.special.loggamma returns nan instead of inf at x=0.0 and x=-0.0 functional agentic-pbt https://github.com/jax-ml/jax/issues/38240  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-loggamma--again</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.loggamma returns nan instead of inf at x=0.0 and x=-0.0</div>
         </div>
@@ -2820,13 +2820,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38240" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38240 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-zeta--again jax.lax.zeta gives wrong results for negative non-integer q (euler-maclaurin breakdown) functional claude-opus-5 https://github.com/jax-ml/jax/issues/38199  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-zeta--again jax.lax.zeta gives wrong results for negative non-integer q (euler-maclaurin breakdown) functional agentic-pbt https://github.com/jax-ml/jax/issues/38199  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-zeta--again</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.lax.zeta gives wrong results for negative non-integer q (Euler-Maclaurin breakdown)</div>
         </div>
@@ -2834,13 +2834,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38199" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38199 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax.array.sum jax.array.sum silently ignores the `initial` argument functional claude-opus-5 https://github.com/jax-ml/jax/issues/41120  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax.array.sum jax.array.sum silently ignores the `initial` argument functional agentic-pbt https://github.com/jax-ml/jax/issues/41120  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax.Array.sum</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.Array.sum silently ignores the `initial` argument</div>
         </div>
@@ -2848,13 +2848,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41120" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41120 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax.fwd_and_bwd jax.fwd_and_bwd silently discards keyword arguments functional claude-opus-5 https://github.com/jax-ml/jax/issues/41121  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax.fwd_and_bwd jax.fwd_and_bwd silently discards keyword arguments functional agentic-pbt https://github.com/jax-ml/jax/issues/41121  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax.fwd_and_bwd</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.fwd_and_bwd silently discards keyword arguments</div>
         </div>
@@ -2862,13 +2862,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41121" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41121 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax.lax.pmean `lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group functional claude-opus-5 https://github.com/jax-ml/jax/issues/41132  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax.lax.pmean `lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group functional agentic-pbt https://github.com/jax-ml/jax/issues/41132  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax.lax.pmean</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group</div>
         </div>
@@ -2876,13 +2876,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41132" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41132 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-gammaln--long jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge functional claude-opus-5 https://github.com/jax-ml/jax/issues/38264  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-gammaln--long jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge functional agentic-pbt https://github.com/jax-ml/jax/issues/38264  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-gammaln--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge</div>
         </div>
@@ -2890,13 +2890,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38264" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38264 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-rel-entr;jax-scipy-special-kl-div;jax-scipy-special-kl-div--long jax.scipy.special.rel_entr / kl_div lose all precision for p close to q and return nan for large p (p*log(p) - p*log(q)) functional claude-opus-5 https://github.com/jax-ml/jax/issues/41200  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-rel-entr;jax-scipy-special-kl-div;jax-scipy-special-kl-div--long jax.scipy.special.rel_entr / kl_div lose all precision for p close to q and return nan for large p (p*log(p) - p*log(q)) functional agentic-pbt https://github.com/jax-ml/jax/issues/41200  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-rel-entr;jax-scipy-special-kl-div;jax-scipy-special-kl-div--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.rel_entr / kl_div lose all precision for p close to q and return nan for large p (p*log(p) - p*log(q))</div>
         </div>
@@ -2904,13 +2904,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41200" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41200 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-gammaincc;jax-scipy-special-gammaincc--long jax.scipy.special.gammaincc returns values far outside [0, 1] for large a (continued fraction stops unconverged) functional claude-opus-5 https://github.com/jax-ml/jax/issues/41201  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-gammaincc;jax-scipy-special-gammaincc--long jax.scipy.special.gammaincc returns values far outside [0, 1] for large a (continued fraction stops unconverged) functional agentic-pbt https://github.com/jax-ml/jax/issues/41201  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-scipy-special-gammaincc;jax-scipy-special-gammaincc--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.gammaincc returns values far outside [0, 1] for large a (continued fraction stops unconverged)</div>
         </div>
@@ -2918,13 +2918,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41201" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41201 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-random-poisson jax.random.poisson: samples for large lam (&gt;~2e5) have the wrong variance (+46% at lam=1e8) functional claude-opus-5 https://github.com/jax-ml/jax/issues/41202  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-random-poisson jax.random.poisson: samples for large lam (&gt;~2e5) have the wrong variance (+46% at lam=1e8) functional agentic-pbt https://github.com/jax-ml/jax/issues/41202  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-random-poisson</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.random.poisson: samples for large lam (&gt;~2e5) have the wrong variance (+46% at lam=1e8)</div>
         </div>
@@ -2932,13 +2932,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41202" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41202 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-t jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32 functional claude-opus-5 https://github.com/jax-ml/jax/issues/41203  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-t jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32 functional agentic-pbt https://github.com/jax-ml/jax/issues/41203  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-scipy-stats-t</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32</div>
         </div>
@@ -2946,13 +2946,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41203" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41203 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-linalg-eigh jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix functional claude-opus-5 https://github.com/jax-ml/jax/issues/41204  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-linalg-eigh jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix functional agentic-pbt https://github.com/jax-ml/jax/issues/41204  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-numpy-linalg-eigh</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix</div>
         </div>
@@ -2960,13 +2960,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41204" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41204 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-expn jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n &gt;= 2 functional claude-opus-5 https://github.com/jax-ml/jax/issues/41205  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-expn jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n &gt;= 2 functional agentic-pbt https://github.com/jax-ml/jax/issues/41205  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-scipy-special-expn</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n &gt;= 2</div>
         </div>
@@ -2974,13 +2974,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41205" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41205 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-numpy-floor-divide;jax-numpy-floor-divide--long jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs functional claude-opus-5 https://github.com/jax-ml/jax/issues/41206  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-numpy-floor-divide;jax-numpy-floor-divide--long jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs functional agentic-pbt https://github.com/jax-ml/jax/issues/41206  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-numpy-floor-divide;jax-numpy-floor-divide--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs</div>
         </div>
@@ -2988,13 +2988,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41206" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41206 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-expi--again;jax-scipy-special-expi--long jax.scipy.special.expi(0.0)` returns nan instead of -inf functional claude-opus-5 https://github.com/jax-ml/jax/issues/41207  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-expi--again;jax-scipy-special-expi--long jax.scipy.special.expi(0.0)` returns nan instead of -inf functional agentic-pbt https://github.com/jax-ml/jax/issues/41207  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">jax-scipy-special-expi--again;jax-scipy-special-expi--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.special.expi(0.0)` returns nan instead of -inf</div>
         </div>
@@ -3002,13 +3002,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41207" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41207 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-poisson--again jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc` functional claude-opus-5 https://github.com/jax-ml/jax/issues/41208  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-poisson--again jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc` functional agentic-pbt https://github.com/jax-ml/jax/issues/41208  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax-scipy-stats-poisson--again</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc`</div>
         </div>
@@ -3016,13 +3016,13 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41208" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41208 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax#1;jax_1 `jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype functional claude-opus-5 https://github.com/jax-ml/jax/issues/41246  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jax#1;jax_1 `jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype functional agentic-pbt https://github.com/jax-ml/jax/issues/41246  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jax#1;jax_1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype</div>
         </div>
@@ -3051,13 +3051,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-gigachat3-tool-parser [bug]: gigachat3, granite and granite-20b-fc tool parsers lose tool calls when the whole message arrives in a single streaming delta functional claude-opus-5 https://github.com/vllm-project/vllm/issues/47907  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-gigachat3-tool-parser [bug]: gigachat3, granite and granite-20b-fc tool parsers lose tool calls when the whole message arrives in a single streaming delta functional agentic-pbt https://github.com/vllm-project/vllm/issues/47907  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-gigachat3-tool-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: gigachat3, granite and granite-20b-fc tool parsers lose tool calls when the whole message arrives in a single streaming delta</div>
         </div>
@@ -3065,13 +3065,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/47907" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #47907 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm-reasoning-olmo3-reasoning-parser;vllm-reasoning-deepseek-r1-reasoning-parser;vllm-reasoning-ernie45-reasoning-parser;vllm-parser-abstract-parser [bug]: reasoning parsers mishandle markers in multi-token streaming deltas functional claude-opus-5 https://github.com/vllm-project/vllm/issues/55195  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm-reasoning-olmo3-reasoning-parser;vllm-reasoning-deepseek-r1-reasoning-parser;vllm-reasoning-ernie45-reasoning-parser;vllm-parser-abstract-parser [bug]: reasoning parsers mishandle markers in multi-token streaming deltas functional agentic-pbt https://github.com/vllm-project/vllm/issues/55195  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm-reasoning-olmo3-reasoning-parser;vllm-reasoning-deepseek-r1-reasoning-parser;vllm-reasoning-ernie45-reasoning-parser;vllm-parser-abstract-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: Reasoning parsers mishandle markers in multi-token streaming deltas</div>
         </div>
@@ -3079,13 +3079,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/55195" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #55195 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tokenizers-detokenizer-utils fix(logprobs): guard convert_ids_list_to_tokens against out-of-range ids crash claude-opus-5 https://github.com/vllm-project/vllm/pull/48567  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tokenizers-detokenizer-utils fix(logprobs): guard convert_ids_list_to_tokens against out-of-range ids crash agentic-pbt https://github.com/vllm-project/vllm/pull/48567  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tokenizers-detokenizer-utils</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(logprobs): guard convert_ids_list_to_tokens against out-of-range ids</div>
         </div>
@@ -3093,13 +3093,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48567" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48567 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-argparse-utils [bugfix] parse human-readable ints with decimal to avoid off-by-one functional claude-opus-5 https://github.com/vllm-project/vllm/pull/58333  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-argparse-utils [bugfix] parse human-readable ints with decimal to avoid off-by-one functional agentic-pbt https://github.com/vllm-project/vllm/pull/58333  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-utils-argparse-utils</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Parse human-readable ints with Decimal to avoid off-by-one</div>
         </div>
@@ -3107,13 +3107,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/58333" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #58333 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-argparse-utils [bugfix] avoid an indexerror for trailing dotted cli args crash claude-opus-5 https://github.com/vllm-project/vllm/pull/54587  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-argparse-utils [bugfix] avoid an indexerror for trailing dotted cli args crash agentic-pbt https://github.com/vllm-project/vllm/pull/54587  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-utils-argparse-utils</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Avoid an IndexError for trailing dotted CLI args</div>
         </div>
@@ -3121,13 +3121,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/54587" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #54587 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-olmo3-reasoning-parser [bugfix][reasoning] olmo3: keep literal think tags in streamed content functional claude-opus-5 https://github.com/vllm-project/vllm/pull/48971  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-olmo3-reasoning-parser [bugfix][reasoning] olmo3: keep literal think tags in streamed content functional agentic-pbt https://github.com/vllm-project/vllm/pull/48971  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-reasoning-olmo3-reasoning-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Reasoning] Olmo3: keep literal think tags in streamed content</div>
         </div>
@@ -3135,13 +3135,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48971" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48971 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long [bugfix] let an optional literal flag accept the none it advertises functional claude-opus-5 https://github.com/vllm-project/vllm/pull/52370  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long [bugfix] let an optional literal flag accept the none it advertises functional agentic-pbt https://github.com/vllm-project/vllm/pull/52370  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Let an optional Literal flag accept the None it advertises</div>
         </div>
@@ -3149,13 +3149,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/52370" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #52370 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long [bugfix][tool parser] return early for unlisted tool names in internlm2 parser functional claude-opus-5 https://github.com/vllm-project/vllm/pull/47968  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long [bugfix][tool parser] return early for unlisted tool names in internlm2 parser functional agentic-pbt https://github.com/vllm-project/vllm/pull/47968  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Tool Parser] Return early for unlisted tool names in InternLM2 parser</div>
         </div>
@@ -3163,13 +3163,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/47968" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #47968 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-collection-utils [bugfix] invalidate lazydict cache on __setitem__ functional claude-opus-5 https://github.com/vllm-project/vllm/pull/52541  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-collection-utils [bugfix] invalidate lazydict cache on __setitem__ functional agentic-pbt https://github.com/vllm-project/vllm/pull/52541  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-utils-collection-utils</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Invalidate LazyDict cache on __setitem__</div>
         </div>
@@ -3177,13 +3177,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/52541" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #52541 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-collection-utils [bugfix][core] preserve none values in swap_dict_values functional claude-opus-5 https://github.com/vllm-project/vllm/pull/47961  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-utils-collection-utils [bugfix][core] preserve none values in swap_dict_values functional agentic-pbt https://github.com/vllm-project/vllm/pull/47961  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-utils-collection-utils</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Core] Preserve None values in swap_dict_values</div>
         </div>
@@ -3191,13 +3191,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/47961" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #47961 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-utils [bugfix] fix extreme case in pythonic parser argument json safety functional claude-opus-5 https://github.com/vllm-project/vllm/pull/51649  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-utils [bugfix] fix extreme case in pythonic parser argument json safety functional agentic-pbt https://github.com/vllm-project/vllm/pull/51649  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-utils</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Fix extreme case in pythonic parser argument json safety</div>
         </div>
@@ -3205,13 +3205,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/51649" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #51649 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-sampling-params-structuredoutputsparams [bugfix][structured outputs] reject empty `structural_tag` at request validation crash claude-opus-5 https://github.com/vllm-project/vllm/pull/47450  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-sampling-params-structuredoutputsparams [bugfix][structured outputs] reject empty `structural_tag` at request validation crash agentic-pbt https://github.com/vllm-project/vllm/pull/47450  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-sampling-params-structuredoutputsparams</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Structured Outputs] Reject empty `structural_tag` at request validation</div>
         </div>
@@ -3219,13 +3219,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/47450" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #47450 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-xlam-tool-parser;vllm-tool-parsers-hunyuan-a13b-tool-parser [bug]: xlam and hunyuan_a13b tool parsers drop the arguments of any tool call that follows an empty-argument call (streaming) functional claude-opus-5 https://github.com/vllm-project/vllm/issues/47901  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-xlam-tool-parser;vllm-tool-parsers-hunyuan-a13b-tool-parser [bug]: xlam and hunyuan_a13b tool parsers drop the arguments of any tool call that follows an empty-argument call (streaming) functional agentic-pbt https://github.com/vllm-project/vllm/issues/47901  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-xlam-tool-parser;vllm-tool-parsers-hunyuan-a13b-tool-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: xlam and hunyuan_a13b tool parsers drop the arguments of any tool call that follows an empty-argument call (streaming)</div>
         </div>
@@ -3233,13 +3233,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/47901" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #47901 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-basic-parsers [bugfix] count reasoning tokens when the start token is absent functional claude-opus-5 https://github.com/vllm-project/vllm/pull/49743  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-basic-parsers [bugfix] count reasoning tokens when the start token is absent functional agentic-pbt https://github.com/vllm-project/vllm/pull/49743  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-reasoning-basic-parsers</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Count reasoning tokens when the start token is absent</div>
         </div>
@@ -3247,13 +3247,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/49743" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #49743 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-entrypoints-openai-completion-protocol-completionreques [bugfix] reject empty prompt lists in completionrequest functional claude-opus-5 https://github.com/vllm-project/vllm/pull/55391  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-entrypoints-openai-completion-protocol-completionreques [bugfix] reject empty prompt lists in completionrequest functional agentic-pbt https://github.com/vllm-project/vllm/pull/55391  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-entrypoints-openai-completion-protocol-completionreques</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] reject empty prompt lists in CompletionRequest</div>
         </div>
@@ -3261,13 +3261,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/55391" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #55391 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-entrypoints-openai-completion-protocol-completionreques [bugfix][frontend] avoid mutating openai request extra args functional claude-opus-5 https://github.com/vllm-project/vllm/pull/50353  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-entrypoints-openai-completion-protocol-completionreques [bugfix][frontend] avoid mutating openai request extra args functional agentic-pbt https://github.com/vllm-project/vllm/pull/50353  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-entrypoints-openai-completion-protocol-completionreques</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Frontend] Avoid mutating OpenAI request extra args</div>
         </div>
@@ -3275,13 +3275,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/50353" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #50353 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-deepseek-v3-reasoning-parser [bugfix][frontend] count reasoning tokens for harmony, deepseek-v3 and step3 parsers functional claude-opus-5 https://github.com/vllm-project/vllm/pull/58626  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-deepseek-v3-reasoning-parser [bugfix][frontend] count reasoning tokens for harmony, deepseek-v3 and step3 parsers functional agentic-pbt https://github.com/vllm-project/vllm/pull/58626  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-reasoning-deepseek-v3-reasoning-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][Frontend] Count reasoning tokens for Harmony, DeepSeek-V3 and Step3 parsers</div>
         </div>
@@ -3289,13 +3289,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/58626" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #58626 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-ernie45-reasoning-parser fix(reasoning): recompute ernie45 response-end index after stripping prefix functional claude-opus-5 https://github.com/vllm-project/vllm/pull/48386  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-ernie45-reasoning-parser fix(reasoning): recompute ernie45 response-end index after stripping prefix functional agentic-pbt https://github.com/vllm-project/vllm/pull/48386  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-reasoning-ernie45-reasoning-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(reasoning): recompute ernie45 response-end index after stripping prefix</div>
         </div>
@@ -3303,13 +3303,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48386" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48386 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-v1-structured-output [bugfix] escape control characters in xgrammar choice grammar functional claude-opus-5 https://github.com/vllm-project/vllm/pull/48115  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-v1-structured-output [bugfix] escape control characters in xgrammar choice grammar functional agentic-pbt https://github.com/vllm-project/vllm/pull/48115  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-v1-structured-output</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Escape control characters in xgrammar choice grammar</div>
         </div>
@@ -3317,13 +3317,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48115" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48115 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-v1-structured-output [bugfix] make lark-to-ebnf quote handling escape-aware functional claude-opus-5 https://github.com/vllm-project/vllm/pull/57695  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-v1-structured-output [bugfix] make lark-to-ebnf quote handling escape-aware functional agentic-pbt https://github.com/vllm-project/vllm/pull/57695  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-v1-structured-output</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Make Lark-to-EBNF quote handling escape-aware</div>
         </div>
@@ -3331,13 +3331,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/57695" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #57695 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-abstract-tool-parser-toolparser [bugfix] avoid mutating tool parameters in _get_tool_schema_defs functional claude-opus-5 https://github.com/vllm-project/vllm/pull/46170  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-abstract-tool-parser-toolparser [bugfix] avoid mutating tool parameters in _get_tool_schema_defs functional agentic-pbt https://github.com/vllm-project/vllm/pull/46170  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-abstract-tool-parser-toolparser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Avoid mutating tool parameters in _get_tool_schema_defs</div>
         </div>
@@ -3345,13 +3345,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/46170" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #46170 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long [bugfix] limit split to first marker in internlm2 tool parser crash claude-opus-5 https://github.com/vllm-project/vllm/pull/44163  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long [bugfix] limit split to first marker in internlm2 tool parser crash agentic-pbt https://github.com/vllm-project/vllm/pull/44163  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-tool-parsers-internlm2-tool-parser;vllm-tool-parsers-internlm2-tool-parser--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Limit split to first marker in internlm2 tool parser</div>
         </div>
@@ -3359,13 +3359,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/44163" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #44163 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm-model-executor-models-qwen3-moe [bug]: qwen3moesparsemoeblock rejects its documented 1d input functional claude-opus-5 https://github.com/vllm-project/vllm/issues/55205  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm-model-executor-models-qwen3-moe [bug]: qwen3moesparsemoeblock rejects its documented 1d input functional agentic-pbt https://github.com/vllm-project/vllm/issues/55205  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm-model-executor-models-qwen3-moe</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: Qwen3MoeSparseMoeBlock rejects its documented 1D input</div>
         </div>
@@ -3373,13 +3373,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/55205" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #55205 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm-model-executor-layers-rotary-embedding-fope [bug]: fourierrotaryembedding pads sin with 1 and corrupts unrotated channels crash claude-opus-5 https://github.com/vllm-project/vllm/issues/55204  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm-model-executor-layers-rotary-embedding-fope [bug]: fourierrotaryembedding pads sin with 1 and corrupts unrotated channels crash agentic-pbt https://github.com/vllm-project/vllm/issues/55204  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm-model-executor-layers-rotary-embedding-fope</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: FourierRotaryEmbedding pads sin with 1 and corrupts unrotated channels</div>
         </div>
@@ -3387,13 +3387,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/55204" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #55204 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-lora;vllm-lora--again;vllm-lora--long [bugfix][lora] skip no-lora tokens (index -1) in cpu torch bgmv ops functional claude-opus-5 https://github.com/vllm-project/vllm/pull/48421  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-lora;vllm-lora--again;vllm-lora--long [bugfix][lora] skip no-lora tokens (index -1) in cpu torch bgmv ops functional agentic-pbt https://github.com/vllm-project/vllm/pull/48421  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm-lora;vllm-lora--again;vllm-lora--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix][LoRA] Skip no-LoRA tokens (index -1) in CPU torch bgmv ops</div>
         </div>
@@ -3401,13 +3401,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48421" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48421 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.multimodal.audio.audiospec [bug]: audiospec(target_channels=1) does not produce 1d mono output for single-channel 2d audio functional claude-opus-5 https://github.com/vllm-project/vllm/issues/59267  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm.multimodal.audio.audiospec [bug]: audiospec(target_channels=1) does not produce 1d mono output for single-channel 2d audio functional agentic-pbt https://github.com/vllm-project/vllm/issues/59267  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm.multimodal.audio.AudioSpec</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: AudioSpec(target_channels=1) does not produce 1D mono output for single-channel 2D audio</div>
         </div>
@@ -3415,13 +3415,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59267" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59267 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor crash claude-opus-5 https://github.com/vllm-project/vllm/issues/59268  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor crash agentic-pbt https://github.com/vllm-project/vllm/issues/59268  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm.utils.system_utils.suppress_stdout</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor</div>
         </div>
@@ -3429,13 +3429,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59268" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59268 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2 crash claude-opus-5 https://github.com/vllm-project/vllm/issues/59269  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2 crash agentic-pbt https://github.com/vllm-project/vllm/issues/59269  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm.utils.system_utils.suppress_stdout</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2</div>
         </div>
@@ -3443,13 +3443,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59269" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59269 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.plugins.lora_resolvers.filesystem_resolver.register_filesystem_resolver [bug]: filesystemresolver loads adapters outside vllm_lora_resolver_cache_dir (path traversal via lora name) functional claude-opus-5 https://github.com/vllm-project/vllm/issues/59270  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vllm.plugins.lora_resolvers.filesystem_resolver.register_filesystem_resolver [bug]: filesystemresolver loads adapters outside vllm_lora_resolver_cache_dir (path traversal via lora name) functional agentic-pbt https://github.com/vllm-project/vllm/issues/59270  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vllm.plugins.lora_resolvers.filesystem_resolver.register_filesystem_resolver</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: FilesystemResolver loads adapters outside VLLM_LORA_RESOLVER_CACHE_DIR (path traversal via LoRA name)</div>
         </div>
@@ -3457,13 +3457,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59270" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59270 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.models.deepseek_v4.common.mm_preprocess.deepseekv4vlimageprocessor [bug]: deepseek-v4 vl dummy image is not the worst case for multimodal profiling functional claude-opus-5 https://github.com/vllm-project/vllm/issues/59271  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.models.deepseek_v4.common.mm_preprocess.deepseekv4vlimageprocessor [bug]: deepseek-v4 vl dummy image is not the worst case for multimodal profiling functional agentic-pbt https://github.com/vllm-project/vllm/issues/59271  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm.models.deepseek_v4.common.mm_preprocess.DeepseekV4VLImageProcessor</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: DeepSeek-V4 VL dummy image is not the worst case for multimodal profiling</div>
         </div>
@@ -3471,13 +3471,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59271" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59271 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.v1.sample.thinking_budget_state.thinkingbudgetstateholder [bug]: thinkingbudgetstateholder maps every request to logits row 0 when spec decoding is on but a step has no drafts functional claude-opus-5 https://github.com/vllm-project/vllm/issues/59272  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.v1.sample.thinking_budget_state.thinkingbudgetstateholder [bug]: thinkingbudgetstateholder maps every request to logits row 0 when spec decoding is on but a step has no drafts functional agentic-pbt https://github.com/vllm-project/vllm/issues/59272  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm.v1.sample.thinking_budget_state.ThinkingBudgetStateHolder</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: ThinkingBudgetStateHolder maps every request to logits row 0 when spec decoding is on but a step has no drafts</div>
         </div>
@@ -3485,13 +3485,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59272" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59272 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.v1.sample.thinking_budget_state.thinkingbudgetstateholder [bug]: thinkingbudgetstateholder.sync_batch leaks stale state on unidirectional moves functional claude-opus-5 https://github.com/vllm-project/vllm/issues/59273  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.v1.sample.thinking_budget_state.thinkingbudgetstateholder [bug]: thinkingbudgetstateholder.sync_batch leaks stale state on unidirectional moves functional agentic-pbt https://github.com/vllm-project/vllm/issues/59273  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm.v1.sample.thinking_budget_state.ThinkingBudgetStateHolder</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: ThinkingBudgetStateHolder.sync_batch leaks stale state on unidirectional moves</div>
         </div>
@@ -3499,13 +3499,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59273" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59273 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: vllm hangs indefinitely with low `num_gpu_blocks_override` crash claude-opus-4-8 https://github.com/vllm-project/vllm/issues/35541  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: vllm hangs indefinitely with low `num_gpu_blocks_override` crash agentic-pbt https://github.com/vllm-project/vllm/issues/35541  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: vLLM hangs indefinitely with low `num_gpu_blocks_override`</div>
         </div>
@@ -3513,13 +3513,13 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/35541" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #35541 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: `block_size=8` triggers triton compilationerror in flexattention kernel; other backends correctly reject crash claude-opus-4-8 https://github.com/vllm-project/vllm/issues/39340  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: `block_size=8` triggers triton compilationerror in flexattention kernel; other backends correctly reject crash agentic-pbt https://github.com/vllm-project/vllm/issues/39340  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-4-8</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]: `block_size=8` triggers Triton CompilationError in FlexAttention kernel; other backends correctly reject</div>
         </div>
@@ -3549,13 +3549,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-code-completion-parser fix(completion): treat none suffix as empty in fim prompt builder functional claude-opus-5 https://github.com/sgl-project/sglang/pull/31022  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-code-completion-parser fix(completion): treat none suffix as empty in fim prompt builder functional agentic-pbt https://github.com/sgl-project/sglang/pull/31022  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-parser-code-completion-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(completion): treat None suffix as empty in FIM prompt builder</div>
         </div>
@@ -3563,13 +3563,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/31022" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #31022 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-qwen25-detector [fix] keep normal text preceding the tool-call opener in streaming parsers functional claude-opus-5 https://github.com/sgl-project/sglang/pull/35169  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-qwen25-detector [fix] keep normal text preceding the tool-call opener in streaming parsers functional agentic-pbt https://github.com/sgl-project/sglang/pull/35169  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-qwen25-detector</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Fix] Keep normal text preceding the tool-call opener in streaming parsers</div>
         </div>
@@ -3577,13 +3577,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/35169" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #35169 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-qwen25-detector;sglang-srt-function-call-function-call-parser-functioncallpa;sglang-srt-function-call-llama32-detector;sglang-srt-function-call-gigachat3-detector;sglang-srt-function-call-hermes-detector--long;sglang-srt-function-call-llama32-detector--long;sglang-srt-function-call-mistral-detector--long [bug] 9 tool-call parsers drop arguments when one streaming increment has more than one complete call functional claude-opus-5 https://github.com/sgl-project/sglang/issues/37634  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-qwen25-detector;sglang-srt-function-call-function-call-parser-functioncallpa;sglang-srt-function-call-llama32-detector;sglang-srt-function-call-gigachat3-detector;sglang-srt-function-call-hermes-detector--long;sglang-srt-function-call-llama32-detector--long;sglang-srt-function-call-mistral-detector--long [bug] 9 tool-call parsers drop arguments when one streaming increment has more than one complete call functional agentic-pbt https://github.com/sgl-project/sglang/issues/37634  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-qwen25-detector;sglang-srt-function-call-function-call-parser-functioncallpa;sglang-srt-function-call-llama32-detector;sglang-srt-function-call-gigachat3-detector;sglang-srt-function-call-hermes-detector--long;sglang-srt-function-call-llama32-detector--long;sglang-srt-function-call-mistral-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] 9 tool-call parsers drop arguments when one streaming increment has more than one complete call</div>
         </div>
@@ -3591,13 +3591,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/37634" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37634 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug]  8 tool-call parsers give wrong or missing calls in token-by-token streaming functional claude-opus-5 https://github.com/sgl-project/sglang/issues/35564  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug]  8 tool-call parsers give wrong or missing calls in token-by-token streaming functional agentic-pbt https://github.com/sgl-project/sglang/issues/35564  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]  8 tool-call parsers give wrong or missing calls in token-by-token streaming</div>
         </div>
@@ -3605,13 +3605,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/35564" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #35564 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector;sglang-srt-function-call-lfm2-detector--long;sglang-srt-function-call-llama32-detector--long fix(function_call): skip non-object entries in parse_base_json crash claude-opus-5 https://github.com/sgl-project/sglang/pull/37291  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector;sglang-srt-function-call-lfm2-detector--long;sglang-srt-function-call-llama32-detector--long fix(function_call): skip non-object entries in parse_base_json crash agentic-pbt https://github.com/sgl-project/sglang/pull/37291  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-llama32-detector;sglang-srt-function-call-lfm2-detector--long;sglang-srt-function-call-llama32-detector--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(function_call): skip non-object entries in parse_base_json</div>
         </div>
@@ -3619,13 +3619,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/37291" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #37291 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mimo-detector;sglang-srt-function-call-mimo-detector--long [bug] mimo tool-call streaming: text after the last tool call is silently dropped; split bot-token flushes markup into content functional claude-opus-5 https://github.com/sgl-project/sglang/issues/33186  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mimo-detector;sglang-srt-function-call-mimo-detector--long [bug] mimo tool-call streaming: text after the last tool call is silently dropped; split bot-token flushes markup into content functional agentic-pbt https://github.com/sgl-project/sglang/issues/33186  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-mimo-detector;sglang-srt-function-call-mimo-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] MiMo tool-call streaming: text after the last tool call is silently dropped; split bot-token flushes markup into content</div>
         </div>
@@ -3633,13 +3633,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/33186" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #33186 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-trinity-detector fix(function_call): strip think tags split across stream chunks in trinity functional claude-opus-5 https://github.com/sgl-project/sglang/pull/30990  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-trinity-detector fix(function_call): strip think tags split across stream chunks in trinity functional agentic-pbt https://github.com/sgl-project/sglang/pull/30990  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-trinity-detector</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(function_call): strip think tags split across stream chunks in Trinity</div>
         </div>
@@ -3647,13 +3647,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/30990" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #30990 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-reasoning-parser-reasoningparser;sglang-srt-parser-reasoning-parser-reasoningparser--long [fix] cohere command4: strip echoed `&lt;|start_thinking|&gt;` in streaming and flush the final text block functional claude-opus-5 https://github.com/sgl-project/sglang/pull/33225  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-reasoning-parser-reasoningparser;sglang-srt-parser-reasoning-parser-reasoningparser--long [fix] cohere command4: strip echoed `&lt;|start_thinking|&gt;` in streaming and flush the final text block functional agentic-pbt https://github.com/sgl-project/sglang/pull/33225  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-parser-reasoning-parser-reasoningparser;sglang-srt-parser-reasoning-parser-reasoningparser--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Fix] Cohere Command4: strip echoed `&lt;|START_THINKING|&gt;` in streaming and flush the final text block</div>
         </div>
@@ -3661,13 +3661,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/33225" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #33225 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mimo-detector;sglang-srt-function-call-qwen3-coder-detector;sglang-srt-function-call-mimo-detector--long;sglang-srt-function-call-poolside-v1-detector--long fix(function_call): handle non-finite numbers in tool-call argument coercion crash claude-opus-5 https://github.com/sgl-project/sglang/pull/28797  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mimo-detector;sglang-srt-function-call-qwen3-coder-detector;sglang-srt-function-call-mimo-detector--long;sglang-srt-function-call-poolside-v1-detector--long fix(function_call): handle non-finite numbers in tool-call argument coercion crash agentic-pbt https://github.com/sgl-project/sglang/pull/28797  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-mimo-detector;sglang-srt-function-call-qwen3-coder-detector;sglang-srt-function-call-mimo-detector--long;sglang-srt-function-call-poolside-v1-detector--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix(function_call): handle non-finite numbers in tool-call argument coercion</div>
         </div>
@@ -3675,13 +3675,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/28797" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #28797 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Rejected" data-search="sglang-srt-layers-deep-gemm-wrapper-configurer [bug] jit deepgemm is enabled on sm121 (gb10 / dgx spark): the sm120 exclusion checks `== 120` instead of the consumer-blackwell family functional claude-opus-5 https://github.com/sgl-project/sglang/issues/36551  rejected">
+      <div class="bug-card-row" data-status="Rejected" data-search="sglang-srt-layers-deep-gemm-wrapper-configurer [bug] jit deepgemm is enabled on sm121 (gb10 / dgx spark): the sm120 exclusion checks `== 120` instead of the consumer-blackwell family functional agentic-pbt https://github.com/sgl-project/sglang/issues/36551  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">sglang-srt-layers-deep-gemm-wrapper-configurer</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] JIT DeepGEMM is enabled on SM121 (GB10 / DGX Spark): the SM120 exclusion checks `== 120` instead of the consumer-Blackwell family</div>
         </div>
@@ -3689,13 +3689,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/36551" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #36551 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-harmony-parser;sglang-srt-parser-harmony-parser--long [parser] hold back harmony markers split across streaming chunks functional claude-opus-5 https://github.com/sgl-project/sglang/pull/41017  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-parser-harmony-parser;sglang-srt-parser-harmony-parser--long [parser] hold back harmony markers split across streaming chunks functional agentic-pbt https://github.com/sgl-project/sglang/pull/41017  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-parser-harmony-parser;sglang-srt-parser-harmony-parser--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[parser] Hold back harmony markers split across streaming chunks</div>
         </div>
@@ -3703,13 +3703,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/41017" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #41017 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long fix: truncate xgrammar accepted_tokens in place on rollback functional claude-opus-5 https://github.com/sgl-project/sglang/pull/31728  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long fix: truncate xgrammar accepted_tokens in place on rollback functional agentic-pbt https://github.com/sgl-project/sglang/pull/31728  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">fix: truncate xgrammar accepted_tokens in place on rollback</div>
         </div>
@@ -3717,13 +3717,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/31728" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #31728 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang.srt.function_call.apertus2509_detector.apertus2509detector apertus2509detector (streaming) drops the second tool block and trailing text when they arrive in the same chunk` functional claude-opus-5 https://github.com/sgl-project/sglang/issues/41821  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang.srt.function_call.apertus2509_detector.apertus2509detector apertus2509detector (streaming) drops the second tool block and trailing text when they arrive in the same chunk` functional agentic-pbt https://github.com/sgl-project/sglang/issues/41821  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang.srt.function_call.apertus2509_detector.Apertus2509Detector</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Apertus2509Detector (streaming) drops the second tool block and trailing text when they arrive in the same chunk`</div>
         </div>
@@ -3731,13 +3731,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/41821" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41821 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-entrypoints-ollama-serving--long [ollama] map options.seed to the sampling_seed field crash claude-opus-5 https://github.com/sgl-project/sglang/pull/39131  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-entrypoints-ollama-serving--long [ollama] map options.seed to the sampling_seed field crash agentic-pbt https://github.com/sgl-project/sglang/pull/39131  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-entrypoints-ollama-serving--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Ollama] Map options.seed to the sampling_seed field</div>
         </div>
@@ -3745,13 +3745,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/39131" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #39131 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-deepseekv3-detector--long tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors) functional claude-opus-5 https://github.com/sgl-project/sglang/issues/31915  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-deepseekv3-detector--long tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors) functional agentic-pbt https://github.com/sgl-project/sglang/issues/31915  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-deepseekv3-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors)</div>
         </div>
@@ -3759,13 +3759,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/31915" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #31915 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-hunyuan-detector--long [fix] parse hunyuan tool arguments with json schema type arrays crash claude-opus-5 https://github.com/sgl-project/sglang/pull/38940  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-hunyuan-detector--long [fix] parse hunyuan tool arguments with json schema type arrays crash agentic-pbt https://github.com/sgl-project/sglang/pull/38940  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-hunyuan-detector--long</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Fix] Parse Hunyuan tool arguments with JSON Schema type arrays</div>
         </div>
@@ -3773,13 +3773,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/38940" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #38940 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long;sglang#1 [bugfix] flush pending tool calls at end of stream in the llama 3.2 detector functional claude-opus-5 https://github.com/sgl-project/sglang/pull/40994  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long;sglang#1 [bugfix] flush pending tool calls at end of stream in the llama 3.2 detector functional agentic-pbt https://github.com/sgl-project/sglang/pull/40994  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-llama32-detector--long;sglang#1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Flush pending tool calls at end of stream in the Llama 3.2 detector</div>
         </div>
@@ -3787,13 +3787,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/40994" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #40994 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long [bugfix] preserve single quotes inside json values in llama32 streaming tool calls functional claude-opus-5 https://github.com/sgl-project/sglang/pull/29582  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long [bugfix] preserve single quotes inside json values in llama32 streaming tool calls functional agentic-pbt https://github.com/sgl-project/sglang/pull/29582  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-llama32-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bugfix] Preserve single quotes inside JSON values in Llama32 streaming tool calls</div>
         </div>
@@ -3801,13 +3801,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/pull/29582" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #29582 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mistral-detector--long;sglang_1 tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors) functional claude-opus-5 https://github.com/sgl-project/sglang/issues/31915  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-mistral-detector--long;sglang_1 tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors) functional agentic-pbt https://github.com/sgl-project/sglang/issues/31915  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang-srt-function-call-mistral-detector--long;sglang_1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Tool-call parsers lose or corrupt data at streaming chunk boundaries (multiple detectors)</div>
         </div>
@@ -3815,13 +3815,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/31915" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #31915 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517 [bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks crash claude-opus-5 https://github.com/sgl-project/sglang/issues/35563  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517 [bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks crash agentic-pbt https://github.com/sgl-project/sglang/issues/35563  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks</div>
         </div>
@@ -3829,13 +3829,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/35563" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #35563 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-function-call-parser-functioncallpa [bug] deepseekv31detector.structure_info() omits `&lt;｜tool▁calls▁begin｜&gt;`, so its own detect_and_parse returns no tool call functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42131  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-function-call-parser-functioncallpa [bug] deepseekv31detector.structure_info() omits `&lt;｜tool▁calls▁begin｜&gt;`, so its own detect_and_parse returns no tool call functional agentic-pbt https://github.com/sgl-project/sglang/issues/42131  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-function-call-parser-functioncallpa</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] DeepSeekV31Detector.structure_info() omits `&lt;｜tool▁calls▁begin｜&gt;`, so its own detect_and_parse returns no tool call</div>
         </div>
@@ -3843,13 +3843,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42131" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42131 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug] glm4moedetector streaming emits invalid json when a non-string parameter&#x27;s value is not valid json functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42132  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug] glm4moedetector streaming emits invalid json when a non-string parameter&#x27;s value is not valid json functional agentic-pbt https://github.com/sgl-project/sglang/issues/42132  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] Glm4MoeDetector streaming emits invalid JSON when a non-string parameter&#x27;s value is not valid JSON</div>
         </div>
@@ -3857,13 +3857,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42132" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42132 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug]  glm4moedetector changes string-typed argument values that look like json (&quot;true&quot; → &quot;true&quot;, &quot;1.50&quot; → &quot;1.5&quot;) functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42133  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long [bug]  glm4moedetector changes string-typed argument values that look like json (&quot;true&quot; → &quot;true&quot;, &quot;1.50&quot; → &quot;1.5&quot;) functional agentic-pbt https://github.com/sgl-project/sglang/issues/42133  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-glm4-moe-detector;sglang-srt-function-call-glm4-moe-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug]  Glm4MoeDetector changes string-typed argument values that look like JSON (&quot;true&quot; → &quot;True&quot;, &quot;1.50&quot; → &quot;1.5&quot;)</div>
         </div>
@@ -3871,13 +3871,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42133" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42133 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-entrypoints-openai-protocol;sglang-srt-entrypoints-openai-protocol--long [bug] chatcompletionrequest.set_json_schema mutates the caller&#x27;s response_format schema (reused schemas change behaviour) functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42134  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-entrypoints-openai-protocol;sglang-srt-entrypoints-openai-protocol--long [bug] chatcompletionrequest.set_json_schema mutates the caller&#x27;s response_format schema (reused schemas change behaviour) functional agentic-pbt https://github.com/sgl-project/sglang/issues/42134  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-entrypoints-openai-protocol;sglang-srt-entrypoints-openai-protocol--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] ChatCompletionRequest.set_json_schema mutates the caller&#x27;s response_format schema (reused schemas change behaviour)</div>
         </div>
@@ -3885,13 +3885,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42134" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42134 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-cohere-command4-detector;sglang-srt-function-call-cohere-command4-detector--long [bug] cohere_command4 detector (streaming) drops the tool call when text and the whole action block arrive in one chunk functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42135  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-cohere-command4-detector;sglang-srt-function-call-cohere-command4-detector--long [bug] cohere_command4 detector (streaming) drops the tool call when text and the whole action block arrive in one chunk functional agentic-pbt https://github.com/sgl-project/sglang/issues/42135  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-cohere-command4-detector;sglang-srt-function-call-cohere-command4-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] cohere_command4 detector (streaming) drops the tool call when text and the whole action block arrive in one chunk</div>
         </div>
@@ -3899,13 +3899,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42135" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42135 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long [bug] deepseekv31 detector (streaming) drops the text that shares a delta with the start of a tool call functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42136  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long [bug] deepseekv31 detector (streaming) drops the text that shares a delta with the start of a tool call functional agentic-pbt https://github.com/sgl-project/sglang/issues/42136  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] deepseekv31 detector (streaming) drops the text that shares a delta with the start of a tool call</div>
         </div>
@@ -3913,13 +3913,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42136" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42136 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long [bug] deepseekv31 detector (streaming): greedy name regex drops a call and attaches the next call&#x27;s arguments to it functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42137  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long [bug] deepseekv31 detector (streaming): greedy name regex drops a call and attaches the next call&#x27;s arguments to it functional agentic-pbt https://github.com/sgl-project/sglang/issues/42137  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-deepseekv31-detector;sglang-srt-function-call-deepseekv31-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] deepseekv31 detector (streaming): greedy name regex drops a call and attaches the next call&#x27;s arguments to it</div>
         </div>
@@ -3927,13 +3927,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42137" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42137 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-hunyuan-detector;sglang-srt-function-call-hunyuan-detector--long [bug] hunyuan detector (streaming): control characters in string arguments produce invalid, corrupted json functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42139  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-hunyuan-detector;sglang-srt-function-call-hunyuan-detector--long [bug] hunyuan detector (streaming): control characters in string arguments produce invalid, corrupted json functional agentic-pbt https://github.com/sgl-project/sglang/issues/42139  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-hunyuan-detector;sglang-srt-function-call-hunyuan-detector--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] hunyuan detector (streaming): control characters in string arguments produce invalid, corrupted JSON</div>
         </div>
@@ -3941,13 +3941,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42139" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42139 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-trinity-detector [bug] trinity detector removes `&lt;think&gt;` / `&lt;/think&gt;` from inside tool-call arguments functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42140  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-function-call-trinity-detector [bug] trinity detector removes `&lt;think&gt;` / `&lt;/think&gt;` from inside tool-call arguments functional agentic-pbt https://github.com/sgl-project/sglang/issues/42140  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-function-call-trinity-detector</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] trinity detector removes `&lt;think&gt;` / `&lt;/think&gt;` from inside tool-call arguments</div>
         </div>
@@ -3955,13 +3955,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42140" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42140 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-entrypoints-ollama-serving [bug] ollama streaming endpoints mangle the output when `--incremental-streaming-output` is on functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42141  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-entrypoints-ollama-serving [bug] ollama streaming endpoints mangle the output when `--incremental-streaming-output` is on functional agentic-pbt https://github.com/sgl-project/sglang/issues/42141  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-entrypoints-ollama-serving</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] Ollama streaming endpoints mangle the output when `--incremental-streaming-output` is on</div>
         </div>
@@ -3969,13 +3969,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42141" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42141 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-utils-hf-transformers-common [bug] `get_hf_text_config` raises attributeerror when `thinker_config` holds a dict `text_config` crash claude-opus-5 https://github.com/sgl-project/sglang/issues/42142  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-utils-hf-transformers-common [bug] `get_hf_text_config` raises attributeerror when `thinker_config` holds a dict `text_config` crash agentic-pbt https://github.com/sgl-project/sglang/issues/42142  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-utils-hf-transformers-common</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] `get_hf_text_config` raises AttributeError when `thinker_config` holds a dict `text_config`</div>
         </div>
@@ -3983,13 +3983,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42142" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42142 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-parser-harmony-parser [bug] harmonyparser streaming: arguments of a tool call on the analysis channel are emitted as reasoning functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42143  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-parser-harmony-parser [bug] harmonyparser streaming: arguments of a tool call on the analysis channel are emitted as reasoning functional agentic-pbt https://github.com/sgl-project/sglang/issues/42143  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-parser-harmony-parser</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] HarmonyParser streaming: arguments of a tool call on the analysis channel are emitted as reasoning</div>
         </div>
@@ -3997,13 +3997,13 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/42143" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #42143 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long [bug] xgrammargrammarbackend._sanitize_structural_format` skips `optional`, `star`, `plus`, `repeat`, `dispatch`, `token_dispatch` and `token_triggered_tags`, so a `null` `json_schema` inside them is rejected functional claude-opus-5 https://github.com/sgl-project/sglang/issues/42144  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long [bug] xgrammargrammarbackend._sanitize_structural_format` skips `optional`, `star`, `plus`, `repeat`, `dispatch`, `token_dispatch` and `token_triggered_tags`, so a `null` `json_schema` inside them is rejected functional agentic-pbt https://github.com/sgl-project/sglang/issues/42144  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">sglang-srt-constrained-xgrammar-backend--again;sglang-srt-constrained-xgrammar-backend--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Bug] XGrammarGrammarBackend._sanitize_structural_format` skips `optional`, `star`, `plus`, `repeat`, `dispatch`, `token_dispatch` and `token_triggered_tags`, so a `null` `json_schema` inside them is rejected</div>
         </div>
@@ -4032,13 +4032,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run aql `substitute()` returns `null` for an empty input string functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23293  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run aql `substitute()` returns `null` for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23293  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">aql-functions-string-substitute; co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL `SUBSTITUTE()` returns `null` for an empty input string</div>
         </div>
@@ -4046,13 +4046,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23293" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23293 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run `substitute` returns null and an icu warning for an empty input string functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23357  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run `substitute` returns null and an icu warning for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23357  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">aql-functions-string-substitute; co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`SUBSTITUTE` returns null and an ICU warning for an empty input string</div>
         </div>
@@ -4060,13 +4060,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23357" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23357 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `to_number` converts a valid subnormal decimal string to zero functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23358  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `to_number` converts a valid subnormal decimal string to zero functional agentic-pbt https://github.com/arangodb/arangodb/issues/23358  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`TO_NUMBER` converts a valid subnormal decimal string to zero</div>
         </div>
@@ -4074,13 +4074,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23358" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23358 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run append(null, [])` returns null instead of the other input array functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23359  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run append(null, [])` returns null instead of the other input array functional agentic-pbt https://github.com/arangodb/arangodb/issues/23359  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">APPEND(null, [])` returns null instead of the other input array</div>
         </div>
@@ -4088,13 +4088,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23359" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23359 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run reverse corrupts a single astral unicode character functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23360  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run reverse corrupts a single astral unicode character functional agentic-pbt https://github.com/arangodb/arangodb/issues/23360  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">REVERSE corrupts a single astral Unicode character</div>
         </div>
@@ -4102,13 +4102,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23360" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23360 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `find_first` and `find_last` fail to find present control characters functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23361  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `find_first` and `find_last` fail to find present control characters functional agentic-pbt https://github.com/arangodb/arangodb/issues/23361  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`FIND_FIRST` and `FIND_LAST` fail to find present control characters</div>
         </div>
@@ -4116,13 +4116,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23361" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23361 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run `regex_matches` reports a match for an empty string that cannot match functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23362  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run `regex_matches` reports a match for an empty string that cannot match functional agentic-pbt https://github.com/arangodb/arangodb/issues/23362  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`REGEX_MATCHES` reports a match for an empty string that cannot match</div>
         </div>
@@ -4130,13 +4130,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23362" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23362 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-operators-array-comparison-operators;aql-operators-array-comparison-operators--long at least (&lt;n&gt;) (&lt;expression&gt;) is true even when n is larger than the array&#x27;s length functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23363  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="aql-operators-array-comparison-operators;aql-operators-array-comparison-operators--long at least (&lt;n&gt;) (&lt;expression&gt;) is true even when n is larger than the array&#x27;s length functional agentic-pbt https://github.com/arangodb/arangodb/issues/23363  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">aql-operators-array-comparison-operators;aql-operators-array-comparison-operators--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AT LEAST (&lt;n&gt;) (&lt;expression&gt;) is true even when n is larger than the array&#x27;s length</div>
         </div>
@@ -4144,13 +4144,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23363" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23363 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again persistent index with deterministic sort and offset limit incorrectly returns an empty result functional claude-opus-5 https://github.com/arangodb/arangodb/issues/22909  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again persistent index with deterministic sort and offset limit incorrectly returns an empty result functional agentic-pbt https://github.com/arangodb/arangodb/issues/22909  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Persistent index with deterministic SORT and offset LIMIT incorrectly returns an empty result</div>
         </div>
@@ -4158,13 +4158,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/22909" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #22909 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="date_diff();date_iso8601() arangodb date_iso8601() applies the sign of a negative utc offset only to its hours, not its minutes functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23382  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="date_diff();date_iso8601() arangodb date_iso8601() applies the sign of a negative utc offset only to its hours, not its minutes functional agentic-pbt https://github.com/arangodb/arangodb/issues/23382  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">DATE_DIFF();DATE_ISO8601()</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ArangoDB DATE_ISO8601() applies the sign of a negative UTC offset only to its hours, not its minutes</div>
         </div>
@@ -4172,13 +4172,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23382" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23382 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="ngram_match() arangodb `ngram_match()` counts one attribute n-gram many times (stale dp diagonal) functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23383  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="ngram_match() arangodb `ngram_match()` counts one attribute n-gram many times (stale dp diagonal) functional agentic-pbt https://github.com/arangodb/arangodb/issues/23383  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">NGRAM_MATCH()</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ArangoDB `NGRAM_MATCH()` counts one attribute n-gram many times (stale DP diagonal)</div>
         </div>
@@ -4186,13 +4186,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23383" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23383 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="to_array() arangodb aql `sorted()` replaces distinct elements that compare equal functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23384  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="to_array() arangodb aql `sorted()` replaces distinct elements that compare equal functional agentic-pbt https://github.com/arangodb/arangodb/issues/23384  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">TO_ARRAY()</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ArangoDB AQL `SORTED()` replaces distinct elements that compare equal</div>
         </div>
@@ -4200,13 +4200,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23384" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23384 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_parse();pi() `json_parse` exponent numbers can read beyond the input string functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23385  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="json_parse();pi() `json_parse` exponent numbers can read beyond the input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23385  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">JSON_PARSE();PI()</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`JSON_PARSE` exponent numbers can read beyond the input string</div>
         </div>
@@ -4214,13 +4214,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23385" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23385 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_parse() `json_parse` can misround fractions and large integer tokens functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23386  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="json_parse() `json_parse` can misround fractions and large integer tokens functional agentic-pbt https://github.com/arangodb/arangodb/issues/23386  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">JSON_PARSE()</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`JSON_PARSE` can misround fractions and large integer tokens</div>
         </div>
@@ -4228,13 +4228,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23386" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23386 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-execution-and-performance-query-optimization-optimizer-r aql `use-indexes` uses a sparse index for a range condition that can match `null` when an `or` branch proves non-null, dropping rows functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23396  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="aql-execution-and-performance-query-optimization-optimizer-r aql `use-indexes` uses a sparse index for a range condition that can match `null` when an `or` branch proves non-null, dropping rows functional agentic-pbt https://github.com/arangodb/arangodb/issues/23396  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">aql-execution-and-performance-query-optimization-optimizer-r</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL `use-indexes` uses a sparse index for a range condition that can match `null` when an `OR` branch proves non-null, dropping rows</div>
         </div>
@@ -4242,13 +4242,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23396" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23396 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-functions-string-substitute aql `substitute()` with several search values skips a match that starts right where the previous replacement ended functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23399  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="aql-functions-string-substitute aql `substitute()` with several search values skips a match that starts right where the previous replacement ended functional agentic-pbt https://github.com/arangodb/arangodb/issues/23399  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">aql-functions-string-substitute</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL `SUBSTITUTE()` with several search values skips a match that starts right where the previous replacement ended</div>
         </div>
@@ -4256,13 +4256,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23399" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23399 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-arithmetic-operators aql arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23400  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-arithmetic-operators aql arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not functional agentic-pbt https://github.com/arangodb/arangodb/issues/23400  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">aql-operators-arithmetic-operators</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not</div>
         </div>
@@ -4270,13 +4270,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23400" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23400 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-ternary-operator aql `remove-redundant-calculations` treats `(a ? b : c) ? d : e` and `a ? b : (c ? d : e)` as the same calculation functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23397  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-ternary-operator aql `remove-redundant-calculations` treats `(a ? b : c) ? d : e` and `a ? b : (c ? d : e)` as the same calculation functional agentic-pbt https://github.com/arangodb/arangodb/issues/23397  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">aql-operators-ternary-operator</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL `remove-redundant-calculations` treats `(a ? b : c) ? d : e` and `a ? b : (c ? d : e)` as the same calculation</div>
         </div>
@@ -4284,13 +4284,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23397" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23397 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import `post /_api/import` stores duplicate attribute names from document and tabular input functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23401  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import `post /_api/import` stores duplicate attribute names from document and tabular input functional agentic-pbt https://github.com/arangodb/arangodb/issues/23401  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">develop-http-api-import</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`POST /_api/import` stores duplicate attribute names from document and tabular input</div>
         </div>
@@ -4298,13 +4298,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23401" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23401 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import /_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid json functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23398  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import /_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid json functional agentic-pbt https://github.com/arangodb/arangodb/issues/23398  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">develop-http-api-import</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON</div>
         </div>
@@ -4312,13 +4312,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23398" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23398 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="indexes-and-search-indexing-working-with-indexes-persistent--again aql `collect` served from a persistent index merges the array values `[]` and `[null]` into one group functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23402  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="indexes-and-search-indexing-working-with-indexes-persistent--again aql `collect` served from a persistent index merges the array values `[]` and `[null]` into one group functional agentic-pbt https://github.com/arangodb/arangodb/issues/23402  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">indexes-and-search-indexing-working-with-indexes-persistent--again</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL `COLLECT` served from a persistent index merges the array values `[]` and `[null]` into one group</div>
         </div>
@@ -4326,13 +4326,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23402" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23402 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-ternary-operator--again aql ternary operator evaluates an untaken operand when it contains an array expansion with a subquery crash claude-opus-5 https://github.com/arangodb/arangodb/issues/23403  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-ternary-operator--again aql ternary operator evaluates an untaken operand when it contains an array expansion with a subquery crash agentic-pbt https://github.com/arangodb/arangodb/issues/23403  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">aql-operators-ternary-operator--again</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">AQL ternary operator evaluates an untaken operand when it contains an array expansion with a subquery</div>
         </div>
@@ -4340,13 +4340,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23403" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23403 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="arangodb#1;arangodb_1 `date_round` with a large positive amount terminates the server with sigfpe crash claude-opus-5 https://github.com/arangodb/arangodb/issues/23411  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="arangodb#1;arangodb_1 `date_round` with a large positive amount terminates the server with sigfpe crash agentic-pbt https://github.com/arangodb/arangodb/issues/23411  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">arangodb#1;arangodb_1</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`DATE_ROUND` with a large positive amount terminates the server with SIGFPE</div>
         </div>
@@ -4354,13 +4354,13 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23411" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23411 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="arangodb#1;arangodb_1 `date_round` assigns pre-1970 timestamps to the following bucket functional claude-opus-5 https://github.com/arangodb/arangodb/issues/23412  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="arangodb#1;arangodb_1 `date_round` assigns pre-1970 timestamps to the following bucket functional agentic-pbt https://github.com/arangodb/arangodb/issues/23412  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">arangodb#1;arangodb_1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`DATE_ROUND` assigns pre-1970 timestamps to the following bucket</div>
         </div>
@@ -4388,13 +4388,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-1-description;crontab-1-t;crontab-5-extensions support input from a pipe for `crontab -t -` functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/223  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-1-description;crontab-1-t;crontab-5-extensions support input from a pipe for `crontab -t -` functional agentic-pbt https://github.com/cronie-crond/cronie/issues/223  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">crontab-1-description;crontab-1-t;crontab-5-extensions</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Support input from a pipe for `crontab -T -`</div>
         </div>
@@ -4402,13 +4402,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/223" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #223 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t `anacron -t` error stream contradicts its manual functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/224  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t `anacron -t` error stream contradicts its manual functional agentic-pbt https://github.com/cronie-crond/cronie/issues/224  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">anacron-8-t</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`anacron -T` error stream contradicts its manual</div>
         </div>
@@ -4416,13 +4416,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/224" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #224 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t;anacrontab-5-start-hours-range;anacrontab-5-description anacron: start_hours_range, random_delay and preferred_hour are matched by prefix, so other variables such as start_hours_range_old are rejected or silently change scheduling functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/226  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t;anacrontab-5-start-hours-range;anacrontab-5-description anacron: start_hours_range, random_delay and preferred_hour are matched by prefix, so other variables such as start_hours_range_old are rejected or silently change scheduling functional agentic-pbt https://github.com/cronie-crond/cronie/issues/226  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">anacron-8-t;anacrontab-5-start-hours-range;anacrontab-5-description</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">anacron: START_HOURS_RANGE, RANDOM_DELAY and PREFERRED_HOUR are matched by prefix, so other variables such as START_HOURS_RANGE_OLD are rejected or silently change scheduling</div>
         </div>
@@ -4430,13 +4430,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/226" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #226 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t;anacrontab-5-description anacron: misspelled period macros such as `@monthlyxyz` are accepted as `@monthly`, and a job with an unknown macro runs although anacron says it is skipped functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/227  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="anacron-8-t;anacrontab-5-description anacron: misspelled period macros such as `@monthlyxyz` are accepted as `@monthly`, and a job with an unknown macro runs although anacron says it is skipped functional agentic-pbt https://github.com/cronie-crond/cronie/issues/227  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">anacron-8-t;anacrontab-5-description</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">anacron: misspelled period macros such as `@monthlyXYZ` are accepted as `@monthly`, and a job with an unknown macro runs although anacron says it is skipped</div>
         </div>
@@ -4444,13 +4444,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/227" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="anacrontab-5-start-hours-range anacron: start_hours_range hours are not range-checked (and overflow `int`), so invalid ranges pass `anacron -t` and silently stop all jobs functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/231  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="anacrontab-5-start-hours-range anacron: start_hours_range hours are not range-checked (and overflow `int`), so invalid ranges pass `anacron -t` and silently stop all jobs functional agentic-pbt https://github.com/cronie-crond/cronie/issues/231  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">anacrontab-5-start-hours-range</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">anacron: START_HOURS_RANGE hours are not range-checked (and overflow `int`), so invalid ranges pass `anacron -T` and silently stop all jobs</div>
         </div>
@@ -4458,13 +4458,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/231" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #231 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1-t cronnext: `-t` and `-q` parse the epoch time with `atoi()`, so times from 2038-01-19 on are truncated (y2038) functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/228  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1-t cronnext: `-t` and `-q` parse the epoch time with `atoi()`, so times from 2038-01-19 on are truncated (y2038) functional agentic-pbt https://github.com/cronie-crond/cronie/issues/228  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">cronnext-1-t</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">cronnext: `-t` and `-q` parse the epoch time with `atoi()`, so times from 2038-01-19 on are truncated (Y2038)</div>
         </div>
@@ -4472,13 +4472,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/228" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #228 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-extensions @daily`/`@midnight` and `@hourly` do not set `dom_star`/`dow_star`, unlike their documented equivalents (cf. #52) functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/229  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-extensions @daily`/`@midnight` and `@hourly` do not set `dom_star`/`dow_star`, unlike their documented equivalents (cf. #52) functional agentic-pbt https://github.com/cronie-crond/cronie/issues/229  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">crontab-5-extensions</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">@daily`/`@midnight` and `@hourly` do not set `DOM_STAR`/`DOW_STAR`, unlike their documented equivalents (cf. #52)</div>
         </div>
@@ -4486,13 +4486,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/229" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #229 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-description `cronnext` ignores a stepped day-of-week / day-of-month field functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/215  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-description `cronnext` ignores a stepped day-of-week / day-of-month field functional agentic-pbt https://github.com/cronie-crond/cronie/issues/215  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">crontab-5-description</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`cronnext` ignores a stepped day-of-week / day-of-month field</div>
         </div>
@@ -4500,13 +4500,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/215" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #215 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-description reversed ranges are accepted but never match functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/221  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-description reversed ranges are accepted but never match functional agentic-pbt https://github.com/cronie-crond/cronie/issues/221  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">crontab-5-description</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">reversed ranges are accepted but never match</div>
         </div>
@@ -4514,13 +4514,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/221" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #221 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-cron-tz `cronnext` ignores `cron_tz` functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/222  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="crontab-5-cron-tz `cronnext` ignores `cron_tz` functional agentic-pbt https://github.com/cronie-crond/cronie/issues/222  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">crontab-5-cron-tz</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`cronnext` ignores `CRON_TZ`</div>
         </div>
@@ -4528,13 +4528,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/222" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #222 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1 cronnext reports a time one hour late when skipping to a month with a different dst state functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/217  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1 cronnext reports a time one hour late when skipping to a month with a different dst state functional agentic-pbt https://github.com/cronie-crond/cronie/issues/217  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">cronnext-1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">cronnext reports a time one hour late when skipping to a month with a different DST state</div>
         </div>
@@ -4542,13 +4542,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/217" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #217 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1 cronnext can skip an entire matching day across a dst spring-forward transition functional claude-opus-5 https://github.com/cronie-crond/cronie/issues/218  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1 cronnext can skip an entire matching day across a dst spring-forward transition functional agentic-pbt https://github.com/cronie-crond/cronie/issues/218  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">cronnext-1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">cronnext can skip an entire matching day across a DST spring-forward transition</div>
         </div>
@@ -4556,13 +4556,13 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/218" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #218 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="anacrontab-5-description anacron: a large `random_delay` value crashes anacron with sigfpe or makes it loop forever crash claude-opus-5 https://github.com/cronie-crond/cronie/issues/230  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="anacrontab-5-description anacron: a large `random_delay` value crashes anacron with sigfpe or makes it loop forever crash agentic-pbt https://github.com/cronie-crond/cronie/issues/230  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">anacrontab-5-description</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">anacron: a large `RANDOM_DELAY` value crashes anacron with SIGFPE or makes it loop forever</div>
         </div>
@@ -4591,13 +4591,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Pending" data-search="pg_backup_start pg_backup_start accepts a newline in the label, and the backup will not start functional claude-opus-5 https://www.postgresql.org/account/submitbug/19730/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="pg_backup_start pg_backup_start accepts a newline in the label, and the backup will not start functional agentic-pbt https://www.postgresql.org/account/submitbug/19730/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">pg_backup_start</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">pg_backup_start accepts a newline in the label, and the backup will not start</div>
         </div>
@@ -4605,13 +4605,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19730/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional claude-opus-5 https://www.postgresql.org/account/submitbug/19731/  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19731/  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">last_value</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame</div>
         </div>
@@ -4619,13 +4619,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19731/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional claude-opus-5 https://www.postgresql.org/account/submitbug/19732/  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19732/  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">last_value</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame</div>
         </div>
@@ -4633,13 +4633,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19732/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_object an empty json_object rejects the on null and with unique keys clauses that its documented syntax allows functional claude-opus-5 https://www.postgresql.org/account/submitbug/19737/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="json_object an empty json_object rejects the on null and with unique keys clauses that its documented syntax allows functional agentic-pbt https://www.postgresql.org/account/submitbug/19737/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">json_object</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">an empty JSON_OBJECT rejects the ON NULL and WITH UNIQUE KEYS clauses that its documented syntax allows</div>
         </div>
@@ -4647,13 +4647,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19737/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="transaction_timestamp transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value functional claude-opus-5 https://www.postgresql.org/account/submitbug/19739/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="transaction_timestamp transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value functional agentic-pbt https://www.postgresql.org/account/submitbug/19739/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">transaction_timestamp</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value</div>
         </div>
@@ -4661,13 +4661,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19739/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="has_language_privilege has_language_privilege returns true for a nonexistent language oid when the current user is a superuser, where a named non-superuser gets null functional claude-opus-5 https://www.postgresql.org/account/submitbug/19740/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="has_language_privilege has_language_privilege returns true for a nonexistent language oid when the current user is a superuser, where a named non-superuser gets null functional agentic-pbt https://www.postgresql.org/account/submitbug/19740/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">has_language_privilege</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">has_language_privilege returns true for a nonexistent language OID when the current user is a superuser, where a named non-superuser gets null</div>
         </div>
@@ -4675,13 +4675,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19740/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="avg avg(double precision) overflows on cancelling finite inputs whose mean is representable functional claude-opus-5 https://www.postgresql.org/account/submitbug/19741/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="avg avg(double precision) overflows on cancelling finite inputs whose mean is representable functional agentic-pbt https://www.postgresql.org/account/submitbug/19741/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">avg</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">avg(double precision) overflows on cancelling finite inputs whose mean is representable</div>
         </div>
@@ -4689,13 +4689,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19741/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jsonb_object_agg_unique_strict (round 003-jsonb-object-agg-unique-strict) jsonb_object_agg_unique_strict silently discards a jsonb null value functional claude-opus-5 https://www.postgresql.org/account/submitbug/19735/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="jsonb_object_agg_unique_strict (round 003-jsonb-object-agg-unique-strict) jsonb_object_agg_unique_strict silently discards a jsonb null value functional agentic-pbt https://www.postgresql.org/account/submitbug/19735/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">jsonb_object_agg_unique_strict (round 003-jsonb-object-agg-unique-strict)</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">jsonb_object_agg_unique_strict silently discards a JSONB null value</div>
         </div>
@@ -4703,13 +4703,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19735/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_object (round 004-json-object) json_object with absent on null accepts a null key and an array, composite or json key for the omitted pair functional claude-opus-5 https://www.postgresql.org/account/submitbug/19736/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="json_object (round 004-json-object) json_object with absent on null accepts a null key and an array, composite or json key for the omitted pair functional agentic-pbt https://www.postgresql.org/account/submitbug/19736/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">json_object (round 004-json-object)</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">JSON_OBJECT with ABSENT ON NULL accepts a NULL key and an array, composite or JSON key for the omitted pair</div>
         </div>
@@ -4717,13 +4717,13 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19736/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="uuidv7 (round 009-uuidv7) uuidv7(interval) rejects timestamps 1 to 999 microseconds into the last millisecond its field can hold functional claude-opus-5 https://www.postgresql.org/account/submitbug/19738/  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="uuidv7 (round 009-uuidv7) uuidv7(interval) rejects timestamps 1 to 999 microseconds into the last millisecond its field can hold functional agentic-pbt https://www.postgresql.org/account/submitbug/19738/  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">uuidv7 (round 009-uuidv7)</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">uuidv7(interval) rejects timestamps 1 to 999 microseconds into the last millisecond its field can hold</div>
         </div>
@@ -4752,13 +4752,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="alignment-builtins [clang] assertion `is&lt;typeinfolvalue&gt;() &amp;&amp; &quot;not a type_info lvalue&quot;&#x27; failed with alignment builtins crash claude-opus-5 https://github.com/llvm/llvm-project/issues/216999  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="alignment-builtins [clang] assertion `is&lt;typeinfolvalue&gt;() &amp;&amp; &quot;not a type_info lvalue&quot;&#x27; failed with alignment builtins crash agentic-pbt https://github.com/llvm/llvm-project/issues/216999  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">alignment-builtins</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[Clang] Assertion `is&lt;TypeInfoLValue&gt;() &amp;&amp; &quot;not a type_info lvalue&quot;&#x27; failed with alignment builtins</div>
         </div>
@@ -4766,13 +4766,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/216999" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #216999 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="__is_bitwise_cloneable clang `__is_bitwise_cloneable` hangs the compiler on nested structs (exponential, un-memoized recursion) crash claude-opus-5 https://github.com/llvm/llvm-project/issues/227446  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="__is_bitwise_cloneable clang `__is_bitwise_cloneable` hangs the compiler on nested structs (exponential, un-memoized recursion) crash agentic-pbt https://github.com/llvm/llvm-project/issues/227446  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">__is_bitwise_cloneable</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">clang `__is_bitwise_cloneable` hangs the compiler on nested structs (exponential, un-memoized recursion)</div>
         </div>
@@ -4780,13 +4780,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/227446" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227446 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="model attribute clang `model` attribute silently ignored when the variable was referenced before its definition functional claude-opus-5 https://github.com/llvm/llvm-project/issues/227447  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="model attribute clang `model` attribute silently ignored when the variable was referenced before its definition functional agentic-pbt https://github.com/llvm/llvm-project/issues/227447  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">model attribute</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">clang `model` attribute silently ignored when the variable was referenced before its definition</div>
         </div>
@@ -4794,13 +4794,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/227447" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227447 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vectorcall attribute clang misassigns homogeneous vector aggregate arguments for sysv `vectorcall` functional claude-opus-5 https://github.com/llvm/llvm-project/issues/227451  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="vectorcall attribute clang misassigns homogeneous vector aggregate arguments for sysv `vectorcall` functional agentic-pbt https://github.com/llvm/llvm-project/issues/227451  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">vectorcall attribute</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">Clang misassigns homogeneous vector aggregate arguments for SysV `vectorcall`</div>
         </div>
@@ -4808,13 +4808,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/227451" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227451 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vectorcall attribute clang `__attribute__((vectorcall))` crashes on any `long double` parameter (x86_64 linux) crash claude-opus-5 https://github.com/llvm/llvm-project/issues/227448  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="vectorcall attribute clang `__attribute__((vectorcall))` crashes on any `long double` parameter (x86_64 linux) crash agentic-pbt https://github.com/llvm/llvm-project/issues/227448  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">vectorcall attribute</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">clang `__attribute__((vectorcall))` crashes on any `long double` parameter (x86_64 Linux)</div>
         </div>
@@ -4822,13 +4822,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/227448" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227448 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="alignment builtins [clang] `constexpr` `__builtin_align_down/up` on a pointer into an array reads the original element functional claude-opus-5 https://github.com/llvm/llvm-project/issues/227548  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="alignment builtins [clang] `constexpr` `__builtin_align_down/up` on a pointer into an array reads the original element functional agentic-pbt https://github.com/llvm/llvm-project/issues/227548  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">Alignment builtins</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">[clang] `constexpr` `__builtin_align_down/up` on a pointer into an array reads the original element</div>
         </div>
@@ -4836,13 +4836,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/227548" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #227548 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-convertvector `__builtin_convertvector` from `__bf16` to `long double` vectors gives wrong values crash claude-opus-5 https://github.com/llvm/llvm-project/issues/228648  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-convertvector `__builtin_convertvector` from `__bf16` to `long double` vectors gives wrong values crash agentic-pbt https://github.com/llvm/llvm-project/issues/228648  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">builtin-convertvector</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`__builtin_convertvector` from `__bf16` to `long double` vectors gives wrong values</div>
         </div>
@@ -4850,13 +4850,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/228648" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #228648 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-convertvector `__builtin_convertvector` to a `bool` vector folds 0.5 to `false` in a constant expression functional claude-opus-5 https://github.com/llvm/llvm-project/issues/228649  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-convertvector `__builtin_convertvector` to a `bool` vector folds 0.5 to `false` in a constant expression functional agentic-pbt https://github.com/llvm/llvm-project/issues/228649  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">builtin-convertvector</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`__builtin_convertvector` to a `bool` vector folds 0.5 to `false` in a constant expression</div>
         </div>
@@ -4864,13 +4864,13 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/228649" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #228649 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="nonnull attribute `nonnull` whose every index is rejected becomes &quot;all pointers&quot; and changes code functional claude-opus-5 https://github.com/llvm/llvm-project/issues/228670  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="nonnull attribute `nonnull` whose every index is rejected becomes &quot;all pointers&quot; and changes code functional agentic-pbt https://github.com/llvm/llvm-project/issues/228670  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">nonnull attribute</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">`nonnull` whose every index is rejected becomes &quot;all pointers&quot; and changes code</div>
         </div>
@@ -4900,13 +4900,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-is-virtual-base-of __builtin_is_virtual_base_of reports a non-virtual base reached through a virtual base as virtual functional claude-opus-5 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127487  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="builtin-is-virtual-base-of __builtin_is_virtual_base_of reports a non-virtual base reached through a virtual base as virtual functional agentic-pbt https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127487  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">builtin-is-virtual-base-of</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">__builtin_is_virtual_base_of reports a non-virtual base reached through a virtual base as virtual</div>
         </div>
@@ -4914,13 +4914,13 @@ hide_title: true
           <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127487" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">GCC #127487 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="builtin-stdc-rotate-left the manual&#x27;s equivalent expression for __builtin_stdc_rotate_left/right is wrong for non-power-of-two _bitint widths functional claude-opus-5 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127490  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="builtin-stdc-rotate-left the manual&#x27;s equivalent expression for __builtin_stdc_rotate_left/right is wrong for non-power-of-two _bitint widths functional agentic-pbt https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127490  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">builtin-stdc-rotate-left</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">the manual&#x27;s equivalent expression for __builtin_stdc_rotate_left/right is wrong for non-power-of-two _BitInt widths</div>
         </div>
@@ -4928,13 +4928,13 @@ hide_title: true
           <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127490" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">GCC #127490 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Rejected" data-search="hardbool-attribute implicitly zero-initialized hardbool objects hold zero bits instead of the false representation functional claude-opus-5 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127486  rejected">
+      <div class="bug-card-row" data-status="Rejected" data-search="hardbool-attribute implicitly zero-initialized hardbool objects hold zero bits instead of the false representation functional agentic-pbt https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127486  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">hardbool-attribute</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">implicitly zero-initialized hardbool objects hold zero bits instead of the false representation</div>
         </div>
@@ -4942,13 +4942,13 @@ hide_title: true
           <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127486" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">GCC #127486 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="macros-with-a-variable-number-of-arguments the gcc manual says , ## __va_args__ drops the comma for an empty argument; the cpp manual and gcc keep it functional claude-opus-5 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127491  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="macros-with-a-variable-number-of-arguments the gcc manual says , ## __va_args__ drops the comma for an empty argument; the cpp manual and gcc keep it functional agentic-pbt https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127491  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">macros-with-a-variable-number-of-arguments</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">the GCC manual says , ## __VA_ARGS__ drops the comma for an empty argument; the CPP manual and GCC keep it</div>
         </div>
@@ -4956,13 +4956,13 @@ hide_title: true
           <a href="https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127491" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">GCC #127491 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="__builtin_bitreverseg __builtin_bitreverseg on a dependent c++ operand gives an ice in mangle_decl crash claude-opus-5 https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127668  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="__builtin_bitreverseg __builtin_bitreverseg on a dependent c++ operand gives an ice in mangle_decl crash agentic-pbt https://gcc.gnu.org/bugzilla/show_bug.cgi?id=127668  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">__builtin_bitreverseg</span>
             <span class="bug-type-pill">Crash</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">__builtin_bitreverseg on a dependent C++ operand gives an ICE in mangle_decl</div>
         </div>
@@ -4991,13 +4991,13 @@ hide_title: true
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Pending" data-search="ssh-1-g ssh -g prints escapechar ^a as \^a which does not parse back functional claude-opus-5 https://bugzilla.mindrot.org/show_bug.cgi?id=4008  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="ssh-1-g ssh -g prints escapechar ^a as \^a which does not parse back functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4008  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">ssh-1-g</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ssh -G prints EscapeChar ^A as \^A which does not parse back</div>
         </div>
@@ -5005,13 +5005,13 @@ hide_title: true
           <a href="https://bugzilla.mindrot.org/show_bug.cgi?id=4008" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Bugzilla #4008 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="ssh-1-g ssh -g shows some localforward entries as dynamicforward functional claude-opus-5 https://bugzilla.mindrot.org/show_bug.cgi?id=4009  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="ssh-1-g ssh -g shows some localforward entries as dynamicforward functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4009  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">ssh-1-g</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ssh -G shows some LocalForward entries as DynamicForward</div>
         </div>
@@ -5019,13 +5019,13 @@ hide_title: true
           <a href="https://bugzilla.mindrot.org/show_bug.cgi?id=4009" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Bugzilla #4009 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="ssh-keygen-1-s ssh-keygen -s signs certificates with duplicate options, which sshd rejects functional claude-opus-5 https://bugzilla.mindrot.org/show_bug.cgi?id=4010  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="ssh-keygen-1-s ssh-keygen -s signs certificates with duplicate options, which sshd rejects functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4010  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">ssh-keygen-1-s</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ssh-keygen -s signs certificates with duplicate options, which sshd rejects</div>
         </div>
@@ -5033,13 +5033,13 @@ hide_title: true
           <a href="https://bugzilla.mindrot.org/show_bug.cgi?id=4010" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Bugzilla #4010 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="ssh-1-g--long streamlocalbindmask ignores host and match blocks, and the last value wins functional claude-opus-5 https://bugzilla.mindrot.org/show_bug.cgi?id=4013  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="ssh-1-g--long streamlocalbindmask ignores host and match blocks, and the last value wins functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4013  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">ssh-1-g--long</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">StreamLocalBindMask ignores Host and Match blocks, and the last value wins</div>
         </div>
@@ -5047,13 +5047,13 @@ hide_title: true
           <a href="https://bugzilla.mindrot.org/show_bug.cgi?id=4013" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Bugzilla #4013 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="openssh#1;openssh_1 ssh-keygen -f and -r miss a hashed known_hosts entry when the host name&#x27;s case differs functional claude-opus-5 https://bugzilla.mindrot.org/show_bug.cgi?id=4014  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="openssh#1;openssh_1 ssh-keygen -f and -r miss a hashed known_hosts entry when the host name&#x27;s case differs functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4014  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
             <span class="bug-api-code">openssh#1;openssh_1</span>
             <span class="bug-type-pill">Functional</span>
-            <span class="bug-tool-pill">claude-opus-5</span>
+            <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
           <div class="bug-title-text">ssh-keygen -F and -R miss a hashed known_hosts entry when the host name&#x27;s case differs</div>
         </div>

@@ -1,0 +1,44 @@
+{%- comment -%}
+  Homepage trophy case. The counts come from _data/bug_stats.json, which
+  scripts/generate_bug_stats.py writes.
+{%- endcomment -%}
+{%- assign stats = site.data.bug_stats -%}
+{%- assign bugs_url = '/bugs/' | relative_url -%}
+<div class="trophy">
+  <dl class="trophy__stats">
+    <div class="trophy__stat">
+      <dt>Bugs reported</dt>
+      <dd>{{ stats.total }}</dd>
+    </div>
+    <div class="trophy__stat trophy__stat--win">
+      <dt>Confirmed or fixed</dt>
+      <dd>{{ stats.accepted }}</dd>
+    </div>
+    <div class="trophy__stat">
+      <dt>Systems</dt>
+      <dd>{{ stats.system_count }}</dd>
+    </div>
+    <div class="trophy__stat">
+      <dt>Domains</dt>
+      <dd>{{ stats.domain_count }}</dd>
+    </div>
+  </dl>
+  <details class="trophy__breakdown">
+    <summary>Breakdown by domain</summary>
+    <dl class="trophy__shelf">
+      {%- for domain in stats.domains %}
+      <div class="trophy__row">
+        <dt>{{ domain.name }}</dt>
+        <dd>
+          <ul class="trophy__systems">
+            {%- for system in domain.systems %}
+            <li><a class="trophy__system" href="{{ bugs_url }}#app-{{ system.slug }}" title="{{ system.accepted }} of {{ system.total }} reports confirmed or fixed"><span class="trophy__name">{{ system.name }}</span> <span class="trophy__count">{{ system.accepted }}<span class="visually-hidden"> of {{ system.total }} reports confirmed or fixed</span></span></a></li>
+            {%- endfor %}
+          </ul>
+        </dd>
+      </div>
+      {%- endfor %}
+    </dl>
+    <p class="trophy__note">The number next to each system counts the reports that its developers confirmed or fixed.</p>
+  </details>
+</div>

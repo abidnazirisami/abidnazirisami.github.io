@@ -1,6 +1,7 @@
 1. <span class="pub-title">A Multi-Domain Study on the Effectiveness of LLMs at Writing Property-Based Tests</span> <span class="pub-links"><a href="https://arxiv.org/pdf/2610.34487"><i class="fa fa-file-pdf" aria-hidden="true"></i> pdf</a> <a href="https://anonymous.4open.science/r/pbt-study-artifact-6A0B"><i class="fa fa-tools" aria-hidden="true"></i> tool</a></span>
     <span class="pub-authors">[M M Abid Naziri](/), [Feiran Qin](https://nsdi.dev/), Khush Patel, [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*Submitted for review*</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Property-based testing</span> <span class="pub-tag">LLM agents</span> <span class="pub-tag">Empirical study</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -11,6 +12,7 @@
 2. <span class="pub-title">A Comprehensive Study of Bugs from Deep Learning Library Fuzzers</span>
     <span class="pub-authors">[M M Abid Naziri](/), Manideepika Reddy Myaka, [Lingjun Liu](https://lingjunliu.github.io/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*Submitted for review*</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Empirical study</span> <span class="pub-tag">Mutational fuzzing</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -23,6 +25,7 @@
     <span class="pub-award">🏆 IEEE Computer Society TCSE Best Student Paper Award</span>
     <span class="pub-venue">*IEEE International Conference on Software Testing, Verification and Validation (accpt. 26.9% [44/163])*</span>
     <span class="pub-where">[ICST 2026](https://conf.researchr.org/home/icst-2026), Daejeon, Republic of Korea, May 2026.</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Coverage-guided fuzzing</span> <span class="pub-tag">LLM harness synthesis</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -34,6 +37,7 @@
     <span class="pub-authors">[M M Abid Naziri](/)<sup>\*</sup>, [Shinhae Kim](https://shinhae-kim.github.io/)<sup>\*</sup>, [Feiran Qin](https://nsdi.dev/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*IEEE/ACM International Conference on Software Engineering (accpt. 21.8% [321/1469])*</span>
     <span class="pub-where">[ICSE 2026](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/272/Testing-Deep-Learning-Libraries-via-Neurosymbolic-Constraint-Learning), Rio de Janeiro, Brazil, April 2026.</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">SMT solving</span> <span class="pub-tag">Grammar-guided LLM</span> <span class="pub-tag">Constraint learning</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -45,6 +49,7 @@
     <span class="pub-authors">[M M Abid Naziri](/), [Stefano Carlo Lambertenghi](https://www.fortiss.org/en/results/scientific-publications/author/stefano-carlo-lambertenghi), [Andrea Stocco](https://tsigalko18.github.io/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*IEEE/ACM International Conference on Software Engineering (accpt. 21.8% [321/1469])*</span>
     <span class="pub-where">[ICSE 2026](https://conf.researchr.org/details/icse-2026/icse-2026-research-track/301/Misbehavior-Forecasting-for-Focused-Autonomous-Driving-Systems-Testing), Rio de Janeiro, Brazil, April 2026.</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Simulation-based testing</span> <span class="pub-tag">Misbehavior forecasting</span> <span class="pub-tag">Fuzzing</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -56,6 +61,7 @@
     <span class="pub-authors">[Facundo Molina](https://facumolina.github.io/), [M M Abid Naziri](/), [Feiran Qin](https://nsdi.dev/), [Alessandra Gorla](https://software.imdea.org/~alessandra.gorla/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*ACM/IEEE International Conference on Automation of Software Test (accpt. 40% [18/45])*</span>
     <span class="pub-where">[AST 2026](https://conf.researchr.org/details/ast-2026/ast-2026-papers/4/Improving-Deep-Learning-Library-Testing-with-Machine-Learning), Rio de Janeiro, Brazil, April 2026.</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">ML classifiers</span> <span class="pub-tag">Input validity prediction</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>
@@ -67,6 +73,7 @@
     <span class="pub-authors">[M M Abid Naziri](/), Aman Kumar Singh, [Feiran Qin](https://nsdi.dev/), Benjamin Wu, [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*International Symposium on Software Testing and Analysis (Tool Demos)*</span>
     <span class="pub-where">[ISSTA 2025, Tool Demonstration](https://conf.researchr.org/details/issta-2025/issta-2025-tool-demonstrations/7/BugsInDLLs-A-Database-of-Reproducible-Bugs-in-Deep-Learning-Libraries-to-Enable-Sys), Trondheim, Norway, June 2025.</span>
+    <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Bug benchmark</span> <span class="pub-tag">Reproducibility</span></span>
 
     <details class="disclosure">
     <summary>Summary</summary>

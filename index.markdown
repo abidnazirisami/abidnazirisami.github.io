@@ -27,7 +27,7 @@ layout: home
 <section class="news-card" aria-labelledby="news-heading">
   <div class="news-card__head">
     <h2 class="news-card__title" id="news-heading">Latest highlights</h2>
-    <span class="news-card__meta">Last updated: April 25, 2026</span>
+    <span class="news-card__meta">Last updated: November 13, 2026</span>
   </div>
   {% capture news_md %}{% include news.md %}{% endcapture %}
   <div class="news-card__scroll scroll-panel" tabindex="0" role="region" aria-labelledby="news-heading">
@@ -35,16 +35,23 @@ layout: home
   </div>
 </section>
 
-<h2>Who am I?</h2>
- I am a fifth year PhD Student at [NC State](https://www.ncsu.edu/). I am working with [Dr. Marcelo D'Amorim](https://damorim.github.io/) as a member of the [Software Engineering Group](https://ncsu.software/). My area of research is Software Testing.
+<h2 id="about">Who am I?</h2>
 
-<h2>Research Interests</h2>
+I am a fifth-year PhD student at [NC State](https://www.ncsu.edu/), where I work with [Dr. Marcelo d'Amorim](https://damorim.github.io/) in the [Software Engineering Group](https://ncsu.software/). My area of research is software testing. My dissertation focuses on finding bugs in deep learning libraries such as PyTorch, TensorFlow, and JAX. Before the PhD, I worked for more than three years as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I expect to graduate in May 2027.
 
- My overall research interest lies in testing learning enabled system. I am working on various testing techniques to find bugs in Deep Learning Libraries such as PyTorch, Tensorflow, Jax etc.
- I have also worked on testing applications in domains like databases, compilers, toolchains etc. using Property-Based Testing. In addition,
- I have worked on generating complex test cases for Autonomous Driving Systems (ADS). To date, I have reported 323 bugs across 11 systems including deep learning frameworks, databases, compilers, and toolchains, with 214 confirmed or fixed upstream ([list of bug-reports](/bugs/)).
+<h2 id="research">Research Interests</h2>
 
-<h2>Publications</h2>
+<p class="lede">I love finding bugs in complex software.</p>
+
+My passion is developing testing techniques that reveal these bugs. Complex software is hard to test: its inputs must satisfy many constraints, and there is often no simple way to tell whether an output is correct. Deep learning libraries, compilers, databases, and LLM serving engines are examples of complex software where I have found bugs using the techniques I developed and studied. I report each bug to the developers so that it gets fixed, and this is how I help build more robust software.
+
+<h2 id="trophy-case">🏆 Trophy Case</h2>
+
+These are the bugs I have reported to the developers of open-source software, as of {{ site.data.bug_stats.generated | date: "%B %Y" }} ([full list](/bugs/)).
+
+{% include trophy_case.html %}
+
+<h2 id="publications">Publications</h2>
 
 <div class="pub-list" markdown="1">
 {% include publications_list.md %}

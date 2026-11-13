@@ -28,6 +28,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 BUGS_DIR = REPO_ROOT / "bugs"
 RQ3_CSV_PATH = BUGS_DIR / "rq3_bugs_reported.csv"
 
+# The tool column names the technique that found the bug. The model behind each
+# run stays in the Model column of rq3_bugs_reported.csv.
+TOOL_NAME = "Agentic-PBT"
+
 URL_RE = re.compile(r"https?://[^\s,\);\"]+")
 GH_PR_RE = re.compile(r"https?://github\.com/[^/]+/[^/]+/pull/\d+")
 
@@ -60,7 +64,7 @@ def extract_rows_from_rq3(app_rows: List[Dict[str, str]]) -> List[Dict[str, str]
         status = STATUS_MAP.get(status_raw, status_raw.capitalize() if status_raw else "Pending")
         bug_type = r.get("Bug_type", "").strip().capitalize()
         note = r.get("Title", "").strip()
-        tool = r.get("Model", "").strip()
+        tool = TOOL_NAME
         fixed = r.get("Fixed", "").strip()
 
         report = r.get("Report", "").strip()

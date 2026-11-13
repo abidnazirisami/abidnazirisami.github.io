@@ -6,7 +6,7 @@
 
 Won the 1st prize in the inaugural [NCStateCS Graduate Research Symposium](https://www.linkedin.com/posts/ncstatecs_ncstatecs-programyourpath-gradpack-activity-7449571785240375296-M01q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACH7TKgBi21tXmBnW0hq50W-ghhBKogjcVM).
 
-📜 **Februay 2026**
+📜 **February 2026**
 
 *FlashFuzz* accepted to [ICST 2026](https://conf.researchr.org/home/icst-2026).
 

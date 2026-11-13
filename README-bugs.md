@@ -4,15 +4,34 @@ Regenerate Bugs Page
 When you update the CSVs in `bugs/`, regenerate the page:
 
 1. Ensure Python 3 is installed.
-2. Run the generator:
+2. If `bugs/rq3_bugs_reported.csv` changed, split it into the per-application CSVs first:
 
-   python3 scripts/generate_bugs_page.py
+       python3 scripts/split_rq3_bugs.py
 
-3. Rebuild locally to preview:
+   It writes `Agentic-PBT` in the `tool` column. The model behind each run stays in the `Model` column of `rq3_bugs_reported.csv`.
 
-   bundle exec jekyll build
+3. Run the generator:
 
-The output is written to `bugs.md` at the repo root and published at `/bugs/`.
+       python3 scripts/generate_bugs_page.py
+
+4. Preview locally:
+
+       bash scripts/serve_locally.sh
+
+The output is written to `bugs.md` at the repo root and published at `/bugs/`. The generator also rewrites `bugs/Reported_Bugs_Complete.xlsx` and `scripts/google_apps_script.js` (this step needs `openpyxl` and is skipped without it) and `_data/bug_stats.json`.
+
+Both scripts are safe to rerun: with unchanged CSVs they reproduce the same files, apart from the "Last updated" time.
+
+Issue titles come from `bugs/titles.json`, which is committed. The scripts add to it whenever `bugs_data/` holds newer titles (see the next section), so a clone without `bugs_data/` still produces the full page. A new GitHub issue shows its CSV note as the title until you fetch its details once.
+
+Homepage Trophy Case
+--------------------
+
+The Trophy Case section of the homepage reads `_data/bug_stats.json`, which holds the counts per system and per domain. The generator above rewrites it. To refresh only this file, without touching `bugs.md`, run:
+
+    python3 scripts/generate_bug_stats.py
+
+A new application also needs a domain in `DOMAINS` in `scripts/generate_bug_stats.py`.
 
 Fetch GitHub Issue Details
 --------------------------

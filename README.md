@@ -25,7 +25,7 @@ or `_sass/legacy/`.
 To preview the legacy build without editing `_config.yml`:
 
 ```bash
-$ bundle exec jekyll serve --config _config.yml,_config.legacy.yml
+$ bash scripts/serve_locally.sh --config _config.yml,_config.legacy.yml
 ```
 
 GitHub Pages only reads `_config.yml`, so the deployed site always follows
