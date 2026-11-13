@@ -2,7 +2,7 @@ Reported:,61,42,5,,,6,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 tf.linalg.svd,https://github.com/tensorflow/tensorflow/issues/93923,Confirmed,No,1,Crash,,,SIGABRT,Centaur
-tf.experimental.numpy.cumsum,https://github.com/tensorflow/tensorflow/issues/97042,Confirmed,No,3,Inconsistent,Open,https://github.com/tensorflow/tensorflow/pull/97693,,Centaur
+tf.experimental.numpy.cumsum,https://github.com/tensorflow/tensorflow/issues/97042,Fixed,No,3,Inconsistent,Open,https://github.com/tensorflow/tensorflow/pull/97693,,Centaur
 tf.linalg.matrix_rank,https://github.com/tensorflow/tensorflow/issues/97102,Confirmed,Yes,1,Inconsistent,,,,Centaur
 tf.nn.local_response_normalization,https://github.com/tensorflow/tensorflow/issues/97105,Confirmed,No,1,Inconsistent,,,,Centaur
 tf.pow,https://github.com/tensorflow/tensorflow/issues/97125,Confirmed,No,1,Inconsistent,Open,https://github.com/tensorflow/tensorflow/pull/97131,,Centaur
@@ -58,7 +58,7 @@ tf.experimental.numpy.asarray,https://github.com/tensorflow/tensorflow/issues/10
 tf.raw_ops.QuantizedMaxPool,https://github.com/tensorflow/tensorflow/issues/100223,Fixed,,,Internal Exception,Merged,https://github.com/tensorflow/tensorflow/pull/122516,,Flashfuzz
 tf.gather,https://github.com/tensorflow/tensorflow/issues/79063,Confirmed,No,0,Inconsistent,No,,,Greyfox
 tf.raw_ops.SparseFillEmptyRowsGrad,https://github.com/tensorflow/tensorflow/issues/106388,Submitted,,,Inconsistent,,,,RBF
-"tf.experimental.numpy.ones, tf.experimental.numpy.zeros",https://github.com/tensorflow/tensorflow/issues/108904,Submitted,No,1,Crash,,,,RBF
+"tf.experimental.numpy.ones, tf.experimental.numpy.zeros",https://github.com/tensorflow/tensorflow/issues/108904,Fixed,No,1,Crash,,,,RBF
 "tf.experimental.numpy.var, tf.experimental.numpy.all, tf.experimental.numpy.any, tf.experimental.numpy.amax, tf.experimental.numpy.amin, tf.experimental.numpy.count_nonzero, tf.experimental.numpy.max, tf.experimental.numpy.nanmean, tf.experimental.numpy.ptp, tf.experimental.numpy.nansum, tf.experimental.numpy.reshape, tf.experimental.numpy.promote_types, tf.experimental.numpy.var, tf.experimental.numpy.std",https://github.com/tensorflow/tensorflow/issues/108921,Submitted,No,1,Crash,,,,RBF
 tf.math.reduce_variance,https://github.com/tensorflow/tensorflow/issues/109148,Confirmed,No,,Crash,,,,RBF
 tf.image.non_max_suppression,https://github.com/tensorflow/tensorflow/issues/109150,Submitted,No,,Crash,,,,RBF

@@ -1,4 +1,4 @@
-Reported:,91,62,27,,,19,,,
+Reported:,91,69,28,,,20,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 torch.logcumsumexp,https://github.com/pytorch/pytorch/issues/139342,Confirmed,No,0,Inconsistent,No,,,Centaur
@@ -72,13 +72,13 @@ torch.nn.Linear,https://github.com/pytorch/pytorch/issues/172014,Rejected,No,0,F
 torch.index_select,https://github.com/pytorch/pytorch/issues/172019,Rejected,No,1,False positive,,,FP: Invalid input,RBF
 torch.addr,https://github.com/pytorch/pytorch/issues/173491,Rejected,No,,False positive,,,FP: Valid input,RBF
 torch.angle,https://github.com/pytorch/pytorch/issues/134607,Fixed,No,0,Crash,Merged,https://github.com/pytorch/pytorch/pull/191301,,Greyfox
-torch.floor_divide,https://github.com/pytorch/pytorch/issues/135330,Submitted,No,2,Inconsistent,No,,,Greyfox
-torch.nn.AvgPool2d,https://github.com/pytorch/pytorch/issues/139115,Submitted,No,4,Crash,No,,,Greyfox
-"torch.add, torch.matmul, torch.linalg.pinv",https://github.com/pytorch/pytorch/issues/170573,Submitted,No,2,Silent,,,,RBF
-torch.clip,https://github.com/pytorch/pytorch/issues/171356,Submitted,No,0,Inconsistent,,,,RBF
-torch.nn.PixelUnshuffle,https://github.com/pytorch/pytorch/issues/171536,Submitted,No,0,Inconsistent,,,,RBF
+torch.floor_divide,https://github.com/pytorch/pytorch/issues/135330,Confirmed,No,2,Inconsistent,No,,,Greyfox
+torch.nn.AvgPool2d,https://github.com/pytorch/pytorch/issues/139115,Confirmed,No,4,Crash,No,,,Greyfox
+"torch.add, torch.matmul, torch.linalg.pinv",https://github.com/pytorch/pytorch/issues/170573,Confirmed,No,2,Silent,,,,RBF
+torch.clip,https://github.com/pytorch/pytorch/issues/171356,Confirmed,No,0,Inconsistent,,,,RBF
+torch.nn.PixelUnshuffle,https://github.com/pytorch/pytorch/issues/171536,Confirmed,No,0,Inconsistent,,,,RBF
 torch.linalg.cholesky_ex,https://github.com/pytorch/pytorch/issues/173786,Rejected,Yes,,Inconsistent,,,Not a bug (behavior for nan/inf input is undefined by design),RBF
-torch.nn.functional.PoissonNLLLoss,https://github.com/pytorch/pytorch/issues/173796,Submitted,No,,Inconsistent,,,,RBF
+torch.nn.functional.PoissonNLLLoss,https://github.com/pytorch/pytorch/issues/173796,Confirmed,No,,Inconsistent,,,,RBF
 torch.nn.functional.pdist,https://github.com/pytorch/pytorch/issues/173799,Fixed,No,,Inconsistent,Merged,https://github.com/pytorch/pytorch/pull/173826,,RBF
 torch-ldexp;torch-ldexp--long,https://github.com/pytorch/pytorch/issues/198577,Confirmed,,,Crash,,,ldexp fails for a bool exponent in eager mode,Agentic-PBT
 torch-distributions-cauchy;torch-distributions-cauchy--long,https://github.com/pytorch/pytorch/issues/198578,Pending,,,Functional,,,Cauchy.log_prob returns -inf where the log density is finite,Agentic-PBT
@@ -87,8 +87,8 @@ torch-distributions-laplace,https://github.com/pytorch/pytorch/issues/198580,Con
 torch-distributions-laplace,https://github.com/pytorch/pytorch/issues/198582,Confirmed,,,Functional,,,Laplace.icdf loses accuracy in the tails,Agentic-PBT
 torch-special-bessel-y0;torch-special-bessel-j1;torch-special-bessel-y1;torch-special-bessel-j0;torch-special-airy-ai,https://github.com/pytorch/pytorch/issues/198583,Confirmed,,,Functional,,,bessel_j0/j1/y0/y1 and airy_ai lose ~9 digits (dropped p1evl leading coefficient),Agentic-PBT
 torch-special-logit,https://github.com/pytorch/pytorch/issues/195075,Confirmed,,,Functional,,,logit backward gives NaN elements index-dependent gradients,Agentic-PBT
-torch-maximum;torch-maximum--long,https://github.com/pytorch/pytorch/issues/193781,Confirmed,,,Functional,,,maximum of signed zeros depends on the tensor length,Agentic-PBT
-torch-trace;torch-trace--opus-4-8,https://github.com/pytorch/pytorch/issues/184847,Confirmed,,,Crash,Yes,,trace raises NotImplementedError for float16 on CPU,Agentic-PBT
-torch.unique,https://github.com/pytorch/pytorch/issues/199057,Pending,,,Functional,,,unique(dim=0) keeps duplicate rows when another row holds NaN,Agentic-PBT
-torch.arctanh,https://github.com/pytorch/pytorch/issues/199058,Pending,,,Functional,,,compiled CPU atanh loses precision to cancellation,Agentic-PBT
+torch-maximum;torch-maximum--long,https://github.com/pytorch/pytorch/issues/193781,Rejected,,,Functional,,,maximum of signed zeros depends on the tensor length,Agentic-PBT
+torch-trace;torch-trace--opus-4-8,https://github.com/pytorch/pytorch/issues/184847,Fixed,,,Crash,Yes,,trace raises NotImplementedError for float16 on CPU,Agentic-PBT
+torch.unique,https://github.com/pytorch/pytorch/issues/199057,Confirmed,,,Functional,,,unique(dim=0) keeps duplicate rows when another row holds NaN,Agentic-PBT
+torch.arctanh,https://github.com/pytorch/pytorch/issues/199058,Confirmed,,,Functional,,,compiled CPU atanh loses precision to cancellation,Agentic-PBT
 torch-clamp--long,https://github.com/pytorch/pytorch/issues/195675,Confirmed,,,Functional,,,inductor silently ignores a clamp bound that eager rejects as unrepresentable,Agentic-PBT

@@ -5,7 +5,7 @@ permalink: /resume/
 wide: true
 nav_cta: true
 ---
-<p class="resume-note">Last updated: 2026-10-27 14:05:41 UTC</p>
+<p class="resume-note">Last updated: 2026-11-13 22:55:59 UTC</p>
 
 Below is an embedded copy of my resume. You can also open or download the PDF using the links.
 

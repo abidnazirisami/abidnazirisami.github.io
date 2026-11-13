@@ -1,4 +1,4 @@
-Reported:,9,6,0,,,0,,,
+Reported:,9,7,1,,,0,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 alignment-builtins,https://github.com/llvm/llvm-project/issues/216999,Confirmed,,,Crash,,,alignment builtins crash Clang on a pointer with no base object,Agentic-PBT
@@ -9,4 +9,4 @@ vectorcall attribute,https://github.com/llvm/llvm-project/issues/227448,Confirme
 Alignment builtins,https://github.com/llvm/llvm-project/issues/227548,Confirmed,,,Functional,,,constant-evaluated __builtin_align_up/down on a pointer into an array reads the original element,Agentic-PBT
 builtin-convertvector,https://github.com/llvm/llvm-project/issues/228648,Confirmed,,,Crash,,,__builtin_convertvector from a __bf16 vector to a long double vector gives wrong values,Agentic-PBT
 builtin-convertvector,https://github.com/llvm/llvm-project/issues/228649,Confirmed,,,Functional,,,__builtin_convertvector to a bool vector folds 0.5 to false in a constant expression,Agentic-PBT
-nonnull attribute,https://github.com/llvm/llvm-project/issues/228670,Pending,,,Functional,,,"nonnull whose every index is rejected is attached with no indices, which means every pointer parameter, and the optimizer drops their null checks",Agentic-PBT
+nonnull attribute,https://github.com/llvm/llvm-project/issues/228670,Fixed,,,Functional,,,"nonnull whose every index is rejected is attached with no indices, which means every pointer parameter, and the optimizer drops their null checks",Agentic-PBT

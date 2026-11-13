@@ -2,7 +2,7 @@
 layout: page
 title: Reported Bugs
 permalink: /bugs/
-last_updated: "2026-11-13T21:50:20+00:00"
+last_updated: "2026-11-13T22:59:41+00:00"
 wide: true
 hide_title: true
 ---
@@ -10,9 +10,9 @@ hide_title: true
 <div class="bugs-dashboard">
   <div class="bugs-hero-banner">
     <h1 class="bugs-hero-title">Reported Bugs</h1>
-    <p class="bugs-hero-subtitle">A list of <strong>323 bugs and issues</strong> reported across <strong>11 open-source applications</strong> spanning deep learning frameworks (PyTorch, TensorFlow, JAX), LLM serving engines (vLLM, SGLang), databases (ArangoDB, PostgreSQL), compilers (Clang/LLVM, GCC), and system utilities (cronie, OpenSSH). <strong>66.3%</strong> have been confirmed or fixed upstream.</p>
+    <p class="bugs-hero-subtitle">A list of <strong>323 bugs and issues</strong> reported across <strong>11 open-source applications</strong> spanning deep learning frameworks (PyTorch, TensorFlow, JAX), LLM serving engines (vLLM, SGLang), databases (ArangoDB, PostgreSQL), compilers (Clang/LLVM, GCC), and system utilities (cronie, OpenSSH). <strong>73.1%</strong> have been confirmed or fixed upstream.</p>
     <div class="bugs-hero-meta">
-      <span class="bugs-meta-pill">Last updated: 2026-11-13 21:50:20 UTC</span>
+      <span class="bugs-meta-pill">Last updated: 2026-11-13 22:59:41 UTC</span>
       <span class="bugs-meta-pill">11 Applications</span>
       <a class="bugs-sheet-link" href="https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Spreadsheet: Google Sheets ↗</a>
     </div>
@@ -27,16 +27,16 @@ hide_title: true
     <div class="kpi-total-sub">
       <span class="kpi-total-item"><strong>11</strong> applications</span>
       <span class="kpi-total-divider"></span>
-      <span class="kpi-total-item"><strong>66.3%</strong> confirmed or fixed</span>
+      <span class="kpi-total-item"><strong>73.1%</strong> confirmed or fixed</span>
     </div>
   </div>
   <div class="bugs-kpi-card kpi-confirmed-card">
     <div class="kpi-header">
-      <span class="kpi-label">Confirmed</span>
+      <span class="kpi-label">Confirmed (Awaiting Fix)</span>
     </div>
-    <div class="kpi-number">177</div>
+    <div class="kpi-number">154</div>
     <div class="kpi-sub">
-      <span class="kpi-badge kpi-badge-confirmed">54.8%</span>
+      <span class="kpi-badge kpi-badge-confirmed">47.7%</span>
       <span>Triaged by maintainers</span>
     </div>
   </div>
@@ -44,9 +44,9 @@ hide_title: true
     <div class="kpi-header">
       <span class="kpi-label">Fixed Upstream</span>
     </div>
-    <div class="kpi-number">37</div>
+    <div class="kpi-number">82</div>
     <div class="kpi-sub">
-      <span class="kpi-badge kpi-badge-fixed">11.5%</span>
+      <span class="kpi-badge kpi-badge-fixed">25.4%</span>
       <span>Patched in releases</span>
     </div>
   </div>
@@ -54,9 +54,9 @@ hide_title: true
     <div class="kpi-header">
       <span class="kpi-label">Under Review</span>
     </div>
-    <div class="kpi-number">79</div>
+    <div class="kpi-number">54</div>
     <div class="kpi-sub">
-      <span class="kpi-badge kpi-badge-pending">24.5%</span>
+      <span class="kpi-badge kpi-badge-pending">16.7%</span>
       <span>Awaiting maintainer triage</span>
     </div>
   </div>
@@ -64,9 +64,9 @@ hide_title: true
     <div class="kpi-header">
       <span class="kpi-label">Rejected</span>
     </div>
-    <div class="kpi-number">30</div>
+    <div class="kpi-number">33</div>
     <div class="kpi-sub">
-      <span class="kpi-badge kpi-badge-rejected">9.3%</span>
+      <span class="kpi-badge kpi-badge-rejected">10.2%</span>
       <span>Closed as invalid or duplicate</span>
     </div>
   </div>
@@ -78,122 +78,122 @@ hide_title: true
     <div class="chart-card-header">
       <h3 class="chart-card-title">Reported Bugs by Application</h3>
       <div class="chart-legend">
-        <span class="legend-item"><span class="legend-dot dot-confirmed"></span> Confirmed</span>
+        <span class="legend-item"><span class="legend-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span>
         <span class="legend-item"><span class="legend-dot dot-fixed"></span> Fixed</span>
         <span class="legend-item"><span class="legend-dot dot-pending"></span> Pending</span>
         <span class="legend-item"><span class="legend-dot dot-rejected"></span> Rejected</span>
       </div>
     </div>
     <div class="apps-bar-list">
-      <div class="app-bar-row" title="PyTorch: 35 Confirmed, 27 Fixed, 10 Pending, 19 Rejected (91 total)" role="button" tabindex="0" onclick="toggleAppAccordion('pytorch')">
+      <div class="app-bar-row" title="PyTorch: 41 Confirmed (Awaiting Fix), 28 Fixed, 2 Pending, 20 Rejected (91 total)" role="button" tabindex="0" onclick="toggleAppAccordion('pytorch')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="PyTorch"><path d="M12.5 2.5C12.5 2.5 7.5 7.5 7.5 13.5C7.5 16.8 9.7 19.5 12.5 19.5C15.3 19.5 17.5 16.8 17.5 13.5C17.5 7.5 12.5 2.5 12.5 2.5Z" fill="#EE4C2C"/><circle cx="16.5" cy="7.5" r="1.8" fill="#EE4C2C"/></svg> <strong>PyTorch</strong> <span class="app-bar-domain">Deep Learning</span></span>
           <span class="app-bar-total">91 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 38.46%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 29.67%;"></div>
-          <div class="bar-segment seg-pending" style="width: 10.99%;"></div>
-          <div class="bar-segment seg-rejected" style="width: 20.88%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 45.05%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 30.77%;"></div>
+          <div class="bar-segment seg-pending" style="width: 2.20%;"></div>
+          <div class="bar-segment seg-rejected" style="width: 21.98%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="TensorFlow: 39 Confirmed, 10 Fixed, 4 Pending, 8 Rejected (61 total)" role="button" tabindex="0" onclick="toggleAppAccordion('tensorflow')">
+      <div class="app-bar-row" title="TensorFlow: 38 Confirmed (Awaiting Fix), 12 Fixed, 3 Pending, 8 Rejected (61 total)" role="button" tabindex="0" onclick="toggleAppAccordion('tensorflow')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="TensorFlow"><path d="M12 2L3 7.2V17.5L7.5 15V9.8L12 7.2L16.5 9.8V15L21 17.5V7.2L12 2Z" fill="#FF6F00"/><path d="M10 10.5V22L14 22V10.5L12 9.3L10 10.5Z" fill="#FFA000"/></svg> <strong>TensorFlow</strong> <span class="app-bar-domain">Deep Learning</span></span>
           <span class="app-bar-total">61 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 42.86%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 10.99%;"></div>
-          <div class="bar-segment seg-pending" style="width: 4.40%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 41.76%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 13.19%;"></div>
+          <div class="bar-segment seg-pending" style="width: 3.30%;"></div>
           <div class="bar-segment seg-rejected" style="width: 8.79%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="JAX: 28 Confirmed, 0 Fixed, 9 Pending, 1 Rejected (38 total)" role="button" tabindex="0" onclick="toggleAppAccordion('jax')">
+      <div class="app-bar-row" title="JAX: 17 Confirmed (Awaiting Fix), 17 Fixed, 2 Pending, 2 Rejected (38 total)" role="button" tabindex="0" onclick="toggleAppAccordion('jax')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="JAX"><rect x="2" y="4" width="20" height="16" rx="4" fill="#E8F0FE"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="800" fill="#1A73E8" text-anchor="middle" letter-spacing="-0.02em">JAX</text></svg> <strong>JAX</strong> <span class="app-bar-domain">Autodiff / ML</span></span>
           <span class="app-bar-total">38 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 30.77%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
-          <div class="bar-segment seg-pending" style="width: 9.89%;"></div>
-          <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 18.68%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 18.68%;"></div>
+          <div class="bar-segment seg-pending" style="width: 2.20%;"></div>
+          <div class="bar-segment seg-rejected" style="width: 2.20%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="vLLM: 27 Confirmed, 0 Fixed, 7 Pending, 0 Rejected (34 total)" role="button" tabindex="0" onclick="toggleAppAccordion('vllm')">
+      <div class="app-bar-row" title="vLLM: 20 Confirmed (Awaiting Fix), 9 Fixed, 5 Pending, 0 Rejected (34 total)" role="button" tabindex="0" onclick="toggleAppAccordion('vllm')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="vLLM"><path d="M4 4L12 20L20 4H15.5L12 13L8.5 4H4Z" fill="#2563EB"/><circle cx="12" cy="7" r="2.2" fill="#60A5FA"/></svg> <strong>vLLM</strong> <span class="app-bar-domain">LLM Serving</span></span>
           <span class="app-bar-total">34 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 29.67%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
-          <div class="bar-segment seg-pending" style="width: 7.69%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 21.98%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 9.89%;"></div>
+          <div class="bar-segment seg-pending" style="width: 5.49%;"></div>
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="SGLang: 17 Confirmed, 0 Fixed, 15 Pending, 1 Rejected (33 total)" role="button" tabindex="0" onclick="toggleAppAccordion('sglang')">
+      <div class="app-bar-row" title="SGLang: 16 Confirmed (Awaiting Fix), 1 Fixed, 15 Pending, 1 Rejected (33 total)" role="button" tabindex="0" onclick="toggleAppAccordion('sglang')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="SGLang"><rect x="2" y="4" width="20" height="16" rx="4" fill="#F3E8FF"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#7C3AED" text-anchor="middle" letter-spacing="-0.02em">SGL</text></svg> <strong>SGLang</strong> <span class="app-bar-domain">LLM Serving</span></span>
           <span class="app-bar-total">33 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 18.68%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 17.58%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 1.10%;"></div>
           <div class="bar-segment seg-pending" style="width: 16.48%;"></div>
           <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="ArangoDB: 6 Confirmed, 0 Fixed, 18 Pending, 0 Rejected (24 total)" role="button" tabindex="0" onclick="toggleAppAccordion('arangodb')">
+      <div class="app-bar-row" title="ArangoDB: 1 Confirmed (Awaiting Fix), 10 Fixed, 12 Pending, 1 Rejected (24 total)" role="button" tabindex="0" onclick="toggleAppAccordion('arangodb')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="ArangoDB"><path d="M12 2C8 2 4 8 4 14C4 18.5 7.5 22 12 22C16.5 22 20 18.5 20 14C20 8 16 2 12 2Z" fill="#2B8236"/><circle cx="12" cy="15" r="4.2" fill="#84CC16"/><circle cx="12" cy="15" r="2.5" fill="#65A30D"/></svg> <strong>ArangoDB</strong> <span class="app-bar-domain">Graph Database</span></span>
           <span class="app-bar-total">24 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 6.59%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
-          <div class="bar-segment seg-pending" style="width: 19.78%;"></div>
-          <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 1.10%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 10.99%;"></div>
+          <div class="bar-segment seg-pending" style="width: 13.19%;"></div>
+          <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="cronie: 13 Confirmed, 0 Fixed, 0 Pending, 0 Rejected (13 total)" role="button" tabindex="0" onclick="toggleAppAccordion('cronie')">
+      <div class="app-bar-row" title="cronie: 12 Confirmed (Awaiting Fix), 1 Fixed, 0 Pending, 0 Rejected (13 total)" role="button" tabindex="0" onclick="toggleAppAccordion('cronie')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="cronie"><circle cx="12" cy="12" r="9" stroke="#475569" stroke-width="2" fill="none"/><polyline points="12,7 12,12 15,14" stroke="#475569" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg> <strong>cronie</strong> <span class="app-bar-domain">System Daemon</span></span>
           <span class="app-bar-total">13 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 14.29%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 13.19%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 1.10%;"></div>
           <div class="bar-segment seg-pending" style="width: 0.00%;"></div>
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="PostgreSQL: 2 Confirmed, 0 Fixed, 8 Pending, 0 Rejected (10 total)" role="button" tabindex="0" onclick="toggleAppAccordion('postgresql')">
+      <div class="app-bar-row" title="PostgreSQL: 0 Confirmed (Awaiting Fix), 2 Fixed, 8 Pending, 0 Rejected (10 total)" role="button" tabindex="0" onclick="toggleAppAccordion('postgresql')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="PostgreSQL"><path d="M12 3C8 3 4 5 4 10C4 13.5 5.5 17 8 19V22H11V18H13V22H16V19C18.5 17 20 13.5 20 10C20 5 16 3 12 3Z" fill="#336791"/><circle cx="9.5" cy="9.5" r="1.5" fill="#FFFFFF"/><circle cx="14.5" cy="9.5" r="1.5" fill="#FFFFFF"/><path d="M11 12H13V15H11V12Z" fill="#E2E8F0"/></svg> <strong>PostgreSQL</strong> <span class="app-bar-domain">Database Engine</span></span>
           <span class="app-bar-total">10 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 2.20%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 2.20%;"></div>
           <div class="bar-segment seg-pending" style="width: 8.79%;"></div>
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="Clang / LLVM: 6 Confirmed, 0 Fixed, 3 Pending, 0 Rejected (9 total)" role="button" tabindex="0" onclick="toggleAppAccordion('clang_llvm')">
+      <div class="app-bar-row" title="Clang / LLVM: 6 Confirmed (Awaiting Fix), 1 Fixed, 2 Pending, 0 Rejected (9 total)" role="button" tabindex="0" onclick="toggleAppAccordion('clang_llvm')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Clang / LLVM"><path d="M4 18C4 18 7 19 10 16C13 13 13 8 13 8C13 8 15 11 17 12C19 13 21 12 21 12C21 12 19 15 16 17C13 19 8 20 4 18Z" fill="#D9381E"/><path d="M13 8C11 5 7 4 7 4C7 4 8 7 10 9C11 10 13 8 13 8Z" fill="#EA580C"/></svg> <strong>Clang / LLVM</strong> <span class="app-bar-domain">Compiler / Toolchain</span></span>
           <span class="app-bar-total">9 bugs</span>
         </div>
         <div class="app-bar-track">
           <div class="bar-segment seg-confirmed" style="width: 6.59%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
-          <div class="bar-segment seg-pending" style="width: 3.30%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 1.10%;"></div>
+          <div class="bar-segment seg-pending" style="width: 2.20%;"></div>
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="GCC: 3 Confirmed, 0 Fixed, 1 Pending, 1 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('gcc')">
+      <div class="app-bar-row" title="GCC: 3 Confirmed (Awaiting Fix), 0 Fixed, 1 Pending, 1 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('gcc')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="GCC"><rect x="2" y="4" width="20" height="16" rx="4" fill="#FEE2E2"/><text x="12" y="15.5" font-family="system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="800" fill="#991B1B" text-anchor="middle" letter-spacing="-0.02em">GCC</text></svg> <strong>GCC</strong> <span class="app-bar-domain">Compiler / Toolchain</span></span>
           <span class="app-bar-total">5 bugs</span>
@@ -205,14 +205,14 @@ hide_title: true
           <div class="bar-segment seg-rejected" style="width: 1.10%;"></div>
         </div>
       </div>
-      <div class="app-bar-row" title="OpenSSH: 1 Confirmed, 0 Fixed, 4 Pending, 0 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('openssh')">
+      <div class="app-bar-row" title="OpenSSH: 0 Confirmed (Awaiting Fix), 1 Fixed, 4 Pending, 0 Rejected (5 total)" role="button" tabindex="0" onclick="toggleAppAccordion('openssh')">
         <div class="app-bar-info">
           <span class="app-bar-name"><svg class="app-logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="OpenSSH"><path d="M12 2L4 6V12C4 17 7.5 21 12 22C16.5 21 20 17 20 12V6L12 2Z" fill="#0F766E"/><circle cx="12" cy="10" r="2.5" fill="#CCFBF1"/><path d="M11 12.5H13V16H11V12.5Z" fill="#CCFBF1"/></svg> <strong>OpenSSH</strong> <span class="app-bar-domain">Security / Network</span></span>
           <span class="app-bar-total">5 bugs</span>
         </div>
         <div class="app-bar-track">
-          <div class="bar-segment seg-confirmed" style="width: 1.10%;"></div>
-          <div class="bar-segment seg-fixed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-confirmed" style="width: 0.00%;"></div>
+          <div class="bar-segment seg-fixed" style="width: 1.10%;"></div>
           <div class="bar-segment seg-pending" style="width: 4.40%;"></div>
           <div class="bar-segment seg-rejected" style="width: 0.00%;"></div>
         </div>
@@ -222,20 +222,20 @@ hide_title: true
   <div class="bugs-chart-card">
     <div class="chart-card-header">
       <h3 class="chart-card-title">Resolution Status</h3>
-      <span class="kpi-badge kpi-badge-confirmed">66.3% Confirmed + Fixed</span>
+      <span class="kpi-badge kpi-badge-confirmed">73.1% Confirmed + Fixed</span>
     </div>
     <div class="donut-chart-container">
       <canvas id="statusDonutChart" width="220" height="220" style="max-height: 220px;"></canvas>
       <div class="donut-center-stat">
-        <div class="donut-center-number">214</div>
+        <div class="donut-center-number">236</div>
         <div class="donut-center-label">Confirmed &amp; Fixed</div>
       </div>
     </div>
     <div class="status-stat-pills">
-      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed</span> <strong>177 (54.8%)</strong></div>
-      <div class="status-stat-item stat-item-fixed"><span><span class="status-dot dot-fixed"></span> Fixed</span> <strong>37 (11.5%)</strong></div>
-      <div class="status-stat-item stat-item-pending"><span><span class="status-dot dot-pending"></span> Pending</span> <strong>79 (24.5%)</strong></div>
-      <div class="status-stat-item stat-item-rejected"><span><span class="status-dot dot-rejected"></span> Rejected</span> <strong>30 (9.3%)</strong></div>
+      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span> <strong>154 (47.7%)</strong></div>
+      <div class="status-stat-item stat-item-fixed"><span><span class="status-dot dot-fixed"></span> Fixed</span> <strong>82 (25.4%)</strong></div>
+      <div class="status-stat-item stat-item-pending"><span><span class="status-dot dot-pending"></span> Pending</span> <strong>54 (16.7%)</strong></div>
+      <div class="status-stat-item stat-item-rejected"><span><span class="status-dot dot-rejected"></span> Rejected</span> <strong>33 (10.2%)</strong></div>
     </div>
     <div class="bug-types-cloud">
       <div class="bug-types-title">Classification by Bug Type</div>
@@ -261,10 +261,10 @@ hide_title: true
   </div>
   <div class="bugs-filter-group">
     <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All (323)</button>
-    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed (177)</button>
-    <button type="button" class="filter-btn" data-filter="Fixed" aria-pressed="false"><span class="filter-dot dot-fixed"></span>Fixed (37)</button>
-    <button type="button" class="filter-btn" data-filter="Pending" aria-pressed="false"><span class="filter-dot dot-pending"></span>Pending (79)</button>
-    <button type="button" class="filter-btn" data-filter="Rejected" aria-pressed="false"><span class="filter-dot dot-rejected"></span>Rejected (30)</button>
+    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed (Awaiting Fix) (154)</button>
+    <button type="button" class="filter-btn" data-filter="Fixed" aria-pressed="false"><span class="filter-dot dot-fixed"></span>Fixed (82)</button>
+    <button type="button" class="filter-btn" data-filter="Pending" aria-pressed="false"><span class="filter-dot dot-pending"></span>Pending (54)</button>
+    <button type="button" class="filter-btn" data-filter="Rejected" aria-pressed="false"><span class="filter-dot dot-rejected"></span>Rejected (33)</button>
   </div>
   <div class="bugs-action-group">
     <button type="button" class="action-btn" id="expandAllBtn">Expand All</button>
@@ -286,10 +286,10 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">35 Confirmed</span>
-        <span class="mini-status-pill mini-fixed">27 Fixed</span>
-        <span class="mini-status-pill mini-pending">10 Pending</span>
-        <span class="mini-status-pill mini-rejected">19 Rejected</span>
+        <span class="mini-status-pill mini-confirmed">41 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">28 Fixed</span>
+        <span class="mini-status-pill mini-pending">2 Pending</span>
+        <span class="mini-status-pill mini-rejected">20 Rejected</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
@@ -1310,10 +1310,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/pull/191301" target="_blank" rel="noopener noreferrer" class="bug-pr-btn" title="View associated Pull Request">PR #191301 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.floor_divide torch.floor_divide not triggering zerodivisionerror on gpu inconsistent greyfox https://github.com/pytorch/pytorch/issues/135330  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.floor_divide torch.floor_divide not triggering zerodivisionerror on gpu inconsistent greyfox https://github.com/pytorch/pytorch/issues/135330  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.floor_divide</span>
             <span class="bug-type-pill">Inconsistent</span>
             <span class="bug-tool-pill">Greyfox</span>
@@ -1324,10 +1324,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/135330" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #135330 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.nn.avgpool2d torch.nn.avgpool2d works with long on cpu but not gpu crash greyfox https://github.com/pytorch/pytorch/issues/139115  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.nn.avgpool2d torch.nn.avgpool2d works with long on cpu but not gpu crash greyfox https://github.com/pytorch/pytorch/issues/139115  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.nn.AvgPool2d</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Greyfox</span>
@@ -1338,10 +1338,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/139115" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #139115 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.add, torch.matmul, torch.linalg.pinv silent heap buffer overflow in standard ops (add, pinv) via implicit view resizing silent rbf https://github.com/pytorch/pytorch/issues/170573  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.add, torch.matmul, torch.linalg.pinv silent heap buffer overflow in standard ops (add, pinv) via implicit view resizing silent rbf https://github.com/pytorch/pytorch/issues/170573  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.add, torch.matmul, torch.linalg.pinv</span>
             <span class="bug-type-pill">Silent</span>
             <span class="bug-tool-pill">RBF</span>
@@ -1352,10 +1352,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/170573" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #170573 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.clip `torch.clip` has checks for float16 scalar overflow on cpu but not on gpu inconsistent rbf https://github.com/pytorch/pytorch/issues/171356  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.clip `torch.clip` has checks for float16 scalar overflow on cpu but not on gpu inconsistent rbf https://github.com/pytorch/pytorch/issues/171356  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.clip</span>
             <span class="bug-type-pill">Inconsistent</span>
             <span class="bug-tool-pill">RBF</span>
@@ -1366,10 +1366,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/171356" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #171356 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.nn.pixelunshuffle `torch.nn.pixelunshuffle` throws runtimeerror: stride calculation overflowed on cuda with empty input and large downscale factor (cpu succeeds) inconsistent rbf https://github.com/pytorch/pytorch/issues/171536  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.nn.pixelunshuffle `torch.nn.pixelunshuffle` throws runtimeerror: stride calculation overflowed on cuda with empty input and large downscale factor (cpu succeeds) inconsistent rbf https://github.com/pytorch/pytorch/issues/171536  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.nn.PixelUnshuffle</span>
             <span class="bug-type-pill">Inconsistent</span>
             <span class="bug-tool-pill">RBF</span>
@@ -1395,10 +1395,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/173786" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #173786 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.nn.functional.poissonnllloss `torch.nn.functional.poissonnllloss` returns `nan` imaginary part on cpu (vs 0 on gpu) for overflowing complex inputs inconsistent rbf https://github.com/pytorch/pytorch/issues/173796  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.nn.functional.poissonnllloss `torch.nn.functional.poissonnllloss` returns `nan` imaginary part on cpu (vs 0 on gpu) for overflowing complex inputs inconsistent rbf https://github.com/pytorch/pytorch/issues/173796  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.nn.functional.PoissonNLLLoss</span>
             <span class="bug-type-pill">Inconsistent</span>
             <span class="bug-tool-pill">RBF</span>
@@ -1522,10 +1522,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/195075" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #195075 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-maximum;torch-maximum--long torch.minimum and torch.maximum return a zero whose sign depends on the tensor length functional agentic-pbt https://github.com/pytorch/pytorch/issues/193781  confirmed">
+      <div class="bug-card-row" data-status="Rejected" data-search="torch-maximum;torch-maximum--long torch.minimum and torch.maximum return a zero whose sign depends on the tensor length functional agentic-pbt https://github.com/pytorch/pytorch/issues/193781  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">torch-maximum;torch-maximum--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -1536,10 +1536,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/193781" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #193781 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="torch-trace;torch-trace--opus-4-8 `torch.trace` raises `notimplementederror` for `float16` input on cpu — no kernel registered for `half`, no documented exclusion, numpy handles it fine crash agentic-pbt https://github.com/pytorch/pytorch/issues/184847  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="torch-trace;torch-trace--opus-4-8 `torch.trace` raises `notimplementederror` for `float16` input on cpu — no kernel registered for `half`, no documented exclusion, numpy handles it fine crash agentic-pbt https://github.com/pytorch/pytorch/issues/184847  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">torch-trace;torch-trace--opus-4-8</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -1550,10 +1550,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/184847" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #184847 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.unique torch.unique returns duplicate sub-tensors when the input contains nan functional agentic-pbt https://github.com/pytorch/pytorch/issues/199057  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.unique torch.unique returns duplicate sub-tensors when the input contains nan functional agentic-pbt https://github.com/pytorch/pytorch/issues/199057  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.unique</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -1564,10 +1564,10 @@ hide_title: true
           <a href="https://github.com/pytorch/pytorch/issues/199057" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #199057 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="torch.arctanh torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0) functional agentic-pbt https://github.com/pytorch/pytorch/issues/199058  pending">
+      <div class="bug-card-row" data-status="Confirmed" data-search="torch.arctanh torch.arctanh under torch.compile loses all precision for small inputs (returns 0.0) functional agentic-pbt https://github.com/pytorch/pytorch/issues/199058  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
             <span class="bug-api-code">torch.arctanh</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -1605,9 +1605,9 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">39 Confirmed</span>
-        <span class="mini-status-pill mini-fixed">10 Fixed</span>
-        <span class="mini-status-pill mini-pending">4 Pending</span>
+        <span class="mini-status-pill mini-confirmed">38 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">12 Fixed</span>
+        <span class="mini-status-pill mini-pending">3 Pending</span>
         <span class="mini-status-pill mini-rejected">8 Rejected</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
@@ -1629,10 +1629,10 @@ hide_title: true
           <a href="https://github.com/tensorflow/tensorflow/issues/93923" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #93923 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="tf.experimental.numpy.cumsum `tf.experimental.numpy.cumsum` handles overflow inconsistently on cpu and gpu inconsistent centaur https://github.com/tensorflow/tensorflow/issues/97042 https://github.com/tensorflow/tensorflow/pull/97693 confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="tf.experimental.numpy.cumsum `tf.experimental.numpy.cumsum` handles overflow inconsistently on cpu and gpu inconsistent centaur https://github.com/tensorflow/tensorflow/issues/97042 https://github.com/tensorflow/tensorflow/pull/97693 fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">tf.experimental.numpy.cumsum</span>
             <span class="bug-type-pill">Inconsistent</span>
             <span class="bug-tool-pill">Centaur</span>
@@ -2420,10 +2420,10 @@ hide_title: true
           <a href="https://github.com/tensorflow/tensorflow/issues/106388" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #106388 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="tf.experimental.numpy.ones, tf.experimental.numpy.zeros `tf.experimental.numpy.ones` crashes (segfault/abort) when int64_max is passed as shape crash rbf https://github.com/tensorflow/tensorflow/issues/108904  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="tf.experimental.numpy.ones, tf.experimental.numpy.zeros `tf.experimental.numpy.ones` crashes (segfault/abort) when int64_max is passed as shape crash rbf https://github.com/tensorflow/tensorflow/issues/108904  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">tf.experimental.numpy.ones, tf.experimental.numpy.zeros</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">RBF</span>
@@ -2489,9 +2489,10 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">28 Confirmed</span>
-        <span class="mini-status-pill mini-pending">9 Pending</span>
-        <span class="mini-status-pill mini-rejected">1 Rejected</span>
+        <span class="mini-status-pill mini-confirmed">17 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">17 Fixed</span>
+        <span class="mini-status-pill mini-pending">2 Pending</span>
+        <span class="mini-status-pill mini-rejected">2 Rejected</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
@@ -2526,10 +2527,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40963" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40963 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-stats-pareto jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x) functional agentic-pbt https://github.com/jax-ml/jax/issues/40964  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-stats-pareto jax.scipy.stats.pareto returns -inf/inf/nan at the support boundary when scale is small relative to loc (support mask computed on unstandardized x) functional agentic-pbt https://github.com/jax-ml/jax/issues/40964  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-stats-pareto</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2568,10 +2569,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40966" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40966 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-jit jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred) functional agentic-pbt https://github.com/jax-ml/jax/issues/40967  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-jit jax.jit: negative static_argnums is not applied when the argument is passed by keyword (static_argnames not inferred) functional agentic-pbt https://github.com/jax-ml/jax/issues/40967  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-jit</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2582,10 +2583,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/40967" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #40967 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-zeta;jax-scipy-special-zeta--long jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s &lt; 1) functional agentic-pbt https://github.com/jax-ml/jax/issues/40968  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-zeta;jax-scipy-special-zeta--long jax.scipy.special.zeta: the custom_jvp rule returns a different primal value than the function (nan vs finite for s &lt; 1) functional agentic-pbt https://github.com/jax-ml/jax/issues/40968  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-zeta;jax-scipy-special-zeta--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2666,10 +2667,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38621" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38621 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-rel-entr jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — scipy compatibility mismatch functional agentic-pbt https://github.com/jax-ml/jax/issues/38262  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-rel-entr jax.scipy.special.rel_entr(0.0, nan) returns inf instead of nan — scipy compatibility mismatch functional agentic-pbt https://github.com/jax-ml/jax/issues/38262  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-rel-entr</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2764,10 +2765,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38607" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38607 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8 `jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan` functional agentic-pbt https://github.com/jax-ml/jax/issues/37751  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8 `jax.scipy.special.xlogy` and `xlog1py` return `0.0` instead of `nan` when `x=0` and `y=nan` functional agentic-pbt https://github.com/jax-ml/jax/issues/37751  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2778,10 +2779,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/37751" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37751 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-abs;jax-numpy-abs--opus-4-8 `jnp.abs(inf + nan*j)` returns `nan` — violates ieee 754 / c99 &quot;infinity dominates&quot; rule for complex magnitude functional agentic-pbt https://github.com/jax-ml/jax/issues/37817  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-numpy-abs;jax-numpy-abs--opus-4-8 `jnp.abs(inf + nan*j)` returns `nan` — violates ieee 754 / c99 &quot;infinity dominates&quot; rule for complex magnitude functional agentic-pbt https://github.com/jax-ml/jax/issues/37817  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-numpy-abs;jax-numpy-abs--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2792,10 +2793,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/37817" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #37817 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-digamma--opus-4-8 `jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf` functional agentic-pbt https://github.com/jax-ml/jax/issues/37763  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-digamma--opus-4-8 `jax.scipy.special.digamma(0.0)` returns `nan` — should be `-inf` functional agentic-pbt https://github.com/jax-ml/jax/issues/37763  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-digamma--opus-4-8</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2834,10 +2835,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/38199" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #38199 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax.array.sum jax.array.sum silently ignores the `initial` argument functional agentic-pbt https://github.com/jax-ml/jax/issues/41120  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax.array.sum jax.array.sum silently ignores the `initial` argument functional agentic-pbt https://github.com/jax-ml/jax/issues/41120  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax.Array.sum</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2848,10 +2849,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41120" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41120 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax.fwd_and_bwd jax.fwd_and_bwd silently discards keyword arguments functional agentic-pbt https://github.com/jax-ml/jax/issues/41121  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax.fwd_and_bwd jax.fwd_and_bwd silently discards keyword arguments functional agentic-pbt https://github.com/jax-ml/jax/issues/41121  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax.fwd_and_bwd</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2862,10 +2863,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41121" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41121 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax.lax.pmean `lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group functional agentic-pbt https://github.com/jax-ml/jax/issues/41132  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax.lax.pmean `lax.pmean` with unequal `axis_index_groups` divides every group by the size of the first group functional agentic-pbt https://github.com/jax-ml/jax/issues/41132  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax.lax.pmean</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2876,10 +2877,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41132" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41132 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-gammaln--long jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge functional agentic-pbt https://github.com/jax-ml/jax/issues/38264  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-gammaln--long jax.scipy.special.gammaln(-inf) returns +inf instead of -inf — sign-wrong at infinity edge functional agentic-pbt https://github.com/jax-ml/jax/issues/38264  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-gammaln--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2932,10 +2933,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41202" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41202 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-t jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32 functional agentic-pbt https://github.com/jax-ml/jax/issues/41203  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-stats-t jax.scipy.stats.t.logpdf is wrong for large df (lgamma(df/2) - lgamma((df+1)/2) cancels): logpdf(0, df=1e7) = 0 in float32 functional agentic-pbt https://github.com/jax-ml/jax/issues/41203  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-stats-t</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2946,10 +2947,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41203" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41203 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-numpy-linalg-eigh jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix functional agentic-pbt https://github.com/jax-ml/jax/issues/41204  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-numpy-linalg-eigh jnp.linalg.eigh silently accepts (…, 1, n) / (…, n, 1) input and returns the decomposition of a broadcast n x n matrix functional agentic-pbt https://github.com/jax-ml/jax/issues/41204  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-numpy-linalg-eigh</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2960,10 +2961,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41204" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41204 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-special-expn jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n &gt;= 2 functional agentic-pbt https://github.com/jax-ml/jax/issues/41205  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-expn jax.scipy.special.expn(n, 0) returns 1/n instead of 1/(n-1) for n &gt;= 2 functional agentic-pbt https://github.com/jax-ml/jax/issues/41205  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-expn</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2974,10 +2975,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41205" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41205 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-numpy-floor-divide;jax-numpy-floor-divide--long jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs functional agentic-pbt https://github.com/jax-ml/jax/issues/41206  pending">
+      <div class="bug-card-row" data-status="Rejected" data-search="jax-numpy-floor-divide;jax-numpy-floor-divide--long jnp.floor_divide / divmod return a quotient larger than x1/x2 for some float16 and bfloat16 inputs functional agentic-pbt https://github.com/jax-ml/jax/issues/41206  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">jax-numpy-floor-divide;jax-numpy-floor-divide--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -2988,10 +2989,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41206" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41206 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="jax-scipy-special-expi--again;jax-scipy-special-expi--long jax.scipy.special.expi(0.0)` returns nan instead of -inf functional agentic-pbt https://github.com/jax-ml/jax/issues/41207  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-special-expi--again;jax-scipy-special-expi--long jax.scipy.special.expi(0.0)` returns nan instead of -inf functional agentic-pbt https://github.com/jax-ml/jax/issues/41207  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-special-expi--again;jax-scipy-special-expi--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3002,10 +3003,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41207" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41207 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax-scipy-stats-poisson--again jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc` functional agentic-pbt https://github.com/jax-ml/jax/issues/41208  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax-scipy-stats-poisson--again jax.scipy.stats.poisson.logpmf` applies the integrality test to `k` instead of `k - loc` functional agentic-pbt https://github.com/jax-ml/jax/issues/41208  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax-scipy-stats-poisson--again</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3016,10 +3017,10 @@ hide_title: true
           <a href="https://github.com/jax-ml/jax/issues/41208" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #41208 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="jax#1;jax_1 `jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype functional agentic-pbt https://github.com/jax-ml/jax/issues/41246  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="jax#1;jax_1 `jnp.add.reduceat` and `jnp.multiply.reduceat` ignore the requested accumulator dtype functional agentic-pbt https://github.com/jax-ml/jax/issues/41246  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">jax#1;jax_1</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3043,8 +3044,9 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">27 Confirmed</span>
-        <span class="mini-status-pill mini-pending">7 Pending</span>
+        <span class="mini-status-pill mini-confirmed">20 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">9 Fixed</span>
+        <span class="mini-status-pill mini-pending">5 Pending</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
@@ -3135,10 +3137,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48971" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48971 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long [bugfix] let an optional literal flag accept the none it advertises functional agentic-pbt https://github.com/vllm-project/vllm/pull/52370  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long [bugfix] let an optional literal flag accept the none it advertises functional agentic-pbt https://github.com/vllm-project/vllm/pull/52370  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3205,10 +3207,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/51649" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #51649 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-sampling-params-structuredoutputsparams [bugfix][structured outputs] reject empty `structural_tag` at request validation crash agentic-pbt https://github.com/vllm-project/vllm/pull/47450  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm-sampling-params-structuredoutputsparams [bugfix][structured outputs] reject empty `structural_tag` at request validation crash agentic-pbt https://github.com/vllm-project/vllm/pull/47450  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm-sampling-params-structuredoutputsparams</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3275,10 +3277,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/50353" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #50353 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-reasoning-deepseek-v3-reasoning-parser [bugfix][frontend] count reasoning tokens for harmony, deepseek-v3 and step3 parsers functional agentic-pbt https://github.com/vllm-project/vllm/pull/58626  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm-reasoning-deepseek-v3-reasoning-parser [bugfix][frontend] count reasoning tokens for harmony, deepseek-v3 and step3 parsers functional agentic-pbt https://github.com/vllm-project/vllm/pull/58626  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm-reasoning-deepseek-v3-reasoning-parser</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3303,10 +3305,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/pull/48386" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #48386 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm-v1-structured-output [bugfix] escape control characters in xgrammar choice grammar functional agentic-pbt https://github.com/vllm-project/vllm/pull/48115  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm-v1-structured-output [bugfix] escape control characters in xgrammar choice grammar functional agentic-pbt https://github.com/vllm-project/vllm/pull/48115  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm-v1-structured-output</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3415,10 +3417,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59267" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59267 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor crash agentic-pbt https://github.com/vllm-project/vllm/issues/59268  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout crashes when sys.stdout has no file descriptor crash agentic-pbt https://github.com/vllm-project/vllm/issues/59268  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm.utils.system_utils.suppress_stdout</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3429,10 +3431,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59268" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59268 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2 crash agentic-pbt https://github.com/vllm-project/vllm/issues/59269  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm.utils.system_utils.suppress_stdout [bug]: vllm.utils.system_utils.suppress_stdout silently suppresses stderr when sys.stdout is bound to fd 2 crash agentic-pbt https://github.com/vllm-project/vllm/issues/59269  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm.utils.system_utils.suppress_stdout</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3457,10 +3459,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59270" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59270 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm.models.deepseek_v4.common.mm_preprocess.deepseekv4vlimageprocessor [bug]: deepseek-v4 vl dummy image is not the worst case for multimodal profiling functional agentic-pbt https://github.com/vllm-project/vllm/issues/59271  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm.models.deepseek_v4.common.mm_preprocess.deepseekv4vlimageprocessor [bug]: deepseek-v4 vl dummy image is not the worst case for multimodal profiling functional agentic-pbt https://github.com/vllm-project/vllm/issues/59271  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm.models.deepseek_v4.common.mm_preprocess.DeepseekV4VLImageProcessor</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3499,10 +3501,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/59273" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #59273 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: vllm hangs indefinitely with low `num_gpu_blocks_override` crash agentic-pbt https://github.com/vllm-project/vllm/issues/35541  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: vllm hangs indefinitely with low `num_gpu_blocks_override` crash agentic-pbt https://github.com/vllm-project/vllm/issues/35541  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3513,10 +3515,10 @@ hide_title: true
           <a href="https://github.com/vllm-project/vllm/issues/35541" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #35541 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: `block_size=8` triggers triton compilationerror in flexattention kernel; other backends correctly reject crash agentic-pbt https://github.com/vllm-project/vllm/issues/39340  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window [bug]: `block_size=8` triggers triton compilationerror in flexattention kernel; other backends correctly reject crash agentic-pbt https://github.com/vllm-project/vllm/issues/39340  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -3540,7 +3542,8 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">17 Confirmed</span>
+        <span class="mini-status-pill mini-confirmed">16 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">1 Fixed</span>
         <span class="mini-status-pill mini-pending">15 Pending</span>
         <span class="mini-status-pill mini-rejected">1 Rejected</span>
       </div>
@@ -3759,7 +3762,7 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/31915" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #31915 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-hunyuan-detector--long [fix] parse hunyuan tool arguments with json schema type arrays crash agentic-pbt https://github.com/sgl-project/sglang/pull/38940  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-hunyuan-detector--long [fix] hunyuan: parse tool arguments with json schema type arrays crash agentic-pbt https://github.com/sgl-project/sglang/pull/38940  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
@@ -3767,13 +3770,13 @@ hide_title: true
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
-          <div class="bug-title-text">[Fix] Parse Hunyuan tool arguments with JSON Schema type arrays</div>
+          <div class="bug-title-text">[Fix] hunyuan: Parse tool arguments with JSON Schema type arrays</div>
         </div>
         <div class="bug-row-actions">
           <a href="https://github.com/sgl-project/sglang/pull/38940" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #38940 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long;sglang#1 [bugfix] flush pending tool calls at end of stream in the llama 3.2 detector functional agentic-pbt https://github.com/sgl-project/sglang/pull/40994  confirmed">
+      <div class="bug-card-row" data-status="Confirmed" data-search="sglang-srt-function-call-llama32-detector--long;sglang#1 [fix] function_call: flush pending tool calls at end of stream in the llama 3.2 detector functional agentic-pbt https://github.com/sgl-project/sglang/pull/40994  confirmed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
@@ -3781,7 +3784,7 @@ hide_title: true
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
-          <div class="bug-title-text">[Bugfix] Flush pending tool calls at end of stream in the Llama 3.2 detector</div>
+          <div class="bug-title-text">[Fix] function_call: Flush pending tool calls at end of stream in the Llama 3.2 detector</div>
         </div>
         <div class="bug-row-actions">
           <a href="https://github.com/sgl-project/sglang/pull/40994" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">PR #40994 ↗</a>
@@ -3815,10 +3818,10 @@ hide_title: true
           <a href="https://github.com/sgl-project/sglang/issues/31915" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #31915 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517 [bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks crash agentic-pbt https://github.com/sgl-project/sglang/issues/35563  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517 [bug] deepseekv32/deepseekv4 tool-call parsers drop calls when the streamed output has two chunks crash agentic-pbt https://github.com/sgl-project/sglang/issues/35563  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517</span>
             <span class="bug-type-pill">Crash</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4024,18 +4027,20 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">6 Confirmed</span>
-        <span class="mini-status-pill mini-pending">18 Pending</span>
+        <span class="mini-status-pill mini-confirmed">1 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">10 Fixed</span>
+        <span class="mini-status-pill mini-pending">12 Pending</span>
+        <span class="mini-status-pill mini-rejected">1 Rejected</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
   </summary>
   <div class="app-details-body">
     <div class="bugs-cards-list">
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run aql `substitute()` returns `null` for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23293  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run aql `substitute()` returns `null` for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23293  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">aql-functions-string-substitute; co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4046,10 +4051,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23293" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23293 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run `substitute` returns null and an icu warning for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23357  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="aql-functions-string-substitute; co-author&#x27;s agentic-pbt run `substitute` returns null and an icu warning for an empty input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23357  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">aql-functions-string-substitute; co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4060,10 +4065,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23357" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23357 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `to_number` converts a valid subnormal decimal string to zero functional agentic-pbt https://github.com/arangodb/arangodb/issues/23358  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="co-author&#x27;s agentic-pbt run `to_number` converts a valid subnormal decimal string to zero functional agentic-pbt https://github.com/arangodb/arangodb/issues/23358  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4074,7 +4079,7 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23358" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23358 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run append(null, [])` returns null instead of the other input array functional agentic-pbt https://github.com/arangodb/arangodb/issues/23359  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="co-author&#x27;s agentic-pbt run `append(null, [])` returns null instead of the other input array functional agentic-pbt https://github.com/arangodb/arangodb/issues/23359  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
@@ -4082,16 +4087,16 @@ hide_title: true
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
-          <div class="bug-title-text">APPEND(null, [])` returns null instead of the other input array</div>
+          <div class="bug-title-text">`APPEND(null, [])` returns null instead of the other input array</div>
         </div>
         <div class="bug-row-actions">
           <a href="https://github.com/arangodb/arangodb/issues/23359" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23359 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run reverse corrupts a single astral unicode character functional agentic-pbt https://github.com/arangodb/arangodb/issues/23360  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="co-author&#x27;s agentic-pbt run reverse corrupts a single astral unicode character functional agentic-pbt https://github.com/arangodb/arangodb/issues/23360  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4116,10 +4121,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23361" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23361 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="co-author&#x27;s agentic-pbt run `regex_matches` reports a match for an empty string that cannot match functional agentic-pbt https://github.com/arangodb/arangodb/issues/23362  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="co-author&#x27;s agentic-pbt run `regex_matches` reports a match for an empty string that cannot match functional agentic-pbt https://github.com/arangodb/arangodb/issues/23362  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">co-author&#x27;s Agentic-PBT run</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4144,10 +4149,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23363" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23363 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again persistent index with deterministic sort and offset limit incorrectly returns an empty result functional agentic-pbt https://github.com/arangodb/arangodb/issues/22909  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again persistent index with deterministic sort and offset limit incorrectly returns an empty result functional agentic-pbt https://github.com/arangodb/arangodb/issues/22909  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4200,10 +4205,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23384" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23384 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_parse();pi() `json_parse` exponent numbers can read beyond the input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23385  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="json_parse();pi() `json_parse` exponent numbers can read beyond the input string functional agentic-pbt https://github.com/arangodb/arangodb/issues/23385  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">JSON_PARSE();PI()</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4214,10 +4219,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23385" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23385 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="json_parse() `json_parse` can misround fractions and large integer tokens functional agentic-pbt https://github.com/arangodb/arangodb/issues/23386  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="json_parse() `json_parse` can misround fractions and large integer tokens functional agentic-pbt https://github.com/arangodb/arangodb/issues/23386  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">JSON_PARSE()</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4242,10 +4247,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23396" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23396 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-functions-string-substitute aql `substitute()` with several search values skips a match that starts right where the previous replacement ended functional agentic-pbt https://github.com/arangodb/arangodb/issues/23399  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="aql-functions-string-substitute aql `substitute()` with several search values skips a match that starts right where the previous replacement ended functional agentic-pbt https://github.com/arangodb/arangodb/issues/23399  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">aql-functions-string-substitute</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4256,10 +4261,10 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23399" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23399 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="aql-operators-arithmetic-operators aql arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not functional agentic-pbt https://github.com/arangodb/arangodb/issues/23400  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="aql-operators-arithmetic-operators aql arithmetic on 64-bit integers from documents loses precision; the same expression on literals does not functional agentic-pbt https://github.com/arangodb/arangodb/issues/23400  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">aql-operators-arithmetic-operators</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4298,7 +4303,7 @@ hide_title: true
           <a href="https://github.com/arangodb/arangodb/issues/23401" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23401 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import /_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid json functional agentic-pbt https://github.com/arangodb/arangodb/issues/23398  pending">
+      <div class="bug-card-row" data-status="Pending" data-search="develop-http-api-import `/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid json functional agentic-pbt https://github.com/arangodb/arangodb/issues/23398  pending">
         <div class="bug-row-main">
           <div class="bug-row-tags">
             <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
@@ -4306,16 +4311,16 @@ hide_title: true
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
           </div>
-          <div class="bug-title-text">/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON</div>
+          <div class="bug-title-text">`/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON</div>
         </div>
         <div class="bug-row-actions">
           <a href="https://github.com/arangodb/arangodb/issues/23398" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #23398 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="indexes-and-search-indexing-working-with-indexes-persistent--again aql `collect` served from a persistent index merges the array values `[]` and `[null]` into one group functional agentic-pbt https://github.com/arangodb/arangodb/issues/23402  pending">
+      <div class="bug-card-row" data-status="Rejected" data-search="indexes-and-search-indexing-working-with-indexes-persistent--again aql `collect` served from a persistent index merges the array values `[]` and `[null]` into one group functional agentic-pbt https://github.com/arangodb/arangodb/issues/23402  rejected">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-rejected"><span class="status-dot dot-rejected"></span>Rejected</span>
             <span class="bug-api-code">indexes-and-search-indexing-working-with-indexes-persistent--again</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4381,7 +4386,8 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">13 Confirmed</span>
+        <span class="mini-status-pill mini-confirmed">12 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">1 Fixed</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
@@ -4528,10 +4534,10 @@ hide_title: true
           <a href="https://github.com/cronie-crond/cronie/issues/222" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #222 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="cronnext-1 cronnext reports a time one hour late when skipping to a month with a different dst state functional agentic-pbt https://github.com/cronie-crond/cronie/issues/217  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="cronnext-1 cronnext reports a time one hour late when skipping to a month with a different dst state functional agentic-pbt https://github.com/cronie-crond/cronie/issues/217  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">cronnext-1</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4583,7 +4589,7 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">2 Confirmed</span>
+        <span class="mini-status-pill mini-fixed">2 Fixed</span>
         <span class="mini-status-pill mini-pending">8 Pending</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
@@ -4605,10 +4611,10 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19730/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19731/  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19731/  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">last_value</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4619,10 +4625,10 @@ hide_title: true
           <a href="https://www.postgresql.org/account/submitbug/19731/" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Tracker ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19732/  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="last_value first_value/last_value/nth_value return null under exclude ties when the current row is outside its frame functional agentic-pbt https://www.postgresql.org/account/submitbug/19732/  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">last_value</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4744,8 +4750,9 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">6 Confirmed</span>
-        <span class="mini-status-pill mini-pending">3 Pending</span>
+        <span class="mini-status-pill mini-confirmed">6 Confirmed (Awaiting Fix)</span>
+        <span class="mini-status-pill mini-fixed">1 Fixed</span>
+        <span class="mini-status-pill mini-pending">2 Pending</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
     </div>
@@ -4864,10 +4871,10 @@ hide_title: true
           <a href="https://github.com/llvm/llvm-project/issues/228649" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Issue #228649 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Pending" data-search="nonnull attribute `nonnull` whose every index is rejected becomes &quot;all pointers&quot; and changes code functional agentic-pbt https://github.com/llvm/llvm-project/issues/228670  pending">
+      <div class="bug-card-row" data-status="Fixed" data-search="nonnull attribute `nonnull` whose every index is rejected becomes &quot;all pointers&quot; and changes code functional agentic-pbt https://github.com/llvm/llvm-project/issues/228670  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-pending"><span class="status-dot dot-pending"></span>Pending</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">nonnull attribute</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -4891,7 +4898,7 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">3 Confirmed</span>
+        <span class="mini-status-pill mini-confirmed">3 Confirmed (Awaiting Fix)</span>
         <span class="mini-status-pill mini-pending">1 Pending</span>
         <span class="mini-status-pill mini-rejected">1 Rejected</span>
       </div>
@@ -4983,7 +4990,7 @@ hide_title: true
     </div>
     <div class="app-summary-right">
       <div class="app-pills-row">
-        <span class="mini-status-pill mini-confirmed">1 Confirmed</span>
+        <span class="mini-status-pill mini-fixed">1 Fixed</span>
         <span class="mini-status-pill mini-pending">4 Pending</span>
       </div>
       <span class="app-chevron-icon" aria-hidden="true">▼</span>
@@ -5033,10 +5040,10 @@ hide_title: true
           <a href="https://bugzilla.mindrot.org/show_bug.cgi?id=4010" target="_blank" rel="noopener noreferrer" class="bug-link-btn" title="View bug tracker entry">Bugzilla #4010 ↗</a>
         </div>
       </div>
-      <div class="bug-card-row" data-status="Confirmed" data-search="ssh-1-g--long streamlocalbindmask ignores host and match blocks, and the last value wins functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4013  confirmed">
+      <div class="bug-card-row" data-status="Fixed" data-search="ssh-1-g--long streamlocalbindmask ignores host and match blocks, and the last value wins functional agentic-pbt https://bugzilla.mindrot.org/show_bug.cgi?id=4013  fixed">
         <div class="bug-row-main">
           <div class="bug-row-tags">
-            <span class="bug-status-badge badge-confirmed"><span class="status-dot dot-confirmed"></span>Confirmed</span>
+            <span class="bug-status-badge badge-fixed"><span class="status-dot dot-fixed"></span>Fixed</span>
             <span class="bug-api-code">ssh-1-g--long</span>
             <span class="bug-type-pill">Functional</span>
             <span class="bug-tool-pill">Agentic-PBT</span>
@@ -5089,9 +5096,9 @@ hide_title: true
     donutChart = new Chart(ctx, {
       type: 'doughnut',
       data: {
-        labels: ['Confirmed', 'Fixed', 'Pending', 'Rejected'],
+        labels: ['Confirmed (Awaiting Fix)', 'Fixed', 'Pending', 'Rejected'],
         datasets: [{
-          data: [177, 37, 79, 30],
+          data: [154, 82, 54, 33],
           backgroundColor: donutColors(),
           borderWidth: 2,
           borderColor: cssVar('--surface', '#ffffff'),

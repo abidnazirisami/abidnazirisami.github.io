@@ -1,5 +1,5 @@
 1. <span class="pub-title">A Multi-Domain Study on the Effectiveness of LLMs at Writing Property-Based Tests</span> <span class="pub-links"><a href="https://arxiv.org/pdf/2610.34487"><i class="fa fa-file-pdf" aria-hidden="true"></i> pdf</a> <a href="https://anonymous.4open.science/r/pbt-study-artifact-6A0B"><i class="fa fa-tools" aria-hidden="true"></i> tool</a></span>
-    <span class="pub-authors">[M M Abid Naziri](/), [Feiran Qin](https://nsdi.dev/), Khush Patel, [Marcelo d'Amorim](https://damorim.github.io/)</span>
+    <span class="pub-authors">[M M Abid Naziri](/)<sup>\*</sup>, [Feiran Qin](https://nsdi.dev/)<sup>\*</sup>, Khush Patel, [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-venue">*Submitted for review*</span>
     <span class="pub-tags"><span class="visually-hidden">Methods: </span><span class="pub-tag">Property-based testing</span> <span class="pub-tag">LLM agents</span> <span class="pub-tag">Empirical study</span></span>
 
@@ -21,7 +21,7 @@
     </div>
     </details>
 3. <span class="pub-title">How Effective Is Coverage-Guided Fuzzing to Test Deep Learning Library APIs?</span> <span class="pub-links"><a href="{{ '/papers/flashfuzz-icst2026.pdf' | relative_url }}" target="_blank" rel="noopener"><i class="fa fa-file-pdf" aria-hidden="true"></i> pdf</a> <a href="https://github.com/ncsu-swat/flashfuzz"><i class="fa fa-tools" aria-hidden="true"></i> tool</a></span>
-    <span class="pub-authors">[Feiran Qin](https://nsdi.dev/), [M M Abid Naziri](/), [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
+    <span class="pub-authors">[Feiran Qin](https://nsdi.dev/), [M M Abid Naziri](/), Hengyu Ai, [Saikat Dutta](https://www.cs.cornell.edu/~saikatd/), [Marcelo d'Amorim](https://damorim.github.io/)</span>
     <span class="pub-award">🏆 IEEE Computer Society TCSE Best Student Paper Award</span>
     <span class="pub-venue">*IEEE International Conference on Software Testing, Verification and Validation (accpt. 26.9% [44/163])*</span>
     <span class="pub-where">[ICST 2026](https://conf.researchr.org/home/icst-2026), Daejeon, Republic of Korea, May 2026.</span>

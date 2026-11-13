@@ -12,15 +12,16 @@
         \headgap
 
         \begin{onecolentry}
-            \mbox{\textbf{\textit{M M Abid Naziri}}, Feiran Qin, Khush Patel, Marcelo d'Amorim}
+            \mbox{\textbf{\textit{M M Abid Naziri}}\textsuperscript{*}, Feiran Qin\textsuperscript{*}, Khush Patel, Marcelo d'Amorim} {\footnotesize (\textsuperscript{*}equal contribution)}
 
             \details{\begin{highlights}
                 \item Studied how well LLMs generalize as Property-Based Test (PBT) writers across \textbf{10} applications from \textbf{5} domains: Deep Learning libraries, databases, system software, compilers, and LLM serving engines.
-                \item Filed \textbf{180} bug reports from the generated PBTs; maintainers confirmed \textbf{65} across all \textbf{5} domains (\textbf{23} Fixed).
+                \item Filed \textbf{180} bug reports from the generated PBTs; maintainers confirmed \textbf{65} across all \textbf{5} domains (\textbf{23} fixed).
                 \item Found that low observability is the main obstacle for LLM-based PBT writers, and that domain-specific fuzzers still cover more of the compilers and of \href{https://github.com/postgres/postgres}{PostgreSQL}.
             \end{highlights}}
 
             \details{\textbf{Preprint:} \href{https://arxiv.org/pdf/2610.34487}{arXiv [pdf]}}
+            \professionalonly{Property-based testing with LLM agents; \textbf{180} bug reports in \textbf{10} applications from \textbf{5} domains (\textbf{65} confirmed) \href{https://arxiv.org/pdf/2610.34487}{[pdf]}}
         \end{onecolentry}
     \end{samepage}
     %%
@@ -46,6 +47,7 @@
                 \item Studied \textbf{220} bugs from \textbf{5} state-of-the-art Deep Learning Library testing techniques; found \textbf{70\%} are validation bugs from simple invalid-input patterns, not deep logic errors.
                 \item Built a mutational fuzzing tool from these patterns, uncovering \textbf{46} new bugs in these libraries (\textbf{30} confirmed).
             \end{highlights}}
+            \professionalonly{Empirical study of \textbf{220} fuzzer-found bugs; a mutational fuzzer built from their patterns found \textbf{46} new bugs (\textbf{30} confirmed)}
         \end{onecolentry}
     \end{samepage}
     %%
@@ -70,13 +72,13 @@
 
             \details{\begin{highlights}
                 \item Conducted a study to assess the effectiveness of coverage guided fuzzing to test Deep Learning Library APIs.
-                \item Reported \textbf{42} new bugs in \href{https://github.com/tensorflow/tensorflow}{Tensorflow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{8} Fixed).
+                \item Reported \textbf{42} new bugs in \href{https://github.com/tensorflow/tensorflow}{TensorFlow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{14} fixed).
             \end{highlights}}
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://conf.researchr.org/home/icst-2026}{IEEE International Conference on Software Testing, Verification and Validation (ICST 2026)} \href{https://abidnazirisami.github.io/papers/flashfuzz-icst2026.pdf}{[pdf]} \\
-            \textbf{Award:} IEEE Computer Society TCSE Best Student Paper Award
+            \details{\textbf{Venue:} \href{https://conf.researchr.org/home/icst-2026}{IEEE International Conference on Software Testing, Verification and Validation (ICST 2026)} \href{https://abidnazirisami.github.io/papers/flashfuzz-icst2026.pdf}{[pdf]}}%
+            \professionalonly{Coverage-guided fuzzing with LLM-synthesized harnesses; \textbf{42} new bugs \href{https://abidnazirisami.github.io/papers/flashfuzz-icst2026.pdf}{[pdf]}}\details{ \\}\professionalonly{. }\textbf{Award:} \details{IEEE Computer Society }\professionalonly{IEEE CS }TCSE Best Student Paper Award
         \end{onecolentry}
     \end{samepage}
     %%
@@ -94,19 +96,19 @@
         \headgap
 
         \begin{onecolentry}
-            \mbox{\textbf{\textit{M M Abid Naziri}}\textsuperscript{*}, Shinhae Kim\textsuperscript{*}, Feiran Qin, Saikat Dutta, Marcelo d'Amorim}\\
-            {\footnotesize \textsuperscript{*}Equal contribution}
+            \mbox{\textbf{\textit{M M Abid Naziri}}\textsuperscript{*}, Shinhae Kim\textsuperscript{*}, Feiran Qin, Saikat Dutta, Marcelo d'Amorim} {\footnotesize (\textsuperscript{*}equal contribution)}
 
             % \vspace{0.10 cm}
 
             \details{\begin{highlights}
                 \item Designed and implemented \textbf{Centaur}, a neurosymbolic constraint learning tool for DL APIs to generate valid test inputs.
-                \item Uncovered \textbf{23} new bugs in \href{https://github.com/tensorflow/tensorflow}{Tensorflow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{11} confirmed).
+                \item Uncovered \textbf{26} new bugs in \href{https://github.com/tensorflow/tensorflow}{TensorFlow} and \href{https://github.com/pytorch/pytorch}{PyTorch} (\textbf{18} confirmed).
             \end{highlights}}
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://conf.researchr.org/details/icse-2026/icse-2026-research-track/272/Testing-Deep-Learning-Libraries-via-Neurosymbolic-Constraint-Learning}{IEEE/ACM International Conference on Software Engineering (ICSE 2026)} \href{https://arxiv.org/pdf/2601.15493}{[pdf]}
+            \details{\textbf{Venue:} \href{https://conf.researchr.org/details/icse-2026/icse-2026-research-track/272/Testing-Deep-Learning-Libraries-via-Neurosymbolic-Constraint-Learning}{IEEE/ACM International Conference on Software Engineering (ICSE 2026)} \href{https://arxiv.org/pdf/2601.15493}{[pdf]}}%
+            \professionalonly{SMT solving (Z3) with a grammar-guided LLM to learn input constraints; \textbf{26} new bugs (\textbf{18} confirmed) \href{https://arxiv.org/pdf/2601.15493}{[pdf]}}
     \end{onecolentry}
     \end{samepage}
     %%
@@ -131,12 +133,13 @@
             \details{\begin{highlights}
                 \item Developed \textbf{Foresee}, a tool to enhance simulation-based testing of self-driving software by identifying and analyzing near-miss scenarios, improving failure detection efficiency and effectiveness.
                 \item \textbf{Foresee} exposes \textbf{128\%} more failures than state-of-the-art failure predictors.
-                \item \textbf{Foresee} also enhances the capability of an existing technique \href{https://github.com/dk-kling/drivefuzz}{DriveFuzz} by upto \textbf{94\%}.
+                \item \textbf{Foresee} also enhances the capability of an existing technique \href{https://github.com/dk-kling/drivefuzz}{DriveFuzz} by up to \textbf{94\%}.
             \end{highlights}}
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://conf.researchr.org/details/icse-2026/icse-2026-research-track/301/Misbehavior-Forecasting-for-Focused-Autonomous-Driving-Systems-Testing}{IEEE/ACM International Conference on Software Engineering (ICSE 2026)} \href{https://arxiv.org/pdf/2512.18823}{[pdf]}
+            \details{\textbf{Venue:} \href{https://conf.researchr.org/details/icse-2026/icse-2026-research-track/301/Misbehavior-Forecasting-for-Focused-Autonomous-Driving-Systems-Testing}{IEEE/ACM International Conference on Software Engineering (ICSE 2026)} \href{https://arxiv.org/pdf/2512.18823}{[pdf]}}%
+            \professionalonly{Misbehavior forecasting for simulation-based testing in CARLA; \textbf{128\%} more failures than prior failure predictors \href{https://arxiv.org/pdf/2512.18823}{[pdf]}}
     \end{onecolentry}
     \end{samepage}
     %%
@@ -154,7 +157,7 @@
         \headgap
 
         \begin{onecolentry}
-            \mbox{Facundo Molina, \textbf{\textit{M M Abid Naziri}}, Feiran (Alex) Qin, Alessandra Gorla, Marcelo d'Amorim}
+            \mbox{Facundo Molina, \textbf{\textit{M M Abid Naziri}}, Feiran Qin, Alessandra Gorla, Marcelo d'Amorim}
 
             \details{\begin{highlights}
                 \item Applied ML classifiers to infer the validity of an input before executing to increase efficiency
@@ -166,7 +169,8 @@
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://conf.researchr.org/details/ast-2026/ast-2026-papers/4/Improving-Deep-Learning-Library-Testing-with-Machine-Learning}{ACM/IEEE International Conference on Automation of Software Test (AST 2026)} \href{https://abidnazirisami.github.io/papers/specs4freeDLL.pdf}{[pdf]}
+            \details{\textbf{Venue:} \href{https://conf.researchr.org/details/ast-2026/ast-2026-papers/4/Improving-Deep-Learning-Library-Testing-with-Machine-Learning}{ACM/IEEE International Conference on Automation of Software Test (AST 2026)} \href{https://abidnazirisami.github.io/papers/specs4freeDLL.pdf}{[pdf]}}%
+            \professionalonly{ML classifiers that predict input validity (\textbf{91\%} accuracy); ACETest's validity ratio rises from \textbf{29\%} to \textbf{61\%} \href{https://abidnazirisami.github.io/papers/specs4freeDLL.pdf}{[pdf]}}
     \end{onecolentry}
     \end{samepage}
     %%
@@ -178,26 +182,26 @@
         \begin{twocolentry}{
             \href{https://conf.researchr.org/track/issta-2025/issta-2025-tool-demonstrations}{ISSTA 2025}
         }
-            \textbf{BugsInDLLs: A Database of Reproducible Bugs in Deep Learning Libraries to Enable Systematic Evaluation of Testing Techniques}
+            \textbf{BugsInDLLs: A Database of Reproducible Bugs in Deep Learning Libraries\details{ to Enable Systematic Evaluation of Testing Techniques}}
         \end{twocolentry}
 
         \headgap
 
         \begin{onecolentry}
-            \mbox{\textbf{\textit{M M Abid Naziri}}, Aman Kumar Singh, Benjamin Wu, Feiran (Alex) Qin, Saikat Dutta, Marcelo d'Amorim}
+            \mbox{\textbf{\textit{M M Abid Naziri}}, Aman Kumar Singh, Feiran Qin, Benjamin Wu, Saikat Dutta, Marcelo d'Amorim}
             % \mbox{\textbf{\textit{M M Abid Naziri}}}, \mbox{Stefano Carlo Lambertenghi}, \mbox{Andrea Stocco}, \mbox{Marcelo d'Amorim}
 
             % \vspace{0.10 cm}
 
             \details{\begin{highlights}
-                \item Developed an open-source dataset \textbf{BugsInDLLs} with \textbf{112} reproducible bugs across three popular DL libraries: \href{https://github.com/jax-ml/jax}{JAX}, \href{https://github.com/tensorflow/tensorflow}{Tensorflow}, and \href{https://github.com/pytorch/pytorch}{PyTorch}.
+                \item Developed an open-source dataset \textbf{BugsInDLLs} with \textbf{112} reproducible bugs across three popular DL libraries: \href{https://github.com/jax-ml/jax}{JAX}, \href{https://github.com/tensorflow/tensorflow}{TensorFlow}, and \href{https://github.com/pytorch/pytorch}{PyTorch}.
                 \item Added support for benchmarking other fuzzing tools with an included integration of \href{https://github.com/ise-uiuc/FreeFuzz}{FreeFuzz}.
             \end{highlights}}
 
             % \vspace{0.10 cm}
 
-            \textbf{Venue:} \href{https://dl.acm.org/doi/pdf/10.1145/3713081.3731739}{International Symposium on Software Testing and Analysis (ISSTA 2025: Tool Demos)}
-            \href{https://abidnazirisami.github.io/papers/bugsindlls.pdf}{[pdf]}
+            \details{\textbf{Venue:} \href{https://dl.acm.org/doi/pdf/10.1145/3713081.3731739}{International Symposium on Software Testing and Analysis (ISSTA 2025: Tool Demos)} \href{https://abidnazirisami.github.io/papers/bugsindlls.pdf}{[pdf]}}%
+            \professionalonly{Benchmark of \textbf{112} reproducible bugs in PyTorch, TensorFlow, and JAX \href{https://abidnazirisami.github.io/papers/bugsindlls.pdf}{[pdf]}}
         \end{onecolentry}
     \end{samepage}
     %%

@@ -37,7 +37,7 @@ layout: home
 
 <h2 id="about">Who am I?</h2>
 
-I am a fifth-year PhD student at [NC State](https://www.ncsu.edu/), where I work with [Dr. Marcelo d'Amorim](https://damorim.github.io/) in the [Software Engineering Group](https://ncsu.software/). My area of research is software testing. My dissertation focuses on finding bugs in deep learning libraries such as PyTorch, TensorFlow, and JAX. Before the PhD, I worked for more than three years as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I expect to graduate in May 2027.
+I am a fifth-year PhD candidate at [NC State](https://www.ncsu.edu/), where I work with [Dr. Marcelo d'Amorim](https://damorim.github.io/) in the [Software Engineering Group](https://ncsu.software/). My area of research is software testing. My dissertation focuses on finding bugs in deep learning libraries such as PyTorch, TensorFlow, and JAX. Before the PhD, I worked for more than three years as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I expect to graduate in May 2027.
 
 <h2 id="research">Research Interests</h2>
 

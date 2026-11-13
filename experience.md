@@ -34,6 +34,8 @@ I am also developing efficient methods to generate complex test cases for **Auto
 
 **CSC 712 - Software Testing and Reliability**, Fall 2025, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
 
+**CSC 379 - Ethics in Computing**, Spring 2026, taught by [David R. Wright](https://csc.ncsu.edu/people/drwrigh3/).
+
 <h3> Enosis Solutions </h3> 
 
 *Dhaka, Bangladesh*

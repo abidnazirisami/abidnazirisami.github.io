@@ -1,12 +1,12 @@
 {
   "generated": "2026-11-13",
   "total": 323,
-  "confirmed": 177,
-  "fixed": 37,
-  "accepted": 214,
-  "pending": 79,
-  "rejected": 30,
-  "accepted_pct": "66.3",
+  "confirmed": 154,
+  "fixed": 82,
+  "accepted": 236,
+  "pending": 54,
+  "rejected": 33,
+  "accepted_pct": "73.1",
   "system_count": 11,
   "domain_count": 5,
   "domains": [
@@ -17,25 +17,25 @@
           "name": "PyTorch",
           "slug": "pytorch",
           "total": 91,
-          "confirmed": 35,
-          "fixed": 27,
-          "accepted": 62
+          "confirmed": 41,
+          "fixed": 28,
+          "accepted": 69
         },
         {
           "name": "TensorFlow",
           "slug": "tensorflow",
           "total": 61,
-          "confirmed": 39,
-          "fixed": 10,
-          "accepted": 49
+          "confirmed": 38,
+          "fixed": 12,
+          "accepted": 50
         },
         {
           "name": "JAX",
           "slug": "jax",
           "total": 38,
-          "confirmed": 28,
-          "fixed": 0,
-          "accepted": 28
+          "confirmed": 17,
+          "fixed": 17,
+          "accepted": 34
         }
       ]
     },
@@ -46,16 +46,16 @@
           "name": "vLLM",
           "slug": "vllm",
           "total": 34,
-          "confirmed": 27,
-          "fixed": 0,
-          "accepted": 27
+          "confirmed": 20,
+          "fixed": 9,
+          "accepted": 29
         },
         {
           "name": "SGLang",
           "slug": "sglang",
           "total": 33,
-          "confirmed": 17,
-          "fixed": 0,
+          "confirmed": 16,
+          "fixed": 1,
           "accepted": 17
         }
       ]
@@ -67,16 +67,16 @@
           "name": "ArangoDB",
           "slug": "arangodb",
           "total": 24,
-          "confirmed": 6,
-          "fixed": 0,
-          "accepted": 6
+          "confirmed": 1,
+          "fixed": 10,
+          "accepted": 11
         },
         {
           "name": "PostgreSQL",
           "slug": "postgresql",
           "total": 10,
-          "confirmed": 2,
-          "fixed": 0,
+          "confirmed": 0,
+          "fixed": 2,
           "accepted": 2
         }
       ]
@@ -89,8 +89,8 @@
           "slug": "clang_llvm",
           "total": 9,
           "confirmed": 6,
-          "fixed": 0,
-          "accepted": 6
+          "fixed": 1,
+          "accepted": 7
         },
         {
           "name": "GCC",
@@ -109,16 +109,16 @@
           "name": "cronie",
           "slug": "cronie",
           "total": 13,
-          "confirmed": 13,
-          "fixed": 0,
+          "confirmed": 12,
+          "fixed": 1,
           "accepted": 13
         },
         {
           "name": "OpenSSH",
           "slug": "openssh",
           "total": 5,
-          "confirmed": 1,
-          "fixed": 0,
+          "confirmed": 0,
+          "fixed": 1,
           "accepted": 1
         }
       ]

@@ -11,6 +11,6 @@ crontab-5-extensions,https://github.com/cronie-crond/cronie/issues/229,Confirmed
 crontab-5-description,https://github.com/cronie-crond/cronie/issues/215,Confirmed,,,Functional,,,cronnext ignores a stepped day-of-week field (*/2),Agentic-PBT
 crontab-5-description,https://github.com/cronie-crond/cronie/issues/221,Confirmed,,,Functional,,,reversed ranges such as 5-2 pass crontab -T and never run,Agentic-PBT
 crontab-5-cron-tz,https://github.com/cronie-crond/cronie/issues/222,Confirmed,,,Functional,,,cronnext ignores CRON_TZ,Agentic-PBT
-cronnext-1,https://github.com/cronie-crond/cronie/issues/217,Confirmed,,,Functional,Yes,,cronnext misses the first hour of a month after a DST change (stale tm_isdst),Agentic-PBT
+cronnext-1,https://github.com/cronie-crond/cronie/issues/217,Fixed,,,Functional,Yes,,cronnext misses the first hour of a month after a DST change (stale tm_isdst),Agentic-PBT
 cronnext-1,https://github.com/cronie-crond/cronie/issues/218,Confirmed,,,Functional,,,cronnext skips the whole spring-forward day,Agentic-PBT
 anacrontab-5-description,https://github.com/cronie-crond/cronie/issues/230,Confirmed,,,Crash,,,a large RANDOM_DELAY crashes anacron (SIGFPE) or hangs it,Agentic-PBT

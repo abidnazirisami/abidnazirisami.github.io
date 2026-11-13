@@ -8,6 +8,8 @@ When you update the CSVs in `bugs/`, regenerate the page:
 
        python3 scripts/split_rq3_bugs.py
 
+   A report marked `Fixed=yes` there is listed as Fixed. `rq3_bugs_reported.csv` is the paper's snapshot, so statuses that changed on the tracker afterwards go in `bugs/status_updates.csv` (one row per issue link); the script applies them on top.
+
    It writes `Agentic-PBT` in the `tool` column. The model behind each run stays in the `Model` column of `rq3_bugs_reported.csv`.
 
 3. Run the generator:

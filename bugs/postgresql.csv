@@ -2,8 +2,8 @@ Reported:,10,2,2,,,0,,,
 ,,,,,,,,,
 api(s),link,Status,data_dependent,comments,bug_type,pr,pr_link,note,tool
 pg_backup_start,https://www.postgresql.org/account/submitbug/19730/,Pending,,,Functional,,,"pg_backup_start accepts a newline in the label, and the backup will not start",Agentic-PBT
-last_value,https://www.postgresql.org/account/submitbug/19731/,Confirmed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,Agentic-PBT
-last_value,https://www.postgresql.org/account/submitbug/19732/,Confirmed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,Agentic-PBT
+last_value,https://www.postgresql.org/account/submitbug/19731/,Fixed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,Agentic-PBT
+last_value,https://www.postgresql.org/account/submitbug/19732/,Fixed,,,Functional,Yes,,first_value/last_value/nth_value return NULL under EXCLUDE TIES when the current row is outside its frame,Agentic-PBT
 json_object,https://www.postgresql.org/account/submitbug/19737/,Pending,,,Functional,,,an empty JSON_OBJECT rejects the ON NULL and WITH UNIQUE KEYS clauses that its documented syntax allows,Agentic-PBT
 transaction_timestamp,https://www.postgresql.org/account/submitbug/19739/,Pending,,,Functional,,,"transaction_timestamp() and statement_timestamp() differ for a parameterized first statement, which the documentation says return the same value",Agentic-PBT
 has_language_privilege,https://www.postgresql.org/account/submitbug/19740/,Pending,,,Functional,,,"has_language_privilege returns true for a nonexistent language OID when the current user is a superuser, where a named non-superuser gets null",Agentic-PBT

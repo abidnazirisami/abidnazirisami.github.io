@@ -15,11 +15,11 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       91,
-      35,
-      27,
+      41,
+      28,
       "",
       "",
-      19,
+      20,
       "",
       "",
       ""
@@ -903,7 +903,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.floor_divide",
       "https://github.com/pytorch/pytorch/issues/135330",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Inconsistent",
@@ -915,7 +915,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.nn.AvgPool2d",
       "https://github.com/pytorch/pytorch/issues/139115",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Crash",
@@ -927,7 +927,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.add, torch.matmul, torch.linalg.pinv",
       "https://github.com/pytorch/pytorch/issues/170573",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Silent",
@@ -939,7 +939,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.clip",
       "https://github.com/pytorch/pytorch/issues/171356",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Inconsistent",
@@ -951,7 +951,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.nn.PixelUnshuffle",
       "https://github.com/pytorch/pytorch/issues/171536",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Inconsistent",
@@ -975,7 +975,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.nn.functional.PoissonNLLLoss",
       "https://github.com/pytorch/pytorch/issues/173796",
-      "Pending",
+      "Confirmed",
       "No",
       "",
       "Inconsistent",
@@ -1083,7 +1083,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch-maximum;torch-maximum--long",
       "https://github.com/pytorch/pytorch/issues/193781",
-      "Confirmed",
+      "Rejected",
       "",
       "",
       "Functional",
@@ -1095,7 +1095,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch-trace;torch-trace--opus-4-8",
       "https://github.com/pytorch/pytorch/issues/184847",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -1107,7 +1107,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.unique",
       "https://github.com/pytorch/pytorch/issues/199057",
-      "Pending",
+      "Confirmed",
       "",
       "",
       "Functional",
@@ -1119,7 +1119,7 @@ const BUG_SHEETS_DATA = {
     [
       "torch.arctanh",
       "https://github.com/pytorch/pytorch/issues/199058",
-      "Pending",
+      "Confirmed",
       "",
       "",
       "Functional",
@@ -1145,8 +1145,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       61,
-      39,
-      10,
+      38,
+      12,
       "",
       "",
       8,
@@ -1193,7 +1193,7 @@ const BUG_SHEETS_DATA = {
     [
       "tf.experimental.numpy.cumsum",
       "https://github.com/tensorflow/tensorflow/issues/97042",
-      "Confirmed",
+      "Fixed",
       "No",
       "",
       "Inconsistent",
@@ -1865,7 +1865,7 @@ const BUG_SHEETS_DATA = {
     [
       "tf.experimental.numpy.ones, tf.experimental.numpy.zeros",
       "https://github.com/tensorflow/tensorflow/issues/108904",
-      "Pending",
+      "Fixed",
       "No",
       "",
       "Crash",
@@ -1915,11 +1915,11 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       38,
-      28,
-      0,
+      17,
+      17,
       "",
       "",
-      1,
+      2,
       "",
       "",
       ""
@@ -1975,7 +1975,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-stats-pareto",
       "https://github.com/jax-ml/jax/issues/40964",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2011,7 +2011,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-jit",
       "https://github.com/jax-ml/jax/issues/40967",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2023,7 +2023,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-zeta;jax-scipy-special-zeta--long",
       "https://github.com/jax-ml/jax/issues/40968",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2095,7 +2095,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-rel-entr",
       "https://github.com/jax-ml/jax/issues/38262",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2179,7 +2179,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-xlog1py;jax-scipy-special-xlogy;jax-scipy-special-xlogy--opus-4-8",
       "https://github.com/jax-ml/jax/issues/37751",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2191,7 +2191,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-numpy-abs;jax-numpy-abs--opus-4-8",
       "https://github.com/jax-ml/jax/issues/37817",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2203,7 +2203,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-digamma--opus-4-8",
       "https://github.com/jax-ml/jax/issues/37763",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2239,7 +2239,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax.Array.sum",
       "https://github.com/jax-ml/jax/issues/41120",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2251,7 +2251,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax.fwd_and_bwd",
       "https://github.com/jax-ml/jax/issues/41121",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2263,7 +2263,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax.lax.pmean",
       "https://github.com/jax-ml/jax/issues/41132",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2275,7 +2275,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-gammaln--long",
       "https://github.com/jax-ml/jax/issues/38264",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2323,7 +2323,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-stats-t",
       "https://github.com/jax-ml/jax/issues/41203",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2335,7 +2335,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-numpy-linalg-eigh",
       "https://github.com/jax-ml/jax/issues/41204",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2347,7 +2347,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-expn",
       "https://github.com/jax-ml/jax/issues/41205",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2359,7 +2359,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-numpy-floor-divide;jax-numpy-floor-divide--long",
       "https://github.com/jax-ml/jax/issues/41206",
-      "Pending",
+      "Rejected",
       "",
       "",
       "Functional",
@@ -2371,7 +2371,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-special-expi--again;jax-scipy-special-expi--long",
       "https://github.com/jax-ml/jax/issues/41207",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2383,7 +2383,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax-scipy-stats-poisson--again",
       "https://github.com/jax-ml/jax/issues/41208",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2395,7 +2395,7 @@ const BUG_SHEETS_DATA = {
     [
       "jax#1;jax_1",
       "https://github.com/jax-ml/jax/issues/41246",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2409,8 +2409,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       34,
-      27,
-      0,
+      20,
+      9,
       "",
       "",
       0,
@@ -2517,7 +2517,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm-engine-arg-utils-engineargs;vllm-engine-arg-utils-engineargs--reported;vllm-engine-arg-utils-engineargs--gpu;vllm-engine-arg-utils-engineargs--long",
       "https://github.com/vllm-project/vllm/pull/52370",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2577,7 +2577,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm-sampling-params-structuredoutputsparams",
       "https://github.com/vllm-project/vllm/pull/47450",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -2637,7 +2637,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm-reasoning-deepseek-v3-reasoning-parser",
       "https://github.com/vllm-project/vllm/pull/58626",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2661,7 +2661,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm-v1-structured-output",
       "https://github.com/vllm-project/vllm/pull/48115",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2757,7 +2757,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm.utils.system_utils.suppress_stdout",
       "https://github.com/vllm-project/vllm/issues/59268",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -2769,7 +2769,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm.utils.system_utils.suppress_stdout",
       "https://github.com/vllm-project/vllm/issues/59269",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -2793,7 +2793,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm.models.deepseek_v4.common.mm_preprocess.DeepseekV4VLImageProcessor",
       "https://github.com/vllm-project/vllm/issues/59271",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -2829,7 +2829,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window",
       "https://github.com/vllm-project/vllm/issues/35541",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -2841,7 +2841,7 @@ const BUG_SHEETS_DATA = {
     [
       "vllm_engine_reported/vllm-llm--engine-again;vllm_engine_reported/vllm-llm--engine-cutoff-window",
       "https://github.com/vllm-project/vllm/issues/39340",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -2855,8 +2855,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       33,
-      17,
-      0,
+      16,
+      1,
       "",
       "",
       1,
@@ -3077,7 +3077,7 @@ const BUG_SHEETS_DATA = {
       "Crash",
       "Open",
       "",
-      "[Fix] Parse Hunyuan tool arguments with JSON Schema type arrays",
+      "[Fix] hunyuan: Parse tool arguments with JSON Schema type arrays",
       "Agentic-PBT"
     ],
     [
@@ -3089,7 +3089,7 @@ const BUG_SHEETS_DATA = {
       "Functional",
       "Open",
       "",
-      "[Bugfix] Flush pending tool calls at end of stream in the Llama 3.2 detector",
+      "[Fix] function_call: Flush pending tool calls at end of stream in the Llama 3.2 detector",
       "Agentic-PBT"
     ],
     [
@@ -3119,7 +3119,7 @@ const BUG_SHEETS_DATA = {
     [
       "sglang_0517/sglang-srt-function-call-deepseekv32-detector--0517;sglang_0517/sglang-srt-function-call-deepseekv4-detector--0517",
       "https://github.com/sgl-project/sglang/issues/35563",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Crash",
@@ -3289,11 +3289,11 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       24,
-      6,
-      0,
+      1,
+      10,
       "",
       "",
-      0,
+      1,
       "",
       "",
       ""
@@ -3325,7 +3325,7 @@ const BUG_SHEETS_DATA = {
     [
       "aql-functions-string-substitute; co-author's Agentic-PBT run",
       "https://github.com/arangodb/arangodb/issues/23293",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3337,7 +3337,7 @@ const BUG_SHEETS_DATA = {
     [
       "aql-functions-string-substitute; co-author's Agentic-PBT run",
       "https://github.com/arangodb/arangodb/issues/23357",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3349,7 +3349,7 @@ const BUG_SHEETS_DATA = {
     [
       "co-author's Agentic-PBT run",
       "https://github.com/arangodb/arangodb/issues/23358",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3367,13 +3367,13 @@ const BUG_SHEETS_DATA = {
       "Functional",
       "",
       "",
-      "APPEND(null, [])` returns null instead of the other input array",
+      "`APPEND(null, [])` returns null instead of the other input array",
       "Agentic-PBT"
     ],
     [
       "co-author's Agentic-PBT run",
       "https://github.com/arangodb/arangodb/issues/23360",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3397,7 +3397,7 @@ const BUG_SHEETS_DATA = {
     [
       "co-author's Agentic-PBT run",
       "https://github.com/arangodb/arangodb/issues/23362",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3421,7 +3421,7 @@ const BUG_SHEETS_DATA = {
     [
       "aql-high-level-operations-limit--again;indexes-and-search-indexing-working-with-indexes-persistent--again",
       "https://github.com/arangodb/arangodb/issues/22909",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3469,7 +3469,7 @@ const BUG_SHEETS_DATA = {
     [
       "JSON_PARSE();PI()",
       "https://github.com/arangodb/arangodb/issues/23385",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3481,7 +3481,7 @@ const BUG_SHEETS_DATA = {
     [
       "JSON_PARSE()",
       "https://github.com/arangodb/arangodb/issues/23386",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3505,7 +3505,7 @@ const BUG_SHEETS_DATA = {
     [
       "aql-functions-string-substitute",
       "https://github.com/arangodb/arangodb/issues/23399",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3517,7 +3517,7 @@ const BUG_SHEETS_DATA = {
     [
       "aql-operators-arithmetic-operators",
       "https://github.com/arangodb/arangodb/issues/23400",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3559,13 +3559,13 @@ const BUG_SHEETS_DATA = {
       "Functional",
       "",
       "",
-      "/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON",
+      "`/_api/import` with `type=documents` and `complete=true` commits a partial import when a line is not valid JSON",
       "Agentic-PBT"
     ],
     [
       "indexes-and-search-indexing-working-with-indexes-persistent--again",
       "https://github.com/arangodb/arangodb/issues/23402",
-      "Pending",
+      "Rejected",
       "",
       "",
       "Functional",
@@ -3615,8 +3615,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       13,
-      13,
-      0,
+      12,
+      1,
       "",
       "",
       0,
@@ -3771,7 +3771,7 @@ const BUG_SHEETS_DATA = {
     [
       "cronnext-1",
       "https://github.com/cronie-crond/cronie/issues/217",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3809,8 +3809,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       10,
-      2,
       0,
+      2,
       "",
       "",
       0,
@@ -3857,7 +3857,7 @@ const BUG_SHEETS_DATA = {
     [
       "last_value",
       "https://www.postgresql.org/account/submitbug/19731/",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3869,7 +3869,7 @@ const BUG_SHEETS_DATA = {
     [
       "last_value",
       "https://www.postgresql.org/account/submitbug/19732/",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -3968,7 +3968,7 @@ const BUG_SHEETS_DATA = {
       "Reported:",
       9,
       6,
-      0,
+      1,
       "",
       "",
       0,
@@ -4099,7 +4099,7 @@ const BUG_SHEETS_DATA = {
     [
       "nonnull attribute",
       "https://github.com/llvm/llvm-project/issues/228670",
-      "Pending",
+      "Fixed",
       "",
       "",
       "Functional",
@@ -4211,8 +4211,8 @@ const BUG_SHEETS_DATA = {
     [
       "Reported:",
       5,
-      1,
       0,
+      1,
       "",
       "",
       0,
@@ -4283,7 +4283,7 @@ const BUG_SHEETS_DATA = {
     [
       "ssh-1-g--long",
       "https://bugzilla.mindrot.org/show_bug.cgi?id=4013",
-      "Confirmed",
+      "Fixed",
       "",
       "",
       "Functional",

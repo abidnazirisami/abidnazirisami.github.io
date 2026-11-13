@@ -27,6 +27,16 @@ from typing import Dict, List
 REPO_ROOT = Path(__file__).resolve().parents[1]
 BUGS_DIR = REPO_ROOT / "bugs"
 RQ3_CSV_PATH = BUGS_DIR / "rq3_bugs_reported.csv"
+# Statuses that changed on the tracker after rq3_bugs_reported.csv was frozen
+# for the paper. A row here overrides the status of the report with that link.
+STATUS_UPDATES_PATH = BUGS_DIR / "status_updates.csv"
+
+
+def load_status_updates() -> Dict[str, str]:
+    if not STATUS_UPDATES_PATH.exists():
+        return {}
+    with STATUS_UPDATES_PATH.open(encoding="utf-8") as f:
+        return {r["link"].strip().rstrip("/"): r["status"].strip() for r in csv.DictReader(f)}
 
 # The tool column names the technique that found the bug. The model behind each
 # run stays in the Model column of rq3_bugs_reported.csv.
@@ -58,6 +68,7 @@ STATUS_MAP = {
 def extract_rows_from_rq3(app_rows: List[Dict[str, str]]) -> List[Dict[str, str]]:
     """Convert rq3_bugs_reported rows for an application to target CSV row format."""
     out_rows = []
+    updates = load_status_updates()
     for r in app_rows:
         api = (r.get("Found_by") or r.get("Bug") or r.get("Title") or "").strip()
         status_raw = r.get("Status", "").strip().lower()
@@ -66,6 +77,10 @@ def extract_rows_from_rq3(app_rows: List[Dict[str, str]]) -> List[Dict[str, str]
         note = r.get("Title", "").strip()
         tool = TOOL_NAME
         fixed = r.get("Fixed", "").strip()
+        # The source keeps "fixed" in its own column. A confirmed report whose
+        # fix landed is listed as Fixed, as in the other CSVs.
+        if status == "Confirmed" and fixed.lower() == "yes":
+            status = "Fixed"
 
         report = r.get("Report", "").strip()
         upstream = r.get("Upstream", "").strip()
@@ -84,12 +99,13 @@ def extract_rows_from_rq3(app_rows: List[Dict[str, str]]) -> List[Dict[str, str]
             pr_val = "Open"
 
         for u in main_urls:
+            row_status = updates.get(u.rstrip("/"), status)
             this_pr_link = u if "/pull/" in u else pr_link
             this_pr_val = "Open" if ("/pull/" in u and not pr_val) else pr_val
             out_rows.append({
                 "api(s)": api,
                 "link": u,
-                "Status": status,
+                "Status": row_status,
                 "data_dependent": "",
                 "comments": "",
                 "bug_type": bug_type,
@@ -132,6 +148,16 @@ def update_pytorch_csv(new_rows: List[Dict[str, str]]) -> int:
     pytorch_path = BUGS_DIR / "pytorch.csv"
     existing_content = pytorch_path.read_text(encoding="utf-8")
     lines = existing_content.splitlines()
+
+    # Drop the rows an earlier run of this script appended, so that a rerun
+    # picks up status changes in rq3_bugs_reported.csv.
+    kept = lines[:3]
+    for l in lines[3:]:
+        parts = list(csv.reader([l]))
+        if parts and parts[0] and parts[0][-1].strip() == TOOL_NAME:
+            continue
+        kept.append(l)
+    lines = kept
 
     # Identify existing links to prevent any duplicate appending
     existing_links = set()

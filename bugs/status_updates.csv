@@ -1,0 +1,20 @@
+link,status,checked,reason
+https://github.com/arangodb/arangodb/issues/23358,Fixed,2026-11-13,maintainer comment states the fix was merged
+https://github.com/arangodb/arangodb/issues/23385,Fixed,2026-11-13,maintainer comment states the fix was merged
+https://github.com/arangodb/arangodb/issues/23386,Fixed,2026-11-13,maintainer comment states the fix was merged
+https://github.com/arangodb/arangodb/issues/23399,Fixed,2026-11-13,maintainer comment states the fix was merged
+https://github.com/arangodb/arangodb/issues/23400,Fixed,2026-11-13,maintainer comment states the fix was merged
+https://github.com/jax-ml/jax/issues/41205,Fixed,2026-11-13,maintainer: fixed by #41404
+https://github.com/vllm-project/vllm/issues/59268,Fixed,2026-11-13,closed by maintainer; fixed by #59336
+https://github.com/vllm-project/vllm/issues/59269,Fixed,2026-11-13,closed by maintainer; fixed by #59336
+https://github.com/jax-ml/jax/issues/38262,Fixed,2026-11-13,closed as completed by a fixing commit (copybara)
+https://github.com/jax-ml/jax/issues/41132,Fixed,2026-11-13,closed as completed by a fixing commit (copybara)
+https://github.com/jax-ml/jax/issues/41203,Fixed,2026-11-13,closed as completed by a fixing commit (copybara)
+https://github.com/jax-ml/jax/issues/41208,Fixed,2026-11-13,closed as completed by a fixing commit (copybara)
+https://github.com/jax-ml/jax/issues/41246,Fixed,2026-11-13,closed as completed by a fixing commit (copybara)
+https://github.com/llvm/llvm-project/issues/228670,Fixed,2026-11-13,labelled confirmed and closed as completed by maintainer
+https://github.com/pytorch/pytorch/issues/199057,Confirmed,2026-11-13,triaged by maintainers
+https://github.com/pytorch/pytorch/issues/199058,Confirmed,2026-11-13,triaged by maintainers
+https://github.com/arangodb/arangodb/issues/23402,Rejected,2026-11-13,maintainer closed as invalid
+https://github.com/jax-ml/jax/issues/41206,Rejected,2026-11-13,maintainer closed as expected floating-point behavior
+https://github.com/pytorch/pytorch/issues/193781,Rejected,2026-11-13,maintainer closed as not planned

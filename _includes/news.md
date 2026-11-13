@@ -6,6 +6,10 @@
 
 Won the 1st prize in the inaugural [NCStateCS Graduate Research Symposium](https://www.linkedin.com/posts/ncstatecs_ncstatecs-programyourpath-gradpack-activity-7449571785240375296-M01q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACH7TKgBi21tXmBnW0hq50W-ghhBKogjcVM).
 
+🎓 **April 2026**
+
+Passed my Oral Preliminary Exam on April 10 and advanced to PhD candidacy.
+
 📜 **February 2026**
 
 *FlashFuzz* accepted to [ICST 2026](https://conf.researchr.org/home/icst-2026).

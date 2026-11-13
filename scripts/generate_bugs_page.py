@@ -233,7 +233,7 @@ def build_kpi_cards_html(total: int, conf: int, fix: int, pend: int, rej: int) -
         # Card 2: Confirmed
         '  <div class="bugs-kpi-card kpi-confirmed-card">',
         '    <div class="kpi-header">',
-        '      <span class="kpi-label">Confirmed</span>',
+        '      <span class="kpi-label">Confirmed (Awaiting Fix)</span>',
         '    </div>',
         f'    <div class="kpi-number">{conf}</div>',
         '    <div class="kpi-sub">',
@@ -290,7 +290,7 @@ def build_visuals_html(apps_data: List[Dict], total: int, conf: int, fix: int, p
         '    <div class="chart-card-header">',
         '      <h3 class="chart-card-title">Reported Bugs by Application</h3>',
         '      <div class="chart-legend">',
-        '        <span class="legend-item"><span class="legend-dot dot-confirmed"></span> Confirmed</span>',
+        '        <span class="legend-item"><span class="legend-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span>',
         '        <span class="legend-item"><span class="legend-dot dot-fixed"></span> Fixed</span>',
         '        <span class="legend-item"><span class="legend-dot dot-pending"></span> Pending</span>',
         '        <span class="legend-item"><span class="legend-dot dot-rejected"></span> Rejected</span>',
@@ -319,7 +319,7 @@ def build_visuals_html(apps_data: List[Dict], total: int, conf: int, fix: int, p
         p_pct = (p / app_total) * track_scale
         r_pct = (r / app_total) * track_scale
 
-        tooltip_text = f"{app_name}: {c} Confirmed, {fx} Fixed, {p} Pending, {r} Rejected ({app_total} total)"
+        tooltip_text = f"{app_name}: {c} Confirmed (Awaiting Fix), {fx} Fixed, {p} Pending, {r} Rejected ({app_total} total)"
 
         html_parts.extend([
             f'      <div class="app-bar-row" title="{html.escape(tooltip_text)}" role="button" tabindex="0" onclick="toggleAppAccordion(\'{app_slug}\')">',
@@ -353,7 +353,7 @@ def build_visuals_html(apps_data: List[Dict], total: int, conf: int, fix: int, p
         '      </div>',
         '    </div>',
         '    <div class="status-stat-pills">',
-        f'      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed</span> <strong>{conf} ({conf/total*100:.1f}%)</strong></div>',
+        f'      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span> <strong>{conf} ({conf/total*100:.1f}%)</strong></div>',
         f'      <div class="status-stat-item stat-item-fixed"><span><span class="status-dot dot-fixed"></span> Fixed</span> <strong>{fix} ({fix/total*100:.1f}%)</strong></div>',
         f'      <div class="status-stat-item stat-item-pending"><span><span class="status-dot dot-pending"></span> Pending</span> <strong>{pend} ({pend/total*100:.1f}%)</strong></div>',
         f'      <div class="status-stat-item stat-item-rejected"><span><span class="status-dot dot-rejected"></span> Rejected</span> <strong>{rej} ({rej/total*100:.1f}%)</strong></div>',
@@ -393,7 +393,7 @@ def build_toolbar_html(total: int, conf: int, fix: int, pend: int, rej: int) -> 
         '  </div>',
         '  <div class="bugs-filter-group">',
         f'    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All ({total})</button>',
-        f'    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed ({conf})</button>',
+        f'    <button type="button" class="filter-btn" data-filter="Confirmed" aria-pressed="false"><span class="filter-dot dot-confirmed"></span>Confirmed (Awaiting Fix) ({conf})</button>',
         f'    <button type="button" class="filter-btn" data-filter="Fixed" aria-pressed="false"><span class="filter-dot dot-fixed"></span>Fixed ({fix})</button>',
         f'    <button type="button" class="filter-btn" data-filter="Pending" aria-pressed="false"><span class="filter-dot dot-pending"></span>Pending ({pend})</button>',
         f'    <button type="button" class="filter-btn" data-filter="Rejected" aria-pressed="false"><span class="filter-dot dot-rejected"></span>Rejected ({rej})</button>',
@@ -435,7 +435,7 @@ def build_collapsible_app_section(app: Dict, cached_titles: Dict[str, str]) -> s
     ]
 
     if c:
-        html_parts.append(f'        <span class="mini-status-pill mini-confirmed">{c} Confirmed</span>')
+        html_parts.append(f'        <span class="mini-status-pill mini-confirmed">{c} Confirmed (Awaiting Fix)</span>')
     if fx:
         html_parts.append(f'        <span class="mini-status-pill mini-fixed">{fx} Fixed</span>')
     if p:
@@ -556,7 +556,7 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
     donutChart = new Chart(ctx, {{
       type: 'doughnut',
       data: {{
-        labels: ['Confirmed', 'Fixed', 'Pending', 'Rejected'],
+        labels: ['Confirmed (Awaiting Fix)', 'Fixed', 'Pending', 'Rejected'],
         datasets: [{{
           data: [{conf}, {fix}, {pend}, {rej}],
           backgroundColor: donutColors(),
