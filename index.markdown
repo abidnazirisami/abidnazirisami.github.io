@@ -10,7 +10,7 @@ layout: home
        alt="M M Abid Naziri" width="512" height="512">
   <div class="masthead__body">
     <p class="masthead__where">
-      Room 3228, Engineering Bldg II<br/>
+      Room 3228, Koch Hall (EB2) <br/>
       <img class="inline-logo" src="{{ '/favicon.ico' | relative_url }}" alt="" aria-hidden="true"> NC State University<br/>
       Raleigh, USA
     </p>
