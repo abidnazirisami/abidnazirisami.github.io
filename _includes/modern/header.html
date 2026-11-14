@@ -6,9 +6,12 @@
     </a>
 
     <div class="site-header__tools">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    {%- if page_paths -%}
+    {%- comment -%}
+      The links come from _data/navigation.yml. A link to "/#id" names a
+      section of the homepage; data-section lets the script below mark it
+      while that section is on screen.
+    {%- endcomment -%}
+    {%- if site.data.navigation -%}
     <nav class="site-nav" aria-label="Primary">
       <input type="checkbox" id="nav-trigger" class="nav-trigger" aria-label="Show navigation menu">
       <label for="nav-trigger" class="nav-toggle" aria-hidden="true">
@@ -21,14 +24,15 @@
       </label>
 
       <div class="nav-links">
-        {%- for path in page_paths -%}
-          {%- assign nav_page = site.pages | where: "path", path | first -%}
-          {%- if nav_page.title -%}
-            {%- assign nav_url = nav_page.url | relative_url -%}
-            <a class="nav-link{% if nav_page.nav_cta %} nav-link--cta{% endif %}"
-               href="{{ nav_url }}"
-               {% if page.url == nav_page.url %}aria-current="page"{% endif %}>{{ nav_page.title | escape }}</a>
-          {%- endif -%}
+        {%- for item in site.data.navigation -%}
+          {%- assign parts = item.url | split: '#' -%}
+          {%- assign section = nil -%}
+          {%- if parts.size == 2 and parts[0] == '/' -%}{%- assign section = parts[1] -%}{%- endif -%}
+          <a class="nav-link{% if item.cta %} nav-link--cta{% endif %}"
+             href="{{ item.url | relative_url }}"
+             {%- if section %} data-section="{{ section }}"{% endif %}
+             {%- if item.new_tab %} target="_blank" rel="noopener"{% endif %}
+             {%- if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title | escape }}</a>
         {%- endfor -%}
       </div>
     </nav>
@@ -37,3 +41,88 @@
     </div>
   </div>
 </header>
+
+<script>
+/* Navigation helpers. Without this script every link still works: the
+   section links are plain anchors. */
+(function () {
+  document.addEventListener('DOMContentLoaded', function () {
+    var trigger = document.getElementById('nav-trigger');
+    var links = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+
+    /* A section link does not load a new page, so the mobile menu has to be
+       closed by hand. */
+    links.forEach(function (link) {
+      link.addEventListener('click', function () {
+        if (trigger) { trigger.checked = false; }
+      });
+    });
+
+    /* Mark the link of the section that is being read. Only the homepage has
+       these sections; elsewhere there is nothing to track. */
+    var tracked = [];
+    links.forEach(function (link) {
+      var id = link.getAttribute('data-section');
+      var target = id ? document.getElementById(id) : null;
+      if (target) { tracked.push({ link: link, target: target }); }
+    });
+    if (!tracked.length) { return; }
+
+    var header = document.querySelector('.site-header');
+    var queued = false;
+
+    /* The section named by the last tab that was pressed, or by the address
+       the page was opened with. */
+    var asked = null;
+    function ask(id) {
+      tracked.forEach(function (entry) {
+        if (entry.target.id === id) { asked = entry; }
+      });
+    }
+    tracked.forEach(function (entry) {
+      entry.link.addEventListener('click', function () { asked = entry; });
+    });
+    ask(window.location.hash.slice(1));
+    /* Scrolling by hand withdraws the request. */
+    ['wheel', 'touchmove', 'keydown'].forEach(function (type) {
+      window.addEventListener(type, function () { asked = null; }, { passive: true });
+    });
+
+    function update() {
+      queued = false;
+      var line = (header ? header.offsetHeight : 0) + 48;
+      var current = null;
+      tracked.forEach(function (entry) {
+        if (entry.target.getBoundingClientRect().top <= line) { current = entry; }
+      });
+      /* At the end of the page the last sections cannot reach the top. The
+         section that was asked for wins if it is on screen; otherwise the
+         last section on screen does. */
+      var doc = document.documentElement;
+      if (window.innerHeight + window.pageYOffset >= doc.scrollHeight - 2) {
+        tracked.forEach(function (entry) {
+          var top = entry.target.getBoundingClientRect().top;
+          if (top > line && top < window.innerHeight && (!asked || current !== asked)) { current = entry; }
+        });
+      }
+      tracked.forEach(function (entry) {
+        if (entry === current) {
+          entry.link.setAttribute('aria-current', 'location');
+        } else {
+          entry.link.removeAttribute('aria-current');
+        }
+      });
+    }
+
+    function queue() {
+      if (queued) { return; }
+      queued = true;
+      window.requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    update();
+  });
+})();
+</script>

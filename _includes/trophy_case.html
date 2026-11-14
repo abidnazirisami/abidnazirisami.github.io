@@ -23,6 +23,10 @@
       <dd>{{ stats.domain_count }}</dd>
     </div>
   </dl>
+  <p class="trophy__action">
+    <a class="btn btn--primary trophy__cta" href="{{ bugs_url }}">See all {{ stats.total }} reported bugs <span aria-hidden="true">&rarr;</span></a>
+    <span class="trophy__action-note">Every report with its status and a link to the issue.</span>
+  </p>
   <details class="trophy__breakdown">
     <summary>Breakdown by domain</summary>
     <dl class="trophy__shelf">

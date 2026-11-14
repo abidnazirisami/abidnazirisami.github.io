@@ -1,0 +1,61 @@
+{%- comment -%}
+  A dated list of entries, with the date in the left column. The entries come
+  from _data/cv.yml, which documents the fields.
+
+    include timeline.html items=site.data.cv.education level=3
+    include timeline.html items=site.data.cv.awards compact=true
+
+  level    heading level of the organization name (default 3)
+  compact  one line per entry: name and note
+{%- endcomment -%}
+{%- assign level = include.level | default: 3 -%}
+<ol class="timeline{% if include.compact %} timeline--compact{% endif %}">
+  {%- for item in include.items %}
+  <li class="timeline__item">
+    <p class="timeline__date">{{ item.date }}</p>
+    <div class="timeline__body">
+      {%- if include.compact %}
+      <p class="timeline__name">
+        {%- if item.url -%}
+        <a href="{{ item.url }}"{% if item.url contains '://' %} target="_blank" rel="noopener"{% endif %}>{{ item.name }}</a>
+        {%- else -%}
+        {{ item.name }}
+        {%- endif -%}
+        {%- if item.note %} <span class="timeline__note">{{ item.note | markdownify | remove: '<p>' | remove: '</p>' | strip }}</span>{% endif -%}
+      </p>
+      {%- else %}
+      <h{{ level }} class="timeline__org">
+        {%- if item.org_url -%}
+        <a href="{{ item.org_url }}" target="_blank" rel="noopener">{{ item.org }}</a>
+        {%- else -%}
+        {{ item.org }}
+        {%- endif -%}
+      </h{{ level }}>
+      {%- if item.role %}
+      <p class="timeline__role">{{ item.role }}{% if item.place %} <span>· {{ item.place }}</span>{% endif %}</p>
+      {%- endif %}
+      {%- for line in item.meta %}
+      <p class="timeline__meta"><span class="timeline__label">{{ line.label }}:</span> {{ line.text | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {%- endfor %}
+      {%- if item.detail %}
+      <p class="timeline__detail">{{ item.detail | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
+      {%- endif %}
+      {%- if item.list %}
+      <ul class="timeline__list">
+        {%- for line in item.list %}
+        <li>{{ line | markdownify | remove: '<p>' | remove: '</p>' | strip }}</li>
+        {%- endfor %}
+      </ul>
+      {%- endif %}
+      {%- if item.links %}
+      <p class="timeline__links">
+        {%- for link in item.links %}
+        <a class="btn" href="{{ link.url | relative_url }}">{{ link.label }} <span aria-hidden="true">&rarr;</span></a>
+        {%- endfor %}
+      </p>
+      {%- endif %}
+      {%- endif %}
+    </div>
+  </li>
+  {%- endfor %}
+</ol>

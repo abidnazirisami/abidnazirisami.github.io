@@ -1,10 +1,27 @@
-- title: Home
-  url: /
-- title: Experience
-  url: /experience/
-- title: Projects
-  url: /projects/
+# Header navigation, read by _includes/modern/header.html and
+# _includes/legacy/header.html.
+#
+# A url of the form "/#id" jumps to that section of the homepage. On the
+# homepage the link scrolls to the section; on any other page it goes to the
+# homepage first. Any other url opens that page or file.
+#
+#   cta: true      show the link as the filled button
+#   new_tab: true  open the link in a new tab
+#
+# To bring back the separate Experience page, set the Experience url to
+# /experience/ (the page is still built from experience.md).
+
+- title: Reported Bugs
+  url: /#reported-bugs
 - title: Publications
-  url: /publications/
+  url: /#publications
+- title: Experience
+  url: /#experience
+- title: Education
+  url: /#education
+- title: Awards
+  url: /#awards
 - title: Resume
-  url: https://tinyurl.com/abidnazirisami-cv
+  url: /resume.pdf
+  cta: true
+  new_tab: true

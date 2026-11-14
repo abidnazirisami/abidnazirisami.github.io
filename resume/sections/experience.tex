@@ -16,20 +16,12 @@
 
     \entrygap
 
-    \begin{twocolentry}{
-        Aug 2022 – Present
-    }
-        \textbf{Graduate Teaching Assistant}, NC State University -- Raleigh, NC, USA\end{twocolentry}
-
-    \headgap
-    \begin{onecolentry}
-        \begin{highlights}
-            \details{\item Ethics in Computing (Spring 2026), Software Testing and Reliability (Fall 2025), Software Engineering (Spring 2025, Spring 2023), Theory of Programming Languages (Fall 2022)}
-            \professionalonly{\item Software Testing and Reliability, Software Engineering, Ethics in Computing, Theory of Programming Languages}
-        \end{highlights}
-    \end{onecolentry}
-
-    \entrygap
+    % The single-page version has no Teaching \& Mentorship section, so its
+    % entries are listed here instead.
+    \ifdefined\academictrue\else
+        \input{sections/teaching-entries}
+        \entrygap
+    \fi
 
     \begin{twocolentry}{
         Mar 2019 – Jul 2022
@@ -39,12 +31,13 @@
     \headgap
     \begin{onecolentry}
         \begin{highlights}
-            \item Developed web \professionalonly{and desktop }applications using Vue JS, TypeScript, and ASP.NET Core, including a project management tool deployed to \textbf{270} employees\details{ and a Welder Management system}\professionalonly{; wrote unit and regression tests}
+            \details{\item Developed web applications using Vue JS, TypeScript, and ASP.NET Core, including a project management tool deployed to \textbf{270} employees and a Welder Management system}
+            \professionalonly{\item Developed web and desktop applications with Vue JS, TypeScript, and ASP.NET Core; one tool is deployed to \textbf{270} employees}
             \details{\item Developed desktop applications DesignCalcs and ProWrite for pressure vessel design, adding features, fixing bugs, and creating unit/regression tests}
             \details{\item Managed CI/CD pipelines, configured testing servers, and ensured smooth system operations}
             \details{\item Operated in an \textbf{Agile} development process in a development team of \textbf{7} people}
             \details{\item Mentored new recruits, conducted code/design reviews}
             \details{\item Collaborated with clients and team members via \textbf{JIRA}}
-            \professionalonly{\item Managed CI/CD pipelines, mentored new recruits, and conducted code reviews in an \textbf{Agile} team of \textbf{7}}
+            \professionalonly{\item Managed CI/CD pipelines, wrote unit and regression tests, mentored new recruits, and conducted code reviews}
         \end{highlights}
     \end{onecolentry}

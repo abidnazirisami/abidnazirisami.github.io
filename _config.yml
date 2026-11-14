@@ -41,14 +41,7 @@ frontend: modern
 sass:
   style: compressed
 
-# Navigation for Minima theme
-# These pages will appear in the header nav in order
-header_pages:
-  - publications.md
-  - bugs.md
-  - experience.md
-  - projects.md
-  - resume.md
+# The header navigation is defined in _data/navigation.yml.
 
 # Exclude from processing.
 # The following items will not be processed, by default.

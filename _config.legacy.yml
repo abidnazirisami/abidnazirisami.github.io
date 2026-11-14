@@ -5,11 +5,3 @@
 # GitHub Pages only ever reads _config.yml, so the deployed site keeps
 # whatever `frontend` is set to there.
 frontend: legacy
-
-# Legacy nav order, as it was before the redesign.
-header_pages:
-  - resume.md
-  - bugs.md
-  - publications.md
-  - experience.md
-  - projects.md

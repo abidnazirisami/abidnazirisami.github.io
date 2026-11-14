@@ -3,6 +3,9 @@ layout: page
 title:  "Projects"
 permalink: /projects/
 body_style: cv
+# The back link returns to the homepage section that links here.
+back_url: /#education
+back_label: Back to Education
 ---
 <h3> Undergraduate Thesis </h3>
 

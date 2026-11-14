@@ -20,6 +20,7 @@ layout: home
       <li><i class="fas fa-university" aria-hidden="true"></i><a href="mailto:mnaziri@ncsu.edu">mnaziri@ncsu.edu</a></li>
       <li><i class="fab fa-github" aria-hidden="true"></i><a href="https://github.com/abidnazirisami" target="_blank" rel="noopener">github.com/abidnazirisami</a></li>
       <li><i class="fab fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/abidnazirisami" target="_blank" rel="noopener">linkedin.com/in/abidnazirisami</a></li>
+      <li><i class="fas fa-file-pdf" aria-hidden="true"></i><span><a href="{{ '/resume.pdf' | relative_url }}" target="_blank" rel="noopener">Resume</a> (<a href="{{ '/resume-single-page.pdf' | relative_url }}" target="_blank" rel="noopener">one-page version</a>)</span></li>
     </ul>
   </div>
 </section>
@@ -45,9 +46,9 @@ I am a fifth-year PhD candidate at [NC State](https://www.ncsu.edu/), where I wo
 
 My passion is developing testing techniques that reveal these bugs. Complex software is hard to test: its inputs must satisfy many constraints, and there is often no simple way to tell whether an output is correct. Deep learning libraries, compilers, databases, and LLM serving engines are examples of complex software where I have found bugs using the techniques I developed and studied. I report each bug to the developers so that it gets fixed, and this is how I help build more robust software.
 
-<h2 id="trophy-case">🏆 Trophy Case</h2>
+<h2 id="reported-bugs">Reported Bugs</h2>
 
-These are the bugs I have reported to the developers of open-source software, as of {{ site.data.bug_stats.generated | date: "%B %Y" }} ([full list](/bugs/)).
+These are the bugs I have reported to the developers of open-source software, as of {{ site.data.bug_stats.generated | date: "%B %Y" }}.
 
 {% include trophy_case.html %}
 
@@ -57,6 +58,21 @@ These are the bugs I have reported to the developers of open-source software, as
 {% include publications_list.md %}
 </div>
 
-<!-- <h1>Education and Experience</h1>
+<h2 id="experience">Experience</h2>
 
- I completed my undergraduate degree in [Computer Science and Engineering](https://du.ac.bd/body/CSE) from [University of Dhaka](https://du.ac.bd) in 2018. After graduating, I worked as a Senior Software Engineer at [Enosis Solutions](https://www.enosisbd.com/). I used to work with several desktop applications written primarily in `Delphi`, with other desktop applications and web apps involving technologies like `ASP.NET Core`, `React JS` etc. -->
+{% for group in site.data.cv.experience %}
+<h3 class="timeline-label">{{ group.group }}</h3>
+{% include timeline.html items=group.items level=4 %}
+{% endfor %}
+
+<h2 id="education">Education</h2>
+
+{% include timeline.html items=site.data.cv.education level=3 %}
+
+<h2 id="awards">Awards</h2>
+
+{% include timeline.html items=site.data.cv.awards compact=true %}
+
+<h2 id="volunteering">Volunteering</h2>
+
+{% include timeline.html items=site.data.cv.activities compact=true %}

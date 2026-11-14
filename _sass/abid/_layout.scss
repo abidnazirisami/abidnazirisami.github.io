@@ -174,10 +174,11 @@
   .nav-link:hover { color: var(--ink); background: var(--accent-wash); }
 }
 
-/* Underline marks the current page — weight never changes, so nothing shifts. */
-.nav-link[aria-current="page"] { color: var(--ink); }
+/* Underline marks the current page, or the homepage section being read.
+   Weight never changes, so nothing shifts. */
+.nav-link[aria-current] { color: var(--ink); }
 
-.nav-link[aria-current="page"]::after {
+.nav-link[aria-current]::after {
   content: "";
   position: absolute;
   left: var(--space-3);
@@ -199,8 +200,8 @@
   .nav-link--cta:hover { color: var(--surface); background: var(--accent); }
 }
 
-.nav-link--cta[aria-current="page"] { color: var(--surface); }
-.nav-link--cta[aria-current="page"]::after { background: var(--surface); }
+.nav-link--cta[aria-current] { color: var(--surface); }
+.nav-link--cta[aria-current]::after { background: var(--surface); }
 
 /* --- Mobile navigation (CSS only, keyboard operable) -------------------- */
 
@@ -292,7 +293,7 @@
     font-size: var(--text-base);
   }
 
-  .nav-link[aria-current="page"]::after { left: var(--space-3); right: auto; width: 1.25rem; bottom: 0.5rem; }
+  .nav-link[aria-current]::after { left: var(--space-3); right: auto; width: 1.25rem; bottom: 0.5rem; }
 
   .nav-link--cta { margin: var(--space-1) 0 0; justify-content: center; }
 }

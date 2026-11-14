@@ -353,10 +353,10 @@ def build_visuals_html(apps_data: List[Dict], total: int, conf: int, fix: int, p
         '      </div>',
         '    </div>',
         '    <div class="status-stat-pills">',
-        f'      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span> <strong>{conf} ({conf/total*100:.1f}%)</strong></div>',
-        f'      <div class="status-stat-item stat-item-fixed"><span><span class="status-dot dot-fixed"></span> Fixed</span> <strong>{fix} ({fix/total*100:.1f}%)</strong></div>',
-        f'      <div class="status-stat-item stat-item-pending"><span><span class="status-dot dot-pending"></span> Pending</span> <strong>{pend} ({pend/total*100:.1f}%)</strong></div>',
-        f'      <div class="status-stat-item stat-item-rejected"><span><span class="status-dot dot-rejected"></span> Rejected</span> <strong>{rej} ({rej/total*100:.1f}%)</strong></div>',
+        f'      <div class="status-stat-item stat-item-confirmed"><span title="Confirmed (Awaiting Fix)">Awaiting Fix</span> <strong>{conf} ({conf/total*100:.1f}%)</strong></div>',
+        f'      <div class="status-stat-item stat-item-fixed"><span>Fixed</span> <strong>{fix} ({fix/total*100:.1f}%)</strong></div>',
+        f'      <div class="status-stat-item stat-item-pending"><span>Pending</span> <strong>{pend} ({pend/total*100:.1f}%)</strong></div>',
+        f'      <div class="status-stat-item stat-item-rejected"><span>Rejected</span> <strong>{rej} ({rej/total*100:.1f}%)</strong></div>',
         '    </div>',
     ])
 
@@ -577,7 +577,7 @@ def build_client_javascript(total: int, conf: int, fix: int, pend: int, rej: int
                 const val = context.parsed;
                 const total = {total};
                 const pct = ((val / total) * 100).toFixed(1);
-                return ' ' + context.label + ': ' + val + ' (' + pct + '%)';
+                return ' ' + val + ' (' + pct + '%)';
               }}
             }}
           }}
@@ -765,6 +765,8 @@ def main():
     content.append(f'last_updated: "{iso_ts}"')
     content.append("wide: true")
     content.append("hide_title: true")
+    content.append("back_url: /#reported-bugs")
+    content.append("back_label: Back to homepage")
     content.append("---\n")
 
     content.append('<div class="bugs-dashboard">')

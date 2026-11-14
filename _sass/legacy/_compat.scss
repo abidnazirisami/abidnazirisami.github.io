@@ -213,3 +213,56 @@
 }
 
 .bugs-visible-count strong { color: #0f172a; }
+
+/* --- Homepage timeline ----------------------------------------------------
+   Experience, Education, Awards and Co-curricular Activities are sections of
+   the homepage and were separate pages before. A plain two-column list keeps
+   them readable here.
+   ------------------------------------------------------------------------- */
+
+.timeline-label {
+  margin: 24px 0 8px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.timeline {
+  margin: 0 0 16px;
+  padding: 0;
+  list-style: none;
+}
+
+.timeline__item {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: 4px 20px;
+  padding: 10px 0;
+  border-top: 1px solid #e8e8e8;
+}
+
+.timeline__item:first-child { border-top: 0; }
+
+.timeline__item p,
+.timeline__item ul { margin: 0; }
+
+.timeline__date { font-size: 0.9rem; color: #64748b; }
+.timeline__org { margin: 0; font-size: 1.15rem; }
+.timeline__meta,
+.timeline__list { font-size: 0.9rem; color: #475569; }
+.timeline__list { list-style: none; }
+.timeline__detail { margin-top: 4px !important; }
+.timeline__links { margin-top: 8px !important; }
+.timeline__note { color: #64748b; }
+.timeline__note::before { content: "· "; }
+
+@media screen and (max-width: 600px) {
+  .timeline__item { grid-template-columns: 1fr; }
+}
+
+/* --- Trophy case button --------------------------------------------------- */
+
+.trophy__action { margin: 12px 0; }
+.trophy__action-note { margin-left: 8px; font-size: 0.9rem; color: #64748b; }

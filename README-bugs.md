@@ -26,10 +26,10 @@ Both scripts are safe to rerun: with unchanged CSVs they reproduce the same file
 
 Issue titles come from `bugs/titles.json`, which is committed. The scripts add to it whenever `bugs_data/` holds newer titles (see the next section), so a clone without `bugs_data/` still produces the full page. A new GitHub issue shows its CSV note as the title until you fetch its details once.
 
-Homepage Trophy Case
---------------------
+Homepage Reported Bugs Section
+------------------------------
 
-The Trophy Case section of the homepage reads `_data/bug_stats.json`, which holds the counts per system and per domain. The generator above rewrites it. To refresh only this file, without touching `bugs.md`, run:
+The Reported Bugs section of the homepage reads `_data/bug_stats.json`, which holds the counts per system and per domain. The generator above rewrites it. To refresh only this file, without touching `bugs.md`, run:
 
     python3 scripts/generate_bug_stats.py
 

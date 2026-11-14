@@ -23,19 +23,6 @@ I am also developing efficient methods to generate complex test cases for **Auto
 
 **Simulator:** [CARLA](https://carla.readthedocs.io/)
 
-**Graduate Teaching Assistant**  
-*August 2022 - Present*
-
-**CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
-
-**CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
-
-**CSC 326 - Software Engineering**, Spring 2025, taught by [Dr. Wesley Klewerton Guez Assunção](https://wesleyklewerton.github.io/) and [Dr. Bowen Xu](https://www.bowenxu.me/).
-
-**CSC 712 - Software Testing and Reliability**, Fall 2025, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
-
-**CSC 379 - Ethics in Computing**, Spring 2026, taught by [David R. Wright](https://csc.ncsu.edu/people/drwrigh3/).
-
 <h3> Enosis Solutions </h3> 
 
 *Dhaka, Bangladesh*
@@ -57,6 +44,38 @@ I am also developing efficient methods to generate complex test cases for **Auto
     <li> Mentored and trained new recruits, conducted regular code/design reviews and ensured that the Agile development process is being followed </li>
     <li> Communicated with clients and collaborated with team members through JIRA </li>
 </ul>
+
+<h3 id="teaching-mentorship"> Teaching and Mentorship </h3>
+
+**Research Mentor**, [UIUC++ Summer Research in Software Engineering (SRSE)](https://uiuc-srse.github.io/)  
+*Summer 2024 and Summer 2026*
+
+**Summer 2026**
+<ul>
+    <li><b>Mentee:</b> Khush Patel</li>
+    <li><b>Advisor:</b> <a href="https://damorim.github.io/">Dr. Marcelo D'Amorim</a></li>
+    <li><b>Project:</b> A Multi-Domain Study on the Effectiveness of LLMs at Writing Property-Based Tests, submitted for review (<a href="https://arxiv.org/pdf/2610.34487">pdf</a>)</li>
+</ul>
+
+**Summer 2024**
+<ul>
+    <li><b>Mentees:</b> Aman Kumar Singh and Benjamin Wu</li>
+    <li><b>Advisors:</b> <a href="https://damorim.github.io/">Dr. Marcelo D'Amorim</a> and <a href="https://www.cs.cornell.edu/~saikatd/">Dr. Saikat Dutta</a></li>
+    <li><b>Project:</b> BugsInDLLs, a database of 112 reproducible bugs in deep learning libraries, published in the <a href="https://conf.researchr.org/details/issta-2025/issta-2025-tool-demonstrations/7/BugsInDLLs-A-Database-of-Reproducible-Bugs-in-Deep-Learning-Libraries-to-Enable-Sys">ISSTA 2025 Tool Demonstration track</a> (<a href="/papers/bugsindlls.pdf">pdf</a>)</li>
+</ul>
+
+**Graduate Teaching Assistant**, North Carolina State University  
+*August 2022 - Present*
+
+**CSC 417 - Theory of Programming Languages**, Fall 2022, taught by [Dr. Jamie Jennings](https://jamiejennings.com/).
+
+**CSC 510 - Software Engineering**, Spring 2023, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
+
+**CSC 326 - Software Engineering**, Spring 2025, taught by [Dr. Wesley Klewerton Guez Assunção](https://wesleyklewerton.github.io/) and [Dr. Bowen Xu](https://www.bowenxu.me/).
+
+**CSC 712 - Software Testing and Reliability**, Fall 2025, taught by [Dr. Marcelo D'Amorim](https://damorim.github.io/).
+
+**CSC 379 - Ethics in Computing**, Spring 2026, taught by [Dr. David R. Wright](https://csc.ncsu.edu/people/drwrigh3/).
 
 <h3 id="co-curricular"> Co-curricular Activities </h3>
 

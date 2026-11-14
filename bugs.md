@@ -2,9 +2,11 @@
 layout: page
 title: Reported Bugs
 permalink: /bugs/
-last_updated: "2026-11-13T22:59:41+00:00"
+last_updated: "2026-11-14T00:18:33+00:00"
 wide: true
 hide_title: true
+back_url: /#reported-bugs
+back_label: Back to homepage
 ---
 
 <div class="bugs-dashboard">
@@ -12,7 +14,7 @@ hide_title: true
     <h1 class="bugs-hero-title">Reported Bugs</h1>
     <p class="bugs-hero-subtitle">A list of <strong>323 bugs and issues</strong> reported across <strong>11 open-source applications</strong> spanning deep learning frameworks (PyTorch, TensorFlow, JAX), LLM serving engines (vLLM, SGLang), databases (ArangoDB, PostgreSQL), compilers (Clang/LLVM, GCC), and system utilities (cronie, OpenSSH). <strong>73.1%</strong> have been confirmed or fixed upstream.</p>
     <div class="bugs-hero-meta">
-      <span class="bugs-meta-pill">Last updated: 2026-11-13 22:59:41 UTC</span>
+      <span class="bugs-meta-pill">Last updated: 2026-11-14 00:18:33 UTC</span>
       <span class="bugs-meta-pill">11 Applications</span>
       <a class="bugs-sheet-link" href="https://docs.google.com/spreadsheets/d/1r03ajIybbPeLBqHdxbD54Qghwoy8NjL2weeh89vX7wM/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Spreadsheet: Google Sheets ↗</a>
     </div>
@@ -232,10 +234,10 @@ hide_title: true
       </div>
     </div>
     <div class="status-stat-pills">
-      <div class="status-stat-item stat-item-confirmed"><span><span class="status-dot dot-confirmed"></span> Confirmed (Awaiting Fix)</span> <strong>154 (47.7%)</strong></div>
-      <div class="status-stat-item stat-item-fixed"><span><span class="status-dot dot-fixed"></span> Fixed</span> <strong>82 (25.4%)</strong></div>
-      <div class="status-stat-item stat-item-pending"><span><span class="status-dot dot-pending"></span> Pending</span> <strong>54 (16.7%)</strong></div>
-      <div class="status-stat-item stat-item-rejected"><span><span class="status-dot dot-rejected"></span> Rejected</span> <strong>33 (10.2%)</strong></div>
+      <div class="status-stat-item stat-item-confirmed"><span title="Confirmed (Awaiting Fix)">Awaiting Fix</span> <strong>154 (47.7%)</strong></div>
+      <div class="status-stat-item stat-item-fixed"><span>Fixed</span> <strong>82 (25.4%)</strong></div>
+      <div class="status-stat-item stat-item-pending"><span>Pending</span> <strong>54 (16.7%)</strong></div>
+      <div class="status-stat-item stat-item-rejected"><span>Rejected</span> <strong>33 (10.2%)</strong></div>
     </div>
     <div class="bug-types-cloud">
       <div class="bug-types-title">Classification by Bug Type</div>
@@ -5117,7 +5119,7 @@ hide_title: true
                 const val = context.parsed;
                 const total = 323;
                 const pct = ((val / total) * 100).toFixed(1);
-                return ' ' + context.label + ': ' + val + ' (' + pct + '%)';
+                return ' ' + val + ' (' + pct + '%)';
               }
             }
           }

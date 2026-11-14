@@ -8,9 +8,9 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="back-home-container">
-          <a class="back-home" href="{{ '/' | relative_url }}" aria-label="Back to homepage">
+          <a class="back-home" href="{{ page.back_url | default: '/' | relative_url }}">
             <span class="back-home-arrow" aria-hidden="true">&larr;</span>
-            <span>Back to homepage</span>
+            <span>{{ page.back_label | default: 'Back to homepage' }}</span>
           </a>
         </div>
 
@@ -34,9 +34,9 @@
     <main class="page-content" id="main">
       <div class="wrapper">
         <div class="back-home-container">
-          <a class="back-home" href="{{ '/' | relative_url }}">
+          <a class="back-home" href="{{ page.back_url | default: '/' | relative_url }}">
             <span class="back-home-arrow" aria-hidden="true">&larr;</span>
-            <span>Back to homepage</span>
+            <span>{{ page.back_label | default: 'Back to homepage' }}</span>
           </a>
         </div>
 

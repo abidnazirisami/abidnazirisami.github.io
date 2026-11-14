@@ -7,6 +7,27 @@ To build and run the server locally, run:
 $ bash scripts/serve_locally.sh
 ```
 
+## Where the content lives
+
+The homepage (`index.markdown`) holds every section, and the header links jump
+to them. Only the bug list (`bugs.md`) and the undergraduate projects
+(`projects.md`) are separate pages.
+
+| What | File |
+| --- | --- |
+| Header links | `_data/navigation.yml` |
+| Experience, Education, Awards, Volunteering | `_data/cv.yml`, rendered by `_includes/timeline.html` |
+| Publications | `_includes/publications_list.md` |
+| News | `_includes/news.md` |
+| Reported Bugs counts | `_data/bug_stats.json` (generated, see `README-bugs.md`) |
+
+The Resume button opens `resume.pdf` directly. `/publications/`, `/resume/`
+and `/co-curricular/` only forward to their new place (`_layouts/redirect.html`).
+
+`experience.md` is the earlier, longer Experience page. It is still built at
+`/experience/` but nothing links to it. To use it again, set the Experience
+url in `_data/navigation.yml` to `/experience/`.
+
 ## Frontend variants
 
 The site ships two frontends. `frontend` in `_config.yml` picks the one that

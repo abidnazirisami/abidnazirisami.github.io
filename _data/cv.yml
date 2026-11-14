@@ -1,0 +1,124 @@
+# Content of the homepage sections Experience, Education, Awards and
+# Volunteering. _includes/timeline.html renders each list.
+#
+# Full entries (experience, education):
+#   date     shown in the left column
+#   org      name of the organization; org_url makes it a link
+#   role     position or degree; place is appended after it
+#   meta     short labelled lines, e.g. Advisor, Project
+#   detail   one or two sentences
+#   list     short unlabelled lines, e.g. the courses of a teaching post
+#   links    buttons under the entry
+#
+# Compact entries (awards, activities):
+#   date, name (url makes it a link), note
+#
+# meta text, detail, list items and note accept inline Markdown.
+
+experience:
+  - group: Research and Engineering
+    items:
+      - date: May 2023 – Present
+        org: North Carolina State University
+        role: Graduate Research Assistant
+        place: Raleigh, NC
+        meta:
+          - label: Advisor
+            text: "[Dr. Marcelo d'Amorim](https://damorim.github.io/)"
+        detail: >-
+          I develop and study testing techniques for deep learning libraries
+          and other complex software, and for autonomous driving systems in
+          simulation.
+
+      - date: Mar 2019 – Jul 2022
+        org: Enosis Solutions
+        org_url: https://www.enosisbd.com/
+        role: Senior Software Engineer
+        place: Dhaka, Bangladesh
+        detail: >-
+          Built web and desktop applications with Vue JS, TypeScript, ASP.NET
+          Core, and Delphi, including a project management tool used by about
+          270 employees. Wrote unit and regression tests, maintained the CI/CD
+          servers, and mentored new engineers.
+
+  - group: Teaching and Mentorship
+    items:
+      - date: Aug 2022 – Present
+        org: North Carolina State University
+        role: Graduate Teaching Assistant
+        place: Raleigh, NC
+        list:
+          - "Spring 2026 · CSC 379 Ethics in Computing · [Dr. David R. Wright](https://csc.ncsu.edu/people/drwrigh3/)"
+          - "Fall 2025 · CSC 712 Software Testing and Reliability · [Dr. Marcelo d'Amorim](https://damorim.github.io/)"
+          - "Spring 2025 · CSC 326 Software Engineering · [Dr. Wesley K. G. Assunção](https://wesleyklewerton.github.io/) and [Dr. Bowen Xu](https://www.bowenxu.me/)"
+          - "Spring 2023 · CSC 510 Software Engineering · [Dr. Marcelo d'Amorim](https://damorim.github.io/)"
+          - "Fall 2022 · CSC 417 Theory of Programming Languages · [Dr. Jamie Jennings](https://jamiejennings.com/)"
+
+      - date: Summers 2024, 2026
+        org: UIUC++ Summer Research in Software Engineering
+        org_url: https://uiuc-srse.github.io/
+        role: Research Mentor
+        list:
+          - "Summer 2026 · Mentee: Khush Patel · Advisor: [Dr. Marcelo d'Amorim](https://damorim.github.io/) · Project: *A Multi-Domain Study on the Effectiveness of LLMs at Writing Property-Based Tests*, submitted for review ([pdf](https://arxiv.org/pdf/2610.34487))"
+          - "Summer 2024 · Mentees: Aman Kumar Singh and Benjamin Wu · Advisors: [Dr. Marcelo d'Amorim](https://damorim.github.io/) and [Dr. Saikat Dutta](https://www.cs.cornell.edu/~saikatd/) · Project: *BugsInDLLs*, published at ISSTA 2025 Tool Demonstrations ([pdf](/papers/bugsindlls.pdf))"
+
+education:
+  - date: Aug 2022 – May 2027 (expected)
+    org: North Carolina State University
+    role: PhD in Computer Science
+    place: Raleigh, NC
+    meta:
+      - label: Advisor
+        text: "[Dr. Marcelo d'Amorim](https://damorim.github.io/)"
+      - label: Candidacy
+        text: Passed the Oral Preliminary Exam in April 2026
+      - label: Dissertation focus
+        text: Finding bugs in deep learning libraries such as PyTorch, TensorFlow, and JAX
+
+  - date: 2014 – Dec 2018
+    org: University of Dhaka
+    org_url: https://du.ac.bd
+    role: BSc in Computer Science and Engineering
+    place: Dhaka, Bangladesh
+    meta:
+      - label: Advisor
+        text: Abu Ahmed Ferdaus
+      - label: Thesis
+        text: "*Secondary & Higher Secondary Result Analysis Using the Tools of Educational Data Mining*"
+    links:
+      - label: Undergraduate projects
+        url: /projects/
+
+awards:
+  - date: May 2026
+    name: IEEE Computer Society TCSE Best Student Paper Award
+    url: https://www.linkedin.com/pulse/phd-students-alex-qin-m-abid-naziri-win-tcse-best-student-paper-rcw6e/
+    note: For *FlashFuzz* at ICST 2026
+  - date: April 2026
+    name: First prize, NCStateCS Graduate Research Symposium
+    url: https://www.linkedin.com/posts/ncstatecs_ncstatecs-programyourpath-gradpack-activity-7449571785240375296-M01q?utm_source=share&utm_medium=member_desktop&rcm=ACoAACH7TKgBi21tXmBnW0hq50W-ghhBKogjcVM
+    note: Inaugural edition
+  - date: June 2025
+    name: Graduate Merit Award
+    note: NC State College of Engineering
+
+activities:
+  - date: 2022 – 2023
+    name: Officer, Bangladesh Student Association at NC State
+    url: https://getinvolved.ncsu.edu/organization/BSA/
+    note: Events and support for incoming students
+  - date: 2016 – 2019
+    name: Volunteer Instructor, Shabab Murshid Development Foundation
+    url: https://tinyurl.com/smdforg
+    note: English and mathematics for secondary school students
+  - date: 2018
+    name: IT Trainer, Bijoy 71 Hall, University of Dhaka
+    note: Office applications and web browsing
+  - date: 2018
+    name: Workshop Volunteer, Fulki
+    url: https://www.dndlab.org/2018/05/16/workshop-at-fulki/
+    note: Computational thinking for children
+  - date: 2016 – 2017
+    name: Actioneer, CommunityAction
+    url: http://ca-bd.org/
+    note: Food drives and fundraising events
